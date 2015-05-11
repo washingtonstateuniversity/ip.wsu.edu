@@ -1,0 +1,169 @@
+/*
+Welcome to custom CSS for the WSU Spine Theme!
+
+You may delete these comments and get started with your custom stylesheet.
+Before doing so, please review the WSU web standards:
+
+http://brand.wsu.edu/media/web/web-standards/
+
+As a general rule of thumb, if your styles target aspects of the spine
+(#spine), that's against standard, whereas if you're styling elsewhere on
+the page, it's all good.
+*/
+
+
+/***** GENERAL STYLES *****/
+.main-header sup:not(.unset) span {
+	display: block;
+	line-height: 2em;
+}
+
+section {
+	padding-bottom: 52px;
+}
+
+.column {
+	padding: 25px !important;
+	-webkit-box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.25);
+	-moz-box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.25);
+	box-shadow: inset 0 0 1px 1px rgba(0,0,0,0.25);
+}
+
+.center {
+	text-align: center;
+}
+
+.caps {
+	text-transform: uppercase;
+}
+
+.none {
+	text-decoration: none;
+}
+
+.blue {
+	background-color: #d3e1e3;
+}
+
+.tan {
+	background-color: #eddccc;
+}
+/***** END OF GENERAL STYLES *****/
+
+
+/***** MIN 990px STYLES *****/
+@media screen
+and ( min-width : 990px ) {
+	#binder main {
+		width: 924px;
+	}
+	
+	main .page {
+		padding-top: 33px;
+		padding-left: 33px;
+		padding-right: 33px;
+	}
+
+	main .page section {
+		margin: 0 auto;
+	}
+}
+/* END OF MIN 990px STYLES */
+
+
+/***** MIN 694px STYLES *****/
+@media screen
+and ( min-width : 694px ) {
+	.row.halves .column.one, .row.halves .column.two {
+		width: 50%;
+	}
+	
+	.row.triptych .column.one, .row.triptych .column.three {
+		width: 25% !important;
+	}
+	
+	.row.triptych .column.two {
+		width: 50% !important;
+	}
+	
+	.row.thirds .column.one, .row.thirds .column.two, .row.thirds .column.three {
+		width: 33.33% !important;
+	}
+
+/***** THREE COLUMN w/EXTRA PAD STYLES *****/
+	.row.thirds .column.one.extra_pad, .row.thirds .column.two.extra_pad, .row.thirds .column.three.extra_pad {
+		width: 25% !important;
+		margin: 0 4.165% !important;
+	}
+/***** END OF THREE COLUMN w/EXTRA PAD STYLES *****/
+
+	.row.quarters .column.one, .row.quarters .column.two, .row.quarters .column.three, .row.quarters .column.four {
+		width: 25%;
+	}
+
+/***** TWO 41.67% COLUMN STYLES *****/	
+	.row.halves .column.one.forty-one_sixty-seven, .row.halves .column.two.forty-one_sixty-seven {
+		width: 33.34% !important;
+		margin: 0 auto;
+		left: 12.495%;
+	}
+	
+	.row.halves .column.one.forty-one_sixty-seven {
+		margin-right: 8.33% !important;
+	}
+		
+	.row.halves .column.two.forty-one_sixty-seven {
+	}
+/***** END OF TWO 41.67% COLUMN STYLES *****/	
+
+
+/***** TWO 33.33% COLUMN STYLES *****/		
+	.row.halves .column.one.thirty-three_thirty-three, .row.halves .column.two.thirty-three_thirty-three {
+		width: 25% !important;
+		margin: 0 auto;
+		left: 20.835%;
+	}
+	
+	.row.halves .column.one.thirty-three_thirty-three {
+		margin-right: 8.33% !important;
+	}
+		
+	.row.halves .column.two.thirty-three_thirty-three {
+	}
+/***** END OF TWO 33.33% COLUMN STYLES *****/		
+	
+	.row.single .column.one {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+	
+	.row.single .column.one.seventy-five_single {
+		width: 75%;
+		margin: 0 auto;
+		float: none;
+	}
+	
+	.row.single .column.one.sixty-six_sixty-seven_single {
+		width: 66.67%;
+		margin: 0 auto;
+		float: none;
+	}
+	
+	.row.single .column.one.fifty-single {
+		width: 50%;
+		margin: 0 auto;
+		float: none;
+	}
+}
+/* END OF MIN 694px STYLES */
+
+
+/***** MAX 693px STYLES *****/
+@media screen
+and ( max-width : 694px ) {
+	.row.quarters .column.one, .row.quarters .column.two, .row.quarters .column.three, .row.quarters .column.four {
+		width: 100%;
+	}
+}
+/* END OF MAX 693px STYLES */
