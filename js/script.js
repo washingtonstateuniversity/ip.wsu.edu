@@ -13,15 +13,6 @@
 		}
 	});
 
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 1){
-			$('#binder > main > header > div.header-group').addClass("sticky");
-		}
-		else{
-			$('#binder > main > header > div.header-group').removeClass("sticky");
-		}
-	});
-
 	process_section_backgrounds = function() {
 		var $bg_sections = $('.section-wrapper-has-background');
 
