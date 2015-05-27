@@ -14,6 +14,8 @@ class WSU_IP_Theme {
 		add_filter( 'spine_builder_save_columns', array( $this, 'save_builder_columns' ), 10, 2 );
 		add_filter( 'spine_builder_save_banner',  array( $this, 'save_builder_columns' ), 10, 2 );
 		add_filter( 'spine_builder_save_header',  array( $this, 'save_builder_columns' ), 10, 2 );
+
+		add_filter( 'make_prepare_data', array( $this, 'prepare_page_nav' ), 10, 1 );
 	}
 
 	/**
@@ -90,6 +92,28 @@ class WSU_IP_Theme {
 		}
 
 		return $clean_data;
+	}
+
+	/**
+	 * Process the cleaned data after a page is built and grab any sections with both
+	 * IDs and anchor text to help build an anchor navigation.
+	 *
+	 * @param array $clean_sections
+	 *
+	 * @return array The unmodified list of data.
+	 */
+	public function prepare_page_nav( $clean_sections ) {
+		$anchor_nav = array();
+
+		foreach( $clean_sections as $section ) {
+			if ( '' !== $section['section-id'] && '' !== $section['section-anchor-text'] ) {
+				$anchor_nav[ $section['section-id'] ] = $section['section-anchor-text'];
+			}
+		}
+
+		update_post_meta( get_the_ID(), '_ip_anchor_nav_data', $anchor_nav );
+
+		return $clean_sections;
 	}
 }
 new WSU_IP_Theme();
