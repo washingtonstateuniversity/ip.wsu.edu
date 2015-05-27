@@ -64,10 +64,10 @@ class WSU_IP_Theme {
 				   class="wsuwp-builder-section-anchor-text widefat"
 				   name="<?php echo $section_name; ?>[section-anchor-text]"
 				   value="<?php echo esc_attr( $section_anchor_text ); ?>" />
-			<p class="description">Enter a short title for this anchor. This will be used in navigation at the top of the page.</p>
+			<p class="description">A short title for this section. Used in navigation at the top of the page.</p>
 			<label for="<?php echo $section_name; ?>[section-id]">Section Id:</label>
 			<input type="text" id="<?php echo $section_name; ?>[section-id]" class="wsuwp-builder-section-id widefat" name="<?php echo $section_name; ?>[section-id]" value="<?php echo esc_attr( $section_id ); ?>" />
-			<p class="description">Enter a single ID to apply it to the <code>section</code> element represented by this builder area.</p>
+			<p class="description">A single ID to be applied to this <code>section</code> element.</p>
 		</div>
 	<?php
 	}
