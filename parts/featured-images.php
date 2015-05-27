@@ -17,11 +17,13 @@ $anchor_nav_data = get_post_meta( get_the_ID(), '_ip_anchor_nav_data', true );
 $anchor_html = '';
 
 if ( $anchor_nav_data ) {
+	$anchor_count = 0;
 	foreach( $anchor_nav_data as $anchor_id => $anchor_text ) {
+		$anchor_count++;
 		$anchor_html .= '<li class="anchor-nav-item"><a href="#' . esc_attr( $anchor_id ) . '">' . esc_html( $anchor_text ) . '</a></li>';
 	}
 }
 
 if ( '' !== $anchor_html ) {
-	echo '<div class="anchor-nav-wrapper"><ul class="anchor-nav">' . $anchor_html . '</ul></div>';
+	echo '<div class="anchor-nav-wrapper anchor-count-' . $anchor_count . '"><ul class="anchor-nav">' . $anchor_html . '</ul></div>';
 }
