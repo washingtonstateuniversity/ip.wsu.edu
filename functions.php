@@ -1,25 +1,119 @@
 <?php
 
-add_action( 'wp_enqueue_scripts', 'wpb_adding_scripts' );
-/**
- * Enqueue custom scripts for IP
- */
-function wpb_adding_scripts() {
-	wp_enqueue_script( 'wsu-ip-js', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery' ), spine_get_script_version(), true );
-}
+class WSU_IP_Theme {
+	/**
+	 * Setup the hooks used in the theme.
+	 */
+	public function __construct() {
+		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_styles' ), 15 );
+		add_filter( 'wsu_color_palette_values', array( $this, 'color_palette_values' ) );
+		add_action( 'spine_output_builder_section', array( $this, 'output_builder_section_ids' ), 10, 3 );
 
-add_filter( 'wsu_color_palette_values', 'wsu_ip_color_palette_values' );
-/**
- * Alter the defaults provided by the WSU Color Palette plugin.
- *
- * @return array
- */
-function wsu_ip_color_palette_values() {
-	return array(
-		'crimson' => array( 'name' => 'Crimson',  'hex' => '#981e32' ),
-		'blue1'   => array( 'name' => 'Blue One', 'hex' => '#4f868e' ),
-		'blue2'   => array( 'name' => 'Blue Two', 'hex' => '#2f5055' ),
-		'gray1'   => array( 'name' => 'Gray One', 'hex' => '#8d959a' ),
-		'gray2'   => array( 'name' => 'Gray Two', 'hex' => '#464e54' ),
-	);
+		// Filter the cleaned data when saving any time of section.
+		add_filter( 'spine_builder_save_columns', array( $this, 'save_builder_columns' ), 10, 2 );
+		add_filter( 'spine_builder_save_banner',  array( $this, 'save_builder_columns' ), 10, 2 );
+		add_filter( 'spine_builder_save_header',  array( $this, 'save_builder_columns' ), 10, 2 );
+
+		add_filter( 'make_prepare_data', array( $this, 'prepare_page_nav' ), 10, 1 );
+	}
+
+	/**
+	 * Enqueue custom scripts for International Programs.
+	 */
+	public function enqueue_scripts() {
+		wp_enqueue_script( 'wsu-ip-js', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery' ), spine_get_script_version(), true );
+	}
+
+	/**
+	 * Enqueue the scripts and styles used in admin views while this theme is active.
+	 */
+	public function enqueue_admin_styles() {
+		if ( 'page' === get_current_screen()->id ) {
+			wp_enqueue_style( 'wsu-ip-builder-styles', get_stylesheet_directory_uri() . '/css/sections.css', array(), spine_get_script_version() );
+		}
+	}
+
+	/**
+	 * Alter the defaults provided by the WSU Color Palette plugin.
+	 *
+	 * @return array
+	 */
+	public function color_palette_values() {
+		return array(
+			'crimson' => array( 'name' => 'Crimson',  'hex' => '#981e32' ),
+			'blue1'   => array( 'name' => 'Blue One', 'hex' => '#4f868e' ),
+			'blue2'   => array( 'name' => 'Blue Two', 'hex' => '#2f5055' ),
+			'gray1'   => array( 'name' => 'Gray One', 'hex' => '#8d959a' ),
+			'gray2'   => array( 'name' => 'Gray Two', 'hex' => '#464e54' ),
+		);
+	}
+
+	/**
+	 * Output the HTML required to capture section ID and anchor text for a section.
+	 *
+	 * @param $section_name
+	 * @param $ttfmake_section_data
+	 * @param $context
+	 */
+	public function output_builder_section_ids( $section_name, $ttfmake_section_data, $context ) {
+		$section_id = isset( $ttfmake_section_data['data']['section-id'] ) ? $ttfmake_section_data['data']['section-id'] : '';
+		$section_anchor_text = isset( $ttfmake_section_data['data']['section-anchor-text'] ) ? $ttfmake_section_data['data']['section-anchor-text'] : '';
+		?>
+		<div class="wsuwp-builder-meta" style="width:100%; margin-top:10px;">
+			<label for="<?php echo $section_name; ?>[section-anchor-text]">Section Anchor Text:</label>
+			<input type="text" id="<?php echo $section_name; ?>[section-anchor-text]"
+				   class="wsuwp-builder-section-anchor-text widefat"
+				   name="<?php echo $section_name; ?>[section-anchor-text]"
+				   value="<?php echo esc_attr( $section_anchor_text ); ?>" />
+			<p class="description">A short title for this section. Used in navigation at the top of the page.</p>
+			<label for="<?php echo $section_name; ?>[section-id]">Section Id:</label>
+			<input type="text" id="<?php echo $section_name; ?>[section-id]" class="wsuwp-builder-section-id widefat" name="<?php echo $section_name; ?>[section-id]" value="<?php echo esc_attr( $section_id ); ?>" />
+			<p class="description">A single ID to be applied to this <code>section</code> element.</p>
+		</div>
+	<?php
+	}
+
+	/**
+	 * Save additional builder data for columns not handled by the parent theme.
+	 *
+	 * @param array $clean_data Current array of cleaned data for storage.
+	 * @param array $data       Original array of data.
+	 *
+	 * @return array Cleaned data with our updates.
+	 */
+	public function save_builder_columns( $clean_data, $data ) {
+		if ( isset( $data['section-id'] ) ) {
+			$clean_data['section-id'] = sanitize_key( $data['section-id'] );
+		}
+
+		if ( isset( $data['section-anchor-text'] ) ) {
+			$clean_data['section-anchor-text'] = sanitize_text_field( esc_html( $data['section-anchor-text'] ) );
+		}
+
+		return $clean_data;
+	}
+
+	/**
+	 * Process the cleaned data after a page is built and grab any sections with both
+	 * IDs and anchor text to help build an anchor navigation.
+	 *
+	 * @param array $clean_sections
+	 *
+	 * @return array The unmodified list of data.
+	 */
+	public function prepare_page_nav( $clean_sections ) {
+		$anchor_nav = array();
+
+		foreach( $clean_sections as $section ) {
+			if ( '' !== $section['section-id'] && '' !== $section['section-anchor-text'] ) {
+				$anchor_nav[ $section['section-id'] ] = $section['section-anchor-text'];
+			}
+		}
+
+		update_post_meta( get_the_ID(), '_ip_anchor_nav_data', $anchor_nav );
+
+		return $clean_sections;
+	}
 }
+new WSU_IP_Theme();

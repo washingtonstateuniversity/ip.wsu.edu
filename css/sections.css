@@ -1,0 +1,5 @@
+.spine-builder-overlay-body {
+	overflow-y: auto;
+	padding-bottom: 0 !important;
+	max-height: 498px;
+}
