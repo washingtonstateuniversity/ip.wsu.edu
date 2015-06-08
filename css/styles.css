@@ -1,0 +1,1659 @@
+/* ============================================================
+  GENERAL OVERRIDES
+============================================================ */
+.main-header sup:not(.unset) {
+	color: #cbc4a2;
+}
+
+.main-header sup:not(.unset) span {
+	display: block;
+	line-height: 2em;
+}
+
+main section {
+	padding: 0;
+}
+
+.column {
+	padding: 0 25px;
+}
+
+#glue:before {
+	border-right: 1px solid #dbdbdb;
+}
+
+#binder,
+#binder > main > header > div {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+hr {
+	height: 1px;
+	background-color: #cbc482;
+	margin-bottom: 44px;
+	width: 100%;
+}
+
+.featured-image {
+	background-position: top left;
+}
+
+/* ============================================================
+  COLORS
+============================================================ */
+.crimson-text {
+	color: #981e32;
+}
+
+.blue1-text {
+	color: #4f868e;
+}
+
+.blue2-text {
+	color: #4f868e;
+}
+
+.gray1-text {
+	color: #8d959a;
+}
+
+.gray2-text {
+	color: #464e54;
+}
+
+.gray3-text {
+	color: #f5f5f5;
+}
+
+.tan1-text {
+	color: #f8f6f1;
+}
+
+.tan2-text {
+	color: #f4f2eb;
+}
+
+.black-text {
+	color: #000;
+}
+
+.white-text {
+	color: #fff;
+}
+
+/* ============================================================
+  BKGRD COLORS
+============================================================ */
+/* the first two classes are for page layout samples only, not used elsewhere */
+.blue {
+	background-color: #4f868e;
+}
+
+.tan {
+	background-color: #8d959a;
+}
+
+.crimson {
+	background-color: #981e32;
+}
+
+.blue1 {
+	background-color: #4f868e;
+}
+
+.blue2 {
+	background-color: #2f5055;
+}
+
+.gray1 {
+	background-color: #8d959a;
+}
+
+.gray2 {
+	background-color: #464e54;
+}
+
+.gray3 {
+	background-color: #f5f5f5;
+}
+
+.tan1 {
+	background-color: #f8f6f1;
+}
+
+.tan2 {
+	background-color: #f4f2eb;
+}
+
+.black {
+	background-color: #000;
+}
+
+.white {
+	background-color: #fff;
+}
+
+/* ============================================================
+  TEXT
+============================================================ */
+.allcaps {
+	text-transform: uppercase;
+}
+
+.none {
+	text-decoration: none;
+}
+
+p,
+p~p {
+	color: #464e54;
+	font-size: 1.05rem;
+	line-height: 1.6;
+	padding-bottom: 1.2rem;
+	font-weight: 300;
+}
+
+main li,
+table {
+	color: #464e54;
+	font-size: 1.05rem;
+	line-height: 1.6;
+	font-weight: 300;
+}
+
+main a {
+	color: inherit;
+	border-bottom: 2px dotted #00a5bd;
+	text-decoration: none;
+}
+
+main a:hover {
+	color: inherit;
+	border-bottom: 2px solid #00a5bd;
+	text-decoration: none;
+}
+
+.dropcap, .dropcap2 {
+	color: #981e32;
+	font-size: 62px;
+	font-style: normal;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	float: left;
+	padding: 0 4px 0 0;
+	line-height: 1;
+	vertical-align: text-top;
+	margin-top: -8px;
+	margin-left: -4px;
+}
+
+.dropcap2 {
+	padding: 0;
+}
+
+/***** ALIGNMENT *****/
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.indent {
+	padding-left: 30px;
+}
+
+/* Next Steps Lists */
+li[style*=center] {
+	list-style: none;
+}
+
+/***** HEADERS *****/
+body {
+	font-family: "OpenSans", "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: center;
+}
+
+h1 {
+	color: #4f868e;
+/* or #981e32 */
+	font-size: 32px;
+	line-height: 46px;
+	font-style: italic;
+	font-weight: normal;
+	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', serif;
+	padding-bottom: 60px;
+}
+
+h2 {
+	color: #981e32;
+/* or #4f868e */
+	font-size: 44px;
+	line-height: 1.2;
+	letter-spacing: -1.3px;
+	padding-bottom: 42px;
+	font-weight: 400;
+}
+
+h3 {
+	color: #8d959a;
+	font-size: 30px;
+	line-height: 44px;
+	letter-spacing: -.6px;
+	padding-top: 3rem;
+	padding-bottom: 25px;
+	font-weight: 400;
+}
+
+.column h3:first-child {
+	padding-top: 0;
+}
+
+h2 + h3 {
+	padding-top: 0;
+}
+
+h4 {
+	color: #8d959a;
+	font-size: 23px;
+	line-height: 35px;
+	letter-spacing: -.4px;
+	padding-bottom: 20px;
+	font-weight: 400;
+}
+
+h5 {
+	color: #8d959a;
+	font-size: 19px;
+	line-height: 29px;
+	letter-spacing: -.4px;
+	text-transform: uppercase;
+	padding: 20px 0;
+	font-weight: 400;
+}
+
+h6 {
+	color: #464e54;
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: uppercase;
+}
+
+/* Alternative section class */
+.alternative .column h2 {
+	padding: 0 0 36px !important;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	color: #4f868e;
+}
+
+.alternative h3 {
+	font-size: 1.4rem;
+	font-weight: 400;
+	margin: 0;
+	padding: 0 0 .75rem;
+}
+
+main strong {
+	font-weight: 600;
+}
+
+/* ============================================================
+  Buttons
+============================================================ */
+main a.button,
+main a.button:hover,
+main a.button:focus,
+main a.button2,
+main a.button2:hover,
+main a.button2:focus,
+main a.button3,
+main a.button3:hover,
+main a.button3:focus {
+	border-radius: 3px;
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	margin-bottom: 0;
+	line-height: 1;
+	padding: 17px 8px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-family: "Open Sans Condensed";
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	margin: 2rem .4rem 0;
+	min-width: 210px;
+	font-size: 20px;
+	letter-spacing: .5px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+main .crimson a.button,
+main .blue1 a.button,
+main .blue2 a.button,
+main .gray1 a.button,
+main .gray2 a.button {
+	color: #fff;
+}
+
+main a.button,
+main a.button:hover,
+main a.button:focus {
+	background: none;
+	border: 1px solid rgba(141,149,154,.5);
+}
+
+main a.button:hover {
+	border-color: #5e6a71;
+	color: #fff;
+}
+
+main .crimson a.button:hover,
+main .blue1 a.button:hover,
+main .blue2 a.button:hover,
+main .gray1 a.button:hover,
+main .gray2 a.button:hover {
+	border-color: #fff;
+}
+
+/* button2 styles */
+main .crimson a.button2,
+main .blue1 a.button2,
+main .blue2 a.button2,
+main .gray1 a.button2,
+main .gray2 a.button2 {
+	color: #fff;
+}
+
+main a.button2,
+main a.button2:hover,
+main a.button2:focus {
+	background: #8d959a;
+	border: none;
+	display: inline-block;
+}
+
+main a.button2:hover {
+	background: #5e6a71;
+	color: #fff;
+}
+
+/* button3 styles */
+main .crimson a.button3,
+main .blue1 a.button3,
+main .blue2 a.button3,
+main .gray1 a.button3,
+main .gray2 a.button3 {
+	color: #981e32;
+}
+
+main a.button3,
+main a.button3:hover,
+main a.button3:focus {
+	background: #eff0f1;
+	border: none;
+	display: inline-block;
+}
+
+main a.button3:hover {
+	background: #fff;
+	color: #981e32;
+}
+
+/* NEXT STEPS */
+main .page section.next-steps {
+	padding-top: 60px;
+	padding-bottom: 120px;
+}
+
+main .page section.next-steps h2,
+main .page section.next-steps h3 {
+	padding: 0;
+	font-family: "Open Sans Condensed";
+	font-size: 30px;
+	letter-spacing: 5.6px;
+	text-transform: uppercase;
+}
+
+main .next-steps a.button,
+main .next-steps a.button:hover,
+main .next-steps a.button:focus {
+	margin-top: 54px;
+}
+
+/* ============================================================
+  ANCHOR LINKS
+============================================================ */
+.anchor-nav-wrapper{
+	background: #f4f2eb;
+}
+.anchor-nav-wrapper{
+	float:left;
+	width:100%;
+}
+.anchor-nav{
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	width:100%;
+	max-width: 990px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.anchor-nav li{
+	background-color: #f4f2eb;
+	padding:0;
+	float: left;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+	background-color: #eeece0;
+	font-size: 1.2rem;
+	line-height: 1;
+	letter-spacing: .5px;
+	font-weight: 300;
+	color: #981e32;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+
+}
+main .anchor-nav li a{
+	padding:15px 8px;
+	width: 100%;
+	display: block;
+	border:none;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	box-sizing: border-box;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.anchor-count-2 li{
+	width:50%;
+}
+.anchor-count-3 li{
+	width:33.33%;
+}
+.anchor-count-4 li{
+	width:25%;
+}
+.anchor-nav li:nth-child(odd){
+	background-color: #e8e5d6;
+}
+.anchor-nav li:hover{
+	background-color: #981e32;
+	color: #e3dfcd;
+	cursor: pointer;
+}
+.anchor-nav-wrapper:before{
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 38px solid #e3dfcd;
+	opacity: .6;
+	content: " ";
+	position: absolute;
+	bottom: -38px;
+	z-index: 2;
+	overflow: visible;
+	visibility: visible !important;
+	left: calc(50% - 50px);
+}
+
+/* ============================================================
+  CONTENT BOXES w/COLOR BKGRD & BLOCKQUOTES
+============================================================ */
+blockquote {
+	float: left;
+	font-family: "Open Sans Condensed", sans-serif;
+	padding: 0;
+	margin-top: -14px;
+	margin-bottom: -28px;
+}
+
+blockquote p:before {
+	display: block;
+	content: ' ';
+	font-size: 110px;
+	font-weight: bold;
+	font-family: 'Georgia', serif;
+	position: absolute;
+	left: 40px;
+	top: 60px;
+	color: #5e6a71;
+	opacity: .6;
+}
+
+blockquote p,
+blockquote cite {
+	display: block;
+	color: #fff;
+}
+
+blockquote p {
+	font-size: 23px;
+	line-height: 40px;
+	letter-spacing: .3px;
+	text-align: center;
+	font-weight: 700;
+}
+
+blockquote cite,
+cite {
+	font-size: 14px;
+	line-height: 1.25em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-align: right;
+	text-transform: initial;
+	margin-top: 1.4rem;
+}
+
+header + blockquote {
+	margin-top: 22px;
+}
+
+.img-quote {
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+.blue1,
+.gray1,
+.blue2,
+.gray2,
+.crimson,
+.black {
+	color: #fff;
+}
+
+.tan1,
+.tan2,
+.gray3,
+.white {
+	color: #464e54;
+}
+
+/* CRIMSON */
+.crimson h1,
+.crimson h3,
+.crimson h5 {
+	color: #e3dfcd;
+}
+
+.crimson h2,
+.crimson h4,
+.crimson h6 {
+	color: #e3dfcd;
+}
+
+.crimson p {
+	color: #fff;
+}
+
+.crimson blockquote p:before {
+	color: #fff;
+}
+
+.crimson blockquote p,
+.crimson blockquote cite {
+	color: #fff;
+}
+
+/* BLUE1 */
+.blue1 h1,
+.blue1 h3,
+.blue1 h5 {
+	color: #d7dad8;
+}
+
+.blue1 h2,
+.blue1 h4,
+.blue1 h6 {
+	color: #e3dfcd;
+}
+
+.blue1 p {
+	color: #fff;
+}
+
+.blue1 blockquote p:before {
+	color: #3f6b72;
+}
+
+.blue1 blockquote p,
+.blue1 blockquote cite {
+	color: #d3e1e3;
+}
+
+/* BLUE2 */
+.blue2 h1,
+.blue2 h3,
+.blue2 h5 {
+	color: #b5babe;
+}
+
+.blue2 h2,
+.blue2 h4,
+.blue2 h6 {
+	color: #cbc4a2;
+}
+
+.blue2 p {
+	color: #fff;
+}
+
+.blue2 blockquote p:before {
+	color: #3f6b72;
+}
+
+.blue2 blockquote p,
+.blue2 blockquote cite {
+	color: #aec7cb;
+}
+
+/* GRAY1 */
+.gray1 h1,
+.gray1 h3,
+.gray1 h5 {
+	color: #d7dad8;
+}
+
+.gray1 h2,
+.gray1 h4,
+.gray1 h6 {
+	color: #e3dfcd;
+}
+
+.gray1 p {
+	color: #fff;
+}
+
+.gray1 blockquote p:before {
+	color: #5e6a71;
+}
+
+.gray1 blockquote p,
+.gray1 blockquote cite {
+	color: #fff;
+}
+
+/* GRAY2 */
+.gray2 h1,
+.gray2 h3,
+.gray2 h5 {
+	color: #b5babe;
+}
+
+.gray2 h2,
+.gray2 h4,
+.gray2 h6 {
+	color: #cbc4a2;
+}
+
+.gray2 p {
+	color: #fff;
+}
+
+.gray2 blockquote p:before {
+	color: #2a3033;
+}
+
+.gray2 blockquote p,
+.gray2 blockquote cite {
+	color: #d7dad8;
+}
+
+/* GRAY3 */
+.gray3 h1,
+.gray3 h3,
+.gray3 h5 {
+	color: #b5babe;
+}
+
+.gray3 h2,
+.gray3 h4,
+.gray3 h6 {
+	color: #cbc4a2;
+}
+
+.gray3 p {
+	color: #464e54;
+}
+
+.gray3 blockquote p:before {
+	color: #5e6a71;
+}
+
+.gray3 blockquote p,
+.gray3 blockquote cite {
+	color: #fff;
+}
+
+/* TAN1 */
+.tan1 h1,
+.tan1 h3,
+.tan1 h5 {
+	color: #b5babe;
+}
+
+.tan1 h2,
+.tan1 h4,
+.tan1 h6 {
+	color: #981e32;
+}
+
+.tan1 p {
+	color: #464e54;
+}
+
+.tan1 blockquote p:before {
+	color: #5e6a71;
+}
+
+.tan1 blockquote p,
+.tan1 blockquote cite {
+	color: #fff;
+}
+
+/* TAN2 */
+.tan2 h1,
+.tan2 h3,
+.tan2 h5 {
+	color: #b5babe;
+}
+
+.tan2 h2,
+.tan2 h4,
+.tan2 h6 {
+	color: #981e32;
+}
+
+.tan2 p {
+	color: #464e54;
+}
+
+.tan2 blockquote p:before {
+	color: #5e6a71;
+}
+
+.tan2 blockquote p,
+.tan2 blockquote cite {
+	color: #00a5bd;
+}
+
+/* BLACK */
+.black h1,
+.black h3,
+.black h5 {
+	color: #d7dad8;
+}
+
+.black h2,
+.black h4,
+.black h6 {
+	color: #e3dfcd;
+}
+
+.black p {
+	color: #fff;
+}
+
+.black blockquote p:before {
+	color: #fff;
+}
+
+.black blockquote p,
+.black blockquote cite {
+	color: #fff;
+}
+
+/* WHITE */
+.white h1,
+.white h3,
+.white h5 {
+	color: #8d959a;
+}
+
+.white h2,
+.white h4,
+.white h6 {
+	color: #981e32;
+}
+
+.white p {
+	color: #464e54;
+}
+
+.white blockquote p:before {
+	color: #5e6a71;
+}
+
+.white blockquote p,
+.white blockquote cite {
+	color: #00a5bd;
+}
+
+/* ============================================================
+  MISC typography
+============================================================ */
+.intro p {
+	color: #4f868e;
+	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', serif;
+	font-size: 2rem;
+	line-height: 1.3;
+	font-style: italic;
+	text-align: center;
+	font-weight: 400;
+}
+
+.intro p:first-child:first-letter {
+/* This handles the dropcap on the intro paragraph */
+	color: #981e32;
+	font-size: 60px;
+	font-style: normal;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	float: initial;
+	padding: 4px 0 0;
+	line-height: 1;
+}
+
+/* ============================================================
+  INFO/STATS
+============================================================ */
+.stats div.column:nth-child(even) header h1,
+.stats div.column:nth-child(even) header h2,
+.stats div.column:nth-child(even) header h3,
+.stats div.column:nth-child(even) header h4,
+.stats div.column:nth-child(even) header h5,
+.stats div.column:nth-child(even) header h6,
+.stats div.column:nth-child(even) h1,
+.stats div.column:nth-child(even) h2,
+.stats div.column:nth-child(even) h3,
+.stats div.column:nth-child(even) h4,
+.stats div.column:nth-child(even) h5,
+.stats div.column:nth-child(even) h6 {
+	color: #ffb81c;
+}
+
+.stats div.column:nth-child(odd) header h1,
+.stats div.column:nth-child(odd) header h2,
+.stats div.column:nth-child(odd) header h3,
+.stats div.column:nth-child(odd) header h4,
+.stats div.column:nth-child(odd) header h5,
+.stats div.column:nth-child(odd) header h6,
+.stats div.column:nth-child(odd) h1,
+.stats div.column:nth-child(odd) h2,
+.stats div.column:nth-child(odd) h3,
+.stats div.column:nth-child(odd) h4,
+.stats div.column:nth-child(odd) h5,
+.stats div.column:nth-child(odd) h6 {
+	color: #00a5bd;
+}
+
+.stats div.column:nth-child(even) header h1,
+.stats div.column:nth-child(even) header h2,
+.stats div.column:nth-child(even) header h3,
+.stats div.column:nth-child(even) header h4,
+.stats div.column:nth-child(even) header h5,
+.stats div.column:nth-child(even) header h6,
+.stats div.column:nth-child(even) h1,
+.stats div.column:nth-child(even) h2,
+.stats div.column:nth-child(even) h3,
+.stats div.column:nth-child(even) h4,
+.stats div.column:nth-child(even) h5,
+.stats div.column:nth-child(even) h6,
+.stats div.column:nth-child(odd) header h1,
+.stats div.column:nth-child(odd) header h2,
+.stats div.column:nth-child(odd) header h3,
+.stats div.column:nth-child(odd) header h4,
+.stats div.column:nth-child(odd) header h5,
+.stats div.column:nth-child(odd) header h6,
+.stats div.column:nth-child(odd) h1,
+.stats div.column:nth-child(odd) h2,
+.stats div.column:nth-child(odd) h3,
+.stats div.column:nth-child(odd) h4,
+.stats div.column:nth-child(odd) h5,
+.stats div.column:nth-child(odd) h6 {
+	font-size: 54px;
+	line-height: 1.28em;
+	font-weight: 700;
+	font-style: normal;
+	padding-bottom: 0;
+}
+
+.stats h2 {
+	margin-bottom: 1rem;
+}
+
+main .page .stats section {
+	padding-bottom: 60px;
+}
+
+main .page .stats.button-wrap section {
+	padding-top: 0;
+	padding-bottom: 60px;
+}
+
+.stats .column {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.stats section > div.column:nth-child(even) > p,
+.stats section > div.column:nth-child(odd) > p {
+	font-size: 1.2rem;
+	line-height: 1.65;
+	color: #8d959a;
+	text-align: center;
+	font-weight: 300;
+}
+
+/* ============================================================
+  NUMBERED PROCESSES
+============================================================ */
+.big-number,
+.big-number {
+	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', serif;
+	font-style: italic;
+	color: #f6861f;
+}
+
+.big-number {
+	font-size: 60px;
+	line-height: 1em;
+	vertical-align: middle;
+	text-align: center;
+	z-index: 10;
+	height: 0;
+	top: 16px;
+	position: relative;
+/*	margin-top: 70px;*/
+	width: 70px;
+	height: 60px;
+	background: white;
+	border-radius: 50px;
+	margin: 0 auto;
+	border: #d7dadb 7px solid;
+	margin-top: 50px;
+	margin-bottom: 16px;
+	padding-top: 10px;
+}
+
+.number {
+	font-size: 40px;
+	line-height: 0;
+	vertical-align: middle;
+}
+
+.big-number-bkgrd {
+	width: 70px;
+	height: 70px;
+	background: white;
+	border-radius: 50px;
+	z-index: -1;
+	margin: 0 auto;
+	border: #b5babe 7px solid;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	top: -16px;
+	position: relative;
+}
+
+/* ============================================================
+  SECTIONS ANS COLUMNS
+============================================================ */
+.column p:last-child,
+.column p~p:last-child {
+	padding-bottom: 0;
+}
+
+.column h2:first-child {
+	padding: 0 0 42px;
+}
+
+main .page section {
+	padding: 70px 0 100px;
+}
+
+/* INTRO */
+main .page .intro section {
+	padding-top: 80px;
+	padding-bottom: 0;
+}
+
+.intro .column {
+	padding-bottom: 60px;
+	border-bottom: 1px solid #cbc482;
+}
+
+.intro + div section {
+	padding-top: 60px;
+}
+
+main .page .anchors section,
+main .page .anchors section h2 {
+	padding: 0;
+}
+
+main .page .alternative section {
+	padding-bottom: 120px;
+}
+
+main .page .alternative section {
+	padding-top: 60px;
+}
+
+.white:not(.intro) + .white section {
+	padding-top: 0;
+}
+
+@media screen and ( min-width: 990px) {
+	#binder main {
+		width: 924px;
+	}
+	
+	main .page section {
+		margin: 0 auto;
+	}
+}
+
+@media screen and ( min-width: 694px) {
+	/***** SINGLE COLS *****/
+	.row.single .column.one {
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+	
+	.row.single .column.one.seventy-five_single {
+		width: 100%;
+		max-width: 693px;
+		margin: 0 auto;
+		float: none;
+	}
+	
+	.row.single .column.one.sixty-six_sixty-seven_single,
+																																																													.row.single .column.one.sixty-six_single {
+		width: 100%;
+		max-width: 616px;
+		margin: 0 auto;
+		float: none;
+	}
+	
+	.row.single .column.one.fifty_single {
+		width: 100%;
+		max-width: 512px;
+		margin: 0 auto;
+		float: none;
+	}
+	
+	/***** TWO EQUAL COLS *****/
+	.row.halves .column.one,
+																																																													.row.halves .column.two {
+		width: 50%;
+	}
+	
+	/***** TWO 41.67% COLS *****/
+	.row.halves .column.one.forty-one_sixty-seven,
+																																																													.row.halves .column.two.forty-one_sixty-seven {
+		width: 33.34%;
+		margin: 0 auto;
+		left: 12.495%;
+	}
+	
+	.row.halves .column.one.forty-one_sixty-seven {
+		margin-right: 8.33%;
+	}
+	
+	.row.halves .column.two.forty-one_sixty-seven {
+	}
+	
+	/***** TWO 33.33% COLS *****/
+	.row.halves .column.one.thirty-three_thirty-three,
+																																																													.row.halves .column.two.thirty-three_thirty-three {
+		width: 25%;
+		margin: 0 auto;
+		left: 20.835%;
+	}
+	
+	.row.halves .column.one.thirty-three_thirty-three {
+		margin-right: 8.33%;
+	}
+	
+	.row.halves .column.two.thirty-three_thirty-three {
+	}
+	
+	/***** THREE EQUAL COLS *****/
+	.row.thirds .column.one,
+																																																													.row.thirds .column.two,
+																																																													.row.thirds .column.three {
+		width: 33.33%;
+	}
+	
+	/***** THREE COLS w/EXTRA PAD *****/
+	.row.thirds .column.one.extra_pad,
+																																																													.row.thirds .column.two.extra_pad,
+																																																													.row.thirds .column.three.extra_pad {
+		width: 25%;
+		margin: 0 4.165%;
+	}
+	
+	/***** THREE COLS (25% / 50% / 25%) *****/
+	.row.triptych .column.one,
+																																																													.row.triptych .column.three {
+		width: 25%;
+	}
+	
+	.row.triptych .column.two {
+		width: 50%;
+	}
+	
+	/***** FOUR COLS *****/
+	.row.quarters .column.one,
+																																																													.row.quarters .column.two,
+																																																													.row.quarters .column.three,
+																																																													.row.quarters .column.four {
+		width: 25%;
+	}
+}
+
+@media screen and ( max-width: 694px) {
+	/***** FOUR COLS *****/
+	.row.quarters .column.one,
+																																																													.row.quarters .column.two,
+																																																													.row.quarters .column.three,
+																																																													.row.quarters .column.four {
+		width: 100%;
+	}
+}
+
+/* ============================================================
+  SITE TITLE PLACEMENT IN MAIN-HEADER
+============================================================ */
+.main-header-sitename sup span {
+	text-align: center;
+	letter-spacing: 5.33px;
+	font-size: 16px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+}
+
+.main-header-sitename sup {
+	color: #e3dfcd;
+	background-color: #981e32;
+	width: 100%;
+	height: 26px;
+	padding-bottom: 4px;
+}
+
+/* ============================================================
+  MAIN-HEADER OVERRIDES
+============================================================ */
+main header {
+	left: 0;
+	background-color: transparent;
+}
+
+.main-header h1 {
+	padding: 0;
+}
+
+.main-header sub:not(.unset) {
+	margin: 0 auto;
+}
+
+.main-header:not(.gutter) .header-group:not(.unset):not(.guttered),
+.main-header .header-group:not(.unset) {
+	max-width: 100%;
+	position: relative;
+	padding-top: 0;
+	text-align: center;
+	clear: both;
+	float: left;
+	padding-bottom: 0;
+	width: 100%;
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	resize: both;
+	padding: 52px 0;
+}
+
+.header-group.hgroup sub h1,
+.header-group sub span {
+	font-size: 76px;
+	line-height: 1em;
+	color: #981e32;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	resize: both;
+	position: relative;
+	font-style: normal;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+/*top:50px;*/
+	letter-spacing: -2.5px;
+}
+
+/* ============================================================
+  COLOR CIRCLES
+============================================================ */
+.stat-circles {
+	padding-top: 5rem;
+}
+
+.stat-circles .column {
+	width: 25%;
+	text-align: center;
+}
+
+.stat-circles .column.one {
+	margin: 0 5% 0 20%;
+}
+
+.stat-circles .column.two {
+	margin: 0 20% 0 5%;
+}
+
+.stat-circles .column h2:first-child {
+	background-color: #ffb81c;
+	width: 150px;
+	border-radius: 75px;
+	height: 150px;
+	margin: 0 auto 2rem;
+	padding-top: 60px;
+	box-sizing: border-box;
+	font-size: 30px;
+	color: #fff;
+}
+
+.stat-circles .column:first-child h2 {
+	background-color: #ada400;
+}
+
+/* ============================================================
+  WSU COLOR PALETTE OPTIONS
+============================================================ */
+/* Default (Crimson) */
+body.wsu-palette-default .header-group,
+body.wsu-palette-crimson .header-group {
+	background-color: #fff;
+}
+
+body.wsu-palette-default .header-group sub h1,
+body.wsu-palette-crimson .header-group sub h1,
+body.wsu-palette-default .dropcap:first-child:first-letter,
+body.wsu-palette-crimson .dropcap:first-child:first-letter {
+	color: #981e32;
+}
+
+/* Default (Blue1) */
+body.wsu-palette-blue1 .header-group {
+	background-color: #4f868e;
+}
+
+body.wsu-palette-blue1 .header-group sub h1 {
+	color: #fff;
+}
+
+body.wsu-palette-blue1 .dropcap:first-child:first-letter {
+	color: #4f868e;
+}
+
+/* Default (Gray1) */
+body.wsu-palette-gray1 .header-group {
+	background-color: #8d959a;
+}
+
+body.wsu-palette-gray1 .header-group sub h1 {
+	color: #fff;
+}
+
+body.wsu-palette-gray1 .dropcap:first-child:first-letter {
+	color: #981e32;
+}
+
+/* Default (Blue2) */
+body.wsu-palette-blue2 .header-group {
+	background-color: #2f5055;
+}
+
+body.wsu-palette-blue2 .header-group sub h1 {
+	color: #fff;
+}
+
+body.wsu-palette-blue2 .dropcap:first-child:first-letter {
+	color: #981e32;
+}
+
+/* Default (Gray2) */
+body.wsu-palette-gray2 .header-group {
+	background-color: #8d959a;
+}
+
+body.wsu-palette-gray2 .header-group sub h1 {
+	color: #fff;
+}
+
+body.wsu-palette-gray2 .dropcap:first-child:first-letter {
+	color: #981e32;
+}
+
+/* ============================================================
+  STICKY HEADERS
+============================================================ */
+#binder > main > header > div.header-group.sticky,
+#binder > main > header > div.header-group.sticky > sub > span,
+div.anchors > div.column.sticky,
+section.anchors > div.column.sticky {
+	-webkit-transition: font-size .8s ease;
+	transition: font-size .8s ease;
+}
+
+#binder > main > header > div.header-group.sticky {
+	position: fixed;
+	top: 0;
+	height: 30px;
+	width: 100%;
+	font-size: 16px;
+	line-height: 1em;
+	background: #981e32;
+	text-align: center;
+	color: #fff;
+	z-index: 100;
+	letter-spacing: 5.33px;
+	padding: 0;
+}
+
+.size-lt-large #binder > main > header > div.header-group.sticky {
+	top: 50px;
+}
+
+#binder > main > header > div.header-group.sticky > sub > span {
+	top: -6px;
+	letter-spacing: 5.33px;
+/* font-size needs important to override fittext js function when it becomes sticky */
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	color: #fff;
+	line-height: 1em;
+	z-index: 100;
+	width: calc(100% - 198px);
+	margin-left: 198px;
+}
+
+div.anchors > div.column.sticky,
+section.anchors > div.column.sticky {
+	position: fixed;
+	top: 31px;
+	z-index: 99;
+}
+
+.size-lt-large div.anchors > div.column.sticky,
+.size-lt-large section.anchors > div.column.sticky {
+	top: 51px;
+}
+
+/* ============================================================
+  PARALLAX EFFECT
+============================================================ */
+.parallax {
+	height: 480px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* ============================================================
+  IMAGE HEADER
+============================================================ */
+.image-span {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 0;
+	padding-bottom: 45.454545%;
+}
+
+/* ============================================================
+  TABLEPRESS
+============================================================ */
+.tablepress tfoot th,
+.tablepress thead th {
+	background-color: transparent;
+	font-weight: bold;
+}
+
+.tablepress tbody td,
+.tablepress thead th,
+.tablepress tfoot th {
+	text-align: center;
+	color: #464e54;
+}
+
+.tablepress.edges tbody td.column-2 {
+	text-align: right;
+}
+
+.tablepress.edges tbody td.column-1 {
+	text-align: left;
+}
+
+.tablepress.left tbody td.column-2 {
+	text-align: left;
+}
+
+.tablepress.left tbody td.column-1 {
+	text-align: left;
+}
+
+.tablepress td,
+.tablepress th {
+	background-color: transparent;
+	padding: 1em;
+}
+
+.tablepress tbody td,
+.tablepress tfoot th {
+	border-top: 0;
+	padding: 12px 0;
+}
+
+.tablepress tr {
+	border-top: dotted 2px #d7dadb;
+}
+
+.tablepress tr:last-child {
+	border-bottom: dotted 2px #d7dadb;
+}
+
+.tablepress.no-border tr:last-child {
+	border-bottom: none;
+}
+
+.tablepress thead th {
+	border-top: none;
+}
+
+.tablepress tfoot th *,
+.tablepress thead th * {
+	padding-bottom: 0;
+	font-size: 1.25em;
+}
+
+.tablepress thead tr {
+	border-top: none;
+}
+
+/* custom table styles */
+#tablepress-6 td.column-1 {
+	width: 5rem;
+}
+
+#tablepress-6 td.column-2, #tablepress-6 th.column-2, #tablepress-6 td.column-3, #tablepress-6 th.column-3 {
+	padding-right: 2rem;
+}
+
+#tablepress-7 tbody td.column-1 {
+	width: 8rem;
+}
+
+body:not(.unset) table td,
+body:not(.unset) table th {
+	padding: 30px 0;
+	vertical-align: top;
+	text-align: center;
+}
+
+/* ============================================================
+  ACCORDION
+============================================================ */
+.accordion * {
+	text-align: left;
+}
+
+.accordion {
+	border-bottom: dotted 2px #d7dadb;
+}
+
+.accordion h3 {
+	border-top: dotted 2px #8d959a;
+}
+
+/* ============================================================
+  MISC.
+============================================================ */
+main .page section.no-pad {
+	padding: 0 0 40px;
+}
+
+main .page section.no-pad-bottom {
+	padding-bottom: 40px;
+}
+
+main .page section.no-pad-top {
+	padding-top: 0;
+}
+
+main .page section.stats-head {
+	padding-bottom: 60px;
+}
+
+.stats-head h3 + p {
+	padding-top: 20px;
+}
+
+.center + h4,
+.button + h4 {
+	padding-top: 60px;
+}
+
+column.fill {
+	max-height: 480px;
+	overflow: hidden;
+}
+
+img.fill {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	width: auto9;
+	-ms-interpolation-mode: bicubic;
+}
+
+main .row {
+	max-width: 990px;
+}
+
+section.h5-list h5 {
+	text-align: left;
+	padding-bottom: 0;
+	font-weight: 400;
+}
+
+/* Deadlines & Dates */
+.dates h3 {
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 23px;
+}
+
+.dates p {
+	padding-bottom: 0;
+}
+
+header + h3 {
+	padding-top: 0;
+}
+
+.tighter h3 {
+	text-transform: uppercase;
+	padding-top: 0;
+}
+
+.stats-head h3 {
+	padding: 0;
+}
+
+.next-steps {
+	text-align: center;
+}
+
+.lead p {
+	font-size: 1.188rem;
+}
+
+/* Contact */
+#builder-section-1431744928826 h1 {
+	padding-bottom: 0;
+}
+
+.remove-bottom-border .column {
+	border-bottom: 0;
+}
