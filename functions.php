@@ -1,4 +1,5 @@
 <?php
+include_once( __DIR__ . '/includes/fields-of-study.php' );
 
 class WSU_IP_Theme {
 	/**
