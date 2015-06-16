@@ -25,4 +25,8 @@
 	$(document).ready( function() {
 		process_section_backgrounds();
 	});
+
+	if ( undefined !== wsuFOS.appView ) {
+		wsuFOS.app = new wsuFOS.appView();
+	}
 }(jQuery, window));
