@@ -139,7 +139,9 @@ hr {
 .tan2 {
 	background-color: #f4f2eb;
 }
-
+.tan3 {
+	background: #e3dfcd;
+}
 .black {
 	background-color: #000;
 }
@@ -329,6 +331,7 @@ main strong {
 /* ============================================================
   Buttons
 ============================================================ */
+
 main a.button,
 main a.button:hover,
 main a.button:focus,
@@ -342,7 +345,6 @@ main a.button3:focus {
 	color: inherit;
 	text-decoration: none;
 	cursor: pointer;
-	margin-bottom: 0;
 	line-height: 1;
 	padding: 17px 8px;
 	vertical-align: middle;
@@ -350,25 +352,46 @@ main a.button3:focus {
 	font-family: "Open Sans Condensed";
 	-webkit-transition: all .2s ease;
 	transition: all .2s ease;
-	margin: 2rem .4rem 0;
+	margin: 1rem 0 2rem;
 	min-width: 210px;
 	font-size: 20px;
 	letter-spacing: .5px;
 	box-sizing: border-box;
 	text-align: center;
 }
-
-main .crimson a.button,
-main .blue1 a.button,
-main .blue2 a.button,
-main .gray1 a.button,
-main .gray2 a.button {
+main a.button, 
+main a.button:hover, 
+main a.button:focus, 
+main a.button2, 
+main a.button2:hover, 
+main a.button2:focus, 
+main a.button3, 
+main a.button3:hover, 
+main a.button3:focus {
+	margin: 1rem 0 2rem;
+}
+main a.button2, 
+main a.button2:hover, 
+main a.button2:focus {
+	color: #fff;
+}
+main .crimson a.button, 
+main .crimson a.button:hover,
+main .blue1 a.button, 
+main .blue1 a.button:hover, 
+main .blue2 a.button, 
+main .blue2 a.button:hover,
+main .gray1 a.button, 
+main .gray1 a.button:hover,
+main .gray2 a.button,
+main .gray2 a.button:hover {
 	color: #fff;
 }
 
 main a.button,
 main a.button:hover,
 main a.button:focus {
+	color:inherit;
 	background: none;
 	border: 1px solid rgba(141,149,154,.5);
 }
@@ -599,7 +622,10 @@ cite {
 	text-transform: initial;
 	margin-top: 1.4rem;
 }
-
+.blue2-text blockquote p, 
+.blue2-text blockquote cite {
+	color: #4f868e;
+}
 header + blockquote {
 	margin-top: 22px;
 }
@@ -808,10 +834,10 @@ header + blockquote {
 }
 
 /* TAN2 */
-.tan2 h1,
-.tan2 h3,
+.tan2 h1, 
+.tan2 h3, 
 .tan2 h5 {
-	color: #b5babe;
+	color: #464e54;
 }
 
 .tan2 h2,
@@ -1027,7 +1053,7 @@ main .page .stats.button-wrap section {
 	border-radius: 50px;
 	margin: 0 auto;
 	border: #d7dadb 7px solid;
-	margin-top: 50px;
+	margin-top: 2rem;
 	margin-bottom: 16px;
 	padding-top: 10px;
 }
@@ -1051,7 +1077,14 @@ main .page .stats.button-wrap section {
 	top: -16px;
 	position: relative;
 }
-
+section.row.single .column.sixty-six_sixty-seven_single.next-step-negative {
+	margin-top:-160px;
+}
+main .page section.border-bottom .column.one.seventy-five_single {
+	padding-bottom: 75px;
+	margin-bottom: 75px;
+	border-bottom: 1px solid #cbc482;
+}
 /* ============================================================
   SECTIONS ANS COLUMNS
 ============================================================ */
@@ -1099,7 +1132,29 @@ main .page .alternative section {
 .white:not(.intro) + .white section {
 	padding-top: 0;
 }
+/* ============================================================
+  Media > Videos and photos
+============================================================ */
+.fluid-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:25px;
+	height:0;
+}
+.fluid-container iframe,
+.fluid-container object, 
+.fluid-container embed, 
+.fluid-container video {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
 
+
+/* ========================================================== */
+.column p:last-child,
 @media screen and ( min-width: 990px) {
 	#binder main {
 		width: 924px;
@@ -1371,11 +1426,11 @@ body.wsu-palette-gray1 .dropcap:first-child:first-letter {
 
 /* Default (Blue2) */
 body.wsu-palette-blue2 .header-group {
-	background-color: #2f5055;
+	background-color: #fff;
 }
 
 body.wsu-palette-blue2 .header-group sub h1 {
-	color: #fff;
+	color: #4f868e;
 }
 
 body.wsu-palette-blue2 .dropcap:first-child:first-letter {
@@ -1384,11 +1439,11 @@ body.wsu-palette-blue2 .dropcap:first-child:first-letter {
 
 /* Default (Gray2) */
 body.wsu-palette-gray2 .header-group {
-	background-color: #8d959a;
+	background-color: #fff;
 }
 
 body.wsu-palette-gray2 .header-group sub h1 {
-	color: #fff;
+	color: #8d959a;
 }
 
 body.wsu-palette-gray2 .dropcap:first-child:first-letter {
@@ -1405,7 +1460,13 @@ section.anchors > div.column.sticky {
 	-webkit-transition: font-size .8s ease;
 	transition: font-size .8s ease;
 }
+.anchor-nav-wrapper {
+	position: relative;
+}
 
+main .anchor-nav li a {
+	text-align: center;
+}
 #binder > main > header > div.header-group.sticky {
 	position: fixed;
 	top: 0;
@@ -1578,6 +1639,37 @@ body:not(.unset) table th {
 .accordion h3 {
 	border-top: dotted 2px #8d959a;
 }
+.accordion h3.ui-accordion-header {
+	padding: 1.5em 4em 1.5em .5em;
+	font-size: 1.5em;
+	line-height: 1.4;
+	cursor: pointer;
+}
+
+.accordion h3.ui-accordion-header:focus {
+	outline: 0;
+}
+
+.accordion div.ui-accordion-content {
+	color: #464e54;
+	font-size: 1.05rem;
+	line-height: 1.6;
+	padding-bottom: 1.2rem;
+	font-weight: 300;
+	padding: 0 .5em 2.2em;
+}
+
+.accordion h3.ui-accordion-header.ui-state-default {
+	background: url(/wp-content/uploads/sites/619/2015/06/a-default.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.accordion h3.ui-accordion-header.ui-state-active {
+	background: url(/wp-content/uploads/sites/619/2015/06/a-actvie.gif);
+	background-position: right;
+	background-repeat: no-repeat;
+}
 
 /* ============================================================
   MISC.
@@ -1629,6 +1721,135 @@ section.h5-list h5 {
 	padding-bottom: 0;
 	font-weight: 400;
 }
+/* FOS*/
+.fos {
+/* float: left; */
+	width: 60%;
+	margin: 2rem auto;
+	list-style: none;
+	background: rgba(255,255,255,.95);
+	border-radius: 3px;
+	padding: .75rem;
+}
+
+.fos li {
+	color: #4f868e;
+	width: 100%;
+	text-align: center;
+}
+
+.fos li:first-child {
+	text-transform: uppercase;
+	padding: 0;
+}
+
+.find-fos-alpha h3 {
+	font-size: 1.4rem;
+	padding-bottom: 1rem;
+}
+
+main .page .fos-section section {
+	padding: 1.5rem 0 2rem;
+}
+
+.fos {
+	background: #fff;
+	border: 1px solid rgba(0,0,0,.2);
+	z-index: 100;
+	position: relative;
+}
+
+.fos-open .fos-item {
+	text-align: left;
+	font-size: .8rem;
+	margin: .3rem 1rem;
+}
+
+.fos-open .fos-label {
+	margin-bottom: 1.25rem;
+}
+
+main .fos-open .fos-item a {
+	border-bottom: none;
+	color: #464e54;
+	display: block;
+}
+
+main .fos-open .fos-item a:hover {
+	color: #981e32;
+	text-decoration: underline;
+}
+.find-fos-wrapper {
+	position: relative;
+	height: 50px;
+}
+
+.find-fos {
+	width: 100%;
+}
+
+.find-fos-alpha-wrapper {
+	margin-top: 4rem;
+}
+
+.fos .fos-label {
+	cursor: pointer;
+}
+
+.fos .fos-item {
+	display: none;
+}
+
+.fos-open .fos-item {
+	display: block;
+}
+h2.twohundredplus:first-child {
+	color: #fff;
+	font-size: 10.5rem;
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+}
+
+h3.thp-fos {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 3rem;
+	color: rgba(0,0,0,.6);
+	margin: 0 0 2rem;
+	padding: 0;
+}
+
+main .page section.border-bottom {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+/* AZ */
+main .az a {
+	color: #fff;
+	display: block;
+	transition: all .5s ease;
+	border-bottom: none;
+	box-shadow: none;
+	font-size: 1.25rem;
+	width:20px;
+}
+main .az a:hover {
+	color:#2F5055;
+	background-color:#d7dad8;
+}
+main ul.az {
+	list-style: none;
+	text-align: center;
+}
+
+main .az li {
+	margin: .2rem;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	display: inline-block;
+}
 
 /* Deadlines & Dates */
 .dates h3 {
@@ -1669,4 +1890,10 @@ header + h3 {
 
 .remove-bottom-border .column {
 	border-bottom: 0;
+}
+/* uchat section & Forms */
+.uchat-section,
+.modal-no {
+/* section is needed to add the script to appropriate pages, but the section shouldn't be visible */
+	display: none;
 }
