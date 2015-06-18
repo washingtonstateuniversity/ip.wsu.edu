@@ -1832,15 +1832,19 @@ main .az a {
 	border-bottom: none;
 	box-shadow: none;
 	font-size: 1.25rem;
+	width:20px;
 }
-
+main .az a:hover {
+	color:#2F5055;
+	background-color:#d7dad8;
+}
 main ul.az {
 	list-style: none;
 	text-align: center;
 }
 
 main .az li {
-	margin: .7rem;
+	margin: .2rem;
 	padding: 0;
 	box-sizing: border-box;
 	text-align: center;
@@ -1890,6 +1894,6 @@ header + h3 {
 /* uchat section & Forms */
 .uchat-section,
 .modal-no {
-/*section is needed to add the script to appropriate pages, but the section shouldn't be visible*/
+/* section is needed to add the script to appropriate pages, but the section shouldn't be visible */
 	display: none;
 }
