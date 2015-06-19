@@ -108,7 +108,7 @@ class WSU_IP_Theme {
 		$anchor_nav = array();
 
 		foreach( $clean_sections as $section ) {
-			if ( '' !== $section['section-id'] && '' !== $section['section-anchor-text'] ) {
+			if ( isset( $section['section-id'] ) && '' !== $section['section-id'] && isset( $section['section-anchor-text'] ) && '' !== $section['section-anchor-text'] ) {
 				$anchor_nav[ $section['section-id'] ] = $section['section-anchor-text'];
 			}
 		}
