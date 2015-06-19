@@ -303,7 +303,7 @@ main .page section.border-bottom {
 	padding-bottom: 45.454545%;
 }
 .parallax {
-	height: 480px;
+	height:480px;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -935,9 +935,9 @@ header + blockquote {
   Buttons - Future Student
 ============================================================ */
 main a.button {
-	color:#5e6a71;
-	background-color:transparent;
-	border:1px solid rgba(141,149,154,.5);
+	color:#3f6b72;
+	background:transparent;
+	border:1px solid rgba(79, 134, 142, .5);
 	border-radius: 3px;
 	color: inherit;
 	text-decoration: none;
@@ -959,18 +959,15 @@ main a.button {
 
 main a.button:hover,
 main a.button:focus {
+	background:transparent;
 	margin: 1rem 0 2rem;
-	border: 1px solid #5e6a71;
-	color:#5e6a71;
+	border: 1px solid rgba(79, 134, 142, 1);
 }
 main a.cta.button {
-	background-color:#8d959a;
+	background-color:#4f868e;
 	color:#fff;
 }
-main a.cta.button {
-	background-color:#5e6a71;
-}
-	/* John's Emphasized default buttons */
+/* John's Emphasized default buttons */
 main a.cta.button:hover,
 main a.cta.button:focus,
 main .white a.cta.button:hover,
@@ -981,16 +978,15 @@ main .tan2 a.cta.button:hover,
 main .tan2 a.cta.button:focus,
 main .tan3 a.cta.button:hover,
 main .tan3 a.cta.button:focus {
-	background-color:#72652a;
+	background-color:#3f6b72;
 }
-	/**/
-/**/
+
 /* tan1, tan2, and tan3 button styles */
 main .tan1 a.button,
 main .tan2 a.button,
 main .tan3 a.button {
-	border:1px solid rgba(143,126,53,0.5);
-	color:#72652a;
+	border:1px solid rgba(79, 134, 142, .5);
+	color:#3f6b72;
 	background-color:transparent;
 }
 main .tan1 a.button:hover,
@@ -999,19 +995,18 @@ main .tan2 a.button:hover,
 main .tan2 a.button:focus,
 main .tan3 a.button:hover,
 main .tan3 a.button:focus {
-	border:1px solid rgba(114,101,42,1);
+	border:1px solid #3f6b72;
 }
 
 main .tan1 a.cta.button,
 main .tan2 a.cta.button,
 main .tan3 a.cta.button {
-	background-color:#8f7e35;
+	background-color:#4f868e;
 	color:#fff;
 }
 /**/
 /* default strong background color button styles */
 
-main .crimson a.button,
 main .blue1 a.button,
 main .blue2 a.button,
 main .gray1 a.button,
@@ -1020,12 +1015,17 @@ main .gray2 a.button {
 	border:1px solid rgba(141,149,154,.5);
 }
 main .crimson a.button:hover,
+main .crimson a.button:focus,
 main .blue1 a.button:hover,
 main .blue2 a.button:hover,
 main .gray1 a.button:hover,
 main .gray2 a.button:hover {
+	color:#fff;
 	border-color: #fff;
 	background-color:transparent;
+}
+main .crimson a.button {
+	border:1px solid #8d959a;
 }
 /* default strong  background color emphasized button styles */
 main .crimson a.cta.button,
@@ -1233,6 +1233,7 @@ main .page section.next-steps h3 {
 	font-size: 30px;
 	letter-spacing: 5.6px;
 	text-transform: uppercase;
+	color:#e8e5d6;
 }
 
 main .next-steps a.button,
