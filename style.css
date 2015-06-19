@@ -976,22 +976,35 @@ main a.cta.button:focus,
 main .white a.cta.button:hover,
 main .white a.cta.button:focus,
 main .tan1 a.cta.button:hover,
-main .tan1 a.cta.button:focus {
+main .tan1 a.cta.button:focus,
+main .tan2 a.cta.button:hover,
+main .tan2 a.cta.button:focus,
+main .tan3 a.cta.button:hover,
+main .tan3 a.cta.button:focus {
 	background-color:#72652a;
 }
 	/**/
 /**/
-/* tan1 button styles */
-main .tan1 a.button {
+/* tan1, tan2, and tan3 button styles */
+main .tan1 a.button,
+main .tan2 a.button,
+main .tan3 a.button {
 	border:1px solid rgba(143,126,53,0.5);
 	color:#72652a;
+	background-color:transparent;
 }
 main .tan1 a.button:hover,
-main .tan1 a.button:focus {
+main .tan1 a.button:focus,
+main .tan2 a.button:hover,
+main .tan2 a.button:focus,
+main .tan3 a.button:hover,
+main .tan3 a.button:focus {
 	border:1px solid rgba(114,101,42,1);
 }
 
-main .tan1 a.cta.button {
+main .tan1 a.cta.button,
+main .tan2 a.cta.button,
+main .tan3 a.cta.button {
 	background-color:#8f7e35;
 	color:#fff;
 }
@@ -1677,8 +1690,7 @@ main .az a {
 	width:20px;
 }
 main .az a:hover {
-	color:#2F5055;
-	background-color:#d7dad8;
+	color:#4F868E;
 }
 main ul.az {
 	list-style: none;
