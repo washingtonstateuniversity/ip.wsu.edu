@@ -7,6 +7,7 @@ class WSU_IP_Theme {
 	 */
 	public function __construct() {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+		add_action( 'spine_enqueue_styles', array( $this, 'enqueue_site_styles' ) );
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_styles' ), 15 );
 		add_filter( 'wsu_color_palette_values', array( $this, 'color_palette_values' ) );
 		add_action( 'spine_output_builder_section', array( $this, 'output_builder_section_ids' ), 10, 3 );
@@ -63,9 +64,9 @@ class WSU_IP_Theme {
 	}
 
 	/**
-	 * Enqueue custom scripts and styles for International Programs.
+	 * Enqueue site specific stylesheets after the child theme's stylesheet.
 	 */
-	public function enqueue_scripts() {
+	public function enqueue_site_styles() {
 		if ( $this->is_ip_site( 'ip-home' ) ) {
 			wp_enqueue_style( 'wsu-ip-home', get_stylesheet_directory_uri() . '/css/ip-home.css', array(), spine_get_script_version() );
 		}
@@ -89,8 +90,12 @@ class WSU_IP_Theme {
 		if ( $this->is_ip_site( 'on-campus' ) ) {
 			wp_enqueue_style( 'wsu-ip-on-campus', get_stylesheet_directory_uri() . '/css/ip-on-campus.css', array(), spine_get_script_version() );
 		}
+	}
 
-
+	/**
+	 * Enqueue custom scripts for International Programs.
+	 */
+	public function enqueue_scripts() {
 		wp_enqueue_script( 'wsu-ip-fos', get_stylesheet_directory_uri() . '/js/ip-fos-view.js', array( 'backbone' ), spine_get_script_version(), true );
 		wp_enqueue_script( 'wsu-ip-js', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery' ), spine_get_script_version(), true );
 	}
