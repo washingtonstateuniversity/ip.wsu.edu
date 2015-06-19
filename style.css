@@ -594,6 +594,9 @@ header + blockquote {
 .blue2 {
 	background-color: #2f5055;
 }
+.blue3 {
+	background:#4F868E;
+}
 .tan {
 	background-color: #8d959a;
 }
@@ -729,6 +732,38 @@ header + blockquote {
 }
 .blue2-text blockquote p, 
 .blue2-text blockquote cite {
+	color: #4f868e;
+}
+/*BLUE3*/
+.blue3-text {
+	color: #4f868e;
+}
+.blue3 h1,
+.blue3 h3,
+.blue3 h5 {
+	color: #b5babe;
+}
+
+.blue3 h2,
+.blue3 h4,
+.blue3 h6 {
+	color: #cbc4a2;
+}
+
+.blue3 p {
+	color: #fff;
+}
+
+.blue3 blockquote p:before {
+	color: #3f6b72;
+}
+
+.blue3 blockquote p,
+.blue3 blockquote cite {
+	color: #aec7cb;
+}
+.blue3-text blockquote p, 
+.blue3-text blockquote cite {
 	color: #4f868e;
 }
 /* GRAY1 */
@@ -1233,7 +1268,7 @@ main .page section.next-steps h3 {
 	font-size: 30px;
 	letter-spacing: 5.6px;
 	text-transform: uppercase;
-	color:#e8e5d6;
+	color:#cbc4a2;
 }
 
 main .next-steps a.button,
@@ -1602,6 +1637,9 @@ main .page .fos-section section {
 	position: relative;
 	height: 50px;
 }
+div.fos-section.blue2 {
+	background:#3f6c72;
+}
 .fos {
 /* float: left; */
 	width: 60%;
@@ -1705,6 +1743,7 @@ main .az li {
 	text-align: center;
 	display: inline-block;
 }
+
 /* ============================================================
   OVER RIDING UTILITIES
   Placed at the bottom for importance
