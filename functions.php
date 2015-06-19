@@ -20,9 +20,77 @@ class WSU_IP_Theme {
 	}
 
 	/**
-	 * Enqueue custom scripts for International Programs.
+	 *
+	 * @param string $name Name of the IP site being checked.
+	 *
+	 * @return bool
+	 */
+	public function is_ip_site( $name ) {
+		$site = get_blog_details();
+
+		$home_domain = apply_filters( 'ip_home_domain', 'stage.ip.wsu.edu' );
+		$future_students_domain = apply_filters( 'ip_future_students_domain', 'stage.future-students.ip.wsu.edu' );
+		$study_english_domain = apply_filters( 'ip_study_english_domain', 'stage.study-english.ip.wsu.edu' );
+		$study_abroad_domain = apply_filters( 'ip_study_abroad_domain', 'stage.study-abroad.ip.wsu.edu' );
+		$scholars_abroad_domain = apply_filters( 'ip_scholars_broad_domain', 'stage.scholars-abroad.ip.wsu.edu' );
+		$on_campus_domain = apply_filters( 'ip_on_campus_domain', 'stage.on-campus.ip.wsu.edu' );
+
+		if ( 'ip-home' === $name && $home_domain === $site->domain ) {
+			return true;
+		}
+
+		if ( 'future-students' === $name && $future_students_domain === $site->domain ) {
+			return true;
+		}
+
+		if ( 'study-english' === $name && $study_english_domain === $site->domain ) {
+			return true;
+		}
+
+		if ( 'study-abroad' === $name && $study_abroad_domain === $site->domain ) {
+			return true;
+		}
+
+		if ( 'scholars-abroad' === $name && $scholars_abroad_domain === $site->domain ) {
+			return true;
+		}
+
+		if ( 'on-campus' === $name&& $on_campus_domain === $site->domain ) {
+			return true;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Enqueue custom scripts and styles for International Programs.
 	 */
 	public function enqueue_scripts() {
+		if ( $this->is_ip_site( 'ip-home' ) ) {
+			wp_enqueue_style( 'wsu-ip-home', get_stylesheet_directory_uri() . '/css/ip-home.css', array(), spine_get_script_version() );
+		}
+
+		if ( $this->is_ip_site( 'future-students' ) ) {
+			wp_enqueue_style( 'wsu-ip-future-students', get_stylesheet_directory_uri() . '/css/ip-future-students.css', array(), spine_get_script_version() );
+		}
+
+		if ( $this->is_ip_site( 'study-english' ) ) {
+			wp_enqueue_style( 'wsu-ip-study-english', get_stylesheet_directory_uri() . '/css/ip-study-english.css', array(), spine_get_script_version() );
+		}
+
+		if ( $this->is_ip_site( 'study-abroad' ) ) {
+			wp_enqueue_style( 'wsu-ip-study-abroad', get_stylesheet_directory_uri() . '/css/ip-study-abroad.css', array(), spine_get_script_version() );
+		}
+
+		if ( $this->is_ip_site( 'scholars-abroad' ) ) {
+			wp_enqueue_style( 'wsu-ip-scholars-abroad', get_stylesheet_directory_uri() . '/css/ip-scholars-abroad.css', array(), spine_get_script_version() );
+		}
+
+		if ( $this->is_ip_site( 'on-campus' ) ) {
+			wp_enqueue_style( 'wsu-ip-on-campus', get_stylesheet_directory_uri() . '/css/ip-on-campus.css', array(), spine_get_script_version() );
+		}
+
+
 		wp_enqueue_script( 'wsu-ip-fos', get_stylesheet_directory_uri() . '/js/ip-fos-view.js', array( 'backbone' ), spine_get_script_version(), true );
 		wp_enqueue_script( 'wsu-ip-js', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery' ), spine_get_script_version(), true );
 	}
