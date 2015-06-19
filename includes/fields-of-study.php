@@ -35,7 +35,7 @@ class WSU_IP_Fields_Of_Study {
 		</div>
 		<div class="find-fos-alpha-wrapper">
 			<div class="find-fos-alpha">
-				<h3>Browse Alphabetically</h3>
+				<h3>Alphabetically</h3>
 				<ul class="az">
 					<li><a href="http://admission.wsu.edu/academics/fos/Public/area.castle?id=7509">A</a></li>
 					<li><a href="http://admission.wsu.edu/academics/fos/Public/area.castle?id=7510">B</a></li>

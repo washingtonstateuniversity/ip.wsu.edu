@@ -595,7 +595,7 @@ header + blockquote {
 	background-color: #2f5055;
 }
 .blue3 {
-	background:#4F868E;
+	background:#3f6c72;
 }
 .tan {
 	background-color: #8d959a;
@@ -966,148 +966,7 @@ header + blockquote {
 .white blockquote cite {
 	color: #00a5bd;
 }
-/* ============================================================
-  Buttons - Future Student
-============================================================ */
-main a.button {
-	color:#3f6b72;
-	background:transparent;
-	border:1px solid rgba(79, 134, 142, .5);
-	border-radius: 3px;
-	color: inherit;
-	text-decoration: none;
-	cursor: pointer;
-	line-height: 1;
-	padding: 17px 8px;
-	vertical-align: middle;
-	text-transform: uppercase;
-	font-family: "Open Sans Condensed";
-	-webkit-transition: all .2s ease;
-	transition: all .2s ease;
-	margin: 1rem 0 2rem;
-	min-width: 210px;
-	font-size: 20px;
-	letter-spacing: .5px;
-	box-sizing: border-box;
-	text-align: center;
-}
 
-main a.button:hover,
-main a.button:focus {
-	background:transparent;
-	margin: 1rem 0 2rem;
-	border: 1px solid rgba(79, 134, 142, 1);
-}
-main a.cta.button {
-	background-color:#4f868e;
-	color:#fff;
-}
-/* John's Emphasized default buttons */
-main a.cta.button:hover,
-main a.cta.button:focus,
-main .white a.cta.button:hover,
-main .white a.cta.button:focus,
-main .tan1 a.cta.button:hover,
-main .tan1 a.cta.button:focus,
-main .tan2 a.cta.button:hover,
-main .tan2 a.cta.button:focus,
-main .tan3 a.cta.button:hover,
-main .tan3 a.cta.button:focus {
-	background-color:#3f6b72;
-}
-
-/* tan1, tan2, and tan3 button styles */
-main .tan1 a.button,
-main .tan2 a.button,
-main .tan3 a.button {
-	border:1px solid rgba(79, 134, 142, .5);
-	color:#3f6b72;
-	background-color:transparent;
-}
-main .tan1 a.button:hover,
-main .tan1 a.button:focus,
-main .tan2 a.button:hover,
-main .tan2 a.button:focus,
-main .tan3 a.button:hover,
-main .tan3 a.button:focus {
-	border:1px solid #3f6b72;
-}
-
-main .tan1 a.cta.button,
-main .tan2 a.cta.button,
-main .tan3 a.cta.button {
-	background-color:#4f868e;
-	color:#fff;
-}
-/**/
-/* default strong background color button styles */
-
-main .blue1 a.button,
-main .blue2 a.button,
-main .gray1 a.button,
-main .gray2 a.button {
-	color:#fff;
-	border:1px solid rgba(141,149,154,.5);
-}
-main .crimson a.button:hover,
-main .crimson a.button:focus,
-main .blue1 a.button:hover,
-main .blue2 a.button:hover,
-main .gray1 a.button:hover,
-main .gray2 a.button:hover {
-	color:#fff;
-	border-color: #fff;
-	background-color:transparent;
-}
-main .crimson a.button {
-	border:1px solid #8d959a;
-}
-/* default strong  background color emphasized button styles */
-main .crimson a.cta.button,
-main .blue1 a.cta.button,
-main .blue2 a.cta.button,
-main .gray1 a.cta.button,
-main .gray2 a.cta.button,
-main .gray3 a.cta.button {
-	background-color:#fff;
-}
-
-main .blue1 a.cta.button {
-	color:#4F868E;
-}
-main .blue2 a.cta.button {
-	color:#2F5055;
-}
-
-main .gray1 a.cta.button {
-	color:#8d959a;
-}
-main .gray2 a.cta.button {
-	color:#464e54;
-}
-
-main .gray3 a.cta.button {
-	color:#f5f5f5;
-}
-/* Crimson buttons */
-
-main a.crimson-o.button {
-	color:#981e32;
-	border:1px solid rgba(141,149,154,.5);
-}
-main a.crimson-o.button:hover,
-main a.crimson-o.button:focus {
-	border:1px solid #981e32;
-}
-
-main a.crimson-b.cta.button {
-	color:#fff;
-	background-color:#981e32;
-}
-main a.crimson-b.cta.button:hover,
-main a.crimson-b.cta.button:focus {
-	background-color:#c60c30;
-}
 /* ============================================================
   INFO/STATS
 ============================================================ */
@@ -1637,9 +1496,6 @@ main .page .fos-section section {
 	position: relative;
 	height: 50px;
 }
-div.fos-section.blue2 {
-	background:#3f6c72;
-}
 .fos {
 /* float: left; */
 	width: 60%;
@@ -1743,7 +1599,189 @@ main .az li {
 	text-align: center;
 	display: inline-block;
 }
+/* ============================================================
+  Buttons - Future Student
+============================================================ */
+main a.button {
+	color:#3f6b72;
+	background:transparent;
+	border:1px solid rgba(79, 134, 142, .5);
+	border-radius: 3px;
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 1;
+	padding: 17px 8px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-family: "Open Sans Condensed";
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	margin: 1rem .6rem;
+	min-width: 210px;
+	font-size: 20px;
+	letter-spacing: .5px;
+	box-sizing: border-box;
+	text-align: center;
+}
 
+main a.button:hover,
+main a.button:focus {
+	background:transparent;
+	
+	border: 1px solid rgba(79, 134, 142, 1);
+}
+main a.cta.button {
+	background-color:#4f868e;
+	color:#fff;
+}
+/* John's Emphasized default buttons */
+main a.cta.button:hover,
+main a.cta.button:focus,
+main .white a.cta.button:hover,
+main .white a.cta.button:focus,
+main .tan1 a.cta.button:hover,
+main .tan1 a.cta.button:focus,
+main .tan2 a.cta.button:hover,
+main .tan2 a.cta.button:focus,
+main .tan3 a.cta.button:hover,
+main .tan3 a.cta.button:focus {
+	background-color:#3f6b72;
+}
+
+/* tan1, tan2, and tan3 button styles */
+main .tan1 a.button,
+main .tan2 a.button,
+main .tan3 a.button {
+	border:1px solid rgba(79, 134, 142, .5);
+	color:#3f6b72;
+	background-color:transparent;
+}
+main .tan1 a.button:hover,
+main .tan1 a.button:focus,
+main .tan2 a.button:hover,
+main .tan2 a.button:focus,
+main .tan3 a.button:hover,
+main .tan3 a.button:focus {
+	border:1px solid #3f6b72;
+	color:#3f6b72;
+}
+
+main .tan1 a.cta.button,
+main .tan2 a.cta.button,
+main .tan3 a.cta.button {
+	background-color:#4f868e;
+	color:#fff;
+}
+/**/
+/* default strong background color button styles */
+
+main .blue1 a.button,
+main .blue2 a.button,
+main .blue3 a.button,
+main .gray1 a.button,
+main .gray2 a.button {
+	color:#fff;
+	border:1px solid rgba(174, 199, 203, .5);
+}
+main .crimson a.button:hover,
+main .crimson a.button:focus,
+main .blue1 a.button:hover,
+main .blue1 a.button:focus,
+main .blue2 a.button:hover,
+main .blue2 a.button:focus,
+main .blue3 a.button:hover,
+main .blue3 a.button:focus,
+main .gray1 a.button:hover,
+main .gray2 a.button:hover {
+	color:#fff;
+	border-color: #fff;
+	background-color:transparent;
+}
+main .crimson a.button {
+	border:1px solid #8d959a;
+}
+/* default strong  background color emphasized button styles */
+main .crimson a.cta.button,
+main .blue1 a.cta.button,
+main .blue2 a.cta.button,
+main .blue3 a.cta.button,
+main .gray1 a.cta.button,
+main .gray2 a.cta.button {
+	background-color:#edf3f4;
+}
+main .crimson a.cta.button:hover,
+main .blue1 a.cta.button:hover,
+main .blue2 a.cta.button:hover,
+main .blue3 a.cta.button:hover,
+main .gray1 a.cta.button:hover,
+main .gray2 a.cta.button:hover {
+	background-color:#fff;
+}
+main .blue1 a.cta.button {
+	color:#4F868E;
+}
+main .blue2 a.cta.button {
+	color:#2F5055;
+}
+main .blue3 a.cta.button {
+	color:#3F6C72;
+}
+main .gray1 a.cta.button {
+	color:#8d959a;
+}
+main .gray2 a.cta.button {
+	color:#464e54;
+}
+
+main .gray3 a.cta.button {
+	color:#fff;
+}
+main .crimson a.cta.button {
+	color:#981E32;
+}
+/* Crimson buttons */
+
+main a.crimson-o.button {
+	color:#981e32;
+	border:1px solid rgba(141,149,154,.5);
+}
+main a.crimson-o.button:hover,
+main a.crimson-o.button:focus {
+	border:1px solid #981e32;
+}
+
+main a.crimson-b.cta.button {
+	color:#fff;
+	background-color:#981e32;
+}
+main a.crimson-b.cta.button:hover,
+main a.crimson-b.cta.button:focus {
+	background-color:#c60c30;
+	border:1px solid #c60c30;
+}
+
+/* Gray buttons */
+
+main a.gray-o.button {
+	color:#5e6a71;
+	border:1px solid rgba(141,149,154,.5);
+}
+main a.gray-o.button:hover,
+main a.gray-o.button:focus {
+	border:1px solid #5e6a71;
+}
+
+main a.gray-b.cta.button {
+	color:#fff;
+	border:1px solid rgba(141,149,154,1);
+	background:rgba(141,149,154,1);
+}
+main a.gray-b.cta.button:hover,
+main a.gray-b.cta.button:focus {
+	background-color:#5e6a71;
+	border:1px solid #5e6a71;
+}
 /* ============================================================
   OVER RIDING UTILITIES
   Placed at the bottom for importance
