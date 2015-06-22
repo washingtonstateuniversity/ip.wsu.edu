@@ -33,7 +33,7 @@ class WSU_IP_Theme {
 		$future_students_domain = apply_filters( 'ip_future_students_domain', 'stage.future-student.ip.wsu.edu' );
 		$study_english_domain = apply_filters( 'ip_study_english_domain', 'stage.study-english.ip.wsu.edu' );
 		$study_abroad_domain = apply_filters( 'ip_study_abroad_domain', 'stage.study-abroad.ip.wsu.edu' );
-		$scholars_abroad_domain = apply_filters( 'ip_scholars_abroad_domain', 'stage.scholars-abroad.ip.wsu.edu' );
+		$scholars_abroad_domain = apply_filters( 'ip_scholars_abroad_domain', 'stage.scholar-abroad.ip.wsu.edu' );
 		$on_campus_domain = apply_filters( 'ip_on_campus_domain', 'stage.on-campus.ip.wsu.edu' );
 
 		if ( 'ip-home' === $name && $home_domain === $site->domain ) {
