@@ -11,44 +11,13 @@ class WSU_IP_Blockquote_Shortcode {
 	}
 
 	/**
-	 * Configure support for the Progress Bar shortcode with Shortcode UI.
+	 * Configure support for the blockquote shortcode with Shortcode UI.
 	 */
 	public function setup_shortcode_ui() {
 		if ( ! function_exists( 'shortcode_ui_register_for_shortcode' ) ) {
 			return;
 		}
-		array(
 
-			// Available shortcode attributes and default values. Required. Array.
-			// Attribute model expects 'attr', 'type' and 'label'
-			// Supported field types: text, checkbox, textarea, radio, select, email, url, number, and date.
-			'attrs' => array(
-				array(
-					'label' => 'Attachment',
-					'attr'  => 'attachment',
-					'type'  => 'attachment',
-					'libraryType' => array( 'image' ),
-					'addButton'   => 'Select Image',
-					'frameTitle'  => 'Select Image',
-				),
-				array(
-					'label' => 'Cite',
-					'attr'  => 'source',
-					'type'  => 'text',
-					'meta' => array(
-						'placeholder' => 'Test placeholder',
-						'data-test'    => 1,
-					),
-				),
-				array(
-					'label'    => 'Select Page',
-					'attr'     => 'page',
-					'type'     => 'post_select',
-					'query'    => array( 'post_type' => 'page' ),
-					'multiple' => true,
-				),
-			),
-		);
 		$args = array(
 			'label'         => 'Blockquote',
 			'listItemImage' => 'dashicons-editor-quote',
