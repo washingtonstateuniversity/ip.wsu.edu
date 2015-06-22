@@ -1,0 +1,595 @@
+/* ============================================================
+  COLORING 
+  ref: https://brand.wsu.edu/visual/colors/
+============================================================ */
+
+/* Default (Blue1) */
+body.wsu-palette-palette2 .header-group {
+	background-color: #4f868e;
+}
+
+body.wsu-palette-palette2 .header-group sub h1 {
+	color: #fff;
+}
+
+body.wsu-palette-palette2 .dropcap:first-child:first-letter {
+	color: #4f868e;
+}
+
+/* Default (Gray1) */
+body.wsu-palette-palette4 .header-group {
+	background-color: #8d959a;
+}
+
+body.wsu-palette-palette4 .header-group sub h1 {
+	color: #fff;
+}
+
+body.wsu-palette-palette4 .dropcap:first-child:first-letter {
+	color: #981e32;
+}
+
+/* Default (Blue2) */
+body.wsu-palette-palette3 .header-group {
+	background-color: #fff;
+}
+
+body.wsu-palette-palette3 .header-group sub h1 {
+	color: #4f868e;
+}
+
+body.wsu-palette-palette3 .dropcap:first-child:first-letter {
+	color: #981e32;
+}
+
+/* Default (Gray2) */
+body.wsu-palette-palette5 .header-group {
+	background-color: #fff;
+}
+
+body.wsu-palette-palette5 .header-group sub h1 {
+	color: #8d959a;
+}
+
+body.wsu-palette-palette5 .dropcap:first-child:first-letter {
+	color: #981e32;
+}
+
+/* ----------------------------------
+  Backgrounds
+---------------------------------- */
+.tan {
+	background-color: #8d959a;
+}
+.tan1 {
+	background-color: #f8f6f1;
+}
+.tan2 {
+	background-color: #f4f2eb;
+}
+.tan3 {
+	background-color: #e3dfcd;
+}
+.gray1 {
+	background-color: #8d959a;
+}
+
+.gray2 {
+	background-color: #464e54;
+}
+.gray3 {
+	background-color: #f5f5f5;
+}
+.blue1 {
+	background-color: #4f868e;
+}
+
+.blue2 {
+	background-color: #2f5055;
+}
+.blue3 {
+	background:#3f6c72;
+}
+
+/* ----------------------------------
+  Background w/color text
+---------------------------------- */
+.blue1,
+.gray1,
+.blue2,
+.gray2 {
+	color: #fff;
+}
+
+.tan1,
+.tan2,
+.gray3,
+.white {
+	color: #464e54;
+}
+
+/* BLUE1 */
+.blue1-text {
+	color: #4f868e;
+}
+.blue1 h1,
+.blue1 h3,
+.blue1 h5 {
+	color: #d7dad8;
+}
+
+.blue1 h2,
+.blue1 h4,
+.blue1 h6 {
+	color: #e3dfcd;
+}
+
+.blue1 p {
+	color: #fff;
+}
+
+.blue1 blockquote p:before {
+	color: #3f6b72;
+}
+
+.blue1 blockquote p,
+.blue1 blockquote cite {
+	color: #d3e1e3;
+}
+/* BLUE2 */
+.blue2-text {
+	color: #4f868e;
+}
+.blue2 h1,
+.blue2 h3,
+.blue2 h5 {
+	color: #b5babe;
+}
+
+.blue2 h2,
+.blue2 h4,
+.blue2 h6 {
+	color: #cbc4a2;
+}
+
+.blue2 p {
+	color: #fff;
+}
+
+.blue2 blockquote p:before {
+	color: #3f6b72;
+}
+
+.blue2 blockquote p,
+.blue2 blockquote cite {
+	color: #aec7cb;
+}
+.blue2-text blockquote p, 
+.blue2-text blockquote cite {
+	color: #4f868e;
+}
+/*BLUE3*/
+.blue3-text {
+	color: #4f868e;
+}
+.blue3 h1,
+.blue3 h3,
+.blue3 h5 {
+	color: #b5babe;
+}
+
+.blue3 h2,
+.blue3 h4,
+.blue3 h6 {
+	color: #cbc4a2;
+}
+
+.blue3 p {
+	color: #fff;
+}
+
+.blue3 blockquote p:before {
+	color: #3f6b72;
+}
+
+.blue3 blockquote p,
+.blue3 blockquote cite {
+	color: #aec7cb;
+}
+.blue3-text blockquote p, 
+.blue3-text blockquote cite {
+	color: #4f868e;
+}
+/* GRAY1 */
+.gray1-text {
+	color: #8d959a;
+}
+.gray1 h1,
+.gray1 h3,
+.gray1 h5 {
+	color: #d7dad8;
+}
+
+.gray1 h2,
+.gray1 h4,
+.gray1 h6 {
+	color: #e3dfcd;
+}
+
+.gray1 p {
+	color: #fff;
+}
+
+.gray1 blockquote p:before {
+	color: #5e6a71;
+}
+
+.gray1 blockquote p,
+.gray1 blockquote cite {
+	color: #fff;
+}
+/* GRAY2 */
+.gray2-text {
+	color: #464e54;
+}
+.gray2 h1,
+.gray2 h3,
+.gray2 h5 {
+	color: #b5babe;
+}
+
+.gray2 h2,
+.gray2 h4,
+.gray2 h6 {
+	color: #cbc4a2;
+}
+
+.gray2 p {
+	color: #fff;
+}
+
+.gray2 blockquote p:before {
+	color: #2a3033;
+}
+
+.gray2 blockquote p,
+.gray2 blockquote cite {
+	color: #d7dad8;
+}
+
+/* GRAY3 */
+.gray3-text {
+	color: #f5f5f5;
+}
+.gray3 h1,
+.gray3 h3,
+.gray3 h5 {
+	color: #b5babe;
+}
+
+.gray3 h2,
+.gray3 h4,
+.gray3 h6 {
+	color: #cbc4a2;
+}
+
+.gray3 p {
+	color: #464e54;
+}
+
+.gray3 blockquote p:before {
+	color: #5e6a71;
+}
+
+.gray3 blockquote p,
+.gray3 blockquote cite {
+	color: #fff;
+}
+
+/* TAN1 */
+.tan1-text {
+	color: #f8f6f1;
+}
+.tan1 h1,
+.tan1 h3,
+.tan1 h5 {
+	color: #b5babe;
+}
+
+.tan1 h2,
+.tan1 h4,
+.tan1 h6 {
+	color: #981e32;
+}
+
+.tan1 p {
+	color: #464e54;
+}
+
+.tan1 blockquote p:before {
+	color: #5e6a71;
+}
+
+.tan1 blockquote p,
+.tan1 blockquote cite {
+	color: #fff;
+}
+
+/* TAN2 */
+.tan2-text {
+	color: #f4f2eb;
+}
+.tan2 h1,  
+.tan2 h5 {
+	color: #464e54;
+}
+
+.tan2 h2,
+.tan2 h4,
+.tan2 h6 {
+	color: #981e32;
+}
+
+.tan2 p {
+	color: #464e54;
+}
+
+.tan2 blockquote p:before {
+	color: #5e6a71;
+}
+
+.tan2 blockquote p,
+.tan2 blockquote cite {
+	color: #00a5bd;
+}
+/* ============================================================
+  Buttons - Future Student
+============================================================ */
+main p a.button {
+	color:#3f6b72;
+	border:1px solid rgba(79, 134, 142, .5);
+}
+
+main p a.button:hover,
+main p a.button:focus {
+	border: 1px solid rgba(79, 134, 142, 1);
+}
+main p a.cta.button {
+	background-color:#4f868e;
+	color:#fff;
+}
+/* John's Emphasized default buttons */
+main p a.cta.button:hover,
+main p a.cta.button:focus,
+main .white p a.cta.button:hover,
+main .white p a.cta.button:focus,
+main .tan1 p a.cta.button:hover,
+main .tan1 p a.cta.button:focus,
+main .tan2 p a.cta.button:hover,
+main .tan2 p a.cta.button:focus,
+main .tan3 p a.cta.button:hover,
+main .tan3 p a.cta.button:focus {
+	background-color:#3f6b72;
+}
+
+/* tan1, tan2, and tan3 button styles */
+main .tan1 p a.button,
+main .tan2 p a.button,
+main .tan3 p a.button {
+	border:1px solid rgba(79, 134, 142, .5);
+	color:#3f6b72;
+	background-color:transparent;
+}
+main .tan1 p a.button:hover,
+main .tan1 p a.button:focus,
+main .tan2 p a.button:hover,
+main .tan2 p a.button:focus,
+main .tan3 p a.button:hover,
+main .tan3 p a.button:focus {
+	border:1px solid #3f6b72;
+	color:#3f6b72;
+}
+
+main .tan1 a.cta.button,
+main .tan2 a.cta.button,
+main .tan3 a.cta.button {
+	background-color:#4f868e;
+	color:#fff;
+}
+main .tan1 p a.cta.button:hover,
+main .tan1 p a.cta.button:focus,
+main .tan2 p a.cta.button:hover,
+main .tan2 p a.cta.button:focus,
+main .tan3 p a.cta.button:hover,
+main .tan3 p a.cta.button:focus {
+	color:#fff;
+}
+/**/
+/* default strong background color button styles */
+
+main .blue1 p a.button,
+main .blue2 p a.button,
+main .blue3 p a.button,
+main .gray1 p a.button,
+main .gray2 p a.button {
+	color:#fff;
+	border:1px solid rgba(174, 199, 203, .5);
+}
+
+main .blue1 p a.button:hover,
+main .blue1 p a.button:focus,
+main .blue2 p a.button:hover,
+main .blue2 p a.button:focus,
+main .blue3 p a.button:hover,
+main .blue3 p a.button:focus,
+main .gray1 p a.button:hover,
+main .gray2 p a.button:hover {
+	color:#fff;
+	border-color: #fff;
+	background-color:transparent;
+}
+
+/* default strong  background color emphasized button styles */
+main .blue1 p a.cta.button,
+main .blue2 p a.cta.button,
+main .blue3 p a.cta.button,
+main .gray1 p a.cta.button,
+main .gray2 p a.cta.button {
+	background-color:#edf3f4;
+}
+
+main .blue1 p a.cta.button:hover,
+main .blue2 p a.cta.button:hover,
+main .blue3 p a.cta.button:hover,
+main .gray1 p a.cta.button:hover,
+main .gray2 p a.cta.button:hover {
+	background-color:#fff;
+}
+main .blue1 p a.cta.button {
+	color:#4F868E;
+}
+main .blue2 p a.cta.button {
+	color:#2F5055;
+}
+main .blue3 p a.cta.button {
+	color:#3F6C72;
+}
+main .gray1 p a.cta.button {
+	color:#8d959a;
+}
+main .gray2 p a.cta.button {
+	color:#464e54;
+}
+
+main .gray3 p a.cta.button {
+	color:#fff;
+}
+
+/* ============================================================
+  PAGE SPECIFICS
+============================================================ */
+
+/* =====================================
+  	Academic Degrees /academics-degrees/
+===================================== */
+
+/* =====================
+  		field of study
+====================== */
+
+main .page .fos-section section {
+	padding: 1.5rem 0 2rem;
+}
+.find-fos-wrapper {
+	position: relative;
+	height: 50px;
+}
+.fos {
+/* float: left; */
+	width: 60%;
+	margin: 2rem auto;
+	list-style: none;
+	background: rgba(255,255,255,.95);
+	border-radius: 3px;
+	padding: .75rem;
+	border: 1px solid rgba(0,0,0,.2);
+	z-index: 100;
+	position: relative;
+}
+.fos li {
+	color: #4f868e;
+	width: 100%;
+	text-align: center;
+}
+.fos li:first-child {
+	text-transform: uppercase;
+	padding: 0;
+}
+.fos-open .fos-label {
+	margin-bottom: 1.25rem;
+}
+.fos-open .fos-item {
+	text-align: left;
+	font-size: .8rem;
+	margin: .3rem 1rem;
+}
+.find-fos-alpha-wrapper {
+	margin-top: 4rem;
+}
+.find-fos {
+	width: 100%;
+}
+.fos .fos-label {
+	cursor: pointer;
+}
+
+.fos .fos-item {
+	display: none;
+}
+
+.fos-open .fos-item {
+	display: block;
+}
+.find-fos-alpha h3 {
+	font-size: 1.4rem;
+	padding-bottom: 1rem;
+	padding-top:6rem;
+}
+main .fos-open .fos-item a {
+	border-bottom: none;
+	color: #464e54;
+	display: block;
+}
+main .fos-open .fos-item a:hover {
+	color: #981e32;
+	text-decoration: underline;
+}
+h2.twohundredplus:first-child {
+	color: #fff;
+	font-size: 10.5rem;
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+}
+
+h3.thp-fos {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 3rem;
+	color: rgba(0,0,0,.6);
+	margin: 0 0 2rem;
+	padding: 0;
+}
+/* =====================
+  		a-z list
+====================== */
+main .az a {
+	color: #fff;
+	display: block;
+	transition: all .5s ease;
+	border-bottom: none;
+	box-shadow: none;
+	font-size: 1.25rem;
+	width:20px;
+}
+main .az a:hover {
+	color:#4F868E;
+}
+main ul.az {
+	list-style: none;
+	text-align: center;
+}
+
+main .az li {
+	margin: .2rem;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	display: inline-block;
+}
+/* ----------------------------------
+  ???
+---------------------------------- */
+#builder-section-1431744928826 h1 {
+	padding-bottom: 0;
+}

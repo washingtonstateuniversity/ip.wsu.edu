@@ -116,11 +116,11 @@ class WSU_IP_Theme {
 	 */
 	public function color_palette_values() {
 		return array(
-			'crimson' => array( 'name' => 'Crimson',  'hex' => '#981e32' ),
-			'blue1'   => array( 'name' => 'Blue One', 'hex' => '#4f868e' ),
-			'blue2'   => array( 'name' => 'Blue Two', 'hex' => '#2f5055' ),
-			'gray1'   => array( 'name' => 'Gray One', 'hex' => '#8d959a' ),
-			'gray2'   => array( 'name' => 'Gray Two', 'hex' => '#464e54' ),
+			'palette1' => array( 'name' => 'Crimson',  'hex' => '#981e32' ),
+			'palette2'   => array( 'name' => 'Blue One', 'hex' => '#4f868e' ),
+			'palette3'   => array( 'name' => 'Blue Two', 'hex' => '#2f5055' ),
+			'palette4'   => array( 'name' => 'Gray One', 'hex' => '#8d959a' ),
+			'palette5'   => array( 'name' => 'Gray Two', 'hex' => '#464e54' ),
 		);
 	}
 
