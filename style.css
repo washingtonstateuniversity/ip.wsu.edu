@@ -101,7 +101,6 @@ main header {
 /*top:50px;*/
 	letter-spacing: -2.5px;
 }
-
 /* ============================================================
   SITE TITLE PLACEMENT IN MAIN-HEADER
 ============================================================ */
@@ -120,73 +119,7 @@ main header {
 	height: 26px;
 	padding-bottom: 4px;
 }
-/* ============================================================
-  WSU COLOR PALETTE OPTIONS
-============================================================ */
-/* Default (Crimson) */
-body.wsu-palette-default .header-group,
-body.wsu-palette-crimson .header-group {
-	background-color: #fff;
-}
 
-body.wsu-palette-default .header-group sub h1,
-body.wsu-palette-crimson .header-group sub h1,
-body.wsu-palette-default .dropcap:first-child:first-letter,
-body.wsu-palette-crimson .dropcap:first-child:first-letter {
-	color: #981e32;
-}
-
-/* Default (Blue1) */
-body.wsu-palette-blue1 .header-group {
-	background-color: #4f868e;
-}
-
-body.wsu-palette-blue1 .header-group sub h1 {
-	color: #fff;
-}
-
-body.wsu-palette-blue1 .dropcap:first-child:first-letter {
-	color: #4f868e;
-}
-
-/* Default (Gray1) */
-body.wsu-palette-gray1 .header-group {
-	background-color: #8d959a;
-}
-
-body.wsu-palette-gray1 .header-group sub h1 {
-	color: #fff;
-}
-
-body.wsu-palette-gray1 .dropcap:first-child:first-letter {
-	color: #981e32;
-}
-
-/* Default (Blue2) */
-body.wsu-palette-blue2 .header-group {
-	background-color: #fff;
-}
-
-body.wsu-palette-blue2 .header-group sub h1 {
-	color: #4f868e;
-}
-
-body.wsu-palette-blue2 .dropcap:first-child:first-letter {
-	color: #981e32;
-}
-
-/* Default (Gray2) */
-body.wsu-palette-gray2 .header-group {
-	background-color: #fff;
-}
-
-body.wsu-palette-gray2 .header-group sub h1 {
-	color: #8d959a;
-}
-
-body.wsu-palette-gray2 .dropcap:first-child:first-letter {
-	color: #981e32;
-}
 
 /* ============================================================
   STICKY HEADERS
@@ -526,18 +459,17 @@ blockquote {
 	margin-top: -14px;
 	margin-bottom: -28px;
 }
-
-blockquote p:before {
-	display: block;
-	content: ' ';
-	font-size: 110px;
-	font-weight: bold;
-	font-family: 'Georgia', serif;
-	position: absolute;
-	left: 40px;
-	top: 60px;
-	color: #5e6a71;
-	opacity: .6;
+blockquote p span{
+  position:relative;
+}
+blockquote p span:before {
+  content:"“";
+  font-size:8rem;
+  position:absolute;
+  top:0;
+  left:-50px;
+  line-height:.5;
+  font-family:"Georgia";
 }
 
 blockquote p,
@@ -573,400 +505,6 @@ header + blockquote {
 	background-repeat: no-repeat;
 	background-position: center right;
 }
-/* ----------------------------------
-  ???
----------------------------------- */
-#builder-section-1431744928826 h1 {
-	padding-bottom: 0;
-}
-/* ============================================================
-  COLORING 
-  ref: https://brand.wsu.edu/visual/colors/
-============================================================ */
-
-/* ----------------------------------
-  Backgrounds
----------------------------------- */
-.blue1 {
-	background-color: #4f868e;
-}
-
-.blue2 {
-	background-color: #2f5055;
-}
-.blue3 {
-	background:#3f6c72;
-}
-.tan {
-	background-color: #8d959a;
-}
-.tan1 {
-	background-color: #f8f6f1;
-}
-.tan2 {
-	background-color: #f4f2eb;
-}
-.tan3 {
-	background-color: #e3dfcd;
-}
-.gray1 {
-	background-color: #8d959a;
-}
-
-.gray2 {
-	background-color: #464e54;
-}
-.gray3 {
-	background-color: #f5f5f5;
-}
-.crimson {
-	background-color: #981e32;
-}
-.black {
-	background-color: #000;
-}
-.white {
-	background-color: #fff;
-}
-/* ----------------------------------
-  Background w/color text
----------------------------------- */
-.blue1,
-.gray1,
-.blue2,
-.gray2,
-.crimson,
-.black {
-	color: #fff;
-}
-
-.tan1,
-.tan2,
-.gray3,
-.white {
-	color: #464e54;
-}
-/* CRIMSON */
-.crimson-text {
-	color: #981e32;
-}
-.crimson h1,
-.crimson h3,
-.crimson h5 {
-	color: #e3dfcd;
-}
-
-.crimson h2,
-.crimson h4,
-.crimson h6 {
-	color: #e3dfcd;
-}
-
-.crimson p {
-	color: #fff;
-}
-
-.crimson blockquote p:before {
-	color: #fff;
-}
-
-.crimson blockquote p,
-.crimson blockquote cite {
-	color: #fff;
-}
-/* BLUE1 */
-.blue1-text {
-	color: #4f868e;
-}
-.blue1 h1,
-.blue1 h3,
-.blue1 h5 {
-	color: #d7dad8;
-}
-
-.blue1 h2,
-.blue1 h4,
-.blue1 h6 {
-	color: #e3dfcd;
-}
-
-.blue1 p {
-	color: #fff;
-}
-
-.blue1 blockquote p:before {
-	color: #3f6b72;
-}
-
-.blue1 blockquote p,
-.blue1 blockquote cite {
-	color: #d3e1e3;
-}
-/* BLUE2 */
-.blue2-text {
-	color: #4f868e;
-}
-.blue2 h1,
-.blue2 h3,
-.blue2 h5 {
-	color: #b5babe;
-}
-
-.blue2 h2,
-.blue2 h4,
-.blue2 h6 {
-	color: #cbc4a2;
-}
-
-.blue2 p {
-	color: #fff;
-}
-
-.blue2 blockquote p:before {
-	color: #3f6b72;
-}
-
-.blue2 blockquote p,
-.blue2 blockquote cite {
-	color: #aec7cb;
-}
-.blue2-text blockquote p, 
-.blue2-text blockquote cite {
-	color: #4f868e;
-}
-/*BLUE3*/
-.blue3-text {
-	color: #4f868e;
-}
-.blue3 h1,
-.blue3 h3,
-.blue3 h5 {
-	color: #b5babe;
-}
-
-.blue3 h2,
-.blue3 h4,
-.blue3 h6 {
-	color: #cbc4a2;
-}
-
-.blue3 p {
-	color: #fff;
-}
-
-.blue3 blockquote p:before {
-	color: #3f6b72;
-}
-
-.blue3 blockquote p,
-.blue3 blockquote cite {
-	color: #aec7cb;
-}
-.blue3-text blockquote p, 
-.blue3-text blockquote cite {
-	color: #4f868e;
-}
-/* GRAY1 */
-.gray1-text {
-	color: #8d959a;
-}
-.gray1 h1,
-.gray1 h3,
-.gray1 h5 {
-	color: #d7dad8;
-}
-
-.gray1 h2,
-.gray1 h4,
-.gray1 h6 {
-	color: #e3dfcd;
-}
-
-.gray1 p {
-	color: #fff;
-}
-
-.gray1 blockquote p:before {
-	color: #5e6a71;
-}
-
-.gray1 blockquote p,
-.gray1 blockquote cite {
-	color: #fff;
-}
-/* GRAY2 */
-.gray2-text {
-	color: #464e54;
-}
-.gray2 h1,
-.gray2 h3,
-.gray2 h5 {
-	color: #b5babe;
-}
-
-.gray2 h2,
-.gray2 h4,
-.gray2 h6 {
-	color: #cbc4a2;
-}
-
-.gray2 p {
-	color: #fff;
-}
-
-.gray2 blockquote p:before {
-	color: #2a3033;
-}
-
-.gray2 blockquote p,
-.gray2 blockquote cite {
-	color: #d7dad8;
-}
-
-/* GRAY3 */
-.gray3-text {
-	color: #f5f5f5;
-}
-.gray3 h1,
-.gray3 h3,
-.gray3 h5 {
-	color: #b5babe;
-}
-
-.gray3 h2,
-.gray3 h4,
-.gray3 h6 {
-	color: #cbc4a2;
-}
-
-.gray3 p {
-	color: #464e54;
-}
-
-.gray3 blockquote p:before {
-	color: #5e6a71;
-}
-
-.gray3 blockquote p,
-.gray3 blockquote cite {
-	color: #fff;
-}
-
-/* TAN1 */
-.tan1-text {
-	color: #f8f6f1;
-}
-.tan1 h1,
-.tan1 h3,
-.tan1 h5 {
-	color: #b5babe;
-}
-
-.tan1 h2,
-.tan1 h4,
-.tan1 h6 {
-	color: #981e32;
-}
-
-.tan1 p {
-	color: #464e54;
-}
-
-.tan1 blockquote p:before {
-	color: #5e6a71;
-}
-
-.tan1 blockquote p,
-.tan1 blockquote cite {
-	color: #fff;
-}
-
-/* TAN2 */
-.tan2-text {
-	color: #f4f2eb;
-}
-.tan2 h1,  
-.tan2 h5 {
-	color: #464e54;
-}
-
-.tan2 h2,
-.tan2 h4,
-.tan2 h6 {
-	color: #981e32;
-}
-
-.tan2 p {
-	color: #464e54;
-}
-
-.tan2 blockquote p:before {
-	color: #5e6a71;
-}
-
-.tan2 blockquote p,
-.tan2 blockquote cite {
-	color: #00a5bd;
-}
-
-/* BLACK */
-.black-text {
-	color: #000;
-}
-.black h1,
-.black h3,
-.black h5 {
-	color: #d7dad8;
-}
-
-.black h2,
-.black h4,
-.black h6 {
-	color: #e3dfcd;
-}
-
-.black p {
-	color: #fff;
-}
-
-.black blockquote p:before {
-	color: #fff;
-}
-
-.black blockquote p,
-.black blockquote cite {
-	color: #fff;
-}
-
-/* WHITE */
-.white-text {
-	color: #fff;
-}
-.white h1,
-.white h3,
-.white h5 {
-	color: #8d959a;
-}
-
-.white h2,
-.white h4,
-.white h6 {
-	color: #981e32;
-}
-
-.white p {
-	color: #464e54;
-}
-
-.white blockquote p:before {
-	color: #5e6a71;
-}
-
-.white blockquote p,
-.white blockquote cite {
-	color: #00a5bd;
-}
-
 /* ============================================================
   INFO/STATS
 ============================================================ */
@@ -1137,6 +675,232 @@ main .next-steps a.button:focus {
 }
 main section.row.single .column.sixty-six_sixty-seven_single.next-step-negative {
 	margin-top:-160px;
+}
+/* ============================================================
+  COLORING 
+  ref: https://brand.wsu.edu/visual/colors/
+============================================================ */
+
+/* =======================================
+  WSU COLOR PALETTE OPTIONS
+======================================= */
+/* Default and palette1 (Crimson) */
+body.wsu-palette-default .header-group,
+body.wsu-palette-palette1 .header-group {
+	background-color: #fff;
+}
+
+body.wsu-palette-default .header-group sub h1,
+body.wsu-palette-palette1 .header-group sub h1,
+body.wsu-palette-default .dropcap:first-child:first-letter,
+body.wsu-palette-palette1 .dropcap:first-child:first-letter {
+	color: #981e32;
+}
+/* ----------------------------------
+  Backgrounds
+---------------------------------- */
+.crimson {
+	background-color: #981e32;
+}
+.black {
+	background-color: #000;
+}
+.white {
+	background-color: #fff;
+}
+/* Gray */
+.gray-dark {
+	background:#2a3033;
+}
+.gray-med {
+	background:#464e54;
+}
+.gray-light {
+	background:#5e6a71;
+}
+.gray-lightest {
+	background:#8d959a;
+}
+/* Tan */
+.tan-dark {
+	background:#e3dfcd;
+}
+.tan-light {
+	background:#f4f2eb;
+}
+
+/* ----------------------------------
+  Background w/color text
+---------------------------------- */
+/* CRIMSON */
+.crimson-text {
+	color: #981e32;
+}
+.crimson h1,
+.crimson h3,
+.crimson h5 {
+	color: #e3dfcd;
+}
+
+.crimson h2,
+.crimson h4,
+.crimson h6 {
+	color: #e3dfcd;
+}
+
+.crimson {
+	color: #fff;
+}
+
+.crimson blockquote p:before {
+	color: #fff;
+}
+
+.crimson blockquote p,
+.crimson blockquote cite {
+	color: #fff;
+}
+/* BLACK */
+.black-text {
+	color: #000;
+}
+.black h1,
+.black h3,
+.black h5 {
+	color: #d7dad8;
+}
+
+.black h2,
+.black h4,
+.black h6 {
+	color: #e3dfcd;
+}
+
+.black {
+	color: #fff;
+}
+
+.black blockquote p:before {
+	color: #fff;
+}
+
+.black blockquote p,
+.black blockquote cite {
+	color: #fff;
+}
+
+/* WHITE */
+.white-text {
+	color: #fff;
+}
+.white h1,
+.white h3,
+.white h5 {
+	color: #8d959a;
+}
+
+.white h2,
+.white h4,
+.white h6 {
+	color: #981e32;
+}
+
+.white p {
+	color: #464e54;
+}
+
+.white blockquote p:before {
+	color: #5e6a71;
+}
+
+.white blockquote p,
+.white blockquote cite {
+	color: #00a5bd;
+}
+/* ============================================================
+  Buttons - Future Student
+============================================================ */
+main p a.button {
+	background:transparent;
+	border-radius: 3px;
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 1;
+	padding: 17px 8px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-family: "Open Sans Condensed";
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	margin: 1rem .6rem;
+	min-width: 210px;
+	font-size: 20px;
+	letter-spacing: .5px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+main p a.button:hover,
+main p a.button:focus {
+	background:transparent;
+}
+/* Crimson buttons */
+
+main .crimson p a.button {
+	border:1px solid #8d959a;
+	color:#fff;
+}
+main .crimson p a.button:hover,
+main .crimson p a.button:focus {	
+	border-color: #fff;
+	background-color:transparent;
+}
+main .crimson p a.cta.button {
+	background-color:#edf3f4;
+	color:#981e32;
+}
+main .crimson p a.cta.button:hover {
+	
+	background-color:#fff;
+}
+main p a.crimson-o.button {
+	color:#981e32;
+	border:1px solid rgba(141,149,154,.5);
+}
+main p a.crimson-o.button:hover,
+main p a.crimson-o.button:focus {
+	border:1px solid #981e32;
+}
+
+main p a.crimson-b.cta.button {
+	color:#fff;
+	background-color:#981e32;
+}
+main p a.crimson-b.cta.button:hover,
+main p a.crimson-b.cta.button:focus {
+	background-color:#c60c30;
+	border:1px solid #c60c30;
+}
+/* Gray buttons */
+main p a.gray-o.button {
+	color:#5e6a71;
+	border:1px solid rgba(141,149,154,.5);
+}
+main p a.gray-o.button:hover,
+main p a.gray-o.button:focus {
+	border:1px solid #5e6a71;
+}
+
+main p a.gray-b.cta.button {
+	color:#fff;
+	border:1px solid rgba(141,149,154,1);
+	background:rgba(141,149,154,1);
+}
+main p a.gray-b.cta.button:hover,
+main p a.gray-b.cta.button:focus {
+	background-color:#5e6a71;
+	border:1px solid #5e6a71;
 }
 /* ============================================================
   COLOR CIRCLES
@@ -1478,311 +1242,6 @@ main .anchor-nav li a{
 	display: none;
 }
 /* ============================================================
-  PAGE SPECIFICS
-============================================================ */
-
-/* =====================================
-  	Academic Degrees /academics-degrees/
-===================================== */
-
-/* =====================
-  		field of study
-====================== */
-
-main .page .fos-section section {
-	padding: 1.5rem 0 2rem;
-}
-.find-fos-wrapper {
-	position: relative;
-	height: 50px;
-}
-.fos {
-/* float: left; */
-	width: 60%;
-	margin: 2rem auto;
-	list-style: none;
-	background: rgba(255,255,255,.95);
-	border-radius: 3px;
-	padding: .75rem;
-	border: 1px solid rgba(0,0,0,.2);
-	z-index: 100;
-	position: relative;
-}
-.fos li {
-	color: #4f868e;
-	width: 100%;
-	text-align: center;
-}
-.fos li:first-child {
-	text-transform: uppercase;
-	padding: 0;
-}
-.fos-open .fos-label {
-	margin-bottom: 1.25rem;
-}
-.fos-open .fos-item {
-	text-align: left;
-	font-size: .8rem;
-	margin: .3rem 1rem;
-}
-.find-fos-alpha-wrapper {
-	margin-top: 4rem;
-}
-.find-fos {
-	width: 100%;
-}
-.fos .fos-label {
-	cursor: pointer;
-}
-
-.fos .fos-item {
-	display: none;
-}
-
-.fos-open .fos-item {
-	display: block;
-}
-.find-fos-alpha h3 {
-	font-size: 1.4rem;
-	padding-bottom: 1rem;
-	padding-top:6rem;
-}
-main .fos-open .fos-item a {
-	border-bottom: none;
-	color: #464e54;
-	display: block;
-}
-main .fos-open .fos-item a:hover {
-	color: #981e32;
-	text-decoration: underline;
-}
-h2.twohundredplus:first-child {
-	color: #fff;
-	font-size: 10.5rem;
-	font-weight: 300;
-	padding: 0;
-	margin: 0;
-}
-
-h3.thp-fos {
-	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 3rem;
-	color: rgba(0,0,0,.6);
-	margin: 0 0 2rem;
-	padding: 0;
-}
-/* =====================
-  		a-z list
-====================== */
-main .az a {
-	color: #fff;
-	display: block;
-	transition: all .5s ease;
-	border-bottom: none;
-	box-shadow: none;
-	font-size: 1.25rem;
-	width:20px;
-}
-main .az a:hover {
-	color:#4F868E;
-}
-main ul.az {
-	list-style: none;
-	text-align: center;
-}
-
-main .az li {
-	margin: .2rem;
-	padding: 0;
-	box-sizing: border-box;
-	text-align: center;
-	display: inline-block;
-}
-/* ============================================================
-  Buttons - Future Student
-============================================================ */
-main a.button {
-	color:#3f6b72;
-	background:transparent;
-	border:1px solid rgba(79, 134, 142, .5);
-	border-radius: 3px;
-	color: inherit;
-	text-decoration: none;
-	cursor: pointer;
-	line-height: 1;
-	padding: 17px 8px;
-	vertical-align: middle;
-	text-transform: uppercase;
-	font-family: "Open Sans Condensed";
-	-webkit-transition: all .2s ease;
-	transition: all .2s ease;
-	margin: 1rem .6rem;
-	min-width: 210px;
-	font-size: 20px;
-	letter-spacing: .5px;
-	box-sizing: border-box;
-	text-align: center;
-}
-
-main a.button:hover,
-main a.button:focus {
-	background:transparent;
-	
-	border: 1px solid rgba(79, 134, 142, 1);
-}
-main a.cta.button {
-	background-color:#4f868e;
-	color:#fff;
-}
-/* John's Emphasized default buttons */
-main a.cta.button:hover,
-main a.cta.button:focus,
-main .white a.cta.button:hover,
-main .white a.cta.button:focus,
-main .tan1 a.cta.button:hover,
-main .tan1 a.cta.button:focus,
-main .tan2 a.cta.button:hover,
-main .tan2 a.cta.button:focus,
-main .tan3 a.cta.button:hover,
-main .tan3 a.cta.button:focus {
-	background-color:#3f6b72;
-}
-
-/* tan1, tan2, and tan3 button styles */
-main .tan1 a.button,
-main .tan2 a.button,
-main .tan3 a.button {
-	border:1px solid rgba(79, 134, 142, .5);
-	color:#3f6b72;
-	background-color:transparent;
-}
-main .tan1 a.button:hover,
-main .tan1 a.button:focus,
-main .tan2 a.button:hover,
-main .tan2 a.button:focus,
-main .tan3 a.button:hover,
-main .tan3 a.button:focus {
-	border:1px solid #3f6b72;
-	color:#3f6b72;
-}
-
-main .tan1 a.cta.button,
-main .tan2 a.cta.button,
-main .tan3 a.cta.button {
-	background-color:#4f868e;
-	color:#fff;
-}
-/**/
-/* default strong background color button styles */
-
-main .blue1 a.button,
-main .blue2 a.button,
-main .blue3 a.button,
-main .gray1 a.button,
-main .gray2 a.button {
-	color:#fff;
-	border:1px solid rgba(174, 199, 203, .5);
-}
-main .crimson a.button:hover,
-main .crimson a.button:focus,
-main .blue1 a.button:hover,
-main .blue1 a.button:focus,
-main .blue2 a.button:hover,
-main .blue2 a.button:focus,
-main .blue3 a.button:hover,
-main .blue3 a.button:focus,
-main .gray1 a.button:hover,
-main .gray2 a.button:hover {
-	color:#fff;
-	border-color: #fff;
-	background-color:transparent;
-}
-main .crimson a.button {
-	border:1px solid #8d959a;
-}
-/* default strong  background color emphasized button styles */
-main .crimson a.cta.button,
-main .blue1 a.cta.button,
-main .blue2 a.cta.button,
-main .blue3 a.cta.button,
-main .gray1 a.cta.button,
-main .gray2 a.cta.button {
-	background-color:#edf3f4;
-}
-main .crimson a.cta.button:hover,
-main .blue1 a.cta.button:hover,
-main .blue2 a.cta.button:hover,
-main .blue3 a.cta.button:hover,
-main .gray1 a.cta.button:hover,
-main .gray2 a.cta.button:hover {
-	background-color:#fff;
-}
-main .blue1 a.cta.button {
-	color:#4F868E;
-}
-main .blue2 a.cta.button {
-	color:#2F5055;
-}
-main .blue3 a.cta.button {
-	color:#3F6C72;
-}
-main .gray1 a.cta.button {
-	color:#8d959a;
-}
-main .gray2 a.cta.button {
-	color:#464e54;
-}
-
-main .gray3 a.cta.button {
-	color:#fff;
-}
-main .crimson a.cta.button {
-	color:#981E32;
-}
-/* Crimson buttons */
-
-main a.crimson-o.button {
-	color:#981e32;
-	border:1px solid rgba(141,149,154,.5);
-}
-main a.crimson-o.button:hover,
-main a.crimson-o.button:focus {
-	border:1px solid #981e32;
-}
-
-main a.crimson-b.cta.button {
-	color:#fff;
-	background-color:#981e32;
-}
-main a.crimson-b.cta.button:hover,
-main a.crimson-b.cta.button:focus {
-	background-color:#c60c30;
-	border:1px solid #c60c30;
-}
-
-/* Gray buttons */
-
-main a.gray-o.button {
-	color:#5e6a71;
-	border:1px solid rgba(141,149,154,.5);
-}
-main a.gray-o.button:hover,
-main a.gray-o.button:focus {
-	border:1px solid #5e6a71;
-}
-
-main a.gray-b.cta.button {
-	color:#fff;
-	border:1px solid rgba(141,149,154,1);
-	background:rgba(141,149,154,1);
-}
-main a.gray-b.cta.button:hover,
-main a.gray-b.cta.button:focus {
-	background-color:#5e6a71;
-	border:1px solid #5e6a71;
-}
-/* ============================================================
   OVER RIDING UTILITIES
   Placed at the bottom for importance
 ============================================================ */
@@ -1812,8 +1271,6 @@ main a.gray-b.cta.button:focus {
 	padding: 4px 0 0;
 	line-height: 1;
 }
-
-
 /* ============================================================
   @MEDIA
 ============================================================ */
@@ -1921,3 +1378,25 @@ main a.gray-b.cta.button:focus {
 		width: 100%;
 	}
 }
+main .page div.blockquote-has-thumbnail section,
+main .page div.blockquote-has-thumbnail section .column,
+main .page div.blockquote-has-thumnail section .column p  {
+	padding:0;
+}
+main .page div.blockquote-has-thumnail section .column blockquote p {
+	font-size: 1.1rem;
+} 
+main .page div.blockquote-has-thumbnail section.side-right blockquote {
+	padding:70px 20px 70px 0;
+}
+div.section-wrapper-has-background.blockquote-has-thumbnail  {
+	background-repeat:no-repeat;
+	background-position:right;
+	background-size:contain;
+}
+/*section.blockquote-has-thumbnail.side-right blockquote p {
+	text-align: left;
+}
+section.blockquote-has-thumbnail.side-left blockquote p {
+	text-align:right;
+}*/

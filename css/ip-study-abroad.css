@@ -1,0 +1,461 @@
+/* ============================================================
+  COLORING 
+  ref: https://brand.wsu.edu/visual/colors/
+============================================================ */
+/* .crimson, .black, .white, .gray-dark, .gray-med, .gray-light, .gray-lightest, .tan-dark, .tan-med, .tan-light, .tan-lightest are in the main style.css sheet. The text colors are controlled individually through out the different site style sheets. */
+/* ============================================================
+  WSU COLOR PALETTE OPTIONS
+============================================================ */
+/* .wsu-palette-palette1 is crimson, called in from the main style sheet */
+/*brown */  
+body.wsu-palette-palette2 .header-group  {
+	background-color: #b67233;
+}
+
+body.wsu-palette-palette2 .header-group sub h1 {
+	color: #fff;
+}
+
+body.wsu-palette-palette2 .dropcap:first-child:first-letter {
+	color: #b67233;
+}
+
+/* Default (Gray1) */
+body.wsu-palette-palette3 .header-group {
+	background-color: #8d959a;
+}
+
+body.wsu-palette-palette3 .header-group sub h1 {
+	color: #fff;
+}
+
+body.wsu-palette-palette3 .dropcap:first-child:first-letter {
+	color: #b67233;
+}
+
+/* Default (white with gray) */
+body.wsu-palette-palette4 .header-group {
+	background-color: #fff;
+}
+
+body.wsu-palette-palette4 .header-group sub h1 {
+	color: #8d959a;
+}
+
+body.wsu-palette-palette4 .dropcap:first-child:first-letter {
+	color: #8d959a;
+}
+
+/* Default (white with brown) */
+body.wsu-palette-palette5 .header-group {
+	background-color: #fff;
+}
+
+body.wsu-palette-palette5 .header-group sub h1 {
+	color: #925b29;
+}
+
+body.wsu-palette-palette5 .dropcap:first-child:first-letter {
+	color: #925b29;
+}
+/* ----------------------------------
+  Backgrounds
+---------------------------------- */
+
+/* ---------------------
+  Browns
+---------------------- */
+
+/* dark */
+.brown-dark {
+	background:#492e14;
+}
+.brown-dark h2 {
+	color:#B67233;
+}
+.brown-dark h3,
+.brown-dark h4,
+.brown-dark h5 {
+	color:#afa370;
+}
+.brown-dark,
+.brown-dark p {
+	color:#fff;
+}
+.brown-dark blockquote,
+.brown-dark blockquote p {
+	color:#ddbea1;
+}
+.brown-dark blockquote p span:before,
+.brown-dark blockquote span:before {
+  color:#6d441f;
+}
+.brown-dark p a.button {
+	border-color:rgba(221, 190, 161, .5);
+}
+.brown-dark p a.button:hover,
+.brown-dark p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.brown-dark p a.button.cta {
+	background:#f8f1eb;
+	color:#925b29;
+}
+.brown-dark p a.button.cta:hover,
+.brown-dark p a.button.cta:focus {
+	background:#fff;
+}
+/* medium */
+.brown-med {
+	background:#6d441f;
+}
+.brown-med h2 {
+	color:#fa9927;
+}
+.brown-med h3,
+.brown-med h4,
+.brown-med h5 {
+	color:#cbc4a2;
+}
+.brown-med,
+.brown-med p {
+	color:#fff;
+}
+.brown-med blockquote,
+.brown-med blockquote p {
+	color:#ddbea1;
+}
+.brown-med blockquote p span:before,
+.brown-med blockquote span:before {
+  color:#492e14;
+}
+.brown-med p a.button {
+	border-color:rgba(221, 190, 161, .5);
+}
+.brown-med p a.button:hover,
+.brown-med p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.brown-med p a.button.cta {
+	background:#f8f1eb;
+	color:#925b29;
+}
+.brown-med p a.button.cta:hover,
+.brown-med p a.button.cta:focus {
+	background:#fff;
+}
+/* light */
+.brown-light {
+	background:#925b29;
+}
+.brown-light h2 {
+	color:#f6861f;
+}
+.brown-light h3,
+.brown-light h4,
+.brown-light h5 {
+	color:#cbc4a2;
+}
+.brown-light,
+.brown-light p {
+	color:#fff;
+}
+.brown-light blockquote,
+.brown-light blockquote p {
+	color:#ddbea1;
+}
+.brown-light blockquote p span:before,
+.brown-light blockquote span:before {
+  color:#6d441f;
+}
+.brown-light p a.button {
+	border-color:rgba(221, 190, 161, .5);
+}
+.brown-light p a.button:hover,
+.brown-light p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.brown-light p a.button.cta {
+	background:#f8f1eb;
+	color:#925b29;
+}
+.brown-light p a.button.cta:hover,
+.brown-light p a.button.cta:focus {
+	background:#fff;
+}
+/* lightest */
+.brown-lightest {
+	background:#b67233;
+}
+.brown-lightest h2 {
+	color:#fff;
+}
+.brown-lightest h3,
+.brown-lightest h4,
+.brown-lightest h5 {
+	color:#e3dfcd;
+}
+.brown-lightest, 
+.brown-lightest p {
+	color:#fff;
+}
+.brown-lightest blockquote,
+.brown-lightest blockquote p {
+	color:#eddccc;
+}
+.brown-lightest blockquote p span:before,
+.brown-lightest blockquote span:before {
+  color:#925b29;
+}
+.brown-lightest p a.button {
+	border-color:rgba(221, 190, 161, .5);
+}
+.brown-lightest p a.button:hover,
+.brown-lightest p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.brown-lightest p a.button.cta {
+	background:#f8f1eb;
+	color:#925b29;
+}
+.brown-lightest p a.button.cta:hover,
+.brown-lightest p a.button.cta:focus {
+	background:#fff;
+}
+/* ---------------------
+  Tans
+---------------------- */
+.tan-dark blockquote,
+.tan-dark blockquote p {
+	color:#fff;
+}
+.tan-dark blockquote p span:before,
+.tan-dark blockquote span:before {
+	color:#fff;
+}
+.tan-dark p a.button {
+	border-color:rgba(182, 114, 51, 1);
+	color:#925b29;
+}
+.tan-dark p a.button:hover,
+.tan-dark p a.button:focus {
+	border:1px solid #925b29;
+	color:#925b29;
+}
+.tan-dark p a.button.cta {
+	background:#b67233;
+	color:#fff;
+}
+.tan-dark p a.button.cta:hover,
+.tan-dark p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
+.tan-light blockquote,
+.tan-light blockquote p {
+	color:#ddbea1;
+}
+.tan-light blockquote p span:before,
+.tan-light blockquote span:before {
+	color:#6d441f;
+}
+.tan-light p a.button {
+	border-color:rgba(182, 114, 51, 1);
+	color:#925b29;
+}
+.tan-light p a.button:hover,
+.tan-light p a.button:focus {
+	border:1px solid #925b29;
+	color:#925b29;
+}
+.tan-light p a.button.cta {
+	background:#b67233;
+	color:#fff;
+}
+.tan-light p a.button.cta:hover,
+.tan-light p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
+/* ---------------------
+  Grays
+---------------------- */
+.gray-dark h2 {
+	color:#b67233;
+}
+.gray-dark h3,
+.gray-dark h4,
+.gray-dark h5 {
+	color:#8d959a;
+}
+.gray-dark,
+.gray-dark p {
+	color:#fff;
+}
+.gray-dark blockquote,
+.gray-dark blockquote p {
+	color:#b5babe;
+}
+.gray-dark blockquote p span:before,
+.gray-dark blockquote span:before {
+  color:#464e54;
+}
+.gray-dark p a.button {
+	border-color:rgba(255, 255, 255, .5);
+	color:#fff;
+}
+.gray-dark p a.button:hover,
+.gray-dark p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.gray-dark p a.button.cta {
+	background:#b67233;
+	color:#fff;
+	border:1px solid #b67233;
+}
+.gray-dark p a.button.cta:hover,
+.gray-dark p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
+.gray-med h2 {
+	color:#f6861f;
+}
+.gray-med h3,
+.gray-med h4,
+.gray-med h5 {
+	color:#b5bABE;
+}
+.gray-med,
+.gray-med p {
+	color:#fff;
+}
+.gray-med blockquote,
+.gray-med blockquote p {
+	color:#d7dadb;
+}
+.gray-med blockquote p span:before,
+.gray-med blockquote span:before {
+  color:#2a3033;
+}
+.gray-med p a.button {
+	border-color:rgba(255, 255, 255, .5);
+	color:#fff;
+}
+.gray-med p a.button:hover,
+.gray-med p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.gray-med p a.button.cta {
+	background:#b67233;
+	color:#fff;
+	border:1px solid #b67233;
+}
+.gray-med p a.button.cta:hover,
+.gray-med p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
+.gray-light h2 {
+	color:#f6861f;
+}
+.gray-light h3,
+.gray-light h4, 
+.gray-light h5 {
+	color:#d7dadb;
+}
+.gray-light,
+.gray-light p {
+	color:#fff;
+}
+.gray-light blockquote,
+.gray-light blockquote p {
+	color:#eff0f1;
+}
+.gray-light blockquote p span:before,
+.gray-light blockquote span:before {
+  color:#464e54;
+}
+.gray-light p a.button {
+	border-color:rgba(255, 255, 255, .5);
+	color:#fff;
+}
+.gray-light p a.button:hover,
+.gray-light p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.gray-light p a.button.cta {
+	background:#b67233;
+	color:#fff;
+	border:1px solid #b67233;
+}
+.gray-light p a.button.cta:hover,
+.gray-light p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
+.gray-lightest h2 {
+	color:#f6861f;
+}
+.gray-lightest h3,
+.gray-lightest h4,
+.gray-lightest h5 {
+	color:#d7dadb;
+}
+.gray-lightest,
+.gray-lightest p {
+	color:#fff;
+}
+.gray-lighest blockquote,
+.gray-lighest blockquote p {
+	color:#fff;
+}
+.gray-lighest blockquote p span:before,
+.gray-lighest blockquote span:before {
+	color:rgba(94, 106, 113, .6);
+}
+.gray-lightest p a.button {
+	border-color:rgba(255, 255, 255, .5);
+	color:#fff;
+}
+.gray-lightest p a.button:hover,
+.gray-lightest p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.gray-lightest p a.button.cta {
+	background:#b67233;
+	color:#fff;
+	border:1px solid #b67233;
+}
+.gray-lightest p a.button.cta:hover,
+.gray-lightest p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
+/* white */
+.white p a.button {
+	border-color:rgba(182, 114, 51, 1);
+	color:#925b29;
+}
+.white p a.button:hover,
+.white p a.button:focus {
+	border:1px solid #925b29;
+	color:#925b29;
+}
+.white p a.button.cta {
+	background:#b67233;
+	color:#fff;
+}
+.white p a.button.cta:hover,
+.white p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
