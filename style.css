@@ -776,7 +776,8 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 	color: #e3dfcd;
 }
 
-.crimson {
+.crimson,
+.crimson p {
 	color: #fff;
 }
 
