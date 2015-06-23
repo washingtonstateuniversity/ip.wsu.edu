@@ -54,6 +54,17 @@ p a.button.cta:focus {
 	background:#72652a;
 	border:1px solid #72652a;
 }
+blockquote,
+blockquote p {
+	color:#Ada400;
+}
+blockquote cite {
+	color:#Afa370;
+}
+blockquote p span:before,
+blockquote span:before {
+	color:rgba(227, 223, 205, .6);
+}
 /* ---------------------
   greens
 ---------------------- */
