@@ -697,6 +697,31 @@ body.wsu-palette-default .dropcap:first-child:first-letter,
 body.wsu-palette-palette1 .dropcap:first-child:first-letter {
 	color: #981e32;
 }
+/* Default (Gray1) */
+body.wsu-palette-palette3 .header-group {
+	background-color: #8d959a;
+}
+
+body.wsu-palette-palette3 .header-group sub h1 {
+	color: #fff;
+}
+
+body.wsu-palette-palette3 .dropcap:first-child:first-letter {
+	color: #b67233;
+}
+
+/* Default (white with gray) */
+body.wsu-palette-palette4 .header-group {
+	background-color: #fff;
+}
+
+body.wsu-palette-palette4 .header-group sub h1 {
+	color: #8d959a;
+}
+
+body.wsu-palette-palette4 .dropcap:first-child:first-letter {
+	color: #8d959a;
+}
 /* ----------------------------------
   Backgrounds
 ---------------------------------- */

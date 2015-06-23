@@ -6,8 +6,7 @@
 /* ============================================================
   WSU COLOR PALETTE OPTIONS
 ============================================================ */
-/* .wsu-palette-palette1 is crimson, called in from the main style sheet */
-/*brown */  
+/* .wsu-palette-palette1 is crimson, .wsu-palette3,and 4 is gray called in from the main style sheet */
 body.wsu-palette-palette2 .header-group  {
 	background-color: #b67233;
 }
@@ -18,32 +17,6 @@ body.wsu-palette-palette2 .header-group sub h1 {
 
 body.wsu-palette-palette2 .dropcap:first-child:first-letter {
 	color: #b67233;
-}
-
-/* Default (Gray1) */
-body.wsu-palette-palette3 .header-group {
-	background-color: #8d959a;
-}
-
-body.wsu-palette-palette3 .header-group sub h1 {
-	color: #fff;
-}
-
-body.wsu-palette-palette3 .dropcap:first-child:first-letter {
-	color: #b67233;
-}
-
-/* Default (white with gray) */
-body.wsu-palette-palette4 .header-group {
-	background-color: #fff;
-}
-
-body.wsu-palette-palette4 .header-group sub h1 {
-	color: #8d959a;
-}
-
-body.wsu-palette-palette4 .dropcap:first-child:first-letter {
-	color: #8d959a;
 }
 
 /* Default (white with brown) */
@@ -61,7 +34,25 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 /* ----------------------------------
   Backgrounds
 ---------------------------------- */
-
+/* defaults */
+p a.button {
+	border-color:rgba(182, 114, 51, 1);
+	color:#925b29;
+}
+p a.button:hover,
+p a.button:focus {
+	border:1px solid #925b29;
+	color:#925b29;
+}
+p a.button.cta {
+	background:#b67233;
+	color:#fff;
+}
+p a.button.cta:hover,
+p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
 /* ---------------------
   Browns
 ---------------------- */
