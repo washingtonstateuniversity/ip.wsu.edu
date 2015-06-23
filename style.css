@@ -25,6 +25,8 @@ Template: spine
 
 main section {
 	padding: 0;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 .column {
