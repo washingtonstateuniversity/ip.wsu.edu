@@ -54,6 +54,14 @@ p a.button.cta:focus {
 	background:#9e7510;
 	border:1px solid #9e7510;
 }
+blockquote,
+blockquote p {
+	color:#c69214;
+}
+blockquote p span:before,
+blockquote span:before {
+	color:rgba(241, 228, 196, .7);
+}
 /* ---------------------
   yellows
 ---------------------- */
