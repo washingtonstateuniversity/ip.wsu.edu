@@ -673,7 +673,8 @@ main .next-steps a.button:hover,
 main .next-steps a.button:focus {
 	margin-top: 54px;
 }
-main section.row.single .column.sixty-six_sixty-seven_single.next-step-negative {
+main section.row.single .column.sixty-six_sixty-seven_single.next-step-negative,
+main section.row.single .column.seventy-five_single.next-step-negative {
 	margin-top:-160px;
 }
 /* ============================================================
