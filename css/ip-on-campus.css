@@ -1,0 +1,497 @@
+/* ============================================================
+  COLORING 
+  ref: https://brand.wsu.edu/visual/colors/
+============================================================ */
+/* .crimson, .black, .white, .gray-dark, .gray-med, .gray-light, .gray-lightest, .tan-dark, .tan-med, .tan-light, .tan-lightest are in the main style.css sheet. The text colors are controlled individually through out the different site style sheets. */
+/* ============================================================
+  WSU COLOR PALETTE OPTIONS
+============================================================ */
+/* .wsu-palette-palette1 is crimson, .wsu-palette3,and 4 is gray called in from the main style sheet */
+/*green */  
+body.wsu-palette-palette2 .header-group  {
+	background-color: #8f7e35;
+}
+
+body.wsu-palette-palette2 .header-group sub h1 {
+	color: #fff;
+}
+
+body.wsu-palette-palette2 .dropcap:first-child:first-letter {
+	color: #8f7e35;
+}
+
+/* Default (white with green) */
+body.wsu-palette-palette5 .header-group {
+	background-color: #fff;
+}
+
+body.wsu-palette-palette5 .header-group sub h1 {
+	color: #72652a;
+}
+
+body.wsu-palette-palette5 .dropcap:first-child:first-letter {
+	color: #72652a;
+}
+/* ----------------------------------
+  Backgrounds
+---------------------------------- */
+/*default */
+p a.button {
+	border-color:rgba(143, 126, 53, .5);
+	color:#72652a;
+}
+p a.button:hover,
+p a.button:focus {
+	border:1px solid #72652a;
+	color:#72652a;
+}
+p a.button.cta {
+	background:#8f7e35;
+	color:#fff;
+}
+p a.button.cta:hover,
+p a.button.cta:focus {
+	background:#72652a;
+	border:1px solid #72652a;
+}
+/* ---------------------
+  greens
+---------------------- */
+
+/* dark */
+.green-dark {
+	background:#393215;
+}
+.green-dark h2 {
+	color:#ada400;
+}
+.green-dark h3,
+.green-dark h4,
+.green-dark h5 {
+	color:#afa370;
+}
+.green-dark,
+.green-dark p {
+	color:#fff;
+}
+.green-dark blockquote,
+.green-dark blockquote p {
+	color:#afa370;
+}
+.green-dark blockquote p span:before,
+.green-dark blockquote span:before {
+  color:rgba(114, 101, 42, .6);
+}
+.green-dark p a.button {
+	border-color:rgba(203, 196, 162, .5);
+	color:#fff;
+}
+.green-dark p a.button:hover,
+.green-dark p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.green-dark p a.button.cta {
+	background:#f4f2eb;
+	color:#72652a;
+}
+.green-dark p a.button.cta:hover,
+.green-dark p a.button.cta:focus {
+	background:#fff;
+}
+/* medium */
+.green-med {
+	background:#564c20;
+}
+.green-med h2 {
+	color:#ada400;
+}
+.green-med h3,
+.green-med h4,
+.green-med h5 {
+	color:#cbc4a2;
+}
+.green-med,
+.green-med p {
+	color:#fff;
+}
+.green-med blockquote,
+.green-med blockquote p {
+	color:#cbc4a2;
+}
+.green-med blockquote p span:before,
+.green-med blockquote span:before {
+  color:#72652a;
+}
+.green-med p a.button {
+	border-color:rgba(203, 196, 162, .5);
+	color:#fff;
+}
+.green-med p a.button:hover,
+.green-med p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.green-med p a.button.cta {
+	background:#f4f2eb;
+	color:#72652a;
+}
+.green-med p a.button.cta:hover,
+.green-med p a.button.cta:focus {
+	background:#fff;
+}
+/* light */
+.green-light {
+	background:#72652a;
+}
+.green-light h2 {
+	color:#ada400;
+}
+.green-light h3,
+.green-light h4,
+.green-light h5 {
+	color:#cbc4a2;
+}
+.green-light,
+.green-light p {
+	color:#fff;
+}
+.green-light blockquote,
+.green-light blockquote p {
+	color:#cbc4a2;
+}
+.green-light blockquote p span:before,
+.green-light blockquote span:before {
+  color:#564c20;
+}
+.green-light p a.button {
+	border-color:rgba(203, 196, 162, .5);
+	color:#fff;
+}
+.green-light p a.button:hover,
+.green-light p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.green-light p a.button.cta {
+	background:#f4f2eb;
+	color:#72652a;
+}
+.green-light p a.button.cta:hover,
+.green-light p a.button.cta:focus {
+	background:#fff;
+}
+/* lightest */
+.green-lightest {
+	background:#8f7e35;
+}
+.green-lightest h2 {
+	color:#fff;
+}
+.green-lightest h3,
+.green-lightest h4,
+.green-lightest h5 {
+	color:#e3dfcd;
+}
+.green-lightest, 
+.green-lightest p {
+	color:#fff;
+}
+.green-lightest blockquote,
+.green-lightest blockquote p {
+	color:#e3dfcd;
+}
+.green-lightest blockquote p span:before,
+.green-lightest blockquote span:before {
+  color:#72652a;
+}
+.green-lightest p a.button {
+	border-color:rgba(203, 196, 162, .5);
+	color:#fff;
+}
+.green-lightest p a.button:hover,
+.green-lightest p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.green-lightest p a.button.cta {
+	background:#f4f2eb;
+	color:#72652a;
+}
+.green-lightest p a.button.cta:hover,
+.green-lightest p a.button.cta:focus {
+	background:#fff;
+}
+/* ---------------------
+  Tans
+---------------------- */
+.tan-dark h2 {
+	color:#8f7e35;
+}
+/* .crimson-text is part of the Spine already. Just apply it to the h2 mark 
+.tan-dark h2.crimson-text {
+}
+*/
+.tan-dark blockquote,
+.tan-dark blockquote p {
+	color:#8f7e35;
+}
+.tan-dark blockquote p span:before,
+.tan-dark blockquote span:before {
+	color:#cbc4a2;
+}
+.tan-dark p a.button {
+	border-color:rgba(143, 126, 53, .5);
+	color:#72652a;
+}
+.tan-dark p a.button:hover,
+.tan-dark p a.button:focus {
+	border:1px solid #72652a;
+	color:#72652a;
+}
+.tan-dark p a.button.cta {
+	background:#8f7e35;
+	color:#fff;
+}
+.tan-dark p a.button.cta:hover,
+.tan-dark p a.button.cta:focus {
+	background:#72652a;
+	border:1px solid #72652a;
+}
+.tan-light blockquote,
+.tan-light blockquote p {
+	color:#8f7e35;
+}
+.tan-light blockquote p span:before,
+.tan-light blockquote span:before {
+	color:#cbc4a2;
+}
+.tan-light p a.button {
+	border-color:rgba(143, 126, 53, .5);
+	color:#72652a;
+}
+.tan-light p a.button:hover,
+.tan-light p a.button:focus {
+	border:1px solid #72652a;
+	color:#72652a;
+}
+.tan-light p a.button.cta {
+	background:#8f7e35;
+	color:#fff;
+}
+.tan-light p a.button.cta:hover,
+.tan-light p a.button.cta:focus {
+	background:#72652a;
+	border:1px solid #72652a;
+}
+/* ---------------------
+  Grays
+---------------------- */
+.gray-dark h2 {
+	color:#ada400;
+}
+.gray-dark h3,
+.gray-dark h4,
+.gray-dark h5 {
+	color:#8d959a;
+}
+.gray-dark,
+.gray-dark p {
+	color:#fff;
+}
+.gray-dark blockquote,
+.gray-dark blockquote p {
+	color:#b5babe;
+}
+.gray-dark blockquote p span:before,
+.gray-dark blockquote span:before {
+  color:#464e54;
+}
+.gray-dark p a.button {
+	border-color:rgba(255, 255, 255, .5);
+	color:#fff;
+}
+.gray-dark p a.button:hover,
+.gray-dark p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.gray-dark p a.button.cta {
+	background:#b67233;
+	color:#fff;
+	border:1px solid #b67233;
+}
+.gray-dark p a.button.cta:hover,
+.gray-dark p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
+.gray-med h2 {
+	color:#ada400;
+}
+.gray-med h3,
+.gray-med h4,
+.gray-med h5 {
+	color:#b5bABE;
+}
+.gray-med,
+.gray-med p {
+	color:#fff;
+}
+.gray-med blockquote,
+.gray-med blockquote p {
+	color:#d7dadb;
+}
+.gray-med blockquote p span:before,
+.gray-med blockquote span:before {
+  color:#2a3033;
+}
+.gray-med p a.button {
+	border-color:rgba(255, 255, 255, .5);
+	color:#fff;
+}
+.gray-med p a.button:hover,
+.gray-med p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.gray-med p a.button.cta {
+	background:#b67233;
+	color:#fff;
+	border:1px solid #b67233;
+}
+.gray-med p a.button.cta:hover,
+.gray-med p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
+.gray-light h2 {
+	color:#fff;
+}
+.gray-light h3,
+.gray-light h4, 
+.gray-light h5 {
+	color:#d7dadb;
+}
+.gray-light,
+.gray-light p {
+	color:#fff;
+}
+.gray-light blockquote,
+.gray-light blockquote p {
+	color:#eff0f1;
+}
+.gray-light blockquote p span:before,
+.gray-light blockquote span:before {
+  color:#464e54;
+}
+.gray-light p a.button {
+	border-color:rgba(255, 255, 255, .5);
+	color:#fff;
+}
+.gray-light p a.button:hover,
+.gray-light p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.gray-light p a.button.cta {
+	background:#b67233;
+	color:#fff;
+	border:1px solid #b67233;
+}
+.gray-light p a.button.cta:hover,
+.gray-light p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
+.gray-lightest h2 {
+	color:#fff;
+}
+.gray-lightest h3,
+.gray-lightest h4,
+.gray-lightest h5 {
+	color:#d7dadb;
+}
+.gray-lightest,
+.gray-lightest p {
+	color:#fff;
+}
+.gray-lighest blockquote,
+.gray-lighest blockquote p {
+	color:#fff;
+}
+.gray-lighest blockquote p span:before,
+.gray-lighest blockquote span:before {
+	color:rgba(94, 106, 113, .6);
+}
+.gray-lightest p a.button {
+	border-color:rgba(255, 255, 255, .5);
+	color:#fff;
+}
+.gray-lightest p a.button:hover,
+.gray-lightest p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.gray-lightest p a.button.cta {
+	background:#b67233;
+	color:#fff;
+	border:1px solid #b67233;
+}
+.gray-lightest p a.button.cta:hover,
+.gray-lightest p a.button.cta:focus {
+	background:#925b29;
+	border:1px solid #925b29;
+}
+/* white */
+.white blockquote,
+.white blockquote p {
+	color:#Ada400;
+}
+.white blockquote cite {
+	color:#Afa370;
+}
+.white blockquote p span:before,
+.white blockquote span:before {
+	color:rgba(227, 223, 205, .6);
+}
+.white p a.button {
+	border-color:rgba(143, 126, 53, .5);
+	color:#72652a;
+}
+.white p a.button:hover,
+.white p a.button:focus {
+	border:1px solid #72652a;
+	color:#72652a;
+}
+.white p a.button.cta {
+	background:#8f7e35;
+	color:#fff;
+}
+.white p a.button.cta:hover,
+.white p a.button.cta:focus {
+	background:#72652a;
+	border:1px solid #72652a;
+}
+/* crimson */
+
+.crimson h2 {
+	color:#cbc4a2;
+}
+.crimson h3,
+.crimson h4,
+.crimson h5 {
+	color:#b5babe;
+}
+.crimson,
+.crimson p {
+	color:#fff;
+}
+.crimson blockquote,
+.crimson blockquote p {
+	color:#cbc4a2;
+}
+.crimson p span:before,
+.crimson span:before {
+	color:rgba(0,0,0,.3);
+}
