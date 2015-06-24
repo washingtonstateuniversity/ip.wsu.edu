@@ -1049,6 +1049,7 @@ main .page section.border-bottom .column.one.seventy-five_single {
 	font-size: 1.5em;
 	line-height: 1.4;
 	cursor: pointer;
+	color:#981e32;
 }
 
 .accordion h3.ui-accordion-header:focus {
