@@ -70,7 +70,9 @@ p a.button.cta:focus {
 	color:#afa370;
 }
 .brown-dark,
-.brown-dark p {
+.brown-dark p,
+.brown-dark ul,
+.brown-dark ol {
 	color:#fff;
 }
 .brown-dark blockquote,
@@ -110,7 +112,9 @@ p a.button.cta:focus {
 	color:#cbc4a2;
 }
 .brown-med,
-.brown-med p {
+.brown-med p,
+.brown-med ol,
+.brown-med ul {
 	color:#fff;
 }
 .brown-med blockquote,
@@ -150,7 +154,9 @@ p a.button.cta:focus {
 	color:#cbc4a2;
 }
 .brown-light,
-.brown-light p {
+.brown-light p,
+.brown-light ul,
+.brown-light ol {
 	color:#fff;
 }
 .brown-light blockquote,
@@ -190,7 +196,9 @@ p a.button.cta:focus {
 	color:#e3dfcd;
 }
 .brown-lightest, 
-.brown-lightest p {
+.brown-lightest p,
+.brown-lightest ol,
+.brown-lightest ul {
 	color:#fff;
 }
 .brown-lightest blockquote,
