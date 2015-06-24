@@ -272,7 +272,9 @@ main .page section.border-bottom {
 }
 
 p,
-p~p {
+p~p,
+main ul li,
+main ol li {
 	color: #464e54;
 	font-size: 1.05rem;
 	line-height: 1.6;
@@ -283,7 +285,6 @@ main strong {
 	font-weight: 600;
 }
 
-main li,
 table {
 	color: #464e54;
 	font-size: .9rem;
@@ -456,7 +457,6 @@ header + h3 {
 }
 
 blockquote {
-	float: left;
 	font-family: "Open Sans Condensed", sans-serif;
 	padding: 0;
 	margin-top: -14px;
@@ -478,7 +478,7 @@ blockquote p span:before {
 blockquote p,
 blockquote cite {
 	display: block;
-	color: #fff;
+	color: #8d959a;
 }
 
 blockquote p {
