@@ -881,7 +881,8 @@ main .crimson p a.button {
 	color:#fff;
 }
 main .crimson p a.button:hover,
-main .crimson p a.button:focus {	
+main .crimson p a.button:focus {
+	color:#fff;	
 	border-color: #fff;
 	background-color:transparent;
 }
