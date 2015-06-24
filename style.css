@@ -273,6 +273,7 @@ main .page section.border-bottom {
 
 p,
 p~p,
+main address,
 main ul li,
 main ol li {
 	color: #464e54;
@@ -280,6 +281,14 @@ main ol li {
 	line-height: 1.6;
 	padding-bottom: 1.2rem;
 	font-weight: 300;
+}
+main address {
+	font-size:.95rem;
+	padding-left:30px;
+}
+main ul li,
+main ol li {
+	padding-bottom:.3rem;
 }
 main strong {
 	font-weight: 600;
