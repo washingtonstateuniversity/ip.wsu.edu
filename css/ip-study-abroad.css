@@ -25,16 +25,19 @@ body.wsu-palette-palette5 .header-group {
 }
 
 body.wsu-palette-palette5 .header-group sub h1 {
-	color: #925b29;
+	color: #b67233;
 }
 
 body.wsu-palette-palette5 .dropcap:first-child:first-letter {
-	color: #925b29;
+	color: #b67233;
 }
 /* ----------------------------------
   Backgrounds
 ---------------------------------- */
 /* defaults */
+main a {
+	border-color:#f6861f;
+}
 p a.button {
 	border-color:rgba(182, 114, 51, .5);
 	color:#925b29;
@@ -557,4 +560,14 @@ h3.thp-fos {
 	color: rgba(255,255,255,1);
 	margin: 0 0 2rem;
 	padding: 0;
+}
+/* ----------------------------------
+  Utilities
+---------------------------------- */
+.brown-dark h3.orange-text,
+.brown-med h3.orange-text,
+.brown-light h3.orange-text,
+.brown-lightest h3.orange-text,
+.white h3.orange-text {
+	color:#fa9927;
 }
