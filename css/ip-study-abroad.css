@@ -35,7 +35,8 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
   Backgrounds
 ---------------------------------- */
 /* defaults */
-main a {
+main a,
+main a:hover {
 	border-color:#f6861f;
 }
 p a.button {
