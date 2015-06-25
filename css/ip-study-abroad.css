@@ -85,6 +85,7 @@ p a.button.cta:focus {
 }
 .brown-dark p a.button {
 	border-color:rgba(221, 190, 161, .5);
+	color:#fff;
 }
 .brown-dark p a.button:hover,
 .brown-dark p a.button:focus {
@@ -127,6 +128,7 @@ p a.button.cta:focus {
 }
 .brown-med p a.button {
 	border-color:rgba(221, 190, 161, .5);
+	color:#fff;
 }
 .brown-med p a.button:hover,
 .brown-med p a.button:focus {
@@ -169,6 +171,7 @@ p a.button.cta:focus {
 }
 .brown-light p a.button {
 	border-color:rgba(221, 190, 161, .5);
+	color:#fff;
 }
 .brown-light p a.button:hover,
 .brown-light p a.button:focus {
@@ -211,6 +214,7 @@ p a.button.cta:focus {
 }
 .brown-lightest p a.button {
 	border-color:rgba(221, 190, 161, .5);
+	color:#fff;
 }
 .brown-lightest p a.button:hover,
 .brown-lightest p a.button:focus {
@@ -469,5 +473,51 @@ p a.button.cta:focus {
 	line-height: 1.3em;
 	vertical-align: middle;
 	text-align: center;
-	margin: 26px auto 8px auto;
+	margin: 0 auto 8px auto;
+}
+/* ----------------------------------
+  Plugins
+---------------------------------- */
+.accordion.more {
+	border-bottom: none;
+}
+
+.accordion.more h3.ui-accordion-header.ui-state-default {
+	background-position: center 65px;
+}
+
+.accordion.more h3.ui-accordion-header.ui-accordion-header-active {
+	background-position: center 0;
+}
+
+.accordion.more h3 {
+	border-top: 0;
+}
+
+.accordion.more h3.ui-state-default:before {
+	content: 'Show Programs';
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.accordion.more h3.ui-accordion-header-active:before {
+	content: 'Less';
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.accordion.more h3.ui-accordion-header {
+	padding: 0;
+	color: #4F868E;
+	font-weight: 300;
+	font-family: "Open Sans Condensed";
+	text-align: center;
+	text-transform: uppercase;
+	height: 85px;
+	margin-top: 45px;
 }
