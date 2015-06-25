@@ -761,7 +761,7 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 	background:#e3dfcd;
 }
 .tan-light {
-	background:#f4f2eb;
+	background:#f8f6f1;
 }
 
 /* ----------------------------------
@@ -1046,7 +1046,7 @@ main .page section.border-bottom .column.one.seventy-five_single {
 }
 
 .accordion h3 {
-	border-top: dotted 2px #8d959a;
+	border-top: dotted 2px #d7dadb;
 }
 .accordion h3.ui-accordion-header {
 	padding: 1.5em 4em 1.5em .5em;
@@ -1162,10 +1162,12 @@ main .page section.border-bottom .column.one.seventy-five_single {
 #tablepress-7 tbody td.column-1 {
 	width: 8rem;
 }
-
+body:not(.unset) table th {
+	font-weight:400;
+}
 body:not(.unset) table td,
 body:not(.unset) table th {
-	padding: 30px 0;
+	padding: 22px;
 	vertical-align: top;
 	text-align: center;
 }
