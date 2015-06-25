@@ -339,7 +339,8 @@ p a.button.cta:focus {
 	color:#fff;
 }
 .gray-med blockquote,
-.gray-med blockquote p {
+.gray-med blockquote p,
+.gray-med cite {
 	color:#d7dadb;
 }
 .gray-med blockquote p span:before,

@@ -50,7 +50,9 @@ hr {
 	margin-bottom: 44px;
 	width: 100%;
 }
-
+hr+h4 {
+	padding-top:0;
+}
 
 /* ============================================================
   MAIN-HEADER OVERRIDES
@@ -451,14 +453,13 @@ blockquote p span:before {
   line-height:.5;
   font-family:"Georgia";
 }
-
 blockquote p,
 blockquote cite {
 	display: block;
-	color: #8d959a;
 }
 
 blockquote p {
+	color: #8d959a;
 	font-size: 23px;
 	line-height: 40px;
 	letter-spacing: .3px;
