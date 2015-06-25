@@ -521,7 +521,9 @@ p a.button.cta:focus {
 	height: 85px;
 	margin-top: 45px;
 }
-
+/* ----------------------------------
+  Tables
+---------------------------------- */
 body:not(.unset) table th {
 	color:#B67233;
 }

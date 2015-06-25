@@ -190,39 +190,7 @@ section.anchors > div.column.sticky {
 main .row {
 	max-width: 990px;
 }
-/* =========================
-  	Utilities
-========================== */
-main .page section.no-pad {
-	padding: 0 0 40px;
-}
 
-main .page section.no-pad-bottom {
-	padding-bottom: 40px;
-}
-
-main .page section.no-pad-top {
-	padding-top: 0;
-}
-.column.fill {
-	max-height: 480px;
-	overflow: hidden;
-}
-
-img.fill {
-	display: inline-block;
-	max-width: 100%;
-	height: auto;
-	width: auto9;
-	-ms-interpolation-mode: bicubic;
-}
-main .page section.border-bottom {
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-.remove-bottom-border .column {
-	border-bottom: 0;
-}
 /* ============================================================
   MEDIA
 ============================================================ */
@@ -1277,6 +1245,39 @@ main .anchor-nav li a{
 .modal-no {
 /* section is needed to add the script to appropriate pages, but the section shouldn't be visible */
 	display: none;
+}
+/* =========================
+  	Utilities
+========================== */
+main .page section.no-pad {
+	padding: 0 0 40px;
+}
+
+main .page section.no-pad-bottom {
+	padding-bottom: 40px;
+}
+
+main .page section.no-pad-top {
+	padding-top: 0;
+}
+.column.fill {
+	max-height: 480px;
+	overflow: hidden;
+}
+
+img.fill {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	width: auto9;
+	-ms-interpolation-mode: bicubic;
+}
+main .page section.border-bottom {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.remove-bottom-border .column {
+	border-bottom: 0;
 }
 /* ============================================================
   OVER RIDING UTILITIES
