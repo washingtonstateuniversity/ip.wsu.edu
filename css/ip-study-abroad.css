@@ -53,6 +53,9 @@ p a.button.cta:focus {
 	background:#925b29;
 	border:1px solid #925b29;
 }
+.intro p {
+	color:#B67233;
+}
 /* ---------------------
   Browns
 ---------------------- */
@@ -484,7 +487,7 @@ p a.button.cta:focus {
 }
 
 .accordion.more h3.ui-accordion-header.ui-state-default {
-	background-position: center 65px;
+	background-position: center 55px;
 }
 
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active {
@@ -514,9 +517,10 @@ p a.button.cta:focus {
 
 .accordion.more h3.ui-accordion-header {
 	padding: 0;
-	color: #4F868E;
+	font-size:16px;
+	letter-spacing: 1px;
+	color: #8D959A;
 	font-weight: 300;
-	font-family: "Open Sans Condensed";
 	text-align: center;
 	text-transform: uppercase;
 	height: 85px;
@@ -527,4 +531,30 @@ p a.button.cta:focus {
 ---------------------------------- */
 body:not(.unset) table th {
 	color:#B67233;
+}
+/* ----------------------------------
+  Page specific
+---------------------------------- */
+/* -----------------------
+  Home
+----------------------- */
+.home-intro h4 {
+	color:#fff;
+	font-weight:300;
+}
+h2.twohundredplus:first-child {
+	color: #B67233;
+	font-size: 10.5rem;
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+}
+
+h3.thp-fos {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 3rem;
+	color: rgba(255,255,255,1);
+	margin: 0 0 2rem;
+	padding: 0;
 }

@@ -94,6 +94,9 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 /* ----------------------------------
   Background w/color text
 ---------------------------------- */
+.intro p {
+	color: #4f868e;
+}
 .blue1,
 .gray1,
 .blue2,
