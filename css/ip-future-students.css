@@ -130,11 +130,11 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .blue1 p {
 	color: #fff;
 }
-
+.blue1 blockquote span:before,
 .blue1 blockquote p:before {
 	color: #3f6b72;
 }
-
+.blue1 blockquote,
 .blue1 blockquote p,
 .blue1 blockquote cite {
 	color: #d3e1e3;
@@ -158,15 +158,16 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .blue2 p {
 	color: #fff;
 }
-
+.blue2 blockquote span:before,
 .blue2 blockquote p:before {
 	color: #3f6b72;
 }
-
+.blue2 blockquote,
 .blue2 blockquote p,
 .blue2 blockquote cite {
 	color: #aec7cb;
 }
+.blue2-text blockquote,
 .blue2-text blockquote p, 
 .blue2-text blockquote cite {
 	color: #4f868e;
@@ -190,15 +191,16 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .blue3 p {
 	color: #fff;
 }
-
+.blue3 blockquote span:before,
 .blue3 blockquote p:before {
 	color: #3f6b72;
 }
-
+.blue3 blockquote,
 .blue3 blockquote p,
 .blue3 blockquote cite {
 	color: #aec7cb;
 }
+.blue3-text blockquote,
 .blue3-text blockquote p, 
 .blue3-text blockquote cite {
 	color: #4f868e;
@@ -222,11 +224,11 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .gray1 p {
 	color: #fff;
 }
-
+.gray1 blockquote span:before,
 .gray1 blockquote p:before {
 	color: #5e6a71;
 }
-
+.gray1 blockquote,
 .gray1 blockquote p,
 .gray1 blockquote cite {
 	color: #fff;
@@ -250,11 +252,11 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .gray2 p {
 	color: #fff;
 }
-
+.gray2 blockquote span:before,
 .gray2 blockquote p:before {
 	color: #2a3033;
 }
-
+.gray2 blockquote,
 .gray2 blockquote p,
 .gray2 blockquote cite {
 	color: #d7dad8;
@@ -279,11 +281,11 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .gray3 p {
 	color: #464e54;
 }
-
+.gray3 blockquote span:before,
 .gray3 blockquote p:before {
 	color: #5e6a71;
 }
-
+.gray3 blockquote,
 .gray3 blockquote p,
 .gray3 blockquote cite {
 	color: #fff;
@@ -308,11 +310,11 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .tan1 p {
 	color: #464e54;
 }
-
+.tan1 blockquote span:before,
 .tan1 blockquote p:before {
 	color: #5e6a71;
 }
-
+.tan1 blockquote,
 .tan1 blockquote p,
 .tan1 blockquote cite {
 	color: #fff;
@@ -336,11 +338,11 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .tan2 p {
 	color: #464e54;
 }
-
+.tan2 blockquote span:before,
 .tan2 blockquote p:before {
 	color: #5e6a71;
 }
-
+.tan2 blockquote,
 .tan2 blockquote p,
 .tan2 blockquote cite {
 	color: #00a5bd;
@@ -360,6 +362,10 @@ main p a.button:focus {
 main p a.cta.button {
 	background-color:#4f868e;
 	color:#fff;
+}
+.accordion h3.ui-accordion-header.ui-state-active {
+	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-blue.png);
+
 }
 /* John's Emphasized default buttons */
 main p a.cta.button:hover,

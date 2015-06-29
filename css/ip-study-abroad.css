@@ -60,6 +60,10 @@ p a.button.cta:focus {
 .intro p {
 	color:#B67233;
 }
+.accordion h3.ui-accordion-header.ui-state-active {
+	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-orange.png);
+
+}
 /* ---------------------
   Browns
 ---------------------- */

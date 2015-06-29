@@ -435,15 +435,24 @@ header + h3 {
 	padding: 0 0 .75rem;
 }
 
-blockquote {
+blockquote,
+blockquote p {
 	font-family: "Open Sans Condensed", sans-serif;
 	padding: 0;
 	margin-top: -14px;
 	margin-bottom: -28px;
+	color: #8d959a;
+	font-size: 23px;
+	line-height: 40px;
+	letter-spacing: .3px;
+	text-align: center;
+	font-weight: 700;
 }
+blockquote span,
 blockquote p span{
   position:relative;
 }
+blockquote span:before,
 blockquote p span:before {
   content:"“";
   font-size:8rem;
@@ -456,15 +465,6 @@ blockquote p span:before {
 blockquote p,
 blockquote cite {
 	display: block;
-}
-
-blockquote p {
-	color: #8d959a;
-	font-size: 23px;
-	line-height: 40px;
-	letter-spacing: .3px;
-	text-align: center;
-	font-weight: 700;
 }
 
 blockquote cite,
@@ -756,11 +756,11 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 .crimson p {
 	color: #fff;
 }
-
+.crimson blockquote span:before,
 .crimson blockquote p:before {
 	color: #fff;
 }
-
+.crimson blockquote,
 .crimson blockquote p,
 .crimson blockquote cite {
 	color: #fff;
@@ -784,11 +784,11 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 .black {
 	color: #fff;
 }
-
+.black blockquote span:before,
 .black blockquote p:before {
 	color: #fff;
 }
-
+.black blockquote,
 .black blockquote p,
 .black blockquote cite {
 	color: #fff;
@@ -811,11 +811,11 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 .white p {
 	color: #464e54;
 }
-
+.white blockquote span:before,
 .white blockquote p:before {
 	color: #5e6a71;
 }
-
+.white blockquote,
 .white blockquote p,
 .white blockquote cite {
 	color: #00a5bd;
@@ -1039,13 +1039,12 @@ main .page section.border-bottom .column.one.seventy-five_single {
 }
 
 .accordion h3.ui-accordion-header.ui-state-default {
-	background: url(/wp-content/uploads/sites/619/2015/06/a-default.gif);
+	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-gray.png);
 	background-position: right;
 	background-repeat: no-repeat;
 }
 
 .accordion h3.ui-accordion-header.ui-state-active {
-	background: url(/wp-content/uploads/sites/619/2015/06/a-actvie.gif);
 	background-position: right;
 	background-repeat: no-repeat;
 }
@@ -1425,6 +1424,7 @@ main .page div.blockquote-has-thumbnail section .column,
 main .page div.blockquote-has-thumnail section .column p  {
 	padding:0;
 }
+main .page div.blockquote-has-thumnail section .column blockquote,
 main .page div.blockquote-has-thumnail section .column blockquote p {
 	font-size: 1.1rem;
 } 
