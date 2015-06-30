@@ -445,7 +445,6 @@ blockquote p {
 	font-size: 23px;
 	line-height: 40px;
 	letter-spacing: .3px;
-	text-align: center;
 	font-weight: 700;
 }
 blockquote span,
@@ -664,13 +663,16 @@ main section.row.single .column.seventy-five_single.next-step-negative {
   WSU COLOR PALETTE OPTIONS
 ======================================= */
 /* Default and palette1 (Crimson) */
-body.wsu-palette-default .header-group,
-body.wsu-palette-palette1 .header-group {
+body.wsu-palette-default .header-group {
 	background-color: #fff;
 }
-
+body.wsu-palette-palette1 .header-group {
+	background-color:#981e32;
+}
+body.wsu-palette-palette1 .header-group sub h1 {
+	color: #fff;
+}
 body.wsu-palette-default .header-group sub h1,
-body.wsu-palette-palette1 .header-group sub h1,
 body.wsu-palette-default .dropcap:first-child:first-letter,
 body.wsu-palette-palette1 .dropcap:first-child:first-letter {
 	color: #981e32;
@@ -1441,4 +1443,27 @@ div.section-wrapper-has-background.blockquote-has-thumbnail  {
 }
 section.blockquote-has-thumbnail.side-left blockquote p {
 	text-align:right;
-}*/
+}
+/*reset city 
+main .page div.has-thumbnail section,
+main .page div.has-thumbnail section .column,
+main .page div.has-thumbnail section .column blockquote {
+	box-sizing: border-box;
+}
+
+main .page div.has-thumbnail section .column blockquote {
+}
+
+main .page div.has-thumbnail section .column .thumbnail-right blockquote {
+	float: left;
+	display: inline-block;
+	width: 60%;
+}
+
+main .page div.has-thumbnail section .column .thumbnail-right img {
+	float: right;
+	display: inline-block;
+	width: 35%;
+	height: 100%;
+}
+*/

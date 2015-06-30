@@ -54,6 +54,17 @@ p a.button.cta:focus {
 	background:#9e7510;
 	border:1px solid #9e7510;
 }
+.intro p {
+	color:#c69214;
+}
+main a,
+main a:hover {
+	border-color:#ffb81c;
+}
+.accordion h3.ui-accordion-header.ui-state-active {
+	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-yellow.png);
+
+}
 /* ---------------------
   yellows
 ---------------------- */
@@ -71,7 +82,10 @@ p a.button.cta:focus {
 	color:#a4a370;
 }
 .yellow-dark,
-.yellow-dark p {
+.yellow-dark ul li,
+.yellow-dark ol li,
+.yellow-dark p,
+.yellow-dark address {
 	color:#fff;
 }
 .yellow-dark blockquote,
@@ -112,7 +126,10 @@ p a.button.cta:focus {
 	color:#cbc4a2;
 }
 .yellow-med,
-.yellow-med p {
+.yellow-med ol li,
+.yellow-med ul li,
+.yellow-med p,
+.yellow-med address {
 	color:#fff;
 }
 .yellow-med blockquote,
@@ -153,7 +170,10 @@ p a.button.cta:focus {
 	color:#e3dfcd;
 }
 .yellow-light,
-.yellow-light p {
+.yellow-light p,
+.yellow-light ol li,
+.yellow-light ul li,
+.yellow-light address {
 	color:#fff;
 }
 .yellow-light blockquote,
@@ -234,7 +254,7 @@ p a.button.cta:focus {
 	color:rgba(158, 117, 16, .3);
 }
 .tan-dark p a.button {
-	border-color:rgba(182, 114, 51, 1);
+	border-color:rgba(182, 114, 51, .5);
 	color:#925b29;
 }
 .tan-dark p a.button:hover,
@@ -260,7 +280,7 @@ p a.button.cta:focus {
 	color:rgba(198, 146, 20, .3);
 }
 .tan-light p a.button {
-	border-color:rgba(182, 114, 51, 1);
+	border-color:rgba(182, 114, 51, .5);
 	color:#925b29;
 }
 .tan-light p a.button:hover,
