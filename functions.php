@@ -1,5 +1,6 @@
 <?php
 include_once( __DIR__ . '/includes/fields-of-study.php' );
+include_once( __DIR__ . '/includes/map-embed-shortcode.php' );
 
 class WSU_IP_Theme {
 	/**
