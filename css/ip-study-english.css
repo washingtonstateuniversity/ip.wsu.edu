@@ -89,7 +89,8 @@ main a:hover {
 	color:#fff;
 }
 .yellow-dark blockquote,
-.yellow-dark blockquote p {
+.yellow-dark blockquote p,
+.yellow-dark cite {
 	color:#e5cd93;
 }
 .yellow-dark blockquote p span:before,
@@ -133,7 +134,8 @@ main a:hover {
 	color:#fff;
 }
 .yellow-med blockquote,
-.yellow-med blockquote p {
+.yellow-med blockquote p,
+.yellow-med cite {
 	color:#e5cd93;
 }
 .yellow-med blockquote p span:before,
@@ -177,7 +179,8 @@ main a:hover {
 	color:#fff;
 }
 .yellow-light blockquote,
-.yellow-light blockquote p {
+.yellow-light blockquote p,
+.yellow-light cite {
 	color:#e5cd93;
 }
 .yellow-light blockquote p span:before,
@@ -218,7 +221,8 @@ main a:hover {
 	color:#fff;
 }
 .yellow-lightest blockquote,
-.yellow-lightest blockquote p {
+.yellow-lightest blockquote p,
+.yellow-lightest cite {
 	color:#f1e4c4;
 }
 .yellow-lightest blockquote p span:before,
@@ -246,7 +250,8 @@ main a:hover {
   Tans
 ---------------------- */
 .tan-dark blockquote,
-.tan-dark blockquote p {
+.tan-dark blockquote p,
+.tan-dark cite {
 	color:#9e7510;
 }
 .tan-dark blockquote p span:before,
@@ -272,7 +277,8 @@ main a:hover {
 	border:1px solid #925b29;
 }
 .tan-light blockquote,
-.tan-light blockquote p {
+.tan-light blockquote p,
+.tan-light cite {
 	color:#c69214;
 }
 .tan-light blockquote p span:before,
@@ -313,7 +319,8 @@ main a:hover {
 	color:#fff;
 }
 .gray-dark blockquote,
-.gray-dark blockquote p {
+.gray-dark blockquote p,
+.gray-dark cite {
 	color:#b5babe;
 }
 .gray-dark blockquote p span:before,
@@ -352,7 +359,8 @@ main a:hover {
 	color:#fff;
 }
 .gray-med blockquote,
-.gray-med blockquote p {
+.gray-med blockquote p,
+.gray-med cite {
 	color:#d7dadb;
 }
 .gray-med blockquote p span:before,
@@ -391,7 +399,8 @@ main a:hover {
 	color:#fff;
 }
 .gray-light blockquote,
-.gray-light blockquote p {
+.gray-light blockquote p,
+.gray-light cite {
 	color:#eff0f1;
 }
 .gray-light blockquote p span:before,
@@ -430,7 +439,8 @@ main a:hover {
 	color:#fff;
 }
 .gray-lighest blockquote,
-.gray-lighest blockquote p {
+.gray-lighest blockquote p,
+.gray-lightest cite {
 	color:#fff;
 }
 .gray-lighest blockquote p span:before,
@@ -458,7 +468,8 @@ main a:hover {
 }
 /* white */
 .white blockquote,
-.white blockquote p {
+.white blockquote p,
+.white cite {
 	color:#c69214;
 }
 .white blockquote p span:before,
@@ -483,6 +494,44 @@ main a:hover {
 .white p a.button.cta:focus {
 	background:#9e7510;
 	border:1px solid #9e7510;
+}
+/* ============================================================
+  INFO/STATS
+============================================================ */
+.stats div.column:nth-child(even) header h1,
+.stats div.column:nth-child(even) header h2,
+.stats div.column:nth-child(even) header h3,
+.stats div.column:nth-child(even) header h4,
+.stats div.column:nth-child(even) header h5,
+.stats div.column:nth-child(even) header h6,
+.stats div.column:nth-child(even) h1,
+.stats div.column:nth-child(even) h2,
+.stats div.column:nth-child(even) h3,
+.stats div.column:nth-child(even) h4,
+.stats div.column:nth-child(even) h5,
+.stats div.column:nth-child(even) h6 {
+	color: #ffb81c;
+}
+
+.stats div.column:nth-child(odd) header h1,
+.stats div.column:nth-child(odd) header h2,
+.stats div.column:nth-child(odd) header h3,
+.stats div.column:nth-child(odd) header h4,
+.stats div.column:nth-child(odd) header h5,
+.stats div.column:nth-child(odd) header h6,
+.stats div.column:nth-child(odd) h1,
+.stats div.column:nth-child(odd) h2,
+.stats div.column:nth-child(odd) h3,
+.stats div.column:nth-child(odd) h4,
+.stats div.column:nth-child(odd) h5,
+.stats div.column:nth-child(odd) h6 {
+	color: #4F3A08;
+}
+.stats.yellow-med p,
+.stats.yellow-dark p,
+.stats.yellow-light p,
+.stats.yellow-lightest p, {
+	color:#fff;
 }
 /* ----------------------------------
   Numbers

@@ -64,6 +64,38 @@ p a.button.cta:focus {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-orange.png);
 
 }
+/* ============================================================
+  INFO/STATS
+============================================================ */
+.stats div.column:nth-child(even) header h1,
+.stats div.column:nth-child(even) header h2,
+.stats div.column:nth-child(even) header h3,
+.stats div.column:nth-child(even) header h4,
+.stats div.column:nth-child(even) header h5,
+.stats div.column:nth-child(even) header h6,
+.stats div.column:nth-child(even) h1,
+.stats div.column:nth-child(even) h2,
+.stats div.column:nth-child(even) h3,
+.stats div.column:nth-child(even) h4,
+.stats div.column:nth-child(even) h5,
+.stats div.column:nth-child(even) h6 {
+	color: #ffb81c;
+}
+
+.stats div.column:nth-child(odd) header h1,
+.stats div.column:nth-child(odd) header h2,
+.stats div.column:nth-child(odd) header h3,
+.stats div.column:nth-child(odd) header h4,
+.stats div.column:nth-child(odd) header h5,
+.stats div.column:nth-child(odd) header h6,
+.stats div.column:nth-child(odd) h1,
+.stats div.column:nth-child(odd) h2,
+.stats div.column:nth-child(odd) h3,
+.stats div.column:nth-child(odd) h4,
+.stats div.column:nth-child(odd) h5,
+.stats div.column:nth-child(odd) h6 {
+	color: #492e14;
+}
 /* ---------------------
   Browns
 ---------------------- */
