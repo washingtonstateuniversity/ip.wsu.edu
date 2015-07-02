@@ -602,6 +602,18 @@ main .az li {
 body:not(.unset) table th {
 	color:#4F868E;
 }
+/* custom table styles */
+#tablepress-6 td.column-1 {
+	width: 5rem;
+}
+
+#tablepress-6 td.column-2, #tablepress-6 th.column-2, #tablepress-6 td.column-3, #tablepress-6 th.column-3 {
+	padding-right: 2rem;
+}
+
+#tablepress-7 tbody td.column-1 {
+	width: 8rem;
+}
 /* ----------------------------------
   ???
 ---------------------------------- */

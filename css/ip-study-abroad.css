@@ -478,14 +478,8 @@ p a.button.cta:focus {
   Numbers
 ---------------------------------- */
 .number-o {
-	font-size: 30px;
-	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', serif;
-	font-style: italic;
 	color: #f6861f;
 	line-height: 1.3em;
-	vertical-align: middle;
-	text-align: center;
-	margin: 0 auto 8px auto;
 }
 /* ----------------------------------
   Plugins
@@ -539,6 +533,18 @@ p a.button.cta:focus {
 ---------------------------------- */
 body:not(.unset) table th {
 	color:#B67233;
+}
+/* custom table styles */
+#tablepress-6 td.column-1 {
+	width: 5rem;
+}
+
+#tablepress-6 td.column-2, #tablepress-6 th.column-2, #tablepress-6 td.column-3, #tablepress-6 th.column-3 {
+	padding-right: 2rem;
+}
+
+#tablepress-7 tbody td.column-1 {
+	width: 8rem;
 }
 /* ----------------------------------
   Page specific

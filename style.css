@@ -370,7 +370,9 @@ h3 {
 	font-weight: 400;
 }
 
-h2 + h3 {
+h2+h3,
+h3+h5,
+h5+h5 {
 	padding-top: 0;
 }
 
@@ -608,13 +610,20 @@ main .page .stats.button-wrap section {
 	padding-top: 10px;
 }
 
-
 .number {
 	font-size: 40px;
 	line-height: 0;
 	vertical-align: middle;
 }
-
+.number-o {
+	font-size: 30px;
+	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', serif;
+	font-style: italic;
+	line-height: 1.3em;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0 auto 8px auto;
+}
 .big-number-bkgrd {
 	width: 70px;
 	height: 70px;
@@ -975,7 +984,10 @@ main .page .intro section {
 	padding-bottom: 60px;
 	border-bottom: 1px solid #cbc482;
 }
-
+.intro .column.no-border {
+	border-bottom: none;
+	padding-bottom: 0;
+}
 .intro + div section {
 	padding-top: 60px;
 }
@@ -1120,18 +1132,7 @@ main .page section.border-bottom .column.one.seventy-five_single {
 	border-top: none;
 }
 
-/* custom table styles */
-#tablepress-6 td.column-1 {
-	width: 5rem;
-}
 
-#tablepress-6 td.column-2, #tablepress-6 th.column-2, #tablepress-6 td.column-3, #tablepress-6 th.column-3 {
-	padding-right: 2rem;
-}
-
-#tablepress-7 tbody td.column-1 {
-	width: 8rem;
-}
 body:not(.unset) table th {
 	font-weight:400;
 }
@@ -1281,6 +1282,16 @@ main .page section.border-bottom {
 .remove-bottom-border .column {
 	border-bottom: 0;
 }
+/* map */
+#binder:not(.fluid).max-1188 .row.map.unbound {
+	margin: 0;
+	max-width: 99164px;
+}
+
+section.map.unbound .column {
+	padding: 0;
+}
+/**/
 /* ============================================================
   OVER RIDING UTILITIES
   Placed at the bottom for importance
