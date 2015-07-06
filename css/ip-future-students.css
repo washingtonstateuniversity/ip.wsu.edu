@@ -379,6 +379,10 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .stats div.column:nth-child(odd) h6 {
 	color: #00a5bd;
 }
+.stats section > div.column:nth-child(even) > p,
+.stats section > div.column:nth-child(odd) > p {
+	color: #8d959a;
+}
 /* ============================================================
   Buttons - Future Student
 ============================================================ */

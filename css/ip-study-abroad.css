@@ -96,6 +96,16 @@ p a.button.cta:focus {
 .stats div.column:nth-child(odd) h6 {
 	color: #492e14;
 }
+.stats.brown-med section > div.column:nth-child(even) > p,
+.stats.brown-med section > div.column:nth-child(odd) > p,
+.stats.brown-light section > div.column:nth-child(even) > p,
+.stats.brown-light section > div.column:nth-child(odd) > p,
+.stats.brown-lightest section > div.column:nth-child(even) > p,
+.stats.brown-lightest section > div.column:nth-child(odd) > p,
+.stats.brown-dark section > div.column:nth-child(even) > p,
+.stats.brown-dark section > div.column:nth-child(odd) > p {
+	color:#fff;
+} 
 /* ---------------------
   Browns
 ---------------------- */
@@ -119,7 +129,8 @@ p a.button.cta:focus {
 	color:#fff;
 }
 .brown-dark blockquote,
-.brown-dark blockquote p {
+.brown-dark blockquote p,
+.brown-dark cite {
 	color:#ddbea1;
 }
 .brown-dark blockquote p span:before,
@@ -162,7 +173,8 @@ p a.button.cta:focus {
 	color:#fff;
 }
 .brown-med blockquote,
-.brown-med blockquote p {
+.brown-med blockquote p,
+.brown-med blockquote cite {
 	color:#ddbea1;
 }
 .brown-med blockquote p span:before,
@@ -205,7 +217,8 @@ p a.button.cta:focus {
 	color:#fff;
 }
 .brown-light blockquote,
-.brown-light blockquote p {
+.brown-light blockquote p,
+.brown-light blockquote cite{
 	color:#ddbea1;
 }
 .brown-light blockquote p span:before,
@@ -248,7 +261,8 @@ p a.button.cta:focus {
 	color:#fff;
 }
 .brown-lightest blockquote,
-.brown-lightest blockquote p {
+.brown-lightest blockquote p,
+.brown-lightest blockquote cite {
 	color:#eddccc;
 }
 .brown-lightest blockquote p span:before,
@@ -276,7 +290,8 @@ p a.button.cta:focus {
   Tans
 ---------------------- */
 .tan-dark blockquote,
-.tan-dark blockquote p {
+.tan-dark blockquote p,
+.tan-dark blockquote cite {
 	color:#fff;
 }
 .tan-dark blockquote p span:before,
@@ -302,7 +317,8 @@ p a.button.cta:focus {
 	border:1px solid #925b29;
 }
 .tan-light blockquote,
-.tan-light blockquote p {
+.tan-light blockquote p,
+.tan-light blockquote cite {
 	color:#ddbea1;
 }
 .tan-light blockquote p span:before,
@@ -343,7 +359,8 @@ p a.button.cta:focus {
 	color:#fff;
 }
 .gray-dark blockquote,
-.gray-dark blockquote p {
+.gray-dark blockquote p,
+.gray-dark blockquote cite {
 	color:#b5babe;
 }
 .gray-dark blockquote p span:before,
@@ -383,7 +400,7 @@ p a.button.cta:focus {
 }
 .gray-med blockquote,
 .gray-med blockquote p,
-.gray-med cite {
+.gray-med blockquote cite {
 	color:#d7dadb;
 }
 .gray-med blockquote p span:before,
@@ -422,7 +439,8 @@ p a.button.cta:focus {
 	color:#fff;
 }
 .gray-light blockquote,
-.gray-light blockquote p {
+.gray-light blockquote p,
+.gray-light blockquote cite {
 	color:#eff0f1;
 }
 .gray-light blockquote p span:before,
@@ -460,12 +478,13 @@ p a.button.cta:focus {
 .gray-lightest p {
 	color:#fff;
 }
-.gray-lighest blockquote,
-.gray-lighest blockquote p {
+.gray-lightest blockquote,
+.gray-lightest blockquote p,
+.gray-lightest blockquote cite {
 	color:#fff;
 }
-.gray-lighest blockquote p span:before,
-.gray-lighest blockquote span:before {
+.gray-lightest blockquote p span:before,
+.gray-lightest blockquote span:before {
 	color:rgba(94, 106, 113, .6);
 }
 .gray-lightest p a.button {

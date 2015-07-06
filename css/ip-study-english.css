@@ -90,7 +90,7 @@ main a:hover {
 }
 .yellow-dark blockquote,
 .yellow-dark blockquote p,
-.yellow-dark cite {
+.yellow-dark blockquote cite {
 	color:#e5cd93;
 }
 .yellow-dark blockquote p span:before,
@@ -135,7 +135,7 @@ main a:hover {
 }
 .yellow-med blockquote,
 .yellow-med blockquote p,
-.yellow-med cite {
+.yellow-med blockquote cite {
 	color:#e5cd93;
 }
 .yellow-med blockquote p span:before,
@@ -180,7 +180,7 @@ main a:hover {
 }
 .yellow-light blockquote,
 .yellow-light blockquote p,
-.yellow-light cite {
+.yellow-light blockquote cite {
 	color:#e5cd93;
 }
 .yellow-light blockquote p span:before,
@@ -222,7 +222,7 @@ main a:hover {
 }
 .yellow-lightest blockquote,
 .yellow-lightest blockquote p,
-.yellow-lightest cite {
+.yellow-lightest blockquote cite {
 	color:#f1e4c4;
 }
 .yellow-lightest blockquote p span:before,
@@ -251,7 +251,7 @@ main a:hover {
 ---------------------- */
 .tan-dark blockquote,
 .tan-dark blockquote p,
-.tan-dark cite {
+.tan-dark blockquote cite {
 	color:#9e7510;
 }
 .tan-dark blockquote p span:before,
@@ -278,7 +278,7 @@ main a:hover {
 }
 .tan-light blockquote,
 .tan-light blockquote p,
-.tan-light cite {
+.tan-light blockquote cite {
 	color:#c69214;
 }
 .tan-light blockquote p span:before,
@@ -320,7 +320,7 @@ main a:hover {
 }
 .gray-dark blockquote,
 .gray-dark blockquote p,
-.gray-dark cite {
+.gray-dark blockquote cite {
 	color:#b5babe;
 }
 .gray-dark blockquote p span:before,
@@ -360,7 +360,7 @@ main a:hover {
 }
 .gray-med blockquote,
 .gray-med blockquote p,
-.gray-med cite {
+.gray-med blockquote cite {
 	color:#d7dadb;
 }
 .gray-med blockquote p span:before,
@@ -400,7 +400,7 @@ main a:hover {
 }
 .gray-light blockquote,
 .gray-light blockquote p,
-.gray-light cite {
+.gray-light blockquote cite {
 	color:#eff0f1;
 }
 .gray-light blockquote p span:before,
@@ -438,13 +438,13 @@ main a:hover {
 .gray-lightest p {
 	color:#fff;
 }
-.gray-lighest blockquote,
-.gray-lighest blockquote p,
-.gray-lightest cite {
+.gray-lightest blockquote,
+.gray-lightest blockquote p,
+.gray-lightest blockquote cite {
 	color:#fff;
 }
-.gray-lighest blockquote p span:before,
-.gray-lighest blockquote span:before {
+.gray-lightest blockquote p span:before,
+.gray-lightest blockquote span:before {
 	color:rgba(94, 106, 113, .6);
 }
 .gray-lightest p a.button {
@@ -469,7 +469,7 @@ main a:hover {
 /* white */
 .white blockquote,
 .white blockquote p,
-.white cite {
+.white blockquote cite {
 	color:#c69214;
 }
 .white blockquote p span:before,
@@ -525,13 +525,23 @@ main a:hover {
 .stats div.column:nth-child(odd) h4,
 .stats div.column:nth-child(odd) h5,
 .stats div.column:nth-child(odd) h6 {
-	color: #4F3A08;
+	color: #00a5bd;
 }
 .stats.yellow-med p,
 .stats.yellow-dark p,
 .stats.yellow-light p,
 .stats.yellow-lightest p, {
 	color:#fff;
+}
+.stats.yellow-med section > div.column:nth-child(even) > p,
+.stats.yellow-med section > div.column:nth-child(odd) > p,
+.stats.yellow-light section > div.column:nth-child(even) > p,
+.stats.yellow-light section > div.column:nth-child(odd) > p 
+.stats.yellow-lightest section > div.column:nth-child(even) > p,
+.stats.yellow-lightest section > div.column:nth-child(odd) > p,
+.stats.yellow-dark section > div.column:nth-child(even) > p,
+.stats.yellow-dark section > div.column:nth-child(odd) > p  {
+	color: #fff;
 }
 /* ----------------------------------
   Numbers

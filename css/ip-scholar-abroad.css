@@ -15,7 +15,7 @@
 }
 .gray-dark blockquote,
 .gray-dark blockquote p,
-.gray-dark cite {
+.gray-dark blockquote cite {
 	color:#b5babe;
 }
 .gray-dark blockquote p span:before,
@@ -55,7 +55,7 @@
 }
 .gray-med blockquote,
 .gray-med blockquote p,
-.gray-med cite {
+.gray-med blockquote cite {
 	color:#d7dadb;
 }
 .gray-med blockquote p span:before,
@@ -95,7 +95,7 @@
 }
 .gray-light blockquote,
 .gray-light blockquote p,
-.gray-light cite {
+.gray-light blockquote cite {
 	color:#eff0f1;
 }
 .gray-light blockquote p span:before,
@@ -133,13 +133,13 @@
 .gray-lightest p {
 	color:#fff;
 }
-.gray-lighest blockquote,
-.gray-lighest blockquote p,
-.gray-lightest cite {
+.gray-lightest blockquote,
+.gray-lightest blockquote p,
+.gray-lightest blockquote cite {
 	color:#fff;
 }
-.gray-lighest blockquote p span:before,
-.gray-lighest blockquote span:before {
+.gray-lightest blockquote p span:before,
+.gray-lightest blockquote span:before {
 	color:rgba(94, 106, 113, .6);
 }
 .gray-lightest p a.button {
@@ -166,7 +166,7 @@
 ---------------------- */
 .tan-dark blockquote,
 .tan-dark blockquote p,
-.tan-dark cite {
+.tan-dark blockquote cite {
 	color:#fff;
 }
 .tan-dark blockquote p span:before,
@@ -193,7 +193,7 @@
 }
 .tan-light blockquote,
 .tan-light blockquote p,
-.tan-light cite {
+.tan-light blockquote cite {
 	color:#ddbea1;
 }
 .tan-light blockquote p span:before,

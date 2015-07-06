@@ -408,12 +408,12 @@ p a.button.cta:focus {
 .gray-lightest h5 {
 	color:#d7dadb;
 }
-.gray-lighest blockquote,
-.gray-lighest blockquote p {
+.gray-lightest blockquote,
+.gray-lightest blockquote p {
 	color:#fff;
 }
-.gray-lighest blockquote p span:before,
-.gray-lighest blockquote span:before {
+.gray-lightest blockquote p span:before,
+.gray-lightest blockquote span:before {
 	color:rgba(94, 106, 113, .6);
 }
 .gray-lightest p a.button {
