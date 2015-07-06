@@ -1476,3 +1476,32 @@ main .page div.has-thumbnail section .column .thumbnail-right img {
 	height: 100%;
 }
 */
+
+/* Form Modal Styling */
+.modal-form {
+	display: none;
+}
+
+.noscroll {
+	overflow: hidden;
+	height: 100%;;
+	width: 100%;
+	position: fixed;
+}
+
+.noscroll .modal-form {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 19560301;
+	background-color: rgba(0,0,0,.8);
+	overflow-y: scroll;
+}
+
+.noscroll .modal-form section {
+	position: static;
+	background: #fff;
+	margin-top: 100px;
+}

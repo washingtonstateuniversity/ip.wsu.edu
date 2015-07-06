@@ -22,8 +22,21 @@
 		});
 	};
 
+	setup_form_modals = function() {
+		$('.trigger-modal').on('click',function(){
+			var modal_id = $(this).data('modal');
+			$('body').addClass('noscroll');
+			$('#' + modal_id).show();
+			$('.close-modal').on('click', function() {
+				$('#' + modal_id).hide();
+				$('body').removeClass('noscroll');
+			});
+		});
+	};
+
 	$(document).ready( function() {
 		process_section_backgrounds();
+		setup_form_modals();
 	});
 
 	if ( undefined !== wsuFOS.appView ) {
