@@ -761,8 +761,8 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 .black h6 {
 	color: #e3dfcd;
 }
-
-.black {
+.black,
+.black p{
 	color: #fff;
 }
 .black blockquote span:before,
@@ -816,8 +816,8 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 .gray-dark h6 {
 	color: #e3dfcd;
 }
-
-.gray-dark {
+.gray-dark,
+.gray-dark p {
 	color: #fff;
 }
 .gray-dark blockquote span:before,
