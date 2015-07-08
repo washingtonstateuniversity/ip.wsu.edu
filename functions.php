@@ -86,7 +86,7 @@ class WSU_IP_Theme {
 		}
 
 		if ( $this->is_ip_site( 'scholars-abroad' ) ) {
-			wp_enqueue_style( 'wsu-ip-scholars-abroad', get_stylesheet_directory_uri() . '/css/ip-scholars-abroad.css', array(), spine_get_script_version() );
+			wp_enqueue_style( 'wsu-ip-scholar-abroad', get_stylesheet_directory_uri() . '/css/ip-scholar-abroad.css', array(), spine_get_script_version() );
 		}
 
 		if ( $this->is_ip_site( 'on-campus' ) ) {
