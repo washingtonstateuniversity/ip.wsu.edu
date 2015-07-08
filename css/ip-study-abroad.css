@@ -791,7 +791,7 @@ main .media-wall-column a {
 	width: 100%;
 }
 
-.photowall header h2 {
+.photowall .column h2:first-child {
 	padding-bottom: 3em;
 }
 
@@ -805,6 +805,45 @@ section.photowall.unbound .column {
 	padding-left: 0;
 	padding-right: 0;
 }
+.spine-social-channels ul li {
+	padding-right: 1em;
+}
+
+.spine-social-channels ul li a:before {
+	width: 40px;
+}
+
+main .spine-social-channels ul li a {
+	padding: 0;
+	box-shadow: none;
+	border: none;
+	font-size: 2rem;
+}
+
+main .spine-social-channels ul .facebook-channel a {
+	color: #3B5998;
+}
+
+main .spine-social-channels ul .facebook-channel a:hover {
+	color: #925b29 !important;
+}
+
+main .spine-social-channels ul .twitter-channel a {
+	color: #55acee;
+}
+
+main .spine-social-channels ul .twitter-channel a:hover {
+	color: #925b29 !important;
+}
+
+main .spine-social-channels ul .instagram-channel a {
+	color: #517fa4;
+}
+
+main .spine-social-channels ul .instagram-channel a:hover {
+	color: #925b29 !important;
+}
+
 /* ----------------------------------
   Utilities
 ---------------------------------- */
