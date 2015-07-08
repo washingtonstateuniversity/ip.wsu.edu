@@ -62,7 +62,7 @@ p a.button.cta:focus {
 }
 .accordion h3.ui-accordion-header.ui-state-active {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-orange.png);
-
+	background-repeat:no-repeat;
 }
 /* ============================================================
   INFO/STATS
@@ -603,136 +603,207 @@ body:not(.unset) table th {
 /* -----------------------
   Home
 ----------------------- */
+.home section.intro .column {
+	height:150px;
+} 
 section.intro div.column ul.rw-words {
 	display: inline;
 	text-indent: 10px;
-	color: green;
 }
 
 section.intro div.column ul.rw-words li {
 	position: absolute;
 	opacity: 0;
 	overflow: hidden;
-	color: #6b969d;
-	-webkit-animation: rotateWord 18s linear infinite 0;
-	-ms-animation: rotateWord 18s linear infinite 0;
-	animation: rotateWord 18s linear infinite 0;
+	color: #B67233;
+	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', serif;
+	font-size: 2rem;
+	line-height: 1.3;
+	font-style: italic;
+	text-align: center;
+	font-weight: 400;
+	-webkit-animation: rotateWord 18s infinite;
+	-ms-animation: rotateWord 18s infinite;
+	animation: rotateWord 18s infinite;
+}
+
+section.intro div.column ul.rw-words li:nth-child(1) {
+	-webkit-animation-delay: -18s;
+	-ms-animation-delay: -18s;
+	animation-delay: -18s;
 }
 
 section.intro div.column ul.rw-words li:nth-child(2) {
-	-webkit-animation-delay: 3s;
-	-ms-animation-delay: 3s;
-	animation-delay: 3s;
-	color: #6b889d;
+	-webkit-animation-delay: -15s;
+	-ms-animation-delay: -15s;
+	animation-delay: -15s;
 }
 
 section.intro div.column ul.rw-words li:nth-child(3) {
-	-webkit-animation-delay: 6s;
-	-ms-animation-delay: 6s;
-	animation-delay: 6s;
-	color: #6b739d;
+	-webkit-animation-delay: -12s;
+	-ms-animation-delay: -12s;
+	animation-delay: -12s;
 }
+
 section.intro div.column ul.rw-words li:nth-child(4) {
-	-webkit-animation-delay: 9s;
-	-ms-animation-delay: 9s;
-	animation-delay: 9s;
-	color: #7a6b9d;
+	-webkit-animation-delay: -9s;
+	-ms-animation-delay: -9s;
+	animation-delay: -9s;
 }
+
 section.intro div.column ul.rw-words li:nth-child(5) {
-	-webkit-animation-delay: 12s;
-	-ms-animation-delay: 12s;
-	animation-delay: 12s;
-	color: #8d6b9d;
+	-webkit-animation-delay: -6s;
+	-ms-animation-delay: -6s;
+	animation-delay: -6s;
 }
+
 section.intro div.column ul.rw-words li:nth-child(6) {
-	-webkit-animation-delay: 15s;
-	-ms-animation-delay: 15s;
-	animation-delay: 15s;
-	color: #9b6b9d;
+	-webkit-animation-delay: -3s;
+	-ms-animation-delay: -3s;
+	animation-delay: -3s;
 }
+
 @-webkit-keyframes rotateWord {
 	0% {
 		opacity: 0;
 	}
+	
 	2% {
 		opacity: 0;
 		-webkit-transform: translateY(-30px);
 	}
+	
 	5% {
 		opacity: 1;
 		-webkit-transform: translateY(0px);
 	}
+	
 	17% {
 		opacity: 1;
 		-webkit-transform: translateY(0px);
 	}
+	
 	20% {
 		opacity: 0;
 		-webkit-transform: translateY(30px);
 	}
+	
 	80% {
 		opacity: 0;
 	}
+	
 	100% {
 		opacity: 0;
 	}
 }
+
 @-ms-keyframes rotateWord {
 	0% {
 		opacity: 0;
 	}
+	
 	2% {
 		opacity: 0;
 		-ms-transform: translateY(-30px);
 	}
+	
 	5% {
 		opacity: 1;
 		-ms-transform: translateY(0px);
 	}
+	
 	17% {
 		opacity: 1;
 		-ms-transform: translateY(0px);
 	}
+	
 	20% {
 		opacity: 0;
 		-ms-transform: translateY(30px);
 	}
+	
 	80% {
 		opacity: 0;
 	}
+	
 	100% {
 		opacity: 0;
 	}
 }
 
 @keyframes rotateWord {
-	0% { opacity: 0;	
+	0% {
+		opacity: 0;
 	}
-	2% {opacity: 0;
+	
+	2% {
+		opacity: 0;
 		-webkit-transform: translateY(-30px);
 		transform: translateY(-30px);
 	}
+	
 	5% {
 		opacity: 1;
 		-webkit-transform: translateY(0px);
 		transform: translateY(0px);
 	}
+	
 	17% {
 		opacity: 1;
 		-webkit-transform: translateY(0px);
 		transform: translateY(0px);
 	}
+	
 	20% {
 		opacity: 0;
 		-webkit-transform: translateY(30px);
 		transform: translateY(30px);
 	}
+	
 	80% {
 		opacity: 0;
 	}
+	
 	100% {
 		opacity: 0;
 	}
+}
+main .media-wall-column a {
+	float: left;
+	border-bottom: none;
+	box-shadow: none;
+	padding: 0;
+	line-height: 0;
+}
+
+.media-wall-column {
+	float: left;
+	width: 25%;
+}
+
+.media-wall-column-0,
+.media-wall-column-2 {
+	margin-top: 10%;
+}
+
+.photowall img {
+	float: left;
+	width: 100%;
+}
+
+.photowall header h2 {
+	padding-bottom: 3em;
+}
+
+#binder:not(.fluid).max-1188 .row.photowall.unbound {
+	max-width: 99164px;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+section.photowall.unbound .column {
+	padding-left: 0;
+	padding-right: 0;
 }
 /* ----------------------------------
   Utilities
