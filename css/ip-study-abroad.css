@@ -63,6 +63,7 @@ p a.button.cta:focus {
 .accordion h3.ui-accordion-header.ui-state-active {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-orange.png);
 	background-repeat:no-repeat;
+	background-position:right;
 }
 /* ============================================================
   INFO/STATS
@@ -808,7 +809,9 @@ section.photowall.unbound .column {
 .spine-social-channels ul li {
 	padding-right: 1em;
 }
-
+.spine-social-channels ul li:last-child {
+	padding-right:0;
+}
 .spine-social-channels ul li a:before {
 	width: 40px;
 }

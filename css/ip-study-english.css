@@ -64,6 +64,7 @@ main a:hover {
 .accordion h3.ui-accordion-header.ui-state-active {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-yellow.png);
 	background-repeat:no-repeat;
+	background-position:right;
 }
 /* ---------------------
   yellows
