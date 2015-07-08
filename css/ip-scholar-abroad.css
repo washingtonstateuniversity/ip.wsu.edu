@@ -60,13 +60,14 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 }
 .gray-dark p a.button.cta {
 	background-color:#edf3f4;
-	color:#fff;
+	color:#5e6a71;
 	border:#edf3f4;
 }
 .gray-dark p a.button.cta:hover,
 .gray-dark p a.button.cta:focus {
 	background-color:#fff;
 	border:#fff;
+	color:#5e6a71;
 }
 .gray-med h2 {
 	color:#ada400;
@@ -99,13 +100,14 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 }
 .gray-med p a.button.cta {
 	background-color:#edf3f4;
-	color:#fff;
+	color:#5e6a71;
 	border:#edf3f4;
 }
 .gray-med p a.button.cta:hover,
 .gray-med p a.button.cta:focus {
 	background-color:#fff;
 	border:#fff;
+	color:#5e6a71;
 }
 .gray-light h2 {
 	color:#fff;
@@ -133,14 +135,15 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 	color:#fff;
 }
 .gray-light p a.button.cta {
-background-color:#edf3f4;
-	color:#fff;
+	background-color:#edf3f4;
+	color:#5e6a71;
 	border:#edf3f4;
 }
 .gray-light p a.button.cta:hover,
 .gray-light p a.button.cta:focus {
 	background-color:#fff;
 	border:#fff;
+	color:#5e6a71;
 }
 .gray-lightest h2 {
 	color:#fff;
@@ -169,13 +172,14 @@ background-color:#edf3f4;
 }
 .gray-lightest p a.button.cta {
 	background-color:#edf3f4;
-	color:#fff;
+	color:#5e6a71;
 	border:#edf3f4;
 }
 .gray-lightest p a.button.cta:hover,
 .gray-lightest p a.button.cta:focus {
 	background-color:#fff;
 	border:#fff;
+	color:#5e6a71;
 }
 /* ---------------------
   Tans
