@@ -27,6 +27,11 @@ class WSU_IP_Blockquote_Shortcode {
 			),
 			'attrs'         => array(
 				array(
+					'label'    => 'Source',
+					'attr'     => 'cite',
+					'type'     => 'text',
+				),
+				array(
 					'label'    => 'Image (Optional)',
 					'attr'     => 'image',
 					'type'     => 'attachment',
@@ -49,7 +54,11 @@ class WSU_IP_Blockquote_Shortcode {
 	 */
 	public function display_ip_blockquote( $atts, $content ) {
 
-		$content = '<blockquote><span class="blockquote-internal">' . wp_kses_post( $content ) . '</span></blockquote>';
+		$content = '<blockquote><span class="blockquote-internal"><span class="blockquote-content">' . wp_kses_post( $content ) . '</span>';
+		if ( ! empty( $atts['cite'] ) ) {
+			$content .= '<cite>' . wp_kses_post( $atts['cite'] ) . '</cite>';
+		}
+		$content .= '</span></blockquote>';
 
 		if ( isset( $atts['image'] ) && 0 !== absint( $atts['image'] ) ) {
 			$content = '<div class="column one">' . $content . '</div><div class="column two">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div>';
