@@ -49,7 +49,7 @@ class WSU_IP_Blockquote_Shortcode {
 	 */
 	public function display_ip_blockquote( $atts, $content ) {
 
-		$content = '<blockquote>' . wp_kses_post( $content ) . '</blockquote>';
+		$content = '<blockquote><span class="blockquote-internal">' . wp_kses_post( $content ) . '</span></blockquote>';
 
 		if ( isset( $atts['image'] ) && 0 !== absint( $atts['image'] ) ) {
 			$content = '<div class="column one">' . $content . '</div><div class="column two">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div>';
