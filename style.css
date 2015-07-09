@@ -215,6 +215,15 @@ main .row {
 	background-attachment: fixed;
 	background-size: cover;
 }
+
+.parallax h2 {
+	color: #fff;
+	position: absolute;
+	top: 286px;
+	display: block;
+	width: 100%;
+	text-align: center;
+}
 .fluid-container {
 	position:relative;
 	padding-bottom:56.25%;
@@ -267,7 +276,7 @@ main strong {
 
 table {
 	color: #464e54;
-	font-size: .9rem;
+	font-size: 1rem;
 	line-height: 1.6;
 	font-weight: 300;
 }
@@ -366,11 +375,14 @@ h3 {
 	font-size: 30px;
 	line-height: 44px;
 	letter-spacing: -.6px;
-	padding-top: 3rem;
+	padding-top:0;
 	padding-bottom: 25px;
 	font-weight: 400;
 }
-
+p+h3,
+h2+h3 {
+	padding-top: 3rem;
+}
 h2+h3,
 h3+h5,
 h5+h5 {
@@ -611,7 +623,7 @@ main .page .stats.button-wrap section {
 
 main .page section.next-steps {
 	padding-top: 60px;
-	padding-bottom: 120px;
+	padding-bottom: 80px;
 	text-align: center;
 }
 
@@ -1072,14 +1084,13 @@ main .page section.border-bottom .column.one.seventy-five_single {
 
 .accordion h3.ui-accordion-header.ui-state-default {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-gray.png);
-	background-position: right;
-	background-repeat: no-repeat;
-}
 
-.accordion h3.ui-accordion-header.ui-state-active {
-	background-position: right;
-	background-repeat: no-repeat;
 }
+.accordion h3.ui-accordion-header.ui-state-default,
+.accordion h3.ui-accordion-header.ui-state-active {
+		background-position: right;
+	background-repeat: no-repeat;
+	background-size:40px;}
 /* =========================
   	Tablepress
 ========================== */
@@ -1161,7 +1172,7 @@ body:not(.unset) table th {
 	text-align: center;
 }
 /* =========================
-	Events
+	News & Events
 ========================= */
 #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a {
 	border-bottom:none;
@@ -1170,6 +1181,66 @@ body:not(.unset) table th {
 #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:focus {
 	border-bottom:none;
 }
+section.news-events ul li {
+	list-style: none;
+	border-top: dotted 2px #d7dadb;
+	border-bottom: none;
+	width: 100%;
+	display: block;
+}
+
+section.news-events ul li a,
+section.news-events ul li a:hover,
+a.more {
+	padding: 1em 0;
+	width: 100%;
+	display: block;
+	border-bottom: none;
+}
+
+a.more {
+	width: 93%;
+	margin-left: 4.5%;
+	padding-top: 0;
+}
+
+a.more:hover {
+	border-bottom: dotted 2px #d7dadb;
+}
+
+section.news-events ul li span.content-item-event-title {
+	width: 85%;
+}
+
+section.news-events ul li a:hover,
+a.more:hover {
+	color: #981e32;
+}
+
+section.news-events ul li:last-of-type,
+a.more {
+	border-bottom: dotted 2px #d7dadb;
+}
+
+section.news-events ul li .content-item-event-date,
+section.news-events ul li .content-item-event-title,
+section.news-events ul li .content-item-event-meta {
+	display: inline-block;
+}
+
+section.news-events ul li .content-item-event-date {
+	font-weight: 700;
+	color: #00a5bd;
+}
+
+section.news-events ul li .content-item-event-title {
+	padding-left: 8px;
+}
+
+section.news-events ul li .content-item-event-meta {
+	display: none;
+}
+
 /* =========================
   	Anchor Links
 ========================== */
@@ -1327,6 +1398,18 @@ section.map.unbound .column {
 .dates p {
 	padding-bottom: 0;
 }
+div.reg-date {
+	color: #00a5bd;
+	font-size: 3em;
+	font-weight: 700;
+	font-family: "Open Sans Condensed";
+	padding: .8em 0;
+}
+
+div.reg-date span.reg-month {
+	font-weight: 300;
+}
+
 .intro p {
 	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', serif;
 	font-size: 2rem;

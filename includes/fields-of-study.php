@@ -10,7 +10,7 @@ class WSU_IP_Fields_Of_Study {
 		?>
 		<div class="find-fos-wrapper">
 			<div class="find-fos">
-				<h4>Find my field of study</h4>
+				<h3>Find my field of study</h3>
 				<ul class="fos">
 					<li class="fos-label">by Academic Area</li>
 					<li class="fos-item"><a href="http://admission.wsu.edu/academics/fos/Public/area.castle?id=7762">Agricultural Sciences</a></li>

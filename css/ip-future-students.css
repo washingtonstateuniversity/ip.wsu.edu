@@ -326,7 +326,9 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .gray3 blockquote cite {
 	color: #fff;
 }
-
+.gray-light-text {
+	color:#b5babe;
+}
 /* TAN1 */
 .tan1-text {
 	color: #f8f6f1;
@@ -383,6 +385,9 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .tan2 blockquote cite {
 	color: #00a5bd;
 }
+.dark-tan-text {
+	color:#cbc4a2;
+}
 /* ============================================================
   INFO/STATS
 ============================================================ */
@@ -429,7 +434,8 @@ main p a.button {
 
 main p a.button:hover,
 main p a.button:focus {
-	border: 1px solid rgba(79, 134, 142, 1);
+	color:#3f6b72;
+	border: 1px solid #3f6b72;
 }
 main p a.cta.button {
 	background-color:#4f868e;
@@ -468,7 +474,7 @@ main .tan1 p a.button:focus,
 main .tan2 p a.button:hover,
 main .tan2 p a.button:focus,
 main .tan3 p a.button:hover,
-main .tan3 p a.button:focus
+main .tan3 p a.button:focus,
 main .white p a.button:hover,
 main .white p a.button:focus {
 	border:1px solid #3f6b72;
@@ -581,6 +587,7 @@ main .page .fos-section section {
 	z-index: 100;
 	position: relative;
 }
+
 .fos li {
 	color: #4f868e;
 	width: 100%;
@@ -606,8 +613,13 @@ main .page .fos-section section {
 }
 .fos .fos-label {
 	cursor: pointer;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:20px;
+	letter-spacing:.5px;
 }
-
+.fos .fos-label:hover {
+	background
+}
 .fos .fos-item {
 	display: none;
 }
@@ -619,6 +631,8 @@ main .page .fos-section section {
 	font-size: 1.4rem;
 	padding-bottom: 1rem;
 	padding-top:6rem;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing: 1px;
 }
 main .fos-open .fos-item a {
 	border-bottom: none;
@@ -635,6 +649,8 @@ h2.twohundredplus:first-child {
 	font-weight: 300;
 	padding: 0;
 	margin: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	letter-spacing:1px;
 }
 
 h3.thp-fos {
