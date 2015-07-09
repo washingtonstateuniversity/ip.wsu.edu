@@ -39,6 +39,17 @@ class WSU_IP_Blockquote_Shortcode {
 					'addButton' => 'Select Image',
 					'frameTitle' => 'Select Image',
 				),
+				array(
+					'label'    => 'Image placement',
+					'attr'     => 'image_placement',
+					'type'     => 'select',
+					'description' => 'Choose where the image, if one is provided, should be displayed.',
+					'options'  => array(
+						''         => 'Text in column one, image in column two',
+						'reverse'  => 'Image in column one, text in column two',
+						'together' => 'Image in text in a single column',
+					)
+				),
 			),
 		);
 		shortcode_ui_register_for_shortcode( 'ip_blockquote', $args );
@@ -61,7 +72,14 @@ class WSU_IP_Blockquote_Shortcode {
 		$content .= '</span></blockquote>';
 
 		if ( isset( $atts['image'] ) && 0 !== absint( $atts['image'] ) ) {
-			$content = '<div class="column one">' . $content . '</div><div class="column two">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div>';
+			if ( empty( $atts['image_placement'] ) ) {
+				$content = '<div class="column one">' . $content . '</div><div class="column two">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div>';
+			} elseif ( 'together' === $atts['image_placement'] ) {
+				$content = '<div class="column one">' . $content . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div>';
+			} elseif ( 'reverse' === $atts['image_placement'] ) {
+				$content = '<div class="column one">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div><div class="column two">' . $content . '</div>';
+			}
+
 		}
 
 		return $content;
