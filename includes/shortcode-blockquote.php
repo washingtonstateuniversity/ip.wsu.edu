@@ -88,12 +88,14 @@ class WSU_IP_Blockquote_Shortcode {
 		$atts['wrapper'] = 'blockquote-container ' . $atts['wrapper'];
 
 		if ( isset( $atts['image'] ) && 0 !== absint( $atts['image'] ) ) {
-			$atts['wrapper'] .= ' blockquote-has-image';
 			if ( empty( $atts['image_placement'] ) ) {
+				$atts['wrapper'] .= ' blockquote-has-image blockquote-has-image-default';
 				$content = '<div class="column one">' . $content . '</div><div class="column two">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div>';
 			} elseif ( 'together' === $atts['image_placement'] ) {
+				$atts['wrapper'] .= ' blockquote-has-image blockquote-has-image-reverse';
 				$content = '<div class="column one">' . $content . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div>';
 			} elseif ( 'reverse' === $atts['image_placement'] ) {
+				$atts['wrapper'] .= ' blockquote-has-image blockquote-has-image-together';
 				$content = '<div class="column one">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div><div class="column two">' . $content . '</div>';
 			}
 
