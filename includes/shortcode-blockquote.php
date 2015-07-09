@@ -70,6 +70,13 @@ class WSU_IP_Blockquote_Shortcode {
 	 * @return string
 	 */
 	public function display_ip_blockquote( $atts, $content ) {
+		$default_atts = array(
+			'cite' => '',
+			'image' => '',
+			'image_placement' => '',
+			'wrapper' => '',
+		);
+		$atts = wp_parse_args( $atts, $default_atts );
 
 		$content = '<blockquote><span class="blockquote-internal"><span class="blockquote-content">' . wp_kses_post( $content ) . '</span>';
 		if ( ! empty( $atts['cite'] ) ) {
