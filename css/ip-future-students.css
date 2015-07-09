@@ -88,9 +88,11 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 	background-color: #2f5055;
 }
 .blue3 {
-	background:#3f6c72;
+	background-color:#3f6c72;
 }
-
+.blue4 {
+	background-color:#203639;
+}
 /* ----------------------------------
   Background w/color text
 ---------------------------------- */
@@ -100,7 +102,8 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .blue1,
 .gray1,
 .blue2,
-.gray2 {
+.gray2,
+.blue4 {
 	color: #fff;
 }
 
@@ -193,7 +196,7 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 }
 .blue3 blockquote span:before,
 .blue3 blockquote p:before {
-	color: #3f6b72;
+	color: #2f5055;
 }
 .blue3 blockquote,
 .blue3 blockquote p,
@@ -204,6 +207,39 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .blue3-text blockquote p, 
 .blue3-text blockquote cite {
 	color: #4f868e;
+}
+/*BLUE4*/
+.blue4-text {
+	color: #203639;
+}
+.blue4 h1,
+.blue4 h3,
+.blue4 h5 {
+	color: #00a5bd;
+}
+
+.blue4 h2,
+.blue4 h4,
+.blue4 h6 {
+	color: #8d959a;
+}
+
+.blue4 p {
+	color: #fff;
+}
+.blue4 blockquote span:before,
+.blue4 blockquote p:before {
+	color: rgba(63, 107, 114, .6);
+}
+.blue4 blockquote,
+.blue4 blockquote p,
+.blue4 blockquote cite {
+	color: #aec7cb;
+}
+.blue4-text blockquote,
+.blue4-text blockquote p, 
+.blue4-text blockquote cite {
+	color: #aec7cb;
 }
 /* GRAY1 */
 .gray1-text {

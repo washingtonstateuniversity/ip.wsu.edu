@@ -26,6 +26,47 @@ body.wsu-palette-palette5 .header-group sub h1 {
 body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 	color: #981e32;
 }
+/*----------------------
+	Defaults
+---------------------- */
+main a {
+	color:#c60c30;
+}
+main a:hover,
+main a:focus {
+	color:#c60c30;
+}
+/* white */
+blockquote,
+blockquote p {
+	color:#Ada400;
+}
+blockquote cite {
+	color:#Afa370;
+}
+blockquote p span:before,
+blockquote span:before {
+	color:rgba(227, 223, 205, .6);
+}
+p a.button {
+	border-color:rgba(141, 149, 154, .5);
+	color:#5e6a71;
+}
+p a.button:hover,
+p a.button:focus {
+	border:1px solid #5e6a71;
+	color:#5e6a71;
+}
+p a.button.cta {
+	background:#8d959a;
+	color:#fff;
+	border:1px solid #8d959a;
+}
+p a.button.cta:hover,
+p a.button.cta:focus {
+	background:#5e6a71;
+	border:1px solid #5e6a71;
+}
 /* ---------------------
   Grays
 ---------------------- */
@@ -205,7 +246,7 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .tan-dark p a.button.cta {
 	background:#8d959a;
 	color:#fff;
-	border:1px solid #5e6a71;
+	border:1px solid #8d959a;
 }
 .tan-dark p a.button.cta:hover,
 .tan-dark p a.button.cta:focus {
@@ -233,7 +274,7 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .tan-light p a.button.cta {
 	background:#8d959a;
 	color:#fff;
-	border:1px solid #5e6a71;
+	border:1px solid #8d959a;
 }
 .tan-light p a.button.cta:hover,
 .tan-light p a.button.cta:focus {
@@ -264,10 +305,17 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 .white p a.button.cta {
 	background:#8d959a;
 	color:#fff;
-	border:1px solid #5e6a71;
+	border:1px solid #8d959a;
 }
 .white p a.button.cta:hover,
 .white p a.button.cta:focus {
 	background:#5e6a71;
 	border:1px solid #5e6a71;
+}
+/* ==========================
+	Video
+=========================== */
+
+main .page section.row.video .column iframe {
+	width: 1080px;
 }

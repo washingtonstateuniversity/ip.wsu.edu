@@ -459,7 +459,7 @@ blockquote p span:before {
   font-size:8rem;
   position:absolute;
   top:0;
-  left:-50px;
+  left:-80px;
   line-height:.5;
   font-family:"Georgia";
 }
@@ -774,7 +774,26 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 .black blockquote cite {
 	color: #fff;
 }
-
+.black p a.button {
+	border:1px solid rgba(141, 149, 154, .5);
+	color:#fff;	
+}
+.black p a.button:hover,
+.black p a.button:focus {
+	border:1px solid #fff;
+	color:#fff;
+}
+.black p a.button.cta {
+	background-color:#edf3f4;
+	color:#000;
+	border:#edf3f4;
+}
+.black p a.button.cta:hover,
+.black p a.button.cta:focus {
+	background-color:#fff;
+	border:#fff;
+	color:#000;
+}
 /* WHITE */
 .white-text {
 	color: #fff;
@@ -1139,6 +1158,16 @@ body:not(.unset) table th {
 	padding: 22px;
 	vertical-align: top;
 	text-align: center;
+}
+/* =========================
+	Events
+========================= */
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a {
+	border-bottom:none;
+}
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:hover,
+#tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:focus {
+	border-bottom:none;
 }
 /* =========================
   	Anchor Links
