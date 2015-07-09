@@ -27,6 +27,11 @@ class WSU_IP_Blockquote_Shortcode {
 			),
 			'attrs'         => array(
 				array(
+					'label'    => 'Source',
+					'attr'     => 'cite',
+					'type'     => 'text',
+				),
+				array(
 					'label'    => 'Image (Optional)',
 					'attr'     => 'image',
 					'type'     => 'attachment',
@@ -34,6 +39,23 @@ class WSU_IP_Blockquote_Shortcode {
 					'addButton' => 'Select Image',
 					'frameTitle' => 'Select Image',
 				),
+				array(
+					'label'    => 'Image placement',
+					'attr'     => 'image_placement',
+					'type'     => 'select',
+					'description' => 'Choose where the image, if one is provided, should be displayed.',
+					'options'  => array(
+						''         => 'Text in column one, image in column two',
+						'reverse'  => 'Image in column one, text in column two',
+						'together' => 'Image in text in a single column',
+					)
+				),
+				array(
+					'label'   => 'Wrapper class',
+					'attr'    => 'wrapper',
+					'type'    => 'text',
+					'description' => 'If provided, a class will be added to the wrapping container. Classes blockquote-container and blockquote-has-image are aready placed automatically.',
+				)
 			),
 		);
 		shortcode_ui_register_for_shortcode( 'ip_blockquote', $args );
@@ -48,12 +70,38 @@ class WSU_IP_Blockquote_Shortcode {
 	 * @return string
 	 */
 	public function display_ip_blockquote( $atts, $content ) {
+		$default_atts = array(
+			'cite' => '',
+			'image' => '',
+			'image_placement' => '',
+			'wrapper' => '',
+		);
+		$atts = wp_parse_args( $atts, $default_atts );
 
-		$content = '<blockquote>' . wp_kses_post( $content ) . '</blockquote>';
+		$content = '<blockquote><span class="blockquote-internal"><span class="blockquote-content">' . wp_kses_post( $content ) . '</span>';
+		if ( ! empty( $atts['cite'] ) ) {
+			$content .= '<cite>' . wp_kses_post( $atts['cite'] ) . '</cite>';
+		}
+		$content .= '</span></blockquote>';
+
+		$atts['wrapper'] = esc_attr( $atts['wrapper'] );
+		$atts['wrapper'] = 'blockquote-container ' . $atts['wrapper'];
 
 		if ( isset( $atts['image'] ) && 0 !== absint( $atts['image'] ) ) {
-			$content = '<div class="column one">' . $content . '</div><div class="column two">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div>';
+			if ( empty( $atts['image_placement'] ) ) {
+				$atts['wrapper'] .= ' blockquote-has-image blockquote-has-image-default';
+				$content = '<div class="column one">' . $content . '</div><div class="column two">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div>';
+			} elseif ( 'together' === $atts['image_placement'] ) {
+				$atts['wrapper'] .= ' blockquote-has-image blockquote-has-image-reverse';
+				$content = '<div class="column one">' . $content . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div>';
+			} elseif ( 'reverse' === $atts['image_placement'] ) {
+				$atts['wrapper'] .= ' blockquote-has-image blockquote-has-image-together';
+				$content = '<div class="column one">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div><div class="column two">' . $content . '</div>';
+			}
+
 		}
+
+		$content = '<div class="' . esc_attr( $atts['wrapper'] ) . '">' . $content . '</div>';
 
 		return $content;
 	}
