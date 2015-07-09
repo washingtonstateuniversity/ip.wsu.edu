@@ -48,6 +48,7 @@ hr {
 	height: 1px;
 	background-color: #cbc482;
 	margin-bottom: 44px;
+	margin-top: 44px;
 	width: 100%;
 }
 hr+h4 {
@@ -739,7 +740,7 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 }
 .crimson blockquote span:before,
 .crimson blockquote p:before {
-	color: #fff;
+	color: rgba(0, 0, 0, .3);
 }
 .crimson blockquote,
 .crimson blockquote p,
@@ -813,7 +814,7 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 }
 .white blockquote span:before,
 .white blockquote p:before {
-	color: #5e6a71;
+	color:rgba(211, 225, 227, .7);
 }
 .white blockquote,
 .white blockquote p,

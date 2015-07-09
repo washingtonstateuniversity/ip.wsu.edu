@@ -30,11 +30,11 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 	Defaults
 ---------------------- */
 main a {
-	color:#c60c30;
+	border-color:#c60c30;
 }
 main a:hover,
 main a:focus {
-	color:#c60c30;
+	border-color:#c60c30;
 }
 /* white */
 blockquote,
@@ -79,7 +79,9 @@ p a.button.cta:focus {
 	color:#8d959a;
 }
 .gray-dark,
-.gray-dark p {
+.gray-dark p,
+.gray-dark ol,
+.gray-dark ul {
 	color:#fff;
 }
 .gray-dark blockquote,
@@ -119,7 +121,9 @@ p a.button.cta:focus {
 	color:#b5bABE;
 }
 .gray-med,
-.gray-med p {
+.gray-med p,
+.gray-med ol,
+.gray-med ul {
 	color:#fff;
 }
 .gray-med blockquote,
@@ -149,6 +153,12 @@ p a.button.cta:focus {
 	background-color:#fff;
 	border:#fff;
 	color:#5e6a71;
+}
+.gray-light,
+.gray-light p,
+.gray-light ol,
+.gray-light ul {
+	color:#fff;
 }
 .gray-light h2 {
 	color:#fff;
@@ -185,6 +195,12 @@ p a.button.cta:focus {
 	background-color:#fff;
 	border:#fff;
 	color:#5e6a71;
+}
+.gray-lightest,
+.gray-lightest p,
+.gray-lightest ol,
+.gray-lightest ul {
+	color:#fff;
 }
 .gray-lightest h2 {
 	color:#fff;
@@ -291,7 +307,7 @@ p a.button.cta:focus {
 }
 .white blockquote p span:before,
 .white blockquote span:before {
-	color:rgba(227, 223, 205, .6);
+	color:rgba(211, 225, 227, .7);
 }
 .white p a.button {
 	border-color:rgba(141, 149, 154, .5);
