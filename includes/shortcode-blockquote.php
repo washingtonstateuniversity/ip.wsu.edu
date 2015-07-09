@@ -47,7 +47,7 @@ class WSU_IP_Blockquote_Shortcode {
 					'options'  => array(
 						''         => 'Text in column one, image in column two',
 						'reverse'  => 'Image in column one, text in column two',
-						'together' => 'Image in text in a single column',
+						'together' => 'Image and text in a single column',
 					)
 				),
 				array(
