@@ -50,6 +50,12 @@ class WSU_IP_Blockquote_Shortcode {
 						'together' => 'Image in text in a single column',
 					)
 				),
+				array(
+					'label'   => 'Wrapper class',
+					'attr'    => 'wrapper',
+					'type'    => 'text',
+					'description' => 'If provided, a wrapping container will be created around the blockquote with this class assigned.',
+				)
 			),
 		);
 		shortcode_ui_register_for_shortcode( 'ip_blockquote', $args );
@@ -80,6 +86,10 @@ class WSU_IP_Blockquote_Shortcode {
 				$content = '<div class="column one">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div><div class="column two">' . $content . '</div>';
 			}
 
+		}
+
+		if ( ! empty( $atts['wrapper'] ) ) {
+			$content = '<div class="' . esc_attr( $atts['wrapper'] ) . '">' . $content . '</div>';
 		}
 
 		return $content;
