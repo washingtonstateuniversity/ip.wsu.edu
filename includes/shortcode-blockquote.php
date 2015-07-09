@@ -54,7 +54,7 @@ class WSU_IP_Blockquote_Shortcode {
 					'label'   => 'Wrapper class',
 					'attr'    => 'wrapper',
 					'type'    => 'text',
-					'description' => 'If provided, a wrapping container will be created around the blockquote with this class assigned.',
+					'description' => 'If provided, a class will be added to the wrapping container. Classes blockquote-container and blockquote-has-image are aready placed automatically.',
 				)
 			),
 		);
@@ -84,7 +84,11 @@ class WSU_IP_Blockquote_Shortcode {
 		}
 		$content .= '</span></blockquote>';
 
+		$atts['wrapper'] = esc_attr( $atts['wrapper'] );
+		$atts['wrapper'] = 'blockquote-container ' . $atts['wrapper'];
+
 		if ( isset( $atts['image'] ) && 0 !== absint( $atts['image'] ) ) {
+			$atts['wrapper'] .= ' blockquote-has-image';
 			if ( empty( $atts['image_placement'] ) ) {
 				$content = '<div class="column one">' . $content . '</div><div class="column two">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div>';
 			} elseif ( 'together' === $atts['image_placement'] ) {
@@ -95,9 +99,7 @@ class WSU_IP_Blockquote_Shortcode {
 
 		}
 
-		if ( ! empty( $atts['wrapper'] ) ) {
-			$content = '<div class="' . esc_attr( $atts['wrapper'] ) . '">' . $content . '</div>';
-		}
+		$content = '<div class="' . esc_attr( $atts['wrapper'] ) . '">' . $content . '</div>';
 
 		return $content;
 	}
