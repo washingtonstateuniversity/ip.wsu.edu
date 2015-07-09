@@ -21,7 +21,6 @@ class WSUWP_IP_Map_Shortcode {
 		if ( isset( $post->post_content ) && has_shortcode( $post->post_content, 'wsu_ip_map' ) ) {
 			wp_enqueue_style( 'jquery-ui-smoothness', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.min.css', array(), false );
 			wp_enqueue_style( 'wsu-ip-map-style', 'https://beta.maps.wsu.edu/content/dis/css/map.view.styles.css', array(), false );
-			wp_enqueue_script( 'wsu-ip-map', 'https://beta.maps.wsu.edu/embed/ip-campus-map', array( 'jquery' ), false, true );
 		}
 	}
 
@@ -48,6 +47,8 @@ class WSUWP_IP_Map_Shortcode {
 
 		$content = '<div id="map-embed-' . $map_path . '"></div>';
 		$content .= '<script>var map_view_scripts_block = true; var map_view_id = "map-embed-' . esc_js( $map_path ) .'";</script>';
+
+		wp_enqueue_script( 'wsu-ip-map', esc_url( 'https://beta.maps.wsu.edu/embed/ ' . $map_path ), array( 'jquery' ), false, true );
 
 		return $content;
 	}

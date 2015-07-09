@@ -457,7 +457,8 @@ main .tan3 p a.cta.button:focus {
 /* tan1, tan2, and tan3 button styles */
 main .tan1 p a.button,
 main .tan2 p a.button,
-main .tan3 p a.button {
+main .tan3 p a.button,
+main .white p a.button {
 	border:1px solid rgba(79, 134, 142, .5);
 	color:#3f6b72;
 	background-color:transparent;
@@ -467,7 +468,9 @@ main .tan1 p a.button:focus,
 main .tan2 p a.button:hover,
 main .tan2 p a.button:focus,
 main .tan3 p a.button:hover,
-main .tan3 p a.button:focus {
+main .tan3 p a.button:focus
+main .white p a.button:hover,
+main .white p a.button:focus {
 	border:1px solid #3f6b72;
 	color:#3f6b72;
 }
