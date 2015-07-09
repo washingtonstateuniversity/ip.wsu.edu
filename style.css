@@ -659,7 +659,7 @@ body.wsu-palette-palette1 .dropcap:first-child:first-letter {
 }
 /* Default (Gray1) */
 body.wsu-palette-palette3 .header-group {
-	background-color: #8d959a;
+	background-color: #5e6a71 ;
 }
 
 body.wsu-palette-palette3 .header-group sub h1 {
@@ -667,7 +667,7 @@ body.wsu-palette-palette3 .header-group sub h1 {
 }
 
 body.wsu-palette-palette3 .dropcap:first-child:first-letter {
-	color: #b67233;
+	color: #5e6a71 ;
 }
 
 /* Default (white with gray) */
@@ -676,11 +676,11 @@ body.wsu-palette-palette4 .header-group {
 }
 
 body.wsu-palette-palette4 .header-group sub h1 {
-	color: #8d959a;
+	color: #5e6a71 ;
 }
 
 body.wsu-palette-palette4 .dropcap:first-child:first-letter {
-	color: #8d959a;
+	color: #5e6a71 ;
 }
 /* ----------------------------------
   Backgrounds
@@ -864,7 +864,7 @@ main p a.button {
 	font-family: "Open Sans Condensed";
 	-webkit-transition: all .2s ease;
 	transition: all .2s ease;
-	margin: 1rem .6rem;
+	margin: 2rem 2rem;
 	min-width: 210px;
 	font-size: 20px;
 	letter-spacing: .5px;
@@ -1208,7 +1208,7 @@ body:not(.unset) table th {
     -ms-flex-pack: center;
     justify-content: center;
 	background-color: #eeece0;
-	font-size: 1.2rem;
+	font-size: 1.313rem;
 	line-height: 1;
 	letter-spacing: .5px;
 	font-weight: 300;
@@ -1330,7 +1330,7 @@ section.map.unbound .column {
 .intro p {
 	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', serif;
 	font-size: 2rem;
-	line-height: 1.3;
+	line-height: 1.4;
 	font-style: italic;
 	text-align: center;
 	font-weight: 400;
