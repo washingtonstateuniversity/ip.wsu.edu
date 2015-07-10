@@ -223,6 +223,7 @@ main .row {
 	display: block;
 	width: 100%;
 	text-align: center;
+	font-size:4em;
 }
 .fluid-container {
 	position:relative;
@@ -461,15 +462,16 @@ blockquote p {
 	line-height: 40px;
 	letter-spacing: .3px;
 	font-weight: 700;
+	text-align: center;
 }
 blockquote span,
-blockquote p span{
+blockquote p span {
   position:relative;
 }
 blockquote span:before,
 blockquote p span:before {
   content:"“";
-  font-size:8rem;
+  font-size:7rem;
   position:absolute;
   top:0;
   left:-80px;
@@ -606,6 +608,12 @@ main .page .stats.button-wrap section {
 	vertical-align: middle;
 	text-align: center;
 	margin: 0 auto 8px auto;
+}
+.number-o+h4 {
+	padding-top:0;
+}
+h4+.number-o {
+	margin:0;
 }
 .big-number-bkgrd {
 	width: 70px;
@@ -951,6 +959,8 @@ main p a.gray-b.cta.button:focus {
 ============================================================ */
 .stat-circles {
 	padding-top: 5rem;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .stat-circles .column {
