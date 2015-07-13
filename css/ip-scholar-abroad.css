@@ -67,6 +67,12 @@ p a.button.cta:focus {
 	background:#5e6a71;
 	border:1px solid #5e6a71;
 }
+.accordion h3.ui-accordion-header.ui-state-active:hover {
+	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-crimson.png);
+}
+.accordion h3.ui-accordion-header.ui-state-default:hover {
+	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-crimson.png);
+}
 /* ---------------------
   Grays
 ---------------------- */

@@ -1,4 +1,4 @@
-/* ============================================================
+photowall/* ============================================================
   COLORING 
   ref: https://brand.wsu.edu/visual/colors/
 ============================================================ */
@@ -60,10 +60,11 @@ p a.button.cta:focus {
 .intro p {
 	color:#B67233;
 }
-.accordion h3.ui-accordion-header.ui-state-active {
+.accordion h3.ui-accordion-header.ui-state-active:hover {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-orange.png);
-	background-repeat:no-repeat;
-	background-position:right;
+}
+.accordion h3.ui-accordion-header.ui-state-default:hover {
+	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-orange.png);
 }
 /* ============================================================
   INFO/STATS
@@ -539,7 +540,11 @@ p a.button.cta:focus {
 .accordion.more {
 	border-bottom: none;
 }
-
+.accordion.more ul li {
+	font-family: "Open Sans Condensed";
+	font-size:16px;
+	color:#8d959a;
+}
 .accordion.more h3.ui-accordion-header.ui-state-default {
 	background-position: center 55px;
 }
@@ -561,12 +566,12 @@ p a.button.cta:focus {
 }
 
 .accordion.more h3.ui-accordion-header-active:before {
-	content: 'Less';
+	content: 'Hide Programs';
 	display: block;
 	width: 100px;
 	text-align: center;
 	margin: 0 auto;
-	padding-top: 20px;
+	padding-top: 28px;
 }
 
 .accordion.more h3.ui-accordion-header {
@@ -793,7 +798,7 @@ main .media-wall-column a {
 }
 
 .photowall .column h2:first-child {
-	padding-bottom: 3em;
+	padding-bottom: 2em;
 }
 
 #binder:not(.fluid).max-1188 .row.photowall.unbound {
@@ -807,7 +812,7 @@ section.photowall.unbound .column {
 	padding-right: 0;
 }
 .spine-social-channels ul li {
-	padding-right: 1em;
+	padding-right: 2em;
 }
 .spine-social-channels ul li:last-child {
 	padding-right:0;
@@ -846,7 +851,13 @@ main .spine-social-channels ul .instagram-channel a {
 main .spine-social-channels ul .instagram-channel a:hover {
 	color: #925b29 !important;
 }
-
+/* -----------------------
+  Ask a student
+----------------------- */
+.country-table .accordion h3.ui-accordion-header {
+	padding-top:.8em;
+	padding-bottom:.8em;
+}
 /* ----------------------------------
   Utilities
 ---------------------------------- */

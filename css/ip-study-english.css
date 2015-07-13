@@ -61,10 +61,11 @@ main a,
 main a:hover {
 	border-color:#ffb81c;
 }
-.accordion h3.ui-accordion-header.ui-state-active {
+.accordion h3.ui-accordion-header.ui-state-active:hover {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-yellow.png);
-	background-repeat:no-repeat;
-	background-position:right;
+}
+.accordion h3.ui-accordion-header.ui-state-default:hover {
+	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-yellow.png);
 }
 /* ---------------------
   yellows

@@ -263,10 +263,6 @@ main ol li {
 	padding-bottom: 1.2rem;
 	font-weight: 300;
 }
-main address {
-	font-size:.95rem;
-	padding-left:30px;
-}
 main ul li,
 main ol li {
 	padding-bottom:.3rem;
@@ -381,12 +377,16 @@ h3 {
 	font-weight: 400;
 }
 p+h3,
+ul+h3,
+ol+h3,
 h2+h3 {
 	padding-top: 3rem;
 }
+
 h2+h3,
 h3+h5,
-h5+h5 {
+h5+h5,
+p a.button+h3  {
 	padding-top: 0;
 }
 
@@ -601,7 +601,7 @@ main .page .stats.button-wrap section {
 	vertical-align: middle;
 }
 .number-o {
-	font-size: 30px;
+	font-size: 40px;
 	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', serif;
 	font-style: italic;
 	line-height: 1.3em;
@@ -1094,11 +1094,20 @@ main .page section.border-bottom .column.one.seventy-five_single {
 
 .accordion h3.ui-accordion-header.ui-state-default {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-gray.png);
-
+	background-repeat:no-repeat;
+	background-position:right;
+	background-size: 55px;
 }
+.accordion h3.ui-accordion-header.ui-state-active {
+	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-gray.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	background-size: 55px;
+}
+
 .accordion h3.ui-accordion-header.ui-state-default,
 .accordion h3.ui-accordion-header.ui-state-active {
-		background-position: right;
+	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;}
 /* =========================

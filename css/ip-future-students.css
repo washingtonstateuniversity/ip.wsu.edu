@@ -441,10 +441,11 @@ main p a.cta.button {
 	background-color:#4f868e;
 	color:#fff;
 }
-.accordion h3.ui-accordion-header.ui-state-active {
+.accordion h3.ui-accordion-header.ui-state-active:hover {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-blue.png);
-	background-repeat:no-repeat;
-	background-position:right;
+}
+.accordion h3.ui-accordion-header.ui-state-default:hover {
+	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-blue.png);
 }
 /* John's Emphasized default buttons */
 main p a.cta.button:hover,
