@@ -216,15 +216,6 @@ main .row {
 	background-size: cover;
 }
 
-.parallax h2 {
-	color: #fff;
-	position: absolute;
-	top: 286px;
-	display: block;
-	width: 100%;
-	text-align: center;
-	font-size:4em;
-}
 .fluid-container {
 	position:relative;
 	padding-bottom:56.25%;
@@ -366,7 +357,15 @@ h2 {
 	padding-bottom: 42px;
 	font-weight: 400;
 }
-
+.parallax h2 {
+	color: #fff;
+	position: absolute;
+	top: 286px;
+	display: block;
+	width: 100%;
+	text-align: center;
+	font-size:5em;
+}
 h3 {
 	color: #8d959a;
 	font-size: 30px;
@@ -386,7 +385,8 @@ h2+h3 {
 h2+h3,
 h3+h5,
 h5+h5,
-p a.button+h3  {
+p a.button+h3 ,
+p a.button+h4 {
 	padding-top: 0;
 }
 
@@ -1100,9 +1100,9 @@ main .page section.border-bottom .column.one.seventy-five_single {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-gray.png);
 }
 .accordion h3.ui-accordion-header.ui-state-default,
-.accordion h3.ui-accordion-header-active.ui-state-active,
+.accordion h3.ui-accordion-header.ui-accordion-header-active.ui-state-active,
 .accordion h3.ui-accordion-header.ui-state-default:hover,
-.accordion h3.ui-accordion-header.ui-state-active:hover {
+.accordion h3.ui-accordion-header.ui-accordion-header-active.ui-state-active:hover {
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;
