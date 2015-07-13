@@ -447,6 +447,12 @@ main p a.cta.button {
 .accordion h3.ui-accordion-header.ui-state-default:hover {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-blue.png);
 }
+.accordion h3.ui-accordion-header.ui-state-default,
+.accordion h3.ui-accordion-header.ui-state-active {
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size:40px;
+}
 /* John's Emphasized default buttons */
 main p a.cta.button:hover,
 main p a.cta.button:focus,
