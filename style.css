@@ -362,7 +362,7 @@ h2 {
 	padding-bottom: 42px;
 	font-weight: 400;
 }
-section.parallax h2 {
+.parallax h2 {
 	color: #fff;
 	position: absolute;
 	top: 286px;

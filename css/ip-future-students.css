@@ -616,7 +616,15 @@ main .page .fos-section section {
 .fos-open .fos-label {
 	margin-bottom: 1.25rem;
 }
-.fos-open .fos-label:hover {
+li.fos-label:after {
+ position: absolute;
+ right: 1.75rem;
+ color: #00a5bd;
+}
+.fos-open li.fos-label:after {
+	content:"X";
+}
+.fos:hover {
 	background:rgba(255,255,255,1);
 }
 .fos-open .fos-item {
@@ -631,8 +639,8 @@ main .page .fos-section section {
 	width: 100%;
 }
 .fos .fos-label {
-	cursor: pointer;
 	font-family: 'Open Sans Condensed', sans-serif;
+	cursor: pointer;
 	font-size:20px;
 	letter-spacing:.5px;
 }
@@ -696,7 +704,7 @@ main .az a {
 	width:20px;
 }
 main .az a:hover {
-	color:#4F868E;
+	color:#E8E5D6;
 }
 main ul.az {
 	list-style: none;
