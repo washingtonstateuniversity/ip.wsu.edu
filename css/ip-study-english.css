@@ -61,16 +61,16 @@ main a,
 main a:hover {
 	border-color:#ffb81c;
 }
-.accordion h3.ui-accordion-header-active.ui-state-active:hover {
+.accordion h3.ui-accordion-header.ui-state-active:hover {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-yellow.png);
 }
 .accordion h3.ui-accordion-header.ui-state-default:hover {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-yellow.png);
 }
 .accordion h3.ui-accordion-header.ui-state-default,
-.accordion h3.uui-accordion-header-active.ui-state-active,
+.accordion h3.ui-accordion-header.ui-state-active,
 .accordion h3.ui-accordion-header.ui-state-default:hover,
-.accordion h3.ui-accordion-header-active.ui-state-active:hover {
+.accordion h3.ui-accordion-header.ui-state-active:hover {
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;

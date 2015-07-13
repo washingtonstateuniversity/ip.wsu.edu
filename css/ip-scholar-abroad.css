@@ -74,9 +74,9 @@ p a.button.cta:focus {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-crimson.png);
 }
 .accordion h3.ui-accordion-header.ui-state-default,
-.accordion h3.ui-accordion-header-active.ui-state-active,
+.accordion h3.ui-accordion-header.ui-state-active,
 .accordion h3.ui-accordion-header.ui-state-default:hover,
-.accordion h3.ui-accordion-header-active.ui-state-active:hover {
+.accordion h3.ui-accordion-header.ui-state-active:hover {
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;
