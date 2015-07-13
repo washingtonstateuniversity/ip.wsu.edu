@@ -1,4 +1,4 @@
-photowall/* ============================================================
+/* ============================================================
   COLORING 
   ref: https://brand.wsu.edu/visual/colors/
 ============================================================ */
@@ -7,7 +7,7 @@ photowall/* ============================================================
   WSU COLOR PALETTE OPTIONS
 ============================================================ */
 /* .wsu-palette-palette1 is crimson, .wsu-palette3,and 4 is gray called in from the main style sheet */
-body.wsu-palette-palette2 .header-group  {
+body.wsu-palette-palette2 .header-group {
 	background-color: #b67233;
 }
 
@@ -62,14 +62,12 @@ p a.button.cta:focus {
 }
 .accordion h3.ui-accordion-header.ui-accordion-header-active.ui-state-active:hover {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-orange.png);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size:40px;
 }
 .accordion h3.ui-accordion-header.ui-state-default:hover {
 	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-orange.png);
-}
-.accordion h3.ui-accordion-header.ui-state-default,
-.accordion h3.ui-accordion-header.ui-accordion-header-active.ui-state-active,
-.accordion h3.ui-accordion-header.ui-state-default:hover,
-.accordion h3.ui-accordion-header.ui-accordion-header-active.ui-state-active:hover {
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;
