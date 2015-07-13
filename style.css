@@ -17,7 +17,12 @@ Template: spine
 .main-header sup:not(.unset) {
 	color: #cbc4a2;
 }
-
+.main-header.foot-title .header-group:not(.unset) {
+	padding:0;
+}
+.main-header.foot-title {
+	height:0;
+}
 .main-header sup:not(.unset) span {
 	display: block;
 	line-height: 2em;
