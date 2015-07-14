@@ -1620,15 +1620,15 @@ main .page div.has-thumbnail section .column .thumbnail-right img {
 .close-modal:before {
 	font-weight: 300;
 	font-family: "Open Sans";
-	color: #bbbfc2;
+	color: #8D959A;
 	content: "x";
-	font-size: 2.2em;
+	font-size: 38px;
 	cursor: pointer;
 	display: block;
 	width: 75px;
 	position: absolute;
-	top: 125px;
-	right: 190px;
+	top: -40px;
+	right: -170px;
 }
 
 .noscroll {
@@ -1645,7 +1645,7 @@ main .page div.has-thumbnail section .column .thumbnail-right img {
 	bottom: 0;
 	left: 0;
 	z-index: 19560301;
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(94, 106, 113, .7);
 	overflow-y: scroll;
 }
 

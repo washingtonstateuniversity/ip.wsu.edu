@@ -7,3 +7,8 @@
 .home main {
 	margin:0;
 }
+@media screen and (min-width: 990px) {
+	.home #spine.cropped {
+		left:198px !important;
+	}
+}
