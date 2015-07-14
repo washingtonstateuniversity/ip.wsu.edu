@@ -1,0 +1,9 @@
+.home #binder:not(.fluid).max-1188, 
+.home #binder:not(.fluid).max-1386, 
+.home #binder:not(.fluid).max-1584, 
+.home #binder:not(.fluid).max-1782, 
+.home #binder:not(.fluid).max-1980,
+.home #binder.fluid.max-1188, #binder.fluid.max-1188 .row,
+.home main {
+	margin:0;
+}

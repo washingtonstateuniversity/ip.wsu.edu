@@ -802,7 +802,10 @@ main .media-wall-column a {
 	float: left;
 	width: 100%;
 }
-
+.photowall p {
+	clear:both;
+	padding-top:40px;
+}
 .photowall .column h2:first-child {
 	padding-bottom: 2em;
 }
