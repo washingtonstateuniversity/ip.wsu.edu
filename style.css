@@ -1617,6 +1617,10 @@ main .page div.has-thumbnail section .column .thumbnail-right img {
 .modal-form {
 	display: none;
 }
+#binder:not(.fluid).max-1188 .modal-form .row {
+	max-width: 90%;
+}
+
 .close-modal:before {
 	font-weight: 300;
 	font-family: "Open Sans";
@@ -1625,10 +1629,12 @@ main .page div.has-thumbnail section .column .thumbnail-right img {
 	font-size: 38px;
 	cursor: pointer;
 	display: block;
-	width: 75px;
-	position: absolute;
-	top: -40px;
-	right: -170px;
+	width: 50px;
+	position: fixed;
+	float: right;
+	right: 10%;
+	margin-top: 200px;
+	z-index: 600;
 }
 
 .noscroll {
@@ -1652,5 +1658,6 @@ main .page div.has-thumbnail section .column .thumbnail-right img {
 .noscroll .modal-form section {
 	position: static;
 	background: #fff;
-	margin-top: 100px;
+	margin-top: 40px;
+	margin-bottom:40px;
 }
