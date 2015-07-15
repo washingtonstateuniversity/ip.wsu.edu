@@ -55,13 +55,13 @@ p a.button.cta:focus {
 	border:1px solid #72652a;
 }
 .accordion h3.ui-accordion-header.ui-accordion-header-active.ui-state-active:hover {
-	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-green.png);
+	background: url(../assets/img/arrow-up-green.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;
 }
 .accordion h3.ui-accordion-header.ui-state-default:hover {
-	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-green.png);
+	background: url(../assets/img/arrow-down-green.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;

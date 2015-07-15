@@ -61,13 +61,13 @@ p a.button.cta:focus {
 	color:#B67233;
 }
 .accordion h3.ui-accordion-header.ui-accordion-header-active.ui-state-active:hover {
-	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-orange.png);
+	background: url(../assets/img/arrow-up-orange.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;
 }
 .accordion h3.ui-accordion-header.ui-state-default:hover {
-	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-orange.png);
+	background: url(../assets/img/arrow-down-orange.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;
@@ -616,94 +616,84 @@ body:not(.unset) table th {
   Home
 ----------------------- */
 .home section.intro .column {
-	height:150px;
+	height:90px;
 } 
 section.intro div.column ul.rw-words {
-	display: inline;
-	text-indent: 10px;
+	padding:0;
+	margin:0;
+	text-indent: 0;
+	width:100%;
+	display:block;
 }
 
 section.intro div.column ul.rw-words li {
+	width:100%;
+	text-align:center;
+	padding:0;
+	margin:0;
+	line-height: 0;
 	position: absolute;
+	left:0;
 	opacity: 0;
-	overflow: hidden;
+	list-style: none;
 	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', serif;
 	font-size: 2rem;
-	line-height: 1.3;
 	font-style: italic;
 	font-weight: 400;
-	-webkit-animation: rotateWord 27s infinite;
-	-ms-animation: rotateWord 27s infinite;
-	animation: rotateWord 27s infinite;
+	-webkit-animation: rotateWord 36s infinite;
+	-ms-animation: rotateWord 36s infinite;
+	animation: rotateWord 36s infinite;
 }
 
 section.intro div.column ul.rw-words li:nth-child(1) {
-	-webkit-animation-delay: -27s;
-	-ms-animation-delay: -27s;
-	animation-delay: -27s;
-	text-align: center;
-	width:990px;
+	-webkit-animation-delay: 32s;
+	-ms-animation-delay: 32s;
+	animation-delay: 32s;
 }
 
 section.intro div.column ul.rw-words li:nth-child(2) {
-	-webkit-animation-delay: -24s;
-	-ms-animation-delay: -24s;
-	animation-delay: -24s;
-	text-align: center;
-	width:990px;
+	-webkit-animation-delay: 28s;
+	-ms-animation-delay: 28s;
+	animation-delay: 28s;
 }
 
 section.intro div.column ul.rw-words li:nth-child(3) {
-	-webkit-animation-delay: -21s;
-	-ms-animation-delay: -21s;
-	animation-delay: -21s;
-	text-align: center;
-	width:990px;
+	-webkit-animation-delay: 24s;
+	-ms-animation-delay: 24s;
+	animation-delay: 24s;
 }
 
 section.intro div.column ul.rw-words li:nth-child(4) {
-	-webkit-animation-delay: -18s;
-	-ms-animation-delay: -18s;
-	animation-delay: -18s;
-	text-align: center;
-	width:990px;
+	-webkit-animation-delay: 20s;
+	-ms-animation-delay: 20s;
+	animation-delay: 20s;
 }
 
 section.intro div.column ul.rw-words li:nth-child(5) {
-	-webkit-animation-delay: -15s;
-	-ms-animation-delay: -15s;
-	animation-delay: -15s;
-	text-align: center;
-	width:990px;
+	-webkit-animation-delay: 16s;
+	-ms-animation-delay: 16s;
+	animation-delay: 16s;
 }
 
 section.intro div.column ul.rw-words li:nth-child(6) {
-	-webkit-animation-delay: -12s;
-	-ms-animation-delay: -12s;
-	animation-delay: -12s;
-	text-align: center;
-	width:990px;
+	-webkit-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	animation-delay: 12s;
 }
 section.intro div.column ul.rw-words li:nth-child(7) {
-	-webkit-animation-delay: -9s;
-	-ms-animation-delay: -9s;
-	animation-delay: -9s;
-	text-align: center;
-	width:990px;
+	-webkit-animation-delay: 8s;
+	-ms-animation-delay: 8s;
+	animation-delay: 8s;
 }
 section.intro div.column ul.rw-words li:nth-child(8) {
-	-webkit-animation-delay: -6s;
-	-ms-animation-delay: -6s;
-	animation-delay: -6s;
-	text-align: center;
-	width:990px;
+	-webkit-animation-delay: 4s;
+	-ms-animation-delay: 4s;
+	animation-delay: 4s;
 }
 section.intro div.column ul.rw-words li:nth-child(9) {
-	-webkit-animation-delay: -3s;
-	-ms-animation-delay: -3s;
-	animation-delay: -3s;
-	text-align: center;
-	width:990px;
+	-webkit-animation-delay: 0s;
+	-ms-animation-delay: 0s;
+	animation-delay: 0s;
 }
 @-webkit-keyframes rotateWord {
 	0% {
@@ -721,7 +711,7 @@ section.intro div.column ul.rw-words li:nth-child(9) {
 	}
 	
 	17% {
-		opacity: 1;
+		opacity: 0;
 		-webkit-transform: translateY(0px);
 	}
 	
@@ -755,7 +745,7 @@ section.intro div.column ul.rw-words li:nth-child(9) {
 	}
 	
 	17% {
-		opacity: 1;
+		opacity: 0;
 		-ms-transform: translateY(0px);
 	}
 	
@@ -791,7 +781,7 @@ section.intro div.column ul.rw-words li:nth-child(9) {
 	}
 	
 	17% {
-		opacity: 1;
+		opacity: 0;
 		-webkit-transform: translateY(0px);
 		transform: translateY(0px);
 	}

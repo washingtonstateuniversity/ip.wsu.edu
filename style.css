@@ -1101,14 +1101,14 @@ main .page section.border-bottom .column.one.seventy-five_single {
 }
 
 .accordion h3.ui-accordion-header.ui-state-default {
-	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-gray.png);
+	background: url(assets/img/arrow-down-gray.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;
 
 }
 .accordion h3.ui-accordion-header.ui-state-active {
-	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-gray.png);
+	background: url(assets/img/arrow-up-gray.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;

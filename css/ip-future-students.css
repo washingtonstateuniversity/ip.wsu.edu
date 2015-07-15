@@ -442,13 +442,13 @@ main p a.cta.button {
 	color:#fff;
 }
 .accordion h3.ui-accordion-header.ui-accordion-header-active.ui-state-active:hover {
-	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-up-blue.png);
+	background: url(../assets/img/arrow-up-blue.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;
 }
 .accordion h3.ui-accordion-header.ui-state-default:hover {
-	background: url(https://stage.ip.wsu.edu/wp-content/uploads/sites/64/2015/06/arrow-down-blue.png);
+	background: url(../assets/img/arrow-down-blue.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;
