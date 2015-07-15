@@ -336,13 +336,19 @@ p a.button.cta:focus {
 	border:1px solid #5e6a71;
 	color:#5e6a71;
 }
-.white p a.button.cta {
+.white p a.button.cta,
+.gform_footer .button,
+.gform_footer button {
 	background:#8d959a;
 	color:#fff;
 	border:1px solid #8d959a;
 }
 .white p a.button.cta:hover,
-.white p a.button.cta:focus {
+.white p a.button.cta:focus,
+.gform_footer .button:hover,
+.gform_footer button:hover,
+.gform_footer .button:focus,
+.gform_footer button:focus {
 	background:#5e6a71;
 	border:1px solid #5e6a71;
 }

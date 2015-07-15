@@ -531,15 +531,22 @@ p a.button.cta:focus {
 	border:1px solid #925b29;
 	color:#925b29;
 }
-.white p a.button.cta {
+.white p a.button.cta,
+.gform_footer .button,
+.gform_footer button {
 	background:#b67233;
 	color:#fff;
 }
 .white p a.button.cta:hover,
-.white p a.button.cta:focus {
+.white p a.button.cta:focus,
+.gform_footer .button:hover,
+.gform_footer button:hover,
+.gform_footer .button:focus,
+.gform_footer button:focus {
 	background:#925b29;
 	border:1px solid #925b29;
 }
+
 /* ----------------------------------
   Numbers
 ---------------------------------- */

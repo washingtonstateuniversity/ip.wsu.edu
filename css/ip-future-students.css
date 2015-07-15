@@ -437,7 +437,9 @@ main p a.button:focus {
 	color:#3f6b72;
 	border: 1px solid #3f6b72;
 }
-main p a.cta.button {
+main p a.cta.button,
+.gform_footer .button,
+.gform_footer button {
 	background-color:#4f868e;
 	color:#fff;
 }
@@ -469,7 +471,10 @@ main .tan1 p a.cta.button:focus,
 main .tan2 p a.cta.button:hover,
 main .tan2 p a.cta.button:focus,
 main .tan3 p a.cta.button:hover,
-main .tan3 p a.cta.button:focus {
+main .tan3 p a.cta.button:focus,
+.gform_footer button:hover,
+.gform_footer .button:focus,
+.gform_footer button:focus  {
 	background-color:#3f6b72;
 }
 
@@ -489,7 +494,8 @@ main .tan2 p a.button:focus,
 main .tan3 p a.button:hover,
 main .tan3 p a.button:focus,
 main .white p a.button:hover,
-main .white p a.button:focus {
+main .white p a.button:focus,
+ {
 	border:1px solid #3f6b72;
 	color:#3f6b72;
 }

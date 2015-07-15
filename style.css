@@ -894,7 +894,8 @@ main p a.button {
 	transition: all .2s ease;
 	margin-top: 2rem;
 	margin-bottom:2rem;
-	margin-right:8%;
+	margin-right:4%;
+	margin-left:4%;
 	min-width: 21%;
 	font-size: 20px;
 	letter-spacing: .5px;
@@ -1390,7 +1391,7 @@ main .anchor-nav li a{
 	display: block;
 	float: right;
 	margin-right: -120px;
-	margin-top: -130px;
+	margin-top: -120px;
 	z-index: 600;
 	width:39px;
 	height:39px;
@@ -1433,7 +1434,9 @@ div.section-wrapper.close-modal:before {
 }
 .gform_wrapper .gfield_checkbox li label, 
 .gform_wrapper .gfield_radio li label {
-
+	 font-size: 100%;
+  font-weight: 300;
+  letter-spacing:1px;
 }
 input[type=text]:focus,
 input[type=password]:focus,
@@ -1446,6 +1449,26 @@ textarea:focus {
 }
 .gform_footer .button,
 .gform_footer button {
+	background:transparent;
+	border-radius: 3px;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 1;
+	padding: 17px 8px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-family: "Open Sans Condensed";
+	-webkit-transition: all .2s ease;
+	transition: all .2s ease;
+	margin-top: 2rem;
+	margin-bottom:2rem;
+	margin-right:4%;
+	margin-left:4%;
+	min-width: 21%;
+	font-size: 20px;
+	letter-spacing: .5px;
+	box-sizing: border-box;
+	text-align: center;
 	color:#fff;
 	border:1px solid rgba(141,149,154,1);
 	background:rgba(141,149,154,1);
@@ -1456,6 +1479,7 @@ textarea:focus {
 .gform_footer button:focus {
 	background-color:#5e6a71;
 	border:1px solid #5e6a71;
+	color:#fff;
 }
 .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_left select, 
 .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_right select, 

@@ -499,13 +499,19 @@ main a:hover {
 	border:1px solid #9e7510;
 	color:#9e7510;
 }
-.white p a.button.cta {
+.white p a.button.cta,
+.gform_footer .button,
+.gform_footer button {
 	background:#c69214;
 	color:#fff;
 	border:1px solid #c69214;
 }
 .white p a.button.cta:hover,
-.white p a.button.cta:focus {
+.white p a.button.cta:focus,
+.gform_footer .button:hover,
+.gform_footer button:hover,
+.gform_footer .button:focus,
+.gform_footer button:focus {
 	background:#9e7510;
 	border:1px solid #9e7510;
 }

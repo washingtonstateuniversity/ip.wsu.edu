@@ -474,12 +474,18 @@ p a.button.cta:focus {
 	border:1px solid #72652a;
 	color:#72652a;
 }
-.white p a.button.cta {
+.white p a.button.cta,
+.gform_footer .button,
+.gform_footer button {
 	background:#8f7e35;
 	color:#fff;
 }
 .white p a.button.cta:hover,
-.white p a.button.cta:focus {
+.white p a.button.cta:focus,
+.gform_footer .button:hover,
+.gform_footer button:hover,
+.gform_footer .button:focus,
+.gform_footer button:focus {
 	background:#72652a;
 	border:1px solid #72652a;
 }
