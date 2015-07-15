@@ -1371,6 +1371,82 @@ main .anchor-nav li a{
 /* section is needed to add the script to appropriate pages, but the section shouldn't be visible */
 	display: none;
 }
+/* Form Modal Styling */
+.modal-form {
+	display: none;
+}
+#binder:not(.fluid).max-1188 .modal-form .row {
+	max-width: 90%;
+}
+/* Must be placed in the modal form as <div class="close-modal"></div> */
+.close-modal:before {
+	font-weight: 300;
+	font-family: "Open Sans";
+	color: #8D959A;
+	content: "x";
+	font-size: 38px;
+	cursor: pointer;
+	display: block;
+	width: 50px;
+	position: fixed;
+	float: right;
+	right: 10%;
+	margin-top: -130px;
+	z-index: 600;
+}
+div.section-wrapper.close-modal:before {
+	content: none;
+}
+.noscroll {
+	overflow: hidden;
+	height: 100%;;
+	width: 100%;
+	position: fixed;
+}
+
+.noscroll .modal-form {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 19560301;
+	background-color: rgba(94, 106, 113, .7);
+	overflow-y: scroll;
+}
+
+.noscroll .modal-form section {
+	position: static;
+	background: #fff;
+	margin-top: 40px;
+	margin-bottom:40px;
+}
+/* =========================
+  	Forms
+========================== */
+.gform_wrapper .top_label .gfield_label {
+	color:#5e6a71;
+	font-weight:300;
+	font-size:1.2em;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+textarea:focus {
+	border:1px solid #981e32;
+	color:#d7dadb;
+	font-weight:300;
+	font-style: italic;
+}
+.gform_footer button {
+	color:#fff;
+	border:1px solid rgba(141,149,154,1);
+	background:rgba(141,149,154,1);
+}
+.gform_footer button:hover {
+	background-color:#5e6a71;
+	border:1px solid #5e6a71;
+}
 /* =========================
   	Utilities
 ========================== */
@@ -1613,51 +1689,3 @@ main .page div.has-thumbnail section .column .thumbnail-right img {
 }
 */
 
-/* Form Modal Styling */
-.modal-form {
-	display: none;
-}
-#binder:not(.fluid).max-1188 .modal-form .row {
-	max-width: 90%;
-}
-
-.close-modal:before {
-	font-weight: 300;
-	font-family: "Open Sans";
-	color: #8D959A;
-	content: "x";
-	font-size: 38px;
-	cursor: pointer;
-	display: block;
-	width: 50px;
-	position: fixed;
-	float: right;
-	right: 10%;
-	margin-top: 200px;
-	z-index: 600;
-}
-
-.noscroll {
-	overflow: hidden;
-	height: 100%;;
-	width: 100%;
-	position: fixed;
-}
-
-.noscroll .modal-form {
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 19560301;
-	background-color: rgba(94, 106, 113, .7);
-	overflow-y: scroll;
-}
-
-.noscroll .modal-form section {
-	position: static;
-	background: #fff;
-	margin-top: 40px;
-	margin-bottom:40px;
-}
