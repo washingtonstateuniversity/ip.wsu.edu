@@ -1382,7 +1382,7 @@ main .anchor-nav li a{
 }
 /* Must be placed in the modal form as <div class="close-modal"></div> */
 .close-modal {
-	background-image:url(../assets/img/close-x.-gray.png);'
+	background-image:url(assets/img/close-x-gray.png);'
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:contain;
@@ -1392,6 +1392,8 @@ main .anchor-nav li a{
 	margin-right: -120px;
 	margin-top: -130px;
 	z-index: 600;
+	width:39px;
+	height:39px;
 }
 div.section-wrapper.close-modal:before {
 	content: none;

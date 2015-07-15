@@ -453,7 +453,12 @@ main p a.cta.button {
 	background-repeat: no-repeat;
 	background-size:40px;
 }
-
+.close-modal:hover {
+	background-image:url(../assets/img/close-x-blue.png);'
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+}
 /* John's Emphasized default buttons */
 main p a.cta.button:hover,
 main p a.cta.button:focus,

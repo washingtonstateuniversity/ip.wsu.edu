@@ -73,7 +73,12 @@ main a:hover {
 	background-repeat: no-repeat;
 	background-size:40px;
 }
-
+.close-modal:hover {
+	background-image:url(../assets/img/close-x-yellow.png);'
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
+}
 /* ---------------------
   yellows
 ---------------------- */
