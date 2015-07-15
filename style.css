@@ -892,8 +892,10 @@ main p a.button {
 	font-family: "Open Sans Condensed";
 	-webkit-transition: all .2s ease;
 	transition: all .2s ease;
-	margin: 2rem 2rem;
-	min-width: 210px;
+	margin-top: 2rem;
+	margin-bottom:2rem;
+	margin-right:8%;
+	min-width: 21%;
 	font-size: 20px;
 	letter-spacing: .5px;
 	box-sizing: border-box;
@@ -1379,18 +1381,15 @@ main .anchor-nav li a{
 	max-width: 90%;
 }
 /* Must be placed in the modal form as <div class="close-modal"></div> */
-.close-modal:before {
-	font-weight: 300;
-	font-family: "Open Sans";
-	color: #8D959A;
-	content: "x";
-	font-size: 38px;
+.close-modal {
+	background-image:url(../assets/img/close-x.-gray.png);'
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:contain;
 	cursor: pointer;
 	display: block;
-	width: 50px;
-	position: fixed;
 	float: right;
-	right: 10%;
+	margin-right: -120px;
 	margin-top: -130px;
 	z-index: 600;
 }
@@ -1420,14 +1419,19 @@ div.section-wrapper.close-modal:before {
 	background: #fff;
 	margin-top: 40px;
 	margin-bottom:40px;
+	float: none;
 }
 /* =========================
   	Forms
 ========================== */
 .gform_wrapper .top_label .gfield_label {
 	color:#5e6a71;
-	font-weight:300;
+	font-weight:400;
 	font-size:1.2em;
+}
+.gform_wrapper .gfield_checkbox li label, 
+.gform_wrapper .gfield_radio li label {
+
 }
 input[type=text]:focus,
 input[type=password]:focus,
@@ -1438,14 +1442,24 @@ textarea:focus {
 	font-weight:300;
 	font-style: italic;
 }
+.gform_footer .button,
 .gform_footer button {
 	color:#fff;
 	border:1px solid rgba(141,149,154,1);
 	background:rgba(141,149,154,1);
 }
-.gform_footer button:hover {
+.gform_footer .button:hover,
+.gform_footer button:hover,
+.gform_footer .button:focus,
+.gform_footer button:focus {
 	background-color:#5e6a71;
 	border:1px solid #5e6a71;
+}
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_left select, 
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_right select, 
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield input[type=radio], 
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select {
+	margin-left:1px;
 }
 /* =========================
   	Utilities
