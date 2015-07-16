@@ -25,6 +25,9 @@ html {
 }
 .main-header.foot-title {
 	height:0;
+	/* Removes footer title for now 
+	comment it out to bring back the footer */
+	display:none;
 }
 .main-header sup:not(.unset) span {
 	display: block;
@@ -220,7 +223,7 @@ main .row {
 	height:480px;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	background-size: cover;
 }
 
@@ -1534,7 +1537,9 @@ main .page section.border-bottom {
 	margin: 0;
 	max-width: 99164px;
 }
-
+#map-embed-ip-campus-map {
+	padding-top:53% !important;
+}
 section.map.unbound .column {
 	padding: 0;
 }

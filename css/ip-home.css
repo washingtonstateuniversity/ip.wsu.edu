@@ -55,7 +55,6 @@ html,
 ---------------------------------- */
 .home .column h2 {
 	font-size:64px;
-	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 	margin-top:60%;
 }
@@ -84,14 +83,14 @@ html,
 .column.white {
 	background-image:url(../assets/img/eiffel_lighter.jpg);
 	background-repeat:no-repeat;
-	background-position:60% bottom;
+	background-position:60% center center;
 	background-size:cover;
 	
 }
 .column.blue {
 	background-image:url(../assets/img/students-butch_blue.jpg);
 	background-repeat:no-repeat;
-	background-position:bottom;
+	background-position:center center;
 	background-size:cover;
 }
 .column.white:hover {
@@ -143,6 +142,20 @@ main .blue p a.button:focus {
 		left:8% !important;
 	}
 }
+@media screen and (max-width: 693px) {
+	#jacket {
+		height: initial;
+	}
+	
+	.home .column h2 {
+		margin: 0;
+		padding-top: 90px;
+	}
+	.home .column {
+		padding-bottom:20%;
+	}
+}
+
 /* ----------------------
   Height
 -----------------------*/
@@ -152,8 +165,9 @@ main .blue p a.button:focus {
 		padding-bottom:12.1%;
 	}
    .home .column h2 {
-   		margin-top:50%;
+   		margin-top:55%;
    		padding-bottom:.5em;
+   		font-size:40px;
    }
    .home main p a.button {
    	font-size:1em;
