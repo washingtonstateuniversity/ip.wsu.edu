@@ -1,14 +1,162 @@
+/* ----------------------------------
+  Static structure styles
+---------------------------------- */
+body,
+html,
+#jacket,
+#binder,
 .home #binder:not(.fluid).max-1188, 
 .home #binder:not(.fluid).max-1386, 
 .home #binder:not(.fluid).max-1584, 
 .home #binder:not(.fluid).max-1782, 
 .home #binder:not(.fluid).max-1980,
-.home #binder.fluid.max-1188, #binder.fluid.max-1188 .row,
+#binder:not(.fluid).max-1188 .row, 
+#binder:not(.fluid).max-1386 .row, 
+#binder:not(.fluid).max-1584 .row, 
+#binder:not(.fluid).max-1782 .row, 
+#binder:not(.fluid).max-1980 .row,
 .home main {
 	margin:0;
+	padding:0;
+	max-width:100%;
+	width:100%;
+	box-sizing: border-box;
+	height:100%;
 }
+.home .main-header:not(.gutter) .header-group:not(.unset):not(.guttered), 
+.home .main-header .header-group:not(.unset),
+.home .main-header.foot-title {
+	display:none;
+}
+.home .main-header,
+.main-header sup:not(.unset) {
+	height:54px;
+	background-color:#2b3033;
+}
+.main-header sup:not(.unset) span {
+	font-size:2em;
+	letter-spacing: 12px;
+}
+.home .column {
+	max-height:100%;
+	height:100%;
+	padding-bottom:70%;
+}
+.home .column:hover {
+	width:100%;
+	height:100%;
+	cursor:pointer;
+}
+.home main .column p {
+	margin-bottom:0;
+}
+/* ----------------------------------
+  Static stylistic styles
+---------------------------------- */
+.home .column h2 {
+	font-size:64px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	margin-top:60%;
+}
+
+.home .column.crimson:hover h2,
+.home .column.white:hover h2,
+.home .column.blue:hover h2 {
+	color:#b5babe;
+}
+.home .column h2 .light {
+	font-weight:300;
+}
+.home .column h2 .heavy {
+	font-weight:700;
+}
+.home .column.crimson h2,
+.home .column.blue h2 {
+	color:#fff;
+}
+.home .column.white h2 {
+	color:#981E32;
+}
+.column.crimson {
+	background-color:rgba(152, 30, 50, 1);
+}
+.column.white {
+	background-image:url(../assets/img/eiffel_lighter.jpg);
+	background-repeat:no-repeat;
+	background-position:60% bottom;
+	background-size:cover;
+	
+}
+.column.blue {
+	background-image:url(../assets/img/students-butch_blue.jpg);
+	background-repeat:no-repeat;
+	background-position:bottom;
+	background-size:cover;
+}
+.column.white:hover {
+	background-image:url(../assets/img/eiffel_light.jpg);	
+}
+.column.blue:hover {
+	background-image:url(../assets/img/students-butch_blue-drk.jpg);	
+}
+.home main p a.button {
+	width:66%;
+	margin-bottom:0;
+	margin-top:0;
+	line-height:1.3;
+	text-transform:none;
+	font-size:1.5em;
+}
+.white p a.button {
+	background-color:rgba(255,255,255,.6);
+	border:1px solid rgba(141, 149, 154, .5);
+	color:#981E32;
+}
+.white p a.button:hover,
+.white p a.button:focus {
+	border-color:rgba(152, 30, 50, 1);
+	color:#981E32;
+	background-color:rgba(255,255,255,1);
+}
+main .blue p a.button {
+	border:1px solid #8d959a;
+	color:#fff;
+}
+main .blue p a.button:hover,
+main .blue p a.button:focus {
+	color:#fff;	
+	border-color: #fff;
+	background-color:transparent;
+}
+
+
+/* ----------------------------------
+  Responding
+---------------------------------- */
+/* ----------------------
+  Width
+-----------------------*/
+
 @media screen and (min-width: 990px) {
 	.home #spine.cropped {
-		left:198px !important;
+		left:8% !important;
 	}
+}
+/* ----------------------
+  Height
+-----------------------*/
+@media screen and (max-height: 800px ){
+	.home .column.crimson,
+	.home .column.blue {
+		padding-bottom:12.1%;
+	}
+   .home .column h2 {
+   		margin-top:50%;
+   		padding-bottom:.5em;
+   }
+   .home main p a.button {
+   	font-size:1em;
+   	padding:8px 4px;
+   }
 }
