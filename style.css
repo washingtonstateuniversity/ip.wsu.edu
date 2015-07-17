@@ -897,8 +897,8 @@ main p a.button {
 	transition: all .2s ease;
 	margin-top: 2rem;
 	margin-bottom:2rem;
-	margin-right:4%;
-	margin-left:4%;
+	margin-right:2%;
+	margin-left:2%;
 	min-width: 210px;
 	font-size: 20px;
 	letter-spacing: .5px;
