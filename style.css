@@ -477,7 +477,7 @@ blockquote p {
 }
 blockquote span,
 blockquote p span {
-	quotes: "“" "”" "‘" "’";
+	quotes: "“" "”";
 	position:relative;
 }
 blockquote span:before,
