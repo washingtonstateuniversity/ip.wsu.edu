@@ -477,17 +477,18 @@ blockquote p {
 }
 blockquote span,
 blockquote p span {
-  position:relative;
+	quotes: "“" "”" "‘" "’";
+	position:relative;
 }
 blockquote span:before,
 blockquote p span:before {
-  content:"\0022";
-  font-size:7rem;
-  position:absolute;
-  top:0;
-  left:-80px;
-  line-height:.5;
-  font-family:"Georgia";
+	content: open-quote;
+	font-size:7rem;
+	position:absolute;
+	top:0;
+	left:-80px;
+	line-height:.5;
+	font-family:"Georgia";
 }
 blockquote p,
 blockquote cite {
