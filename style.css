@@ -26,8 +26,8 @@ html {
 .main-header.foot-title {
 	height:0;
 	/* Removes footer title for now 
-	comment it out to bring back the footer */
-	display:none;
+	comment it out to bring back the footer 
+	display:none;*/
 }
 .main-header sup:not(.unset) span {
 	display: block;
@@ -481,7 +481,7 @@ blockquote p span {
 }
 blockquote span:before,
 blockquote p span:before {
-  content:"“";
+  content:"\0022";
   font-size:7rem;
   position:absolute;
   top:0;
@@ -574,7 +574,7 @@ main .page .stats.button-wrap section {
 .stats section > div.column:nth-child(odd) > p {
 	font-size: 1.2rem;
 	line-height: 1.65;
-	color: #8d959a;
+	color: #cbc4a2;
 	text-align: center;
 	font-weight: 300;
 }
@@ -899,7 +899,7 @@ main p a.button {
 	margin-bottom:2rem;
 	margin-right:4%;
 	margin-left:4%;
-	min-width: 21%;
+	min-width: 210px;
 	font-size: 20px;
 	letter-spacing: .5px;
 	box-sizing: border-box;
@@ -1190,7 +1190,9 @@ main .page section.border-bottom .column.one.seventy-five_single {
 	border-top: none;
 }
 
-
+table.tablepress.dollar td.column-2{
+	text-align:right;
+}
 body:not(.unset) table th {
 	font-weight:400;
 }

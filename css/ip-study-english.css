@@ -29,7 +29,10 @@ body.wsu-palette-palette5 .header-group sub h1 {
 }
 
 body.wsu-palette-palette5 .dropcap:first-child:first-letter {
-	color: #9e7510;
+	color: #C69214;
+}
+.intro p {
+	color:#981E32;
 }
 /* ----------------------------------
   Backgrounds
@@ -54,9 +57,7 @@ p a.button.cta:focus {
 	background:#9e7510;
 	border:1px solid #9e7510;
 }
-.intro p {
-	color:#c69214;
-}
+
 main a,
 main a:hover {
 	border-color:#ffb81c;
@@ -409,7 +410,9 @@ main a:hover {
 	color:#d7dadb;
 }
 .gray-light,
-.gray-light p {
+.gray-light p,
+.gray-light ol,
+.gray-light ul {
 	color:#fff;
 }
 .gray-light blockquote,
