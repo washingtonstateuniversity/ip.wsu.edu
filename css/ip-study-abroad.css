@@ -569,7 +569,9 @@ p a.button.cta:focus {
 	background-position: center 55px;
 }
 
-.accordion.more h3.ui-accordion-header.ui-accordion-header-active {
+.accordion.more h3.ui-accordion-header.ui-accordion-header-active,
+.accordion.more h3.ui-accordion-header.ui-accordion-header-active:hover,
+.accordion.more h3.ui-accordion-header.ui-accordion-header-active:focus {
 	background-position: center 0;
 }
 

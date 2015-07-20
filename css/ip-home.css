@@ -142,7 +142,7 @@ main .blue p a.button:focus {
 
 @media screen and (min-width: 990px) {
 	.home #spine.cropped {
-		left:8% !important;
+		left:calc((33.3% / 2 ) - 99px) !important;
 	}
 
 }
@@ -155,8 +155,11 @@ main .blue p a.button:focus {
 		font-size: 44px;
 		margin-top:0;
 	}
+	.home .column.crimson,
+	.home .column.blue, 
 	.home .column {
-		padding-bottom:20%;
+		padding-bottom:22%;
+		background-position:center;
 	}
 	.home .main-header, 
 	.main-header sup:not(.unset) {
