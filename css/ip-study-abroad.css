@@ -905,3 +905,36 @@ main .spine-social-channels ul .instagram-channel a:hover {
 .white h3.orange-text {
 	color:#fa9927;
 }
+/* ============================================================
+  @MEDIA
+============================================================ */
+@media screen and (max-width: 791px) { 
+	section.intro div.column ul.rw-words li {
+		word-wrap: break-word;
+		font-size: 2.7em;
+		line-height: 1em;
+		padding-bottom: 10em;
+	}
+	
+	.home .intro {
+		height: 14em;
+	}
+	
+	.home .intro.single.gutter .column:not(.gutterless) {
+		height: 9em;
+	}
+}
+@media screen and (max-width: 491px) { 
+		section.intro div.column ul.rw-words li {
+		font-size: 2.3em;
+	}
+	
+	.home .intro {
+		height: 15em;
+	}
+	
+	.home .intro.single.gutter .column:not(.gutterless) {
+		height: 8em;
+	}
+
+}

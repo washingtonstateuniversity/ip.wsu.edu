@@ -411,8 +411,8 @@ main a:hover {
 }
 .gray-light,
 .gray-light p,
-.gray-light ol,
-.gray-light ul {
+.gray-light ol li,
+.gray-light ul li {
 	color:#fff;
 }
 .gray-light blockquote,
@@ -577,4 +577,12 @@ main a:hover {
 ---------------------------------- */
 body:not(.unset) table th {
 	color:#C69214;
+}
+/* ============================================================
+  @MEDIA
+============================================================ */
+@media screen and (max-width: 491px) {
+	.acred p {
+		padding-bottom: 2em;
+	}
 }

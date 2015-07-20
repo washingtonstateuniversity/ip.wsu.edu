@@ -1546,6 +1546,9 @@ main .page section.border-bottom {
 section.map.unbound .column {
 	padding: 0;
 }
+.no-show {
+	display: none;
+}
 /**/
 /* ============================================================
   OVER RIDING UTILITIES
@@ -1601,6 +1604,63 @@ div.reg-date span.reg-month {
 	}
 	main .page section {
 		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 990px) {
+	.column p~p:last-child {
+		text-align: center;
+	}
+}
+@media screen and (max-width: 791px) {
+	blockquote {
+		padding: 1em;
+		font-size: 1.5em;
+		line-height: 1.6em;
+	}
+	
+	blockquote span:before {
+		font-size: 5rem;
+		left: -.7em;
+	}
+	
+	.white blockquote p {
+		padding-bottom: 1em;
+	}
+	
+	.row.quarters .column.one {
+		width: 100%;
+		padding-top: 1em;
+	}
+	
+	.row.quarters .column.two {
+		width: 100%;
+		padding-top: 1em;
+	}
+	
+	.row.quarters .column.three {
+		width: 100%;
+		padding-top: 1em;
+	}
+	
+	.row.quarters .column.four {
+		width: 100%;
+		padding-top: 1em;
+	}
+	
+	.header-group.hgroup sub h1 {
+		font-size: 2.1em;
+	}
+	
+	main .anchor-nav li a {
+		font-size: .9em;
+	}
+	
+	.stat-circles .column.one {
+		margin: 0;
+	}
+	
+	.stat-circles .column.two {
+		margin: 0;
 	}
 }
 @media screen and ( min-width: 694px) {
@@ -1699,6 +1759,75 @@ div.reg-date span.reg-month {
 		width: 100%;
 	}
 }
+
+@media screen and (max-width: 491px) {
+	.header-group.hgroup sub h1 {
+		font-size: 1.8em;
+	}
+	
+	.intro p {
+		font-size: 1.7rem;
+	}
+	
+	blockquote {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		padding: .6em;
+		letter-spacing: .2px;
+	}
+	
+	blockquote span:before {
+		font-size: 4rem;
+		left: -.6em;
+	}
+	
+	main p a.button {
+		margin-top: 1em;
+	}
+	
+	main p a.button:hover {
+		margin-top: 1em;
+	}
+	
+	main .next-steps a.button {
+		margin-top: 1em;
+	}
+	
+	main .next-steps a.button:hover {
+		margin-top: 1em;
+	}
+	
+	h2 {
+		font-size: 2.5em;
+	}
+	
+	h3 {
+		padding-top: .1em;
+		padding-bottom: .9em;
+		font-size: 1.6em;
+		line-height: 1.2em;
+	}
+	
+	.dates h3 {
+		padding-bottom: 1em;
+	}
+	
+	.header-group.hgroup sub h1 {
+		font-size: 1.35em;
+	}
+	
+	main .anchor-nav li a {
+		font-size: .7em;
+		line-height: 1.2em;
+	}
+	
+	main ul li, main ol li {
+		padding-bottom: .4rem;
+	}
+}
+
+
+
 main .page div.blockquote-has-thumbnail section,
 main .page div.blockquote-has-thumbnail section .column,
 main .page div.blockquote-has-thumnail section .column p  {
