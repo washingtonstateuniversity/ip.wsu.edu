@@ -32,9 +32,16 @@ body.wsu-palette-palette5 .header-group sub h1 {
 body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 	color: #72652a;
 }
+.intro p {
+	color:#ada400;
+}
 /* ----------------------------------
   Backgrounds
 ---------------------------------- */
+main a,
+main a:hover {
+	border-color:#ada400;
+}
 /*default */
 p a.button {
 	border-color:rgba(143, 126, 53, .5);
@@ -510,4 +517,57 @@ p a.button.cta:focus {
 .crimson p span:before,
 .crimson span:before {
 	color:rgba(0,0,0,.3);
+}
+/* ----------------------------------
+  Plugins
+---------------------------------- */
+.accordion.duties {
+	border-bottom: none;
+}
+.accordion.duties ul li {
+	font-family: "Open Sans Condensed";
+	font-size:16px;
+	color:#8d959a;
+}
+.accordion.duties h3.ui-accordion-header.ui-state-default {
+	background-position: center 55px;
+}
+
+.accordion.duties h3.ui-accordion-header.ui-accordion-header-active,
+.accordion.duties h3.ui-accordion-header.ui-accordion-header-active:hover,
+.accordion.duties h3.ui-accordion-header.ui-accordion-header-active:focus {
+	background-position: center 0;
+}
+
+.accordion.duties h3 {
+	border-top: 0;
+}
+
+.accordion.duties h3.ui-state-default:before {
+	content: 'Duties';
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.accordion.duties h3.ui-accordion-header-active:before {
+	content: 'Duties';
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 28px;
+}
+
+.accordion.duties h3.ui-accordion-header {
+	padding: 0;
+	font-size:16px;
+	letter-spacing: 1px;
+	color: #8D959A;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	height: 85px;
+	margin-top: 45px;
 }

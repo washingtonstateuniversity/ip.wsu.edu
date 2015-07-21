@@ -25,7 +25,8 @@ html,
 }
 .home .main-header:not(.gutter) .header-group:not(.unset):not(.guttered), 
 .home .main-header .header-group:not(.unset),
-.home .main-header.foot-title {
+.home .main-header.foot-title,
+#spine .spine-actions {
 	display:none;
 }
 .home .main-header,
