@@ -1143,7 +1143,7 @@ main .page section.border-bottom .column.one.seventy-five_single {
 }
 
 .accordion.more h3.ui-state-default:before {
-	content: 'Show Programs';
+	content: 'More';
 	display: block;
 	width: 100px;
 	text-align: center;
@@ -1151,7 +1151,7 @@ main .page section.border-bottom .column.one.seventy-five_single {
 }
 
 .accordion.more h3.ui-accordion-header-active:before {
-	content: 'Hide Programs';
+	content: 'Less';
 	display: block;
 	width: 100px;
 	text-align: center;

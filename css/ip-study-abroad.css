@@ -557,7 +557,56 @@ p a.button.cta:focus {
 /* ----------------------------------
   Plugins
 ---------------------------------- */
+.accordion.programs {
+	border-bottom: none;
+}
+.accordion.programs ul li {
+	font-family: "Open Sans Condensed";
+	font-size:16px;
+	color:#8d959a;
+}
+.accordion.programs h3.ui-accordion-header.ui-state-default {
+	background-position: center 55px;
+}
 
+.accordion.programs h3.ui-accordion-header.ui-accordion-header-active,
+.accordion.programs h3.ui-accordion-header.ui-accordion-header-active:hover,
+.accordion.programs h3.ui-accordion-header.ui-accordion-header-active:focus {
+	background-position: center 0;
+}
+
+.accordion.programs h3 {
+	border-top: 0;
+}
+
+.accordion.programs h3.ui-state-default:before {
+	content: 'Show Programs';
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.accordion.programs h3.ui-accordion-header-active:before {
+	content: 'Hide Programs';
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 28px;
+}
+
+.accordion.programs h3.ui-accordion-header {
+	padding: 0;
+	font-size:16px;
+	letter-spacing: 1px;
+	color: #8D959A;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	height: 85px;
+	margin-top: 45px;
+}
 /* ----------------------------------
   Tables
 ---------------------------------- */
