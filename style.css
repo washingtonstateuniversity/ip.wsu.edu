@@ -1128,10 +1128,9 @@ main .page section.border-bottom .column.one.seventy-five_single {
 	font-size:16px;
 	color:#8d959a;
 }
-.accordion.more h3.ui-accordion-header.ui-state-default {
-	background-position: center 55px;
-}
-
+.accordion.more h3.ui-accordion-header.ui-state-default,
+.accordion.more h3.ui-accordion-header.ui-state-default:hover,
+.accordion.more h3.ui-accordion-header.ui-state-default:focus,
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active,
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active:hover,
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active:focus {
@@ -1142,7 +1141,7 @@ main .page section.border-bottom .column.one.seventy-five_single {
 	border-top: 0;
 }
 
-.accordion.more h3.ui-state-default:before {
+.accordion.more h3.ui-accordion-header.ui-state-default:before {
 	content: 'More';
 	display: block;
 	width: 100px;
@@ -1150,7 +1149,7 @@ main .page section.border-bottom .column.one.seventy-five_single {
 	margin: 0 auto;
 }
 
-.accordion.more h3.ui-accordion-header-active:before {
+.accordion.more h3.ui-accordion-header.ui-accordion-header-active:before {
 	content: 'Less';
 	display: block;
 	width: 100px;
