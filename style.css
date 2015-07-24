@@ -1135,7 +1135,7 @@ main .page section.border-bottom .column.one.seventy-five_single {
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active,
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active:hover,
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active:focus {
-	background-position: center 0;
+	background-position: center 0 !important;
 }
 
 .accordion.more h3 {
