@@ -1126,11 +1126,12 @@ main .page section.border-bottom .column.one.seventy-five_single {
 .accordion.more {
 	border-bottom: none;
 }
+/*
 .accordion.more ul li {
 	font-family: "Open Sans Condensed";
 	font-size:16px;
 	color:#8d959a;
-}
+}*/
 .accordion.more h3.ui-accordion-header.ui-state-default,
 .accordion.more h3.ui-accordion-header.ui-state-default:hover,
 .accordion.more h3.ui-accordion-header.ui-state-default:focus {
