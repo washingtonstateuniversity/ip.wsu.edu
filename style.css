@@ -1130,7 +1130,9 @@ main .page section.border-bottom .column.one.seventy-five_single {
 }
 .accordion.more h3.ui-accordion-header.ui-state-default,
 .accordion.more h3.ui-accordion-header.ui-state-default:hover,
-.accordion.more h3.ui-accordion-header.ui-state-default:focus,
+.accordion.more h3.ui-accordion-header.ui-state-default:focus {
+	background-position: center 32px !important;
+}
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active,
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active:hover,
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active:focus {
