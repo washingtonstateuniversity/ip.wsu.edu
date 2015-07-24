@@ -390,6 +390,10 @@ p a.button.cta:focus {
 	background:#72652a;
 	border:1px solid #72652a;
 }
+.gray-light,
+.gray-light p,
+.gray-light ol li,
+.gray-light ul li,
 .gray-light h2 {
 	color:#fff;
 }
@@ -530,7 +534,7 @@ p a.button.cta:focus {
 	color:#8d959a;
 }
 .accordion.duties h3.ui-accordion-header.ui-state-default {
-	background-position: center 55px;
+	background-position: center 35px;
 }
 
 .accordion.duties h3.ui-accordion-header.ui-accordion-header-active,

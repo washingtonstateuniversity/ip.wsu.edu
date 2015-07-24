@@ -1120,7 +1120,56 @@ main .page section.border-bottom .column.one.seventy-five_single {
 	background-repeat: no-repeat;
 	background-size:40px;
 }
+.accordion.more {
+	border-bottom: none;
+}
+.accordion.more ul li {
+	font-family: "Open Sans Condensed";
+	font-size:16px;
+	color:#8d959a;
+}
+.accordion.more h3.ui-accordion-header.ui-state-default {
+	background-position: center 55px;
+}
 
+.accordion.more h3.ui-accordion-header.ui-accordion-header-active,
+.accordion.more h3.ui-accordion-header.ui-accordion-header-active:hover,
+.accordion.more h3.ui-accordion-header.ui-accordion-header-active:focus {
+	background-position: center 0;
+}
+
+.accordion.more h3 {
+	border-top: 0;
+}
+
+.accordion.more h3.ui-state-default:before {
+	content: 'Show Programs';
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.accordion.more h3.ui-accordion-header-active:before {
+	content: 'Hide Programs';
+	display: block;
+	width: 100px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 28px;
+}
+
+.accordion.more h3.ui-accordion-header {
+	padding: 0;
+	font-size:16px;
+	letter-spacing: 1px;
+	color: #8D959A;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	height: 85px;
+	margin-top: 45px;
+}
 /* =========================
   	Tablepress
 ========================== */
@@ -1438,12 +1487,16 @@ div.section-wrapper.close-modal:before {
 	color:#5e6a71;
 	font-weight:400;
 	font-size:1.2em;
+	padding-top:.8em;
+}
+.gform_wrapper .gfield_checkbox li, 
+.gform_wrapper .gfield_radio li  {
+	cursor:pointer;
 }
 .gform_wrapper .gfield_checkbox li label, 
 .gform_wrapper .gfield_radio li label {
-	 font-size: 100%;
-  font-weight: 300;
-  letter-spacing:1px;
+	font-size: 100%;
+	font-weight: 300;
 }
 input[type=text]:focus,
 input[type=password]:focus,
