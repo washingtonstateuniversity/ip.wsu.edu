@@ -79,7 +79,11 @@ html,
 	color:#981E32;
 }
 .column.crimson {
-	background-color:rgba(152, 30, 50, 1);
+	background-image:url(../assets/img/campus-aerial-crimson-light.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	background-position:center -80px;
 }
 .column.white {
 	background-image:url(../assets/img/eiffel_lighter.jpg);
@@ -102,6 +106,12 @@ html,
 	background-image:url(../assets/img/students-butch_blue-drk.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
+}
+.column.crimson:hover {
+	background-image:url(../assets/img/campus-aerial-crimson-dark.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center -80px;
 }
 .home main p a.button {
 	width:66%;
