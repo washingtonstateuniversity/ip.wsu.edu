@@ -146,10 +146,106 @@ hr+h4 {
 ============================================================ */
 .anchor-nav-wrapper {
 	position: relative;
+	background: #f4f2eb;
+	float: left;
+	width: 100%;
+}
+
+.anchor-nav {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	width:100%;
+	max-width: 990px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.anchor-nav li {
+	padding:0;
+	float: left;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background-color: #eeece0;
+	font-size: 1.313rem;
+	line-height: 1;
+	letter-spacing: .5px;
+	font-weight: 300;
+	color: #981e32;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
 }
 
 main .anchor-nav li a {
 	text-align: center;
+	padding:15px 8px;
+	width: 100%;
+	display: block;
+	border:none;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	box-sizing: border-box;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.anchor-count-2 li {
+	width:50%;
+}
+
+.anchor-count-3 li {
+	width:33.33%;
+}
+
+.anchor-count-4 li {
+	width:25%;
+}
+
+.anchor-nav li:nth-child(odd) {
+	background-color: #e8e5d6;
+}
+
+.anchor-nav li:hover {
+	background-color: #981e32;
+	color: #e3dfcd;
+	cursor: pointer;
+}
+
+.anchor-nav-wrapper:before {
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 38px solid #e3dfcd;
+	opacity: .6;
+	content: " ";
+	position: absolute;
+	bottom: -38px;
+	z-index: 2;
+	overflow: visible;
+	visibility: visible !important;
+	left: calc(50% - 50px);
 }
 
 /* ============================================================
@@ -1281,105 +1377,6 @@ section.news-events ul li .content-item-event-meta {
 	display: none;
 }
 
-/* =========================
-  	Anchor Links
-========================== */
-.anchor-nav-wrapper{
-	background: #f4f2eb;
-}
-.anchor-nav-wrapper{
-	float:left;
-	width:100%;
-}
-.anchor-nav{
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
-	width:100%;
-	max-width: 990px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-}
-.anchor-nav li{
-	background-color: #f4f2eb;
-	padding:0;
-	float: left;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-	background-color: #eeece0;
-	font-size: 1.313rem;
-	line-height: 1;
-	letter-spacing: .5px;
-	font-weight: 300;
-	color: #981e32;
-	font-family: 'Open Sans Condensed', sans-serif;
-	text-transform: uppercase;
-	-webkit-transition: all .3s ease;
-	transition: all .3s ease;
-
-}
-main .anchor-nav li a{
-	padding:15px 8px;
-	width: 100%;
-	display: block;
-	border:none;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	box-sizing: border-box;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-.anchor-count-2 li{
-	width:50%;
-}
-.anchor-count-3 li{
-	width:33.33%;
-}
-.anchor-count-4 li{
-	width:25%;
-}
-.anchor-nav li:nth-child(odd){
-	background-color: #e8e5d6;
-}
-.anchor-nav li:hover{
-	background-color: #981e32;
-	color: #e3dfcd;
-	cursor: pointer;
-}
-.anchor-nav-wrapper:before{
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 38px solid #e3dfcd;
-	opacity: .6;
-	content: " ";
-	position: absolute;
-	bottom: -38px;
-	z-index: 2;
-	overflow: visible;
-	visibility: visible !important;
-	left: calc(50% - 50px);
-}
 /* =========================
   	UChat and Modal
 ========================== */
