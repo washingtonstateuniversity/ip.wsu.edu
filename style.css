@@ -17,6 +17,11 @@ Template: spine
 html {
 	background-color:#f5f5f5;
 }
+
+.main-header {
+	height: auto; /* Overwrite the default Spine setting of 142px */
+}
+
 .main-header sup:not(.unset) {
 	color: #cbc4a2;
 }
