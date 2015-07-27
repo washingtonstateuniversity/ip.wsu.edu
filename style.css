@@ -89,6 +89,18 @@ hr+h4 {
 	padding: 0;
 }
 
+/* Sticky headline on scroll */
+.fixed-header .ip-headline,
+.fixed-header #binder .main-header {
+	width: inherit; /* Inherit the maintained pixel width of main */
+}
+
+.fixed-header #binder .main-header .ip-headline {
+	position: fixed;
+	top: 0;
+	bottom: initial;
+}
+
 /* ============================================================
   MAIN-HEADER Site Name (sup)
 ============================================================ */
@@ -1918,4 +1930,3 @@ main .page div.has-thumbnail section .column .thumbnail-right img {
 	height: 100%;
 }
 */
-
