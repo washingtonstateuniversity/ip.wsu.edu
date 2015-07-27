@@ -66,6 +66,7 @@ hr+h4 {
 .ip-headline {
 	max-width: 100%;
 	position: relative;
+	font-size: 2em;
 	text-align: center;
 	clear: both;
 	float: left;
@@ -1656,7 +1657,7 @@ div.reg-date span.reg-month {
 		padding-top: 1em;
 	}
 	
-	.header-group.hgroup sub h1 {
+	.ip-headline h1 {
 		font-size: 2.1em;
 	}
 	
@@ -1770,10 +1771,6 @@ div.reg-date span.reg-month {
 }
 
 @media screen and (max-width: 491px) {
-	.header-group.hgroup sub h1 {
-		font-size: 1.8em;
-	}
-	
 	.intro p {
 		font-size: 1.7rem;
 	}
@@ -1821,7 +1818,7 @@ div.reg-date span.reg-month {
 		padding-bottom: 1em;
 	}
 	
-	.header-group.hgroup sub h1 {
+	.ip-headline h1 {
 		font-size: 1.35em;
 	}
 	
