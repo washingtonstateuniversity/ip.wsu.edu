@@ -83,7 +83,7 @@ html,
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-position:center;
-	background-position:center -80px;
+	background-position:40% -200px;
 }
 .column.white {
 	background-image:url(../assets/img/eiffel_lighter.jpg);
@@ -111,7 +111,7 @@ html,
 	background-image:url(../assets/img/campus-aerial-crimson-dark.jpg);
 	background-repeat:no-repeat;
 	background-size:cover;
-	background-position:center -80px;
+	background-position:40% -200px;
 }
 .home main p a.button {
 	width:66%;
