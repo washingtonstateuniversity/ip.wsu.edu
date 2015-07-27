@@ -70,7 +70,7 @@ hr+h4 {
 	text-align: center;
 	clear: both;
 	float: left;
-	width: 100%;
+	width: inherit;
 	margin: 0 auto;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -97,7 +97,6 @@ hr+h4 {
 }
 
 /* Sticky headline on scroll */
-.fixed-header .ip-headline,
 .fixed-header #binder .main-header {
 	width: inherit; /* Inherit the maintained pixel width of main */
 }
@@ -106,6 +105,7 @@ hr+h4 {
 	position: fixed;
 	top: 0;
 	bottom: initial;
+	z-index: 99999;
 }
 
 /* ============================================================
@@ -247,6 +247,13 @@ main .anchor-nav li a {
 	overflow: visible;
 	visibility: visible !important;
 	left: calc(50% - 50px);
+}
+
+.fixed-header .anchor-nav-wrapper {
+	position: fixed;
+	width: inherit;
+	top: 180px;
+	z-index: 99999;
 }
 
 /* ============================================================
