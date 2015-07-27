@@ -142,15 +142,8 @@ hr+h4 {
 }
 
 /* ============================================================
-  STICKY HEADERS
+  ANCHOR NAV
 ============================================================ */
-#binder > main > header > div.header-group.sticky,
-#binder > main > header > div.header-group.sticky > sub > span,
-div.anchors > div.column.sticky,
-section.anchors > div.column.sticky {
-	-webkit-transition: font-size .8s ease;
-	transition: font-size .8s ease;
-}
 .anchor-nav-wrapper {
 	position: relative;
 }
@@ -158,50 +151,7 @@ section.anchors > div.column.sticky {
 main .anchor-nav li a {
 	text-align: center;
 }
-#binder > main > header > div.header-group.sticky {
-	position: fixed;
-	top: 0;
-	height: 30px;
-	width: 100%;
-	font-size: 16px;
-	line-height: 1em;
-	background: #981e32;
-	text-align: center;
-	color: #fff;
-	z-index: 100;
-	letter-spacing: 5.33px;
-	padding: 0;
-}
 
-.size-lt-large #binder > main > header > div.header-group.sticky {
-	top: 50px;
-}
-
-#binder > main > header > div.header-group.sticky > sub > span {
-	top: -6px;
-	letter-spacing: 5.33px;
-/* font-size needs important to override fittext js function when it becomes sticky */
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
-	color: #fff;
-	line-height: 1em;
-	z-index: 100;
-	width: calc(100% - 198px);
-	margin-left: 198px;
-}
-
-div.anchors > div.column.sticky,
-section.anchors > div.column.sticky {
-	position: fixed;
-	top: 31px;
-	z-index: 99;
-}
-
-.size-lt-large div.anchors > div.column.sticky,
-.size-lt-large section.anchors > div.column.sticky {
-	top: 51px;
-}
 /* ============================================================
   STRUCTURAL
 ============================================================ */
