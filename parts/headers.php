@@ -22,7 +22,9 @@ if ( spine_get_option( 'main_header_show' ) == 'true' ) :
 ?>
 <header class="main-header">
 	<div class="main-header-sitename">
-		<sup class="sup-header" data-section="<?php echo $spine_main_header_values['section_title']; ?>" data-pagetitle="<?php echo $spine_main_header_values['page_title']; ?>" data-posttitle="<?php echo $spine_main_header_values['post_title']; ?>" data-default="<?php echo esc_html($spine_main_header_values['sup_header_default']); ?>" data-alternate="<?php echo esc_html($spine_main_header_values['sup_header_alternate']); ?>"><span class="sup-header-default"><?php echo strip_tags( $spine_main_header_values['sup_header_default'], '<a>' ); ?></span></sup>
+		<sup class="sup-header">
+			<span class="sup-header-default"><?php echo strip_tags( $spine_main_header_values['sup_header_default'], '<a>' ); ?></span>
+		</sup>
 	</div>
 	<?php if ( spine_has_featured_image() ) {
 		$featured_image_src = spine_get_featured_image_src(); ?>
