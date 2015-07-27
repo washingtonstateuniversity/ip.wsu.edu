@@ -426,6 +426,7 @@ h2 {
 	padding-bottom: 42px;
 	font-weight: 400;
 }
+
 .parallax h2 {
 	color: #fff;
 	position: absolute;
@@ -435,6 +436,7 @@ h2 {
 	text-align: center;
 	font-size:5em;
 }
+
 h3 {
 	color: #8d959a;
 	font-size: 30px;
@@ -444,18 +446,23 @@ h3 {
 	padding-bottom: 25px;
 	font-weight: 400;
 }
-p+h3,
-ul+h3,
-ol+h3,
-h2+h3 {
+
+h3 + h4 {
+	padding-top:.8em;
+}
+
+p + h3,
+ul + h3,
+ol + h3,
+h2 + h3 {
 	padding-top: 3rem;
 }
 
-h2+h3,
-h3+h5,
-h5+h5,
-p a.button+h3 ,
-p a.button+h4 {
+h2 + h3,
+h3 + h5,
+h5 + h5,
+p a.button + h3 ,
+p a.button + h4 {
 	padding-top: 0;
 }
 
@@ -478,25 +485,30 @@ h5 {
 	padding: 20px 0;
 	font-weight: 400;
 }
+
 section.h5-list h5 {
 	text-align: left;
 	padding-bottom: 0;
 	font-weight: 400;
 }
+
 h6 {
 	color: #464e54;
 	font-size: 14px;
 	line-height: 22px;
 	text-transform: uppercase;
 }
+
 .dates h3 {
 	padding: 0;
 	text-transform: uppercase;
 	font-size: 23px;
 }
+
 .stats-head h3 {
 	padding: 0;
 }
+
 header + h3 {
 	padding-top: 0;
 }
@@ -505,6 +517,7 @@ header + h3 {
 	text-transform: uppercase;
 	padding-top: 0;
 }
+
 /* Alternative section class */
 .alternative .column h2 {
 	padding: 0 0 36px !important;
@@ -533,11 +546,13 @@ blockquote p {
 	font-weight: 700;
 	text-align: center;
 }
+
 blockquote span,
 blockquote p span {
 	quotes: "“" "”";
 	position:relative;
 }
+
 blockquote span:before,
 blockquote p span:before {
 	content: open-quote;
@@ -548,6 +563,7 @@ blockquote p span:before {
 	line-height:.5;
 	font-family:"Georgia";
 }
+
 blockquote p,
 blockquote cite {
 	display: block;
