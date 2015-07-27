@@ -54,34 +54,15 @@ hr+h4 {
 	width: inherit; /* Inherit the maintained pixel width of main. */
 }
 
-.main-header.foot-title .header-group:not(.unset) {
-	padding:0;
-}
-
-.main-header.foot-title {
-	height:0;
-	/* Removes footer title for now
-	comment it out to bring back the footer
-	display:none;*/
-}
-
-.main-header h1 {
-	padding: 0;
-}
-
-.main-header sub:not(.unset) {
-	margin: 0 auto;
-}
-
-.main-header:not(.gutter) .header-group:not(.unset):not(.guttered),
-.main-header .header-group:not(.unset) {
+/* ============================================================
+  MAIN-HEADER H1 Area
+============================================================ */
+.ip-headline {
 	max-width: 100%;
 	position: relative;
-	padding-top: 0;
 	text-align: center;
 	clear: both;
 	float: left;
-	padding-bottom: 0;
 	width: 100%;
 	margin: 0 auto;
 	display: -webkit-box;
@@ -92,8 +73,7 @@ hr+h4 {
 	padding: 52px 0;
 }
 
-.header-group.hgroup sub h1,
-.header-group sub span {
+.ip-headline h1 {
 	font-size: 76px;
 	line-height: 1em;
 	color: #981e32;
@@ -105,12 +85,12 @@ hr+h4 {
 	font-style: normal;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-/*top:50px;*/
 	letter-spacing: -2.5px;
+	padding: 0;
 }
 
 /* ============================================================
-  SITE TITLE PLACEMENT IN MAIN-HEADER
+  MAIN-HEADER Site Name (sup)
 ============================================================ */
 .main-header-sitename .sup-header {
 	background-color: #981e32;
@@ -127,6 +107,20 @@ hr+h4 {
 	font-size: 16px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 300;
+}
+
+/* ============================================================
+  MAIN-HEADER Footer area
+============================================================ */
+.main-header.foot-title .header-group:not(.unset) {
+	padding:0;
+}
+
+.main-header.foot-title {
+	height:0;
+	/* Removes footer title for now
+	comment it out to bring back the footer
+	display:none;*/
 }
 
 /* ============================================================
@@ -667,26 +661,26 @@ main section.row.single .column.seventy-five_single.next-step-negative {
   WSU COLOR PALETTE OPTIONS
 ======================================= */
 /* Default and palette1 (Crimson) */
-body.wsu-palette-default .header-group {
+body.wsu-palette-default .ip-headline {
 	background-color: #fff;
 }
-body.wsu-palette-palette1 .header-group {
+body.wsu-palette-palette1 .ip-headline {
 	background-color:#981e32;
 }
-body.wsu-palette-palette1 .header-group sub h1 {
+body.wsu-palette-palette1 .ip-headline h1 {
 	color: #fff;
 }
-body.wsu-palette-default .header-group sub h1,
+body.wsu-palette-default .ip-headline h1,
 body.wsu-palette-default .dropcap:first-child:first-letter,
 body.wsu-palette-palette1 .dropcap:first-child:first-letter {
 	color: #981e32;
 }
 /* Default (Gray1) */
-body.wsu-palette-palette3 .header-group {
+body.wsu-palette-palette3 .ip-headline {
 	background-color: #5e6a71 ;
 }
 
-body.wsu-palette-palette3 .header-group sub h1 {
+body.wsu-palette-palette3 .ip-headline h1 {
 	color: #fff;
 }
 
@@ -695,11 +689,11 @@ body.wsu-palette-palette3 .dropcap:first-child:first-letter {
 }
 
 /* Default (white with gray) */
-body.wsu-palette-palette4 .header-group {
+body.wsu-palette-palette4 .ip-headline {
 	background-color: #fff;
 }
 
-body.wsu-palette-palette4 .header-group sub h1 {
+body.wsu-palette-palette4 .ip-headline h1 {
 	color: #5e6a71 ;
 }
 
