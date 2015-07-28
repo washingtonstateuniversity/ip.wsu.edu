@@ -2,11 +2,11 @@
   WSU COLOR PALETTE OPTIONS
 ============================================================ */
 /* .wsu-palette-palette1 is crimson, .wsu-palette3,and 4 is gray called in from the main style sheet */
-body.wsu-palette-palette2 .header-group  {
+body.wsu-palette-palette2 .ip-headline  {
 	background-color: #8d959a;
 }
 
-body.wsu-palette-palette2 .header-group sub h1 {
+body.wsu-palette-palette2 .ip-headline h1 {
 	color: #fff;
 }
 
@@ -15,11 +15,11 @@ body.wsu-palette-palette2 .dropcap:first-child:first-letter {
 }
 
 /* Default (white with crimson) */
-body.wsu-palette-palette5 .header-group {
+body.wsu-palette-palette5 .ip-headline {
 	background-color: #5e6a71 ;
 }
 
-body.wsu-palette-palette5 .header-group sub h1 {
+body.wsu-palette-palette5 .ip-headline h1 {
 	color: #fff;
 }
 

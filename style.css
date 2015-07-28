@@ -17,22 +17,6 @@ Template: spine
 html {
 	background-color:#f5f5f5;
 }
-.main-header sup:not(.unset) {
-	color: #cbc4a2;
-}
-.main-header.foot-title .header-group:not(.unset) {
-	padding:0;
-}
-.main-header.foot-title {
-	height:0;
-	/* Removes footer title for now 
-	comment it out to bring back the footer 
-	display:none;*/
-}
-.main-header sup:not(.unset) span {
-	display: block;
-	line-height: 2em;
-}
 
 main section {
 	padding: 0;
@@ -48,8 +32,7 @@ main section {
 	border-right: 1px solid #dbdbdb;
 }
 
-#binder,
-#binder > main > header > div {
+#binder {
 	width: 100%;
 	padding-left: 0;
 	padding-right: 0;
@@ -62,49 +45,44 @@ hr {
 	margin-top: 44px;
 	width: 100%;
 }
-hr+h4 {
+
+hr + h4 {
 	padding-top:0;
 }
 
 /* ============================================================
   MAIN-HEADER OVERRIDES
 ============================================================ */
-main header {
+.main-header {
 	left: 0;
 	background-color: transparent;
+	height: auto; /* Overwrite the default Spine setting of 142px. */
+	width: inherit; /* Inherit the maintained pixel width of main. */
 }
 
-.main-header h1 {
-	padding: 0;
-}
-
-.main-header sub:not(.unset) {
-	margin: 0 auto;
-}
-
-.main-header:not(.gutter) .header-group:not(.unset):not(.guttered),
-.main-header .header-group:not(.unset) {
+/* ============================================================
+  MAIN-HEADER H1 Area
+============================================================ */
+.ip-headline {
 	max-width: 100%;
 	position: relative;
-	padding-top: 0;
+	font-size: 2em;
 	text-align: center;
 	clear: both;
 	float: left;
-	padding-bottom: 0;
-	width: 100%;
+	width: inherit;
 	margin: 0 auto;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	resize: both;
-	padding: 52px 0;
+	padding: 0;
 }
 
-.header-group.hgroup sub h1,
-.header-group sub span {
+.ip-headline h1 {
 	font-size: 76px;
-	line-height: 1em;
+	line-height: 2.368421053em; /* 180px when font-size is 76px */
 	color: #981e32;
 	text-align: center;
 	text-transform: uppercase;
@@ -114,13 +92,35 @@ main header {
 	font-style: normal;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
-/*top:50px;*/
 	letter-spacing: -2.5px;
+	padding: 0;
 }
+
+/* Sticky headline on scroll */
+.fixed-header #binder .main-header {
+	width: inherit; /* Inherit the maintained pixel width of main */
+}
+
+.fixed-header #binder .main-header .ip-headline {
+	position: fixed;
+	top: 0;
+	bottom: initial;
+	z-index: 99999;
+}
+
 /* ============================================================
-  SITE TITLE PLACEMENT IN MAIN-HEADER
+  MAIN-HEADER Site Name (sup)
 ============================================================ */
-.main-header-sitename sup span {
+.main-header-sitename .sup-header {
+	background-color: #981e32;
+	width: inherit;
+	height: 30px;
+}
+
+.main-header-sitename .sup-header .sup-header-default {
+	display: block;
+	line-height: 2em;
+	color: #cbc4a2;
 	text-align: center;
 	letter-spacing: 5.33px;
 	font-size: 16px;
@@ -128,76 +128,134 @@ main header {
 	font-weight: 300;
 }
 
-.main-header-sitename sup {
-	color: #e3dfcd;
-	background-color: #981e32;
-	width: 100%;
-	height: 26px;
-	padding-bottom: 4px;
+/* ============================================================
+  MAIN-HEADER Footer area
+============================================================ */
+.main-header.foot-title .header-group:not(.unset) {
+	padding:0;
 }
 
+.main-header.foot-title {
+	height:0;
+	/* Removes footer title for now
+	comment it out to bring back the footer
+	display:none;*/
+}
 
 /* ============================================================
-  STICKY HEADERS
+  ANCHOR NAV
 ============================================================ */
-#binder > main > header > div.header-group.sticky,
-#binder > main > header > div.header-group.sticky > sub > span,
-div.anchors > div.column.sticky,
-section.anchors > div.column.sticky {
-	-webkit-transition: font-size .8s ease;
-	transition: font-size .8s ease;
-}
 .anchor-nav-wrapper {
 	position: relative;
+	background: #f4f2eb;
+	float: left;
+	width: 100%;
+}
+
+.anchor-nav {
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	width:100%;
+	max-width: 990px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.anchor-nav li {
+	padding:0;
+	float: left;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	background-color: #eeece0;
+	font-size: 1.313rem;
+	line-height: 1;
+	letter-spacing: .5px;
+	font-weight: 300;
+	color: #981e32;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
 }
 
 main .anchor-nav li a {
 	text-align: center;
-}
-#binder > main > header > div.header-group.sticky {
-	position: fixed;
-	top: 0;
-	height: 30px;
+	padding:15px 8px;
 	width: 100%;
-	font-size: 16px;
-	line-height: 1em;
-	background: #981e32;
-	text-align: center;
-	color: #fff;
-	z-index: 100;
-	letter-spacing: 5.33px;
-	padding: 0;
+	display: block;
+	border:none;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	box-sizing: border-box;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
-.size-lt-large #binder > main > header > div.header-group.sticky {
-	top: 50px;
+.anchor-count-2 li {
+	width:50%;
 }
 
-#binder > main > header > div.header-group.sticky > sub > span {
-	top: -6px;
-	letter-spacing: 5.33px;
-/* font-size needs important to override fittext js function when it becomes sticky */
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
-	color: #fff;
-	line-height: 1em;
-	z-index: 100;
-	width: calc(100% - 198px);
-	margin-left: 198px;
+.anchor-count-3 li {
+	width:33.33%;
 }
 
-div.anchors > div.column.sticky,
-section.anchors > div.column.sticky {
+.anchor-count-4 li {
+	width:25%;
+}
+
+.anchor-nav li:nth-child(odd) {
+	background-color: #e8e5d6;
+}
+
+.anchor-nav li:hover {
+	background-color: #981e32;
+	color: #e3dfcd;
+	cursor: pointer;
+}
+
+.anchor-nav-wrapper:before {
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 38px solid #e3dfcd;
+	opacity: .6;
+	content: " ";
+	position: absolute;
+	bottom: -38px;
+	z-index: 2;
+	overflow: visible;
+	visibility: visible !important;
+	left: calc(50% - 50px);
+}
+
+.fixed-header .anchor-nav-wrapper {
 	position: fixed;
-	top: 31px;
-	z-index: 99;
+	width: inherit;
+	top: 180px;
+	z-index: 99999;
 }
 
-.size-lt-large div.anchors > div.column.sticky,
-.size-lt-large section.anchors > div.column.sticky {
-	top: 51px;
-}
 /* ============================================================
   STRUCTURAL
 ============================================================ */
@@ -211,6 +269,7 @@ main .row {
 .featured-image {
 	background-position: top left;
 }
+
 .image-span {
 	background-position: center;
 	background-repeat: no-repeat;
@@ -219,6 +278,7 @@ main .row {
 	height: 0;
 	padding-bottom: 45.454545%;
 }
+
 .parallax {
 	height:480px;
 	background-position: 50% 50%;
@@ -233,6 +293,7 @@ main .row {
 	padding-top:25px;
 	height:0;
 }
+
 .fluid-container iframe,
 .fluid-container object, 
 .fluid-container embed, 
@@ -243,6 +304,7 @@ main .row {
 	width:100%;
 	height:100%;
 }
+
 /* ============================================================
   TEXT
 ============================================================ */
@@ -255,7 +317,7 @@ main .row {
 }
 
 p,
-p~p,
+p ~ p,
 main address,
 main ul li,
 main ol li {
@@ -265,10 +327,12 @@ main ol li {
 	padding-bottom: 1.2rem;
 	font-weight: 300;
 }
+
 main ul li,
 main ol li {
 	padding-bottom:.3rem;
 }
+
 main strong {
 	font-weight: 600;
 }
@@ -292,7 +356,8 @@ main a:hover {
 	text-decoration: none;
 }
 
-.dropcap, .dropcap2 {
+.dropcap,
+.dropcap2 {
 	color: #981e32;
 	font-size: 62px;
 	font-style: normal;
@@ -326,15 +391,16 @@ main a:hover {
 .indent {
 	padding-left: 30px;
 }
+
 .center + h4,
 .button + h4 {
 	padding-top: 60px;
 }
+
 /* Next Steps Lists */
 li[style*=center] {
 	list-style: none;
 }
-
 
 /* ----------------------------------
   Headers
@@ -349,8 +415,7 @@ h6 {
 }
 
 h1 {
-	color: #4f868e;
-/* or #981e32 */
+	color: #4f868e; /* or #981e32 */
 	font-size: 32px;
 	line-height: 46px;
 	font-style: italic;
@@ -360,14 +425,14 @@ h1 {
 }
 
 h2 {
-	color: #981e32;
-/* or #4f868e */
+	color: #981e32; /* or #4f868e */
 	font-size: 44px;
 	line-height: 1.2;
 	letter-spacing: -1.3px;
 	padding-bottom: 42px;
 	font-weight: 400;
 }
+
 .parallax h2 {
 	color: #fff;
 	position: absolute;
@@ -377,6 +442,7 @@ h2 {
 	text-align: center;
 	font-size:5em;
 }
+
 h3 {
 	color: #8d959a;
 	font-size: 30px;
@@ -386,18 +452,23 @@ h3 {
 	padding-bottom: 25px;
 	font-weight: 400;
 }
-p+h3,
-ul+h3,
-ol+h3,
-h2+h3 {
+
+h3 + h4 {
+	padding-top:.8em;
+}
+
+p + h3,
+ul + h3,
+ol + h3,
+h2 + h3 {
 	padding-top: 3rem;
 }
 
-h2+h3,
-h3+h5,
-h5+h5,
-p a.button+h3 ,
-p a.button+h4 {
+h2 + h3,
+h3 + h5,
+h5 + h5,
+p a.button + h3 ,
+p a.button + h4 {
 	padding-top: 0;
 }
 
@@ -420,25 +491,30 @@ h5 {
 	padding: 20px 0;
 	font-weight: 400;
 }
+
 section.h5-list h5 {
 	text-align: left;
 	padding-bottom: 0;
 	font-weight: 400;
 }
+
 h6 {
 	color: #464e54;
 	font-size: 14px;
 	line-height: 22px;
 	text-transform: uppercase;
 }
+
 .dates h3 {
 	padding: 0;
 	text-transform: uppercase;
 	font-size: 23px;
 }
+
 .stats-head h3 {
 	padding: 0;
 }
+
 header + h3 {
 	padding-top: 0;
 }
@@ -447,6 +523,7 @@ header + h3 {
 	text-transform: uppercase;
 	padding-top: 0;
 }
+
 /* Alternative section class */
 .alternative .column h2 {
 	padding: 0 0 36px !important;
@@ -475,11 +552,13 @@ blockquote p {
 	font-weight: 700;
 	text-align: center;
 }
+
 blockquote span,
 blockquote p span {
 	quotes: "“" "”";
 	position:relative;
 }
+
 blockquote span:before,
 blockquote p span:before {
 	content: open-quote;
@@ -490,6 +569,7 @@ blockquote p span:before {
 	line-height:.5;
 	font-family:"Georgia";
 }
+
 blockquote p,
 blockquote cite {
 	display: block;
@@ -514,6 +594,7 @@ header + blockquote {
 	background-repeat: no-repeat;
 	background-position: center right;
 }
+
 /* ============================================================
   INFO/STATS
 ============================================================ */
@@ -551,12 +632,15 @@ header + blockquote {
 .stats h2 {
 	margin-bottom: 1rem;
 }
+
 main .page section.stats-head {
 	padding-bottom: 60px;
 }
+
 .stats-head h3 + p {
 	padding-top: 20px;
 }
+
 main .page .stats section {
 	padding-bottom: 60px;
 }
@@ -595,7 +679,6 @@ main .page .stats.button-wrap section {
 	height: 0;
 	top: 16px;
 	position: relative;
-/*	margin-top: 70px;*/
 	width: 70px;
 	height: 60px;
 	background: white;
@@ -612,6 +695,7 @@ main .page .stats.button-wrap section {
 	line-height: 0;
 	vertical-align: middle;
 }
+
 .number-o {
 	font-size: 40px;
 	font-family: Palatino, 'Palatino Linotype', 'Palatino LT STD', serif;
@@ -621,12 +705,15 @@ main .page .stats.button-wrap section {
 	text-align: center;
 	margin: 0 auto 8px auto;
 }
-.number-o+h4 {
+
+.number-o + h4 {
 	padding-top:0;
 }
-h4+.number-o {
+
+h4 + .number-o {
 	margin:0;
 }
+
 .big-number-bkgrd {
 	width: 70px;
 	height: 70px;
@@ -662,10 +749,12 @@ main .next-steps a.button:hover,
 main .next-steps a.button:focus {
 	margin-top: 54px;
 }
+
 main section.row.single .column.sixty-six_sixty-seven_single.next-step-negative,
 main section.row.single .column.seventy-five_single.next-step-negative {
 	margin-top:-160px;
 }
+
 /* ============================================================
   COLORING 
   ref: https://brand.wsu.edu/visual/colors/
@@ -675,26 +764,30 @@ main section.row.single .column.seventy-five_single.next-step-negative {
   WSU COLOR PALETTE OPTIONS
 ======================================= */
 /* Default and palette1 (Crimson) */
-body.wsu-palette-default .header-group {
+body.wsu-palette-default .ip-headline {
 	background-color: #fff;
 }
-body.wsu-palette-palette1 .header-group {
+
+body.wsu-palette-palette1 .ip-headline {
 	background-color:#981e32;
 }
-body.wsu-palette-palette1 .header-group sub h1 {
+
+body.wsu-palette-palette1 .ip-headline h1 {
 	color: #fff;
 }
-body.wsu-palette-default .header-group sub h1,
+
+body.wsu-palette-default .ip-headline h1,
 body.wsu-palette-default .dropcap:first-child:first-letter,
 body.wsu-palette-palette1 .dropcap:first-child:first-letter {
 	color: #981e32;
 }
+
 /* Default (Gray1) */
-body.wsu-palette-palette3 .header-group {
+body.wsu-palette-palette3 .ip-headline {
 	background-color: #5e6a71 ;
 }
 
-body.wsu-palette-palette3 .header-group sub h1 {
+body.wsu-palette-palette3 .ip-headline h1 {
 	color: #fff;
 }
 
@@ -703,46 +796,55 @@ body.wsu-palette-palette3 .dropcap:first-child:first-letter {
 }
 
 /* Default (white with gray) */
-body.wsu-palette-palette4 .header-group {
+body.wsu-palette-palette4 .ip-headline {
 	background-color: #fff;
 }
 
-body.wsu-palette-palette4 .header-group sub h1 {
+body.wsu-palette-palette4 .ip-headline h1 {
 	color: #5e6a71 ;
 }
 
 body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 	color: #5e6a71 ;
 }
+
 /* ----------------------------------
   Backgrounds
 ---------------------------------- */
 .crimson {
 	background-color: #981e32;
 }
+
 .black {
 	background-color: #000;
 }
+
 .white {
 	background-color: #fff;
 }
+
 /* Gray */
 .gray-dark {
 	background:#2a3033;
 }
+
 .gray-med {
 	background:#464e54;
 }
+
 .gray-light {
 	background:#5e6a71;
 }
+
 .gray-lightest {
 	background:#8d959a;
 }
+
 /* Tan */
 .tan-dark {
 	background:#e3dfcd;
 }
+
 .tan-light {
 	background:#f8f6f1;
 }
@@ -754,6 +856,7 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 .crimson-text {
 	color: #981e32;
 }
+
 .crimson h1,
 .crimson h3,
 .crimson h5 {
@@ -770,19 +873,23 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 .crimson p {
 	color: #fff;
 }
+
 .crimson blockquote span:before,
 .crimson blockquote p:before {
 	color: rgba(0, 0, 0, .3);
 }
+
 .crimson blockquote,
 .crimson blockquote p,
 .crimson blockquote cite {
 	color: #fff;
 }
+
 /* BLACK */
 .black-text {
 	color: #000;
 }
+
 .black h1,
 .black h3,
 .black h5 {
@@ -794,43 +901,52 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 .black h6 {
 	color: #e3dfcd;
 }
+
 .black,
 .black p{
 	color: #fff;
 }
+
 .black blockquote span:before,
 .black blockquote p:before {
 	color: #fff;
 }
+
 .black blockquote,
 .black blockquote p,
 .black blockquote cite {
 	color: #fff;
 }
+
 .black p a.button {
 	border:1px solid rgba(141, 149, 154, .5);
 	color:#fff;	
 }
+
 .black p a.button:hover,
 .black p a.button:focus {
 	border:1px solid #fff;
 	color:#fff;
 }
+
 .black p a.button.cta {
 	background-color:#edf3f4;
 	color:#000;
 	border:#edf3f4;
 }
+
 .black p a.button.cta:hover,
 .black p a.button.cta:focus {
 	background-color:#fff;
 	border:#fff;
 	color:#000;
 }
+
 /* WHITE */
 .white-text {
 	color: #fff;
 }
+
 .white h1,
 .white h3,
 .white h5 {
@@ -844,19 +960,23 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 .white p {
 	color: #464e54;
 }
+
 .white blockquote span:before,
 .white blockquote p:before {
 	color:rgba(211, 225, 227, .7);
 }
+
 .white blockquote,
 .white blockquote p,
 .white blockquote cite {
 	color: #00a5bd;
 }
+
 /* Gray */
 .black-text {
 	color: #000;
 }
+
 .gray-dark h1,
 .gray-dark h3,
 .gray-dark h5 {
@@ -868,22 +988,27 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 .gray-dark h6 {
 	color: #e3dfcd;
 }
+
 .gray-dark,
 .gray-dark p {
 	color: #fff;
 }
+
 .gray-dark blockquote span:before,
 .gray-dark blockquote p:before {
 	color: #fff;
 }
+
 .gray-dark blockquote,
 .gray-dark blockquote p,
 .gray-dark blockquote cite {
 	color: #fff;
 }
+
 .tan-text {
 	color:#CBC4A2;
 }
+
 /* ============================================================
   Buttons - Future Student
 ============================================================ */
@@ -896,7 +1021,7 @@ main p a.button {
 	padding: 17px 8px;
 	vertical-align: middle;
 	text-transform: uppercase;
-	font-family: "Open Sans Condensed";
+	font-family: "Open Sans Condensed", sans-serif;
 	-webkit-transition: all .2s ease;
 	transition: all .2s ease;
 	margin-top: 2rem;
@@ -914,30 +1039,34 @@ main p a.button:hover,
 main p a.button:focus {
 	background:transparent;
 }
-/* Crimson buttons */
 
+/* Crimson buttons */
 main .crimson p a.button {
 	border:1px solid #8d959a;
 	color:#fff;
 }
+
 main .crimson p a.button:hover,
 main .crimson p a.button:focus {
 	color:#fff;	
 	border-color: #fff;
 	background-color:transparent;
 }
+
 main .crimson p a.cta.button {
 	background-color:#edf3f4;
 	color:#981e32;
 }
+
 main .crimson p a.cta.button:hover {
-	
 	background-color:#fff;
 }
+
 main p a.crimson-o.button {
 	color:#981e32;
 	border:1px solid rgba(141,149,154,.5);
 }
+
 main p a.crimson-o.button:hover,
 main p a.crimson-o.button:focus {
 	border:1px solid #981e32;
@@ -947,16 +1076,19 @@ main p a.crimson-b.cta.button {
 	color:#fff;
 	background-color:#981e32;
 }
+
 main p a.crimson-b.cta.button:hover,
 main p a.crimson-b.cta.button:focus {
 	background-color:#c60c30;
 	border:1px solid #c60c30;
 }
+
 /* Gray buttons */
 main p a.gray-o.button {
 	color:#5e6a71;
 	border:1px solid rgba(141,149,154,.5);
 }
+
 main p a.gray-o.button:hover,
 main p a.gray-o.button:focus {
 	border:1px solid #5e6a71;
@@ -967,11 +1099,13 @@ main p a.gray-b.cta.button {
 	border:1px solid rgba(141,149,154,1);
 	background:rgba(141,149,154,1);
 }
+
 main p a.gray-b.cta.button:hover,
 main p a.gray-b.cta.button:focus {
 	background-color:#5e6a71;
 	border:1px solid #5e6a71;
 }
+
 /* ============================================================
   COLOR CIRCLES
 ============================================================ */
@@ -1042,10 +1176,12 @@ main .page .intro section {
 	padding-bottom: 60px;
 	border-bottom: 1px solid #cbc482;
 }
+
 .intro .column.no-border {
 	border-bottom: none;
 	padding-bottom: 0;
 }
+
 .intro + div section {
 	padding-top: 60px;
 }
@@ -1066,6 +1202,7 @@ main .page .alternative section {
 .white:not(.intro) + .white section {
 	padding-top: 0;
 }
+
 main .page section.border-bottom .column.one.seventy-five_single {
 	padding-bottom: 75px;
 	margin-bottom: 75px;
@@ -1089,6 +1226,7 @@ main .page section.border-bottom .column.one.seventy-five_single {
 .accordion h3 {
 	border-top: dotted 2px #d7dadb;
 }
+
 .accordion h3.ui-accordion-header {
 	padding: 1.5em 4em 1.5em .5em;
 	font-size: 1.5em;
@@ -1117,26 +1255,31 @@ main .page section.border-bottom .column.one.seventy-five_single {
 	background-size:40px;
 
 }
+
 .accordion h3.ui-accordion-header.ui-state-active {
 	background: url(assets/img/arrow-up-gray.png);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size:40px;
 }
+
 .accordion.more {
 	border-bottom: none;
 }
+
 /*
 .accordion.more ul li {
 	font-family: "Open Sans Condensed";
 	font-size:16px;
 	color:#8d959a;
 }*/
+
 .accordion.more h3.ui-accordion-header.ui-state-default,
 .accordion.more h3.ui-accordion-header.ui-state-default:hover,
 .accordion.more h3.ui-accordion-header.ui-state-default:focus {
 	background-position: center 32px !important;
 }
+
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active,
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active:hover,
 .accordion.more h3.ui-accordion-header.ui-accordion-header-active:focus {
@@ -1175,6 +1318,7 @@ main .page section.border-bottom .column.one.seventy-five_single {
 	height: 85px;
 	margin-top: 45px;
 }
+
 /* =========================
   	Tablepress
 ========================== */
@@ -1248,25 +1392,30 @@ main .page section.border-bottom .column.one.seventy-five_single {
 table.tablepress.dollar td.column-2{
 	text-align:right;
 }
+
 body:not(.unset) table th {
 	font-weight:400;
 }
+
 body:not(.unset) table td,
 body:not(.unset) table th {
 	padding: 22px;
 	vertical-align: top;
 	text-align: center;
 }
+
 /* =========================
 	News & Events
 ========================= */
 #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a {
 	border-bottom:none;
 }
+
 #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:hover,
 #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:focus {
 	border-bottom:none;
 }
+
 section.news-events ul li {
 	list-style: none;
 	border-top: dotted 2px #d7dadb;
@@ -1328,119 +1477,22 @@ section.news-events ul li .content-item-event-meta {
 }
 
 /* =========================
-  	Anchor Links
-========================== */
-.anchor-nav-wrapper{
-	background: #f4f2eb;
-}
-.anchor-nav-wrapper{
-	float:left;
-	width:100%;
-}
-.anchor-nav{
-	list-style: none;
-	margin: 0 auto;
-	padding: 0;
-	width:100%;
-	max-width: 990px;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-}
-.anchor-nav li{
-	background-color: #f4f2eb;
-	padding:0;
-	float: left;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-	background-color: #eeece0;
-	font-size: 1.313rem;
-	line-height: 1;
-	letter-spacing: .5px;
-	font-weight: 300;
-	color: #981e32;
-	font-family: 'Open Sans Condensed', sans-serif;
-	text-transform: uppercase;
-	-webkit-transition: all .3s ease;
-	transition: all .3s ease;
-
-}
-main .anchor-nav li a{
-	padding:15px 8px;
-	width: 100%;
-	display: block;
-	border:none;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	box-sizing: border-box;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-}
-.anchor-count-2 li{
-	width:50%;
-}
-.anchor-count-3 li{
-	width:33.33%;
-}
-.anchor-count-4 li{
-	width:25%;
-}
-.anchor-nav li:nth-child(odd){
-	background-color: #e8e5d6;
-}
-.anchor-nav li:hover{
-	background-color: #981e32;
-	color: #e3dfcd;
-	cursor: pointer;
-}
-.anchor-nav-wrapper:before{
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 38px solid #e3dfcd;
-	opacity: .6;
-	content: " ";
-	position: absolute;
-	bottom: -38px;
-	z-index: 2;
-	overflow: visible;
-	visibility: visible !important;
-	left: calc(50% - 50px);
-}
-/* =========================
   	UChat and Modal
 ========================== */
 .uchat-section,
 .modal-no {
-/* section is needed to add the script to appropriate pages, but the section shouldn't be visible */
-	display: none;
+	display: none; /* section is needed to add the script to appropriate pages, but the section shouldn't be visible */
 }
+
 /* Form Modal Styling */
 .modal-form {
 	display: none;
 }
+
 #binder:not(.fluid).max-1188 .modal-form .row {
 	max-width: 90%;
 }
+
 /* Must be placed in the modal form as <div class="close-modal"></div> */
 .close-modal {
 	background-image:url(assets/img/close-x-gray.png);'
@@ -1456,9 +1508,11 @@ main .anchor-nav li a{
 	width:39px;
 	height:39px;
 }
+
 div.section-wrapper.close-modal:before {
 	content: none;
 }
+
 .noscroll {
 	overflow: hidden;
 	height: 100%;;
@@ -1484,25 +1538,28 @@ div.section-wrapper.close-modal:before {
 	margin-bottom:40px;
 	float: none;
 }
+
 /* =========================
   	Forms
 ========================== */
-
 .gform_wrapper .top_label .gfield_label {
 	color:#5e6a71;
 	font-weight:400;
 	font-size:1.2em;
 	padding-top:.8em;
 }
+
 .gform_wrapper .gfield_checkbox li, 
 .gform_wrapper .gfield_radio li  {
 	cursor:pointer;
 }
+
 .gform_wrapper .gfield_checkbox li label, 
 .gform_wrapper .gfield_radio li label {
 	font-size: 100%;
 	font-weight: 300;
 }
+
 input[type=text]:focus,
 input[type=password]:focus,
 input[type=email]:focus,
@@ -1512,14 +1569,17 @@ textarea:focus {
 	font-weight:300;
 	font-style: italic;
 }
+
 .gform_footer .button:first-of-type,
 .gform_footer button:first-of-type {
 	margin-left:0;
 }
+
 .gform_wrapper .gform_footer input.button, 
 .gform_wrapper .gform_footer input[type=submit] {
 	font-size:20px;
 }
+
 .gform_footer .button,
 .gform_footer button {
 	background:transparent;
@@ -1546,6 +1606,7 @@ textarea:focus {
 	border:1px solid rgba(141,149,154,1);
 	background:rgba(141,149,154,1);
 }
+
 .gform_footer .button:hover,
 .gform_footer button:hover,
 .gform_footer .button:focus,
@@ -1554,12 +1615,14 @@ textarea:focus {
 	border:1px solid #5e6a71;
 	color:#fff;
 }
+
 .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_left select, 
 .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_right select, 
 .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield input[type=radio], 
 .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select {
 	margin-left:1px;
 }
+
 /* =========================
   	Utilities
 ========================== */
@@ -1574,6 +1637,7 @@ main .page section.no-pad-bottom {
 main .page section.no-pad-top {
 	padding-top: 0;
 }
+
 .column.fill {
 	max-height: 480px;
 	overflow: hidden;
@@ -1586,27 +1650,34 @@ img.fill {
 	width: auto;
 	-ms-interpolation-mode: bicubic;
 }
+
 main .page section.border-bottom {
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
+
 .remove-bottom-border .column {
 	border-bottom: 0;
 }
+
 /* map */
 #binder:not(.fluid).max-1188 .row.map.unbound {
 	margin: 0;
 	max-width: 99164px;
 }
+
 #map-embed-ip-campus-map {
 	padding-top:53% !important;
 }
+
 section.map.unbound .column {
 	padding: 0;
 }
+
 .no-show {
 	display: none;
 }
+
 /**/
 /* ============================================================
   OVER RIDING UTILITIES
@@ -1615,6 +1686,7 @@ section.map.unbound .column {
 .dates p {
 	padding-bottom: 0;
 }
+
 div.reg-date {
 	color: #00a5bd;
 	font-size: 3em;
@@ -1635,11 +1707,13 @@ div.reg-date span.reg-month {
 	text-align: center;
 	font-weight: 400;
 }
+
 .lead p {
 	font-size: 1.188rem;
 }
-.intro p:first-child:first-letter {
+
 /* This handles the dropcap on the intro paragraph */
+.intro p:first-child:first-letter {
 	color: #981e32;
 	font-size: 60px;
 	font-style: normal;
@@ -1649,6 +1723,7 @@ div.reg-date span.reg-month {
 	padding: 4px 0 0;
 	line-height: 1;
 }
+
 .bordered-bottom {
 	border-bottom: 1px solid #cbc482;
 }
@@ -1664,11 +1739,13 @@ div.reg-date span.reg-month {
 		margin: 0 auto;
 	}
 }
+
 @media screen and (max-width: 990px) {
-	.column p~p:last-child {
+	.column p ~ p:last-child {
 		text-align: center;
 	}
 }
+
 @media screen and (max-width: 791px) {
 	blockquote {
 		padding: 1em;
@@ -1705,7 +1782,7 @@ div.reg-date span.reg-month {
 		padding-top: 1em;
 	}
 	
-	.header-group.hgroup sub h1 {
+	.ip-headline h1 {
 		font-size: 2.1em;
 	}
 	
@@ -1721,6 +1798,7 @@ div.reg-date span.reg-month {
 		margin: 0;
 	}
 }
+
 @media screen and ( min-width: 694px) {
 	/***** SINGLE COLS *****/
 	.row.single .column.one {
@@ -1764,11 +1842,11 @@ div.reg-date span.reg-month {
 		margin: 0 auto;
 		left: 12.495%;
 	}
+
 	.row.halves .column.one.forty-one_sixty-seven {
 		margin-right: 8.33%;
 	}
-	.row.halves .column.two.forty-one_sixty-seven {
-	}
+
 	/***** TWO 33.33% COLS *****/
 	.row.halves .column.one.thirty-three_thirty-three,
 	.row.halves .column.two.thirty-three_thirty-three {
@@ -1776,15 +1854,18 @@ div.reg-date span.reg-month {
 		margin: 0 auto;
 		left: 20.835%;
 	}
+
 	.row.halves .column.one.thirty-three_thirty-three {
 		margin-right: 8.33%;
 	}
+
 	/***** THREE EQUAL COLS *****/
 	.row.thirds .column.one,
 	.row.thirds .column.two,
 	.row.thirds .column.three {
 		width: 33.33%;
 	}
+
 	/***** THREE COLS w/EXTRA PAD *****/
 	.row.thirds .column.one.extra_pad,
 	.row.thirds .column.two.extra_pad,
@@ -1811,6 +1892,7 @@ div.reg-date span.reg-month {
 		width: 25%;
 	}
 }
+
 @media screen and ( max-width: 694px) {
 	/***** FOUR COLS *****/
 	.row.quarters .column.one {	
@@ -1819,10 +1901,6 @@ div.reg-date span.reg-month {
 }
 
 @media screen and (max-width: 491px) {
-	.header-group.hgroup sub h1 {
-		font-size: 1.8em;
-	}
-	
 	.intro p {
 		font-size: 1.7rem;
 	}
@@ -1870,7 +1948,7 @@ div.reg-date span.reg-month {
 		padding-bottom: 1em;
 	}
 	
-	.header-group.hgroup sub h1 {
+	.ip-headline h1 {
 		font-size: 1.35em;
 	}
 	
@@ -1884,25 +1962,27 @@ div.reg-date span.reg-month {
 	}
 }
 
-
-
 main .page div.blockquote-has-thumbnail section,
 main .page div.blockquote-has-thumbnail section .column,
 main .page div.blockquote-has-thumnail section .column p  {
-	padding:0;
+	padding: 0;
 }
+
 main .page div.blockquote-has-thumnail section .column blockquote,
 main .page div.blockquote-has-thumnail section .column blockquote p {
 	font-size: 1.1rem;
-} 
-main .page div.blockquote-has-thumbnail section.side-right blockquote {
-	padding:70px 20px 70px 0;
 }
+
+main .page div.blockquote-has-thumbnail section.side-right blockquote {
+	padding: 70px 20px 70px 0;
+}
+
 div.section-wrapper-has-background.blockquote-has-thumbnail  {
 	background-repeat:no-repeat;
 	background-position:right;
 	background-size:contain;
 }
+
 /*section.blockquote-has-thumbnail.side-right blockquote p {
 	text-align: left;
 }
@@ -1932,4 +2012,3 @@ main .page div.has-thumbnail section .column .thumbnail-right img {
 	height: 100%;
 }
 */
-

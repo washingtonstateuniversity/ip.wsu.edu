@@ -4,11 +4,11 @@
 ============================================================ */
 
 /* Default (Blue1) */
-body.wsu-palette-palette2 .header-group {
+body.wsu-palette-palette2 .ip-headline {
 	background-color: #4f868e;
 }
 
-body.wsu-palette-palette2 .header-group sub h1 {
+body.wsu-palette-palette2 .ip-headline h1 {
 	color: #fff;
 }
 
@@ -17,11 +17,11 @@ body.wsu-palette-palette2 .dropcap:first-child:first-letter {
 }
 
 /* Default (Gray1) */
-body.wsu-palette-palette4 .header-group {
+body.wsu-palette-palette4 .ip-headline {
 	background-color: #8d959a;
 }
 
-body.wsu-palette-palette4 .header-group sub h1 {
+body.wsu-palette-palette4 .ip-headline h1 {
 	color: #fff;
 }
 
@@ -30,11 +30,11 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 }
 
 /* Default (Blue2) */
-body.wsu-palette-palette3 .header-group {
+body.wsu-palette-palette3 .ip-headline {
 	background-color: #fff;
 }
 
-body.wsu-palette-palette3 .header-group sub h1 {
+body.wsu-palette-palette3 .ip-headline h1 {
 	color: #4f868e;
 }
 
@@ -43,11 +43,11 @@ body.wsu-palette-palette3 .dropcap:first-child:first-letter {
 }
 
 /* Default (Gray2) */
-body.wsu-palette-palette5 .header-group {
+body.wsu-palette-palette5 .ip-headline {
 	background-color: #fff;
 }
 
-body.wsu-palette-palette5 .header-group sub h1 {
+body.wsu-palette-palette5 .ip-headline h1 {
 	color: #8d959a;
 }
 
