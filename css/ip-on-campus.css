@@ -528,11 +528,12 @@ p a.button.cta:focus {
 .accordion.duties {
 	border-bottom: none;
 }
+/*
 .accordion.duties ul li {
 	font-family: "Open Sans Condensed";
 	font-size:16px;
 	color:#8d959a;
-}
+}*/
 .accordion.duties h3.ui-accordion-header.ui-state-default {
 	background-position: center 35px;
 }
