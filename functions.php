@@ -99,7 +99,7 @@ class WSU_IP_Theme {
 	 */
 	public function enqueue_scripts() {
 		wp_enqueue_script( 'wsu-ip-fos', get_stylesheet_directory_uri() . '/js/ip-fos-view.js', array( 'backbone' ), spine_get_script_version(), true );
-		wp_enqueue_script( 'wsu-ip-js', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery' ), spine_get_script_version(), true );
+		wp_enqueue_script( 'wsu-ip-js', get_stylesheet_directory_uri() . '/js/script.js', array( 'backbone' ), spine_get_script_version(), true );
 	}
 
 	/**
