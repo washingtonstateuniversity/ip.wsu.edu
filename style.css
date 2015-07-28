@@ -86,7 +86,7 @@ hr + h4 {
 	color: #981e32;
 	text-align: center;
 	text-transform: uppercase;
-	width: 100%;
+	width: inherit;
 	resize: both;
 	position: relative;
 	font-style: normal;
