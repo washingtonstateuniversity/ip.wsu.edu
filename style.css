@@ -306,20 +306,12 @@ main .row {
 }
 .video {
 	padding:0;
-	display:block;
 	height:370px;
-	background-color:green;
 	background-repeat:no-repeat;
 	background-size:cover;
 }
 
-.video section .column {
-	width:100%;
-	height:100%;
-	position: absolute;
-	top:0;
-	left:0;
-}
+
 .video p,
 .video p a {
 	height:100%;
@@ -1483,10 +1475,6 @@ a.more {
 
 a.more:hover {
 	border-bottom: dotted 2px #d7dadb;
-}
-
-section.news-events ul li span.content-item-event-title {
-	width: 85%;
 }
 
 section.news-events ul li a:hover,
