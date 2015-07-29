@@ -323,9 +323,7 @@ main .row {
 	height:0;
 	width:100%;
 	left:0;
-	top:0;
 	margin:0 auto;
-	padding:0 0 25% 0;
 }
 .video a.video-play {
 	display:block;
@@ -333,17 +331,19 @@ main .row {
 	height:0;
 	position:absolute;
 	margin:0 auto;
-	padding:0 0 25% 0;
+	padding:0 0 30% 0;
 	text-decoration: none;
 	border:none;
 	background:url(assets/img/play-icon.png) center center;
 	background-repeat:no-repeat;
+	background-size:12%;
 	cursor:pointer;
 }
 .video a.video-play:hover,
 .video a.video-play:focus {
 	background:url(assets/img/play-icon-hover.png) center center;
 	background-repeat:no-repeat;
+	background-size:12%;
 }
 /* ============================================================
   TEXT
@@ -1462,6 +1462,7 @@ section.news-events ul li {
 	border-bottom: none;
 	width: 100%;
 	display: block;
+	padding:1em 0 1em 0;
 }
 
 section.news-events ul li a,
@@ -1469,12 +1470,12 @@ section.news-events ul li a:hover,
 a.more {
 	padding: 1em 0;
 	width: 100%;
-	display: block;
 	border-bottom: none;
 }
 
 a.more {
-	width: 93%;
+	display:block;
+	width: 91%;
 	margin-left: 4.5%;
 	padding-top: 0;
 }
@@ -1502,6 +1503,8 @@ section.news-events ul li .content-item-event-meta {
 section.news-events ul li .content-item-event-date {
 	font-weight: 700;
 	color: #00a5bd;
+	vertical-align: top;
+	padding-top:1em;
 }
 
 section.news-events ul li .content-item-event-title {
