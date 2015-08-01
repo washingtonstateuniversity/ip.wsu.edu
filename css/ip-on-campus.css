@@ -576,3 +576,31 @@ p a.button.cta:focus {
 	height: 85px;
 	margin-top: 45px;
 }
+/* ============================================================
+  PAGE SPECIFICS
+============================================================ */
+
+/* =====================================
+  	About us /about-us/
+===================================== */
+.h-stats {
+	font-size: 54px;
+	line-height: 1.28em;
+	font-weight: 600;
+	font-style: normal;
+	padding-bottom: 0;
+}
+
+.h-stats .h-stats-thin {
+	color: #ada400;
+	font-weight: 300;
+}
+
+h3.h-stats-bottom {
+	font-weight: 300;
+	color: #fff;
+}
+
+.yellow-stat-text {
+	color: #ffb81c;
+}
