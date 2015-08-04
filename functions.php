@@ -20,6 +20,8 @@ class WSU_IP_Theme {
 		add_filter( 'spine_builder_save_header',  array( $this, 'save_builder_columns' ), 10, 2 );
 
 		add_filter( 'make_prepare_data', array( $this, 'prepare_page_nav' ), 10, 1 );
+
+		add_filter( 'wsuwp_people_item_html', array( $this, 'people_html' ), 10, 2 );
 	}
 
 	/**
@@ -191,6 +193,41 @@ class WSU_IP_Theme {
 		update_post_meta( get_the_ID(), '_ip_anchor_nav_data', $anchor_nav );
 
 		return $clean_sections;
+	}
+
+	/**
+	 * Provide a custom HTML template for use with syndicated people.
+	 *
+	 * @param string   $html   The HTML to output for an individual person.
+	 * @param stdClass $person Object representing a person received from people.wsu.edu.
+	 *
+	 * @return string The HTML to output for a person.
+	 */
+	public function people_html( $html, $person ) {
+		if ( isset( $person->working_title[0] ) ) {
+			$title = $person->working_title[0];
+		} else {
+			$title = $person->position_title;
+		}
+
+		ob_start();
+		?>
+		<div class="wsuwp-person-container">
+			<?php if ( isset( $person->profile_photo ) && $person->profile_photo ) : ?>
+				<figure class="wsuwp-person-photo">
+					<img src="<?php echo esc_url( $person->profile_photo ); ?>" />
+				</figure>
+			<?php endif; ?>
+			<div class="wsuwp-person-name"><?php echo esc_html( $person->title ); ?></div>
+			<div class="wsuwp-person-position"><?php echo esc_html( $title ); ?></div>
+			<div class="wsuwp-person-office"><?php echo esc_html( $person->office ); ?></div>
+			<div class="wsuwp-person-phone"><?php echo esc_html( $person->phone ); ?></div>
+		</div>
+		<?php
+		$html = ob_get_contents();
+		ob_end_clean();
+
+		return $html;
 	}
 }
 new WSU_IP_Theme();
