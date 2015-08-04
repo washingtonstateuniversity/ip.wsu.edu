@@ -81,7 +81,7 @@ hr + h4 {
 }
 
 .ip-headline h1 {
-	font-size: 76px;
+	font-size: 176%;
 	line-height: 2.368421053em; /* 180px when font-size is 76px */
 	color: #981e32;
 	text-align: center;
