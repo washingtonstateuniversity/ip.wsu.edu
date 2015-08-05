@@ -108,11 +108,17 @@ var wsuIPTheme = wsuIPTheme || {};
 	var last_section_height = function() {
 		var doc_height = $(document).height();
 		var win_height = $(window).height();
+		var extra_height = 0;
+
+		if ( $('.admin-bar').length > 0 ) {
+			doc_height = doc_height - 32;
+			extra_height = 32;
+		}
 
 		if ( win_height == doc_height ) {
 			console.log('test');
 			var $last_section = $('div.page section').last();
-			var min_height = $last_section.outerHeight() + ( doc_height - $('.main-footer-sitename').offset().top ) - 30;
+			var min_height = $last_section.outerHeight() + ( doc_height - $('.main-footer-sitename').offset().top ) - 30 + extra_height;
 
 			$last_section.css('min-height',min_height);
 		}
