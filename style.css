@@ -109,8 +109,15 @@ hr + h4 {
 }
 
 /* ============================================================
-  MAIN-HEADER Site Name (sup)
+  MAIN-HEADER Site Name
 ============================================================ */
+.main-header-sitename {
+	position: fixed;
+	top: 0;
+	width: inherit;
+	z-index: 99999;
+}
+
 .main-header-sitename .sup-header {
 	background-color: #981e32;
 	width: inherit;
