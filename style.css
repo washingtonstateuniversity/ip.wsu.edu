@@ -112,6 +112,10 @@ hr + h4 {
 	top: 32px;
 }
 
+.size-lt-large .main-header-sitename {
+	display: none;
+}
+
 .main-footer-sitename .sup-footer,
 .main-header-sitename .sup-header {
 	background-color: #981e32;
