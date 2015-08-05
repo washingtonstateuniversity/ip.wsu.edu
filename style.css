@@ -126,7 +126,7 @@ hr + h4 {
 .main-footer-sitename .sup-footer .sup-footer-default,
 .main-header-sitename .sup-header .sup-header-default {
 	display: block;
-	line-height: 2em;
+	line-height: 30px;
 	color: #cbc4a2;
 	text-align: center;
 	letter-spacing: 5.33px;
