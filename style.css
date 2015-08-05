@@ -280,6 +280,7 @@ main .row {
 ============================================================ */
 .featured-image {
 	background-position: top left;
+	margin-top: 30px;
 }
 
 .image-span {
