@@ -23,6 +23,7 @@ html,
 	box-sizing: border-box;
 	height:100%;
 }
+.home .ip-headline,
 .home .main-header:not(.gutter) .header-group:not(.unset):not(.guttered), 
 .home .main-header .header-group:not(.unset),
 .home .main-header.foot-title,
