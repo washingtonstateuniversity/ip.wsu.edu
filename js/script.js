@@ -7,10 +7,9 @@ var wsuIPTheme = wsuIPTheme || {};
 
 	var header_original_position = false,
 		headline_current_height = false,
-		calculated_height = false,
 		last_position = false,
+		stop_position = false,
 		is_sticky = false,
-		$main_header = false,
 		$anchor_nav_wrapper = '';
 
 	wsuIPTheme.appView = Backbone.View.extend({
@@ -23,12 +22,11 @@ var wsuIPTheme = wsuIPTheme || {};
 		scrollStickyHeader: function() {
 			var scroll_position = $(document).scrollTop();
 
+			if ( false === stop_position ) {
+				stop_position = $('.main-header-sitename').height();
+			}
 			if ( false === last_position ) {
 				last_position = scroll_position;
-			}
-
-			if ( false === $main_header ) {
-				$main_header = $('.main-header');
 			}
 
 			if ( '' === $anchor_nav_wrapper ) {
@@ -40,56 +38,26 @@ var wsuIPTheme = wsuIPTheme || {};
 			}
 
 			if ( false === header_original_position ) {
-				header_original_position = $('.ip-headline').offset().top;
+				header_original_position = $('.anchor-nav-wrapper').offset().top;
 			}
 
 			if ( false === headline_current_height ) {
-				headline_current_height = $('.ip-headline').outerHeight();
-			}
-
-			if ( false === calculated_height ) {
-				if ( $anchor_nav_wrapper ) {
-					calculated_height = header_original_position + $anchor_nav_wrapper.height() + headline_current_height;
-				} else {
-					calculated_height = header_original_position + headline_current_height;
-				}
+				headline_current_height = $('.anchor-nav-wrapper').outerHeight();
 			}
 
 			var sticky_position = header_original_position - scroll_position;
 
-			if ( sticky_position <= 0 && false === is_sticky ) {
+			if ( sticky_position <= stop_position && false === is_sticky ) {
 				is_sticky = true;
 				$('body').addClass('fixed-header');
-				$main_header.css('height', calculated_height + 'px' );
 			}
 
-			if ( sticky_position > 0 && true === is_sticky ) {
+			if ( sticky_position > stop_position && true === is_sticky ) {
 				is_sticky = false;
 				$('body').removeClass('fixed-header');
-				$main_header.css('height', 'auto');
 				$anchor_nav_wrapper.css('top','');
 			}
-
-			// Scrolling down, headline should get smaller as header gets sticky.
-			if ( is_sticky && ( last_position <= scroll_position ) ) {
-				if ( ( scroll_position - header_original_position ) <= 240 ) {
-					$('.ip-headline h1').css('font-size', ( ( 180 - ( ( scroll_position - header_original_position ) / 2 ) ) / 2.368421053 ) + 'px');
-					if ( $anchor_nav_wrapper ) {
-						$anchor_nav_wrapper.css('top', Math.floor( ( 180 - ( ( scroll_position - header_original_position ) ) / 2 ) ) );
-					}
-				}
-			}
-
-			// Scrolling up, headline should get larger when we reach the top.
-			if ( is_sticky && ( last_position > scroll_position ) ) {
-				if ( ( scroll_position - header_original_position ) <= 240 ) {
-					$('.ip-headline h1').css('font-size', ( ( 180 - ( ( scroll_position - header_original_position ) / 2 ) ) / 2.368421053 ) + 'px');
-					if ( $anchor_nav_wrapper ) {
-						$anchor_nav_wrapper.css('top', Math.floor( ( ( 180 - ( ( scroll_position - header_original_position ) / 2 ) ) ) ) );
-					}
-				}
-			}
-
+			
 			last_position = scroll_position;
 		}
 	});

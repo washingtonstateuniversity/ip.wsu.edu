@@ -96,18 +96,6 @@ hr + h4 {
 	padding: 0;
 }
 
-/* Sticky headline on scroll */
-.fixed-header #binder .main-header {
-	width: inherit; /* Inherit the maintained pixel width of main */
-}
-
-.fixed-header #binder .main-header .ip-headline {
-	position: fixed;
-	top: 0;
-	bottom: initial;
-	z-index: 99999;
-}
-
 /* ============================================================
   MAIN-HEADER Site Name
 ============================================================ */
@@ -259,7 +247,7 @@ main .anchor-nav li a {
 .fixed-header .anchor-nav-wrapper {
 	position: fixed;
 	width: inherit;
-	top: 180px;
+	top: 30px;
 	z-index: 99999;
 }
 
