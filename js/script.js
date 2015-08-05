@@ -93,11 +93,26 @@ var wsuIPTheme = wsuIPTheme || {};
 		});
 	};
 
+	var last_section_height = function() {
+		var doc_height = $(document).height();
+		var win_height = $(window).height();
+
+		if ( win_height == doc_height ) {
+			console.log('test');
+			var $last_section = $('div.page section').last();
+			var min_height = $last_section.outerHeight() + ( doc_height - $('.main-footer-sitename').offset().top ) - 30;
+
+			$last_section.css('min-height',min_height);
+		}
+
+	};
+
 	$(document).ready(function() {
 		window.wsuIPTheme.app = new wsuIPTheme.appView();
 		if ( undefined !== wsuFOS.appView ) {
 			wsuFOS.app = new wsuFOS.appView();
 		}
+		last_section_height();
 		setup_form_modals();
 	});
 })(window, Backbone, jQuery, _, wsuIPTheme, wsuFOS);
