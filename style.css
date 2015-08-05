@@ -107,6 +107,11 @@ hr + h4 {
 	z-index: 99999;
 }
 
+/* When the WordPress admin bar is enabled, push this down a bit. */
+.admin-bar .main-header-sitename {
+	top: 32px;
+}
+
 .main-footer-sitename .sup-footer,
 .main-header-sitename .sup-header {
 	background-color: #981e32;
@@ -256,6 +261,11 @@ main .anchor-nav li a {
 	width: inherit;
 	top: 30px;
 	z-index: 99999;
+}
+
+/* When the WordPress admin bar is enabled, push this down a bit. */
+.admin-bar.fixed-header .anchor-nav-wrapper {
+	top: 62px;
 }
 
 /* ============================================================

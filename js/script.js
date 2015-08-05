@@ -23,7 +23,7 @@ var wsuIPTheme = wsuIPTheme || {};
 			var scroll_position = $(document).scrollTop();
 
 			if ( false === stop_position ) {
-				stop_position = $('.main-header-sitename').height();
+				stop_position = $('.main-header-sitename').height() + $('.main-header-sitename').offset().top;
 			}
 
 			if ( '' === main_header_text ) {
