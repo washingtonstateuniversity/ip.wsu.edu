@@ -9,6 +9,7 @@ var wsuIPTheme = wsuIPTheme || {};
 		headline_current_height = false,
 		stop_position = false,
 		is_sticky = false,
+		is_mobile = '',
 		main_header_text = '',
 		$anchor_nav_wrapper = '';
 
@@ -22,8 +23,19 @@ var wsuIPTheme = wsuIPTheme || {};
 		scrollStickyHeader: function() {
 			var scroll_position = $(document).scrollTop();
 
+			if ( '' == is_mobile ) {
+				if ( $('.size-lt-large').length > 0 ) {
+					is_mobile = true;
+				} else {
+					is_mobile = false;
+				}
+			}
 			if ( false === stop_position ) {
-				stop_position = $('.main-header-sitename').height();
+				if ( is_mobile ) {
+					stop_position = 50;
+				} else {
+					stop_position = $('.main-header-sitename').height() + $('.main-header-sitename').offset().top;
+				}
 			}
 
 			if ( '' === main_header_text ) {
@@ -38,12 +50,16 @@ var wsuIPTheme = wsuIPTheme || {};
 				}
 			}
 
+			if ( false === $anchor_nav_wrapper ) {
+				return; // nothing to do here.
+			}
+
 			if ( false === header_original_position ) {
-				header_original_position = $('.anchor-nav-wrapper').offset().top;
+				header_original_position = $anchor_nav_wrapper.offset().top;
 			}
 
 			if ( false === headline_current_height ) {
-				headline_current_height = $('.anchor-nav-wrapper').outerHeight();
+				headline_current_height = $anchor_nav_wrapper.outerHeight();
 			}
 
 			var sticky_position = header_original_position - scroll_position;
@@ -89,11 +105,26 @@ var wsuIPTheme = wsuIPTheme || {};
 		});
 	};
 
+	var last_section_height = function() {
+		var doc_height = $(document).height();
+		var win_height = $(window).height();
+
+		if ( win_height == doc_height ) {
+			console.log('test');
+			var $last_section = $('div.page section').last();
+			var min_height = $last_section.outerHeight() + ( doc_height - $('.main-footer-sitename').offset().top ) - 30;
+
+			$last_section.css('min-height',min_height);
+		}
+
+	};
+
 	$(document).ready(function() {
 		window.wsuIPTheme.app = new wsuIPTheme.appView();
 		if ( undefined !== wsuFOS.appView ) {
 			wsuFOS.app = new wsuFOS.appView();
 		}
+		last_section_height();
 		setup_form_modals();
 	});
 })(window, Backbone, jQuery, _, wsuIPTheme, wsuFOS);
