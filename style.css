@@ -70,7 +70,7 @@ hr + h4 {
 	text-align: center;
 	clear: both;
 	float: left;
-	width: inherit;
+	width: 100%;
 	margin: 0 auto;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -86,7 +86,7 @@ hr + h4 {
 	color: #981e32;
 	text-align: center;
 	text-transform: uppercase;
-	width: inherit;
+	width: 100%;
 	resize: both;
 	position: relative;
 	font-style: normal;

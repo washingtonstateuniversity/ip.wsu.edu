@@ -57,7 +57,7 @@ var wsuIPTheme = wsuIPTheme || {};
 				$('body').removeClass('fixed-header');
 				$anchor_nav_wrapper.css('top','');
 			}
-			
+
 			last_position = scroll_position;
 		}
 	});
