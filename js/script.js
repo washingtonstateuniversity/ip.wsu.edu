@@ -9,6 +9,7 @@ var wsuIPTheme = wsuIPTheme || {};
 		headline_current_height = false,
 		stop_position = false,
 		is_sticky = false,
+		is_mobile = '',
 		main_header_text = '',
 		$anchor_nav_wrapper = '';
 
@@ -22,8 +23,19 @@ var wsuIPTheme = wsuIPTheme || {};
 		scrollStickyHeader: function() {
 			var scroll_position = $(document).scrollTop();
 
+			if ( '' == is_mobile ) {
+				if ( $('.size-lt-large').length > 0 ) {
+					is_mobile = true;
+				} else {
+					is_mobile = false;
+				}
+			}
 			if ( false === stop_position ) {
-				stop_position = $('.main-header-sitename').height() + $('.main-header-sitename').offset().top;
+				if ( is_mobile ) {
+					stop_position = 50;
+				} else {
+					stop_position = $('.main-header-sitename').height() + $('.main-header-sitename').offset().top;
+				}
 			}
 
 			if ( '' === main_header_text ) {
