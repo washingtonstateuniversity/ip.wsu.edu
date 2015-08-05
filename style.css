@@ -53,6 +53,7 @@ hr + h4 {
 /* ============================================================
   MAIN-HEADER OVERRIDES
 ============================================================ */
+.main-footer,
 .main-header {
 	left: 0;
 	background-color: transparent;
@@ -106,12 +107,14 @@ hr + h4 {
 	z-index: 99999;
 }
 
+.main-footer-sitename .sup-footer,
 .main-header-sitename .sup-header {
 	background-color: #981e32;
 	width: inherit;
 	height: 30px;
 }
 
+.main-footer-sitename .sup-footer .sup-footer-default,
 .main-header-sitename .sup-header .sup-header-default {
 	display: block;
 	line-height: 2em;
@@ -126,15 +129,19 @@ hr + h4 {
 /* ============================================================
   MAIN-HEADER Footer area
 ============================================================ */
-.main-header.foot-title .header-group:not(.unset) {
+.main-footer.foot-title .header-group:not(.unset) {
 	padding:0;
 }
 
-.main-header.foot-title {
-	height:0;
+.main-footer.foot-title {
+	height: 30px;
 	/* Removes footer title for now
 	comment it out to bring back the footer
 	display:none;*/
+}
+
+.sup-footer {
+	display: block;
 }
 
 /* ============================================================
