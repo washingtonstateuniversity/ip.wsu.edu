@@ -7,9 +7,9 @@ var wsuIPTheme = wsuIPTheme || {};
 
 	var header_original_position = false,
 		headline_current_height = false,
-		last_position = false,
 		stop_position = false,
 		is_sticky = false,
+		main_header_text = '',
 		$anchor_nav_wrapper = '';
 
 	wsuIPTheme.appView = Backbone.View.extend({
@@ -25,8 +25,9 @@ var wsuIPTheme = wsuIPTheme || {};
 			if ( false === stop_position ) {
 				stop_position = $('.main-header-sitename').height();
 			}
-			if ( false === last_position ) {
-				last_position = scroll_position;
+
+			if ( '' === main_header_text ) {
+				main_header_text = $('.sup-header-default').text();
 			}
 
 			if ( '' === $anchor_nav_wrapper ) {
@@ -49,16 +50,16 @@ var wsuIPTheme = wsuIPTheme || {};
 
 			if ( sticky_position <= stop_position && false === is_sticky ) {
 				is_sticky = true;
+				jQuery('.sup-header-default').fadeOut(100, function() { jQuery(this).text( $('.ip-headline h1').text()).fadeIn(200); });
 				$('body').addClass('fixed-header');
 			}
 
 			if ( sticky_position > stop_position && true === is_sticky ) {
 				is_sticky = false;
+				jQuery('.sup-header-default').fadeOut(100, function() { jQuery(this).text(main_header_text).fadeIn(200); });
 				$('body').removeClass('fixed-header');
 				$anchor_nav_wrapper.css('top','');
 			}
-
-			last_position = scroll_position;
 		}
 	});
 
