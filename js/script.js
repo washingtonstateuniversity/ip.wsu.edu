@@ -38,12 +38,16 @@ var wsuIPTheme = wsuIPTheme || {};
 				}
 			}
 
+			if ( false === $anchor_nav_wrapper ) {
+				return; // nothing to do here.
+			}
+
 			if ( false === header_original_position ) {
-				header_original_position = $('.anchor-nav-wrapper').offset().top;
+				header_original_position = $anchor_nav_wrapper.offset().top;
 			}
 
 			if ( false === headline_current_height ) {
-				headline_current_height = $('.anchor-nav-wrapper').outerHeight();
+				headline_current_height = $anchor_nav_wrapper.outerHeight();
 			}
 
 			var sticky_position = header_original_position - scroll_position;
