@@ -144,6 +144,7 @@ hr + h4 {
 
 .sup-footer {
 	display: block;
+	text-transform: uppercase;
 }
 
 /* ============================================================
