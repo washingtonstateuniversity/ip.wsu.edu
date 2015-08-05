@@ -53,6 +53,7 @@ hr + h4 {
 /* ============================================================
   MAIN-HEADER OVERRIDES
 ============================================================ */
+.main-footer,
 .main-header {
 	left: 0;
 	background-color: transparent;
@@ -70,7 +71,7 @@ hr + h4 {
 	text-align: center;
 	clear: both;
 	float: left;
-	width: inherit;
+	width: 100%;
 	margin: 0 auto;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -81,12 +82,12 @@ hr + h4 {
 }
 
 .ip-headline h1 {
-	font-size: 176%;
+	font-size: 76px;
 	line-height: 2.368421053em; /* 180px when font-size is 76px */
 	color: #981e32;
 	text-align: center;
 	text-transform: uppercase;
-	width: inherit;
+	width: 100%;
 	resize: both;
 	position: relative;
 	font-style: normal;
@@ -96,27 +97,24 @@ hr + h4 {
 	padding: 0;
 }
 
-/* Sticky headline on scroll */
-.fixed-header #binder .main-header {
-	width: inherit; /* Inherit the maintained pixel width of main */
-}
-
-.fixed-header #binder .main-header .ip-headline {
+/* ============================================================
+  MAIN-HEADER Site Name
+============================================================ */
+.main-header-sitename {
 	position: fixed;
 	top: 0;
-	bottom: initial;
+	width: inherit;
 	z-index: 99999;
 }
 
-/* ============================================================
-  MAIN-HEADER Site Name (sup)
-============================================================ */
+.main-footer-sitename .sup-footer,
 .main-header-sitename .sup-header {
 	background-color: #981e32;
 	width: inherit;
 	height: 30px;
 }
 
+.main-footer-sitename .sup-footer .sup-footer-default,
 .main-header-sitename .sup-header .sup-header-default {
 	display: block;
 	line-height: 2em;
@@ -131,15 +129,19 @@ hr + h4 {
 /* ============================================================
   MAIN-HEADER Footer area
 ============================================================ */
-.main-header.foot-title .header-group:not(.unset) {
+.main-footer.foot-title .header-group:not(.unset) {
 	padding:0;
 }
 
-.main-header.foot-title {
-	height:0;
+.main-footer.foot-title {
+	height: 30px;
 	/* Removes footer title for now
 	comment it out to bring back the footer
 	display:none;*/
+}
+
+.sup-footer {
+	display: block;
 }
 
 /* ============================================================
@@ -252,7 +254,7 @@ main .anchor-nav li a {
 .fixed-header .anchor-nav-wrapper {
 	position: fixed;
 	width: inherit;
-	top: 180px;
+	top: 30px;
 	z-index: 99999;
 }
 
