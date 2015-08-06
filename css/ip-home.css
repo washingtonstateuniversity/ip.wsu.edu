@@ -32,7 +32,7 @@ html,
 }
 .home .main-header,
 .main-header sup:not(.unset) {
-	height:54px;
+	height:30px;
 	background-color:#2b3033;
 }
 .main-header sup:not(.unset) span {
