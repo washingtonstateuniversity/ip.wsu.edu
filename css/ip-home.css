@@ -52,6 +52,17 @@ html,
 .home main .column p {
 	margin-bottom:0;
 }
+
+/* Default state is hidden. */
+.path-none main .column p {
+	display: none;
+}
+
+/* Clicking a column makes it active. */
+.path-none main .column.active-panel p {
+	display: block;
+}
+
 /* ----------------------------------
   Static stylistic styles
 ---------------------------------- */
