@@ -2005,19 +2005,20 @@ div.reg-date span.reg-month {
 	.row.quarters .column.four {
 		width: 25%;
 	}
-	.wsuwp-people-wrapper .wsuwp-person-container {
-		display:block;
-		width:100%;
-	}
-	.wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-photo, .wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container {
-		display: inline-block;
-	}
+
 }
 
 @media screen and ( max-width: 694px) {
 	/***** FOUR COLS *****/
 	.row.quarters .column.one {	
 		width: 100%;
+	}
+		.wsuwp-people-wrapper .wsuwp-person-container {
+		display:block;
+		width:100%;
+	}
+	.wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-photo, .wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container {
+		display: inline-block;
 	}
 }
 
