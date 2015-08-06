@@ -100,8 +100,11 @@ class WSU_IP_Theme {
 	 * Enqueue custom scripts for International Programs.
 	 */
 	public function enqueue_scripts() {
-		wp_enqueue_script( 'wsu-ip-fos', get_stylesheet_directory_uri() . '/js/ip-fos-view.js', array( 'backbone' ), spine_get_script_version(), true );
-		wp_enqueue_script( 'wsu-ip-js', get_stylesheet_directory_uri() . '/js/script.js', array( 'backbone' ), spine_get_script_version(), true );
+		// Our standard scripts aren't required on the IP Home page.
+		if ( ! $this->is_ip_site( 'ip-home' ) ) {
+			wp_enqueue_script( 'wsu-ip-fos', get_stylesheet_directory_uri() . '/js/ip-fos-view.js', array( 'backbone' ), spine_get_script_version(), true );
+			wp_enqueue_script( 'wsu-ip-js', get_stylesheet_directory_uri() . '/js/script.js', array( 'backbone' ), spine_get_script_version(), true );
+		}
 	}
 
 	/**
