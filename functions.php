@@ -218,10 +218,12 @@ class WSU_IP_Theme {
 					<img src="<?php echo esc_url( $person->profile_photo ); ?>" />
 				</figure>
 			<?php endif; ?>
+			<div class="wsuwp-person-info-container">
 			<div class="wsuwp-person-name"><?php echo esc_html( $person->title ); ?></div>
 			<div class="wsuwp-person-position"><?php echo esc_html( $title ); ?></div>
 			<div class="wsuwp-person-office"><?php echo esc_html( $person->office ); ?></div>
 			<div class="wsuwp-person-phone"><?php echo esc_html( $person->phone ); ?></div>
+		</div>
 		</div>
 		<?php
 		$html = ob_get_contents();

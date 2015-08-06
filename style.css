@@ -82,8 +82,8 @@ hr + h4 {
 }
 
 .ip-headline h1 {
-	font-size: 76px;
-	line-height: 2.368421053em; /* 180px when font-size is 76px */
+	font-size: 176%;
+	line-height: 1.4;
 	color: #981e32;
 	text-align: center;
 	text-transform: uppercase;
@@ -94,7 +94,7 @@ hr + h4 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	letter-spacing: -2.5px;
-	padding: 0;
+	padding: .7em 0;
 }
 
 /* ============================================================
@@ -1673,7 +1673,74 @@ textarea:focus {
 .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select {
 	margin-left:1px;
 }
+/* =========================
+  	People
+========================== */
+.wsuwp-people-wrapper {
+	width:100%;
+	border-bottom: dotted 2px #d7dadb;
+	display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  
+flex-wrap: wrap;
+}
+.wsuwp-people-wrapper .wsuwp-person-container {
+	box-sizing: border-box;
+	width:49%;
+	border-bottom: dotted 2px #d7dadb;
+	padding:1.2em 0;
+	display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  	display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+    display: -webkit-flex;
+  /* NEW - Chrome */
+	display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+    display: -webkit-flex;
+  /* NEW - Chrome */
+ }
+.wsuwp-people-wrapper .wsuwp-person-container:last-child {
+	border-bottom:none;
+}
+.wsuwp-people-wrapper .wsuwp-person-container:nth-child(odd) {
+  flex: 1 1 calc(50% - 50px);
+  justify-content: space-around;
+}
+/*.wsuwp-people-wrapper .wsuwp-person-container:nth-child(even) {
 
+}*/
+.wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-photo,.wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container {
+	box-sizing: border-box;
+	vertical-align: text-top;
+	
+}
+.wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container {
+	font-size:1.1em;
+	padding-left:1em;
+	padding-right:1em;
+	word-wrap: break-word;
+	flex: 1 1 calc(50% - 50px);
+}
+.wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container .wsuwp-person-name {
+	color:#2B3033;
+	padding-bottom:.4em;
+}
 /* =========================
   	Utilities
 ========================== */
@@ -1833,10 +1900,6 @@ div.reg-date span.reg-month {
 		padding-top: 1em;
 	}
 	
-	.ip-headline h1 {
-		font-size: 2.1em;
-	}
-	
 	main .anchor-nav li a {
 		font-size: .9em;
 	}
@@ -1941,6 +2004,13 @@ div.reg-date span.reg-month {
 	.row.quarters .column.three,
 	.row.quarters .column.four {
 		width: 25%;
+	}
+	.wsuwp-people-wrapper .wsuwp-person-container {
+		display:block;
+		width:100%;
+	}
+	.wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-photo, .wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container {
+		display: inline-block;
 	}
 }
 
