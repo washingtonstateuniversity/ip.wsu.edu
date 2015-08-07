@@ -27,12 +27,15 @@ html,
 
 .home .main-header,
 .main-header sup:not(.unset) {
-	height:40px;
+	height:50px;
 	background-color:#2b3033;
+	text-align: center;
+	width:100%;
 }
 .main-header-sitename .sup-header .sup-header-default{
 	font-size:2em;
 	letter-spacing: 12px;
+	padding-top: 10px;
 }
 .home .column {
 	max-height:100%;
@@ -169,8 +172,13 @@ main .blue p a.button:focus {
 		left: calc((33.3% / 2 ) - 99px) !important;
 	}
 
-}
 
+}
+@media screen (min-width: 791px) and (max-width:990px) {
+	.home .column h2 {
+		margin-top:30%;
+	}
+}
 @media screen and (max-width: 790px) {
 	#jacket {
 		height: 100vh;
@@ -189,14 +197,13 @@ main .blue p a.button:focus {
 		flex:1;
 		padding:0;
 	}
-	.home main .column.active-panel {
-		transition: min-height 0.15s ease-out;
-		min-height:100vh;
-	}
 	.home .column h2 {
-		padding-top: 90px;
-		font-size: 144%;
-		margin:0;
+		margin-top:8%;
+	}
+	.home main .column.active-panel {
+		transition: min-height 0.15s ease-in;
+		min-height:calc(100vh - 35%);
+		max-height:calc(100vh - 15%);
 	}
 	.home .main-header, .main-header sup:not(.unset) {
 		padding-top:10px;
@@ -231,9 +238,8 @@ main .blue p a.button:focus {
 }
 
 @media screen and (max-height: 800px ) {
- 
    .home main p a.button {
-   		font-size:1em;
+   		font-size:.8em;
    		padding:8px 4px;
    }
 }
