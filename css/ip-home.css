@@ -32,7 +32,7 @@ html,
 }
 .home .main-header,
 .main-header sup:not(.unset) {
-	height:30px;
+	height:35px;
 	background-color:#2b3033;
 }
 .main-header sup:not(.unset) span {
@@ -188,15 +188,18 @@ main .blue p a.button:focus {
 		margin-top:0;
 	}
 	.home .column.crimson,
-	.home .column.blue, 
+	.home .column.blue,
 	.home .column {
 		padding-bottom:22%;
 		background-position:center;
 	}
+	.home .column.white {
+		background-position: 60% 0;
+	}
 	.home .main-header, 
 	.main-header sup:not(.unset) {
-		height:95px;
-		padding-top:12px;
+		height:50px;
+		padding-top:32px;
 	}
 	.main-header sup:not(.unset) span {
 		font-size:1.4em;
@@ -207,6 +210,9 @@ main .blue p a.button:focus {
 	.home .column h2 { 
 		font-size:40px;
 	}
+}
+.size-lt-large .main-header-sitename {
+	display:block;
 }
 /* ----------------------
   Height
