@@ -193,9 +193,7 @@ main .blue p a.button:focus {
 		padding-bottom:22%;
 		background-position:center;
 	}
-	.home .column.white {
-		background-position: 60% 0;
-	}
+
 	.home .main-header, 
 	.main-header sup:not(.unset) {
 		height:50px;
@@ -209,6 +207,14 @@ main .blue p a.button:focus {
 @media screen and (max-width: 990px) { 
 	.home .column h2 { 
 		font-size:40px;
+	}
+	.home .column.crimson,
+	.home .column.blue {
+		background-position: 30% 0;
+		background-size: 300%;
+	}
+	.home .column.white {
+		background-position: 60% -200px;
 	}
 }
 .size-lt-large .main-header-sitename {
@@ -230,10 +236,6 @@ main .blue p a.button:focus {
    }
 }
 @media screen and (max-height: 800px ) {
-	.home .column.crimson,
-	.home .column.blue {
-		padding-bottom:12.1%;
-	}
    .home .column h2 {
    		padding-bottom:.5em;
    		font-size:40px;
