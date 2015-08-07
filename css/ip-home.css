@@ -5,16 +5,8 @@ body,
 html,
 #jacket,
 #binder,
-.home #binder:not(.fluid).max-1188, 
-.home #binder:not(.fluid).max-1386, 
-.home #binder:not(.fluid).max-1584, 
-.home #binder:not(.fluid).max-1782, 
-.home #binder:not(.fluid).max-1980,
-#binder:not(.fluid).max-1188 .row, 
-#binder:not(.fluid).max-1386 .row, 
-#binder:not(.fluid).max-1584 .row, 
-#binder:not(.fluid).max-1782 .row, 
-#binder:not(.fluid).max-1980 .row,
+.home #binder:not(.fluid).max-1188,
+.home #binder:not(.fluid).max-1188 .row,
 .home .page,
 .home main {
 	margin:0;
@@ -57,12 +49,12 @@ html,
 }
 
 /* Default state is hidden. */
-.path-none main .column p a {
+.home main .column p a {
 	visibility: hidden;
 }
 
 /* Clicking a column makes it active. */
-.path-none main .column.active-panel p a {
+.home main .column.active-panel p a {
 	visibility: visible;
 }
 
@@ -73,6 +65,11 @@ html,
 	font-size:64px;
 	text-transform: uppercase;
 	margin-top:60%;
+	color: #fff;
+}
+
+.home .column.white h2 {
+	color:#981E32;
 }
 
 .home .column.crimson:hover h2,
@@ -87,15 +84,6 @@ html,
 
 .home .column h2 .heavy {
 	font-weight:700;
-}
-
-.home .column.crimson h2,
-.home .column.blue h2 {
-	color:#fff;
-}
-
-.home .column.white h2 {
-	color:#981E32;
 }
 
 .home .column {
@@ -171,43 +159,42 @@ main .blue p a.button:focus {
 /* ----------------------
   Width
 -----------------------*/
-
 @media screen and (min-width: 990px) {
 	.home #spine.cropped {
-		left:calc((33.3% / 2 ) - 99px) !important;
+		left: calc((33.3% / 2 ) - 99px) !important;
 	}
 
 }
+
 @media screen and (max-width: 693px) {
 	#jacket {
 		height: initial;
 	}
+
 	.home .column h2 {
 		padding-top: 90px;
 		font-size: 44px;
 		margin-top:0;
 	}
-	.home .column.crimson,
-	.home .column.blue, 
-	.home .column {
-		padding-bottom:22%;
-		background-position:center;
-	}
+
 	.home .main-header, 
 	.main-header sup:not(.unset) {
 		height:95px;
 		padding-top:12px;
 	}
+
 	.main-header sup:not(.unset) span {
 		font-size:1.4em;
 		line-height:1.2em;
 	}
 }
+
 @media screen and (max-width: 990px) { 
 	.home .column h2 { 
 		font-size:40px;
 	}
 }
+
 /* ----------------------
   Height
 -----------------------*/
@@ -216,6 +203,7 @@ main .blue p a.button:focus {
    		font-size:1.2em;
    }
 }
+
 @media screen and (max-height: 800px ) {
    .home .column h2 {
    		font-size:40px;
@@ -225,6 +213,7 @@ main .blue p a.button:focus {
    		padding:8px 4px;
    }
 }
+
 /* ----------------------
   Height and Width
 -----------------------*/
