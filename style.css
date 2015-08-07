@@ -1719,36 +1719,51 @@ flex-wrap: wrap;
   /* TWEENER - IE 10 */
     display: -webkit-flex;
   /* NEW - Chrome */
+  	-webkit-flex-wrap: wrap;
+  	flex-wrap: wrap;
+  	flex-direction:row;
+  	align-content: flex-start;
  }
 .wsuwp-people-wrapper .wsuwp-person-container:last-child {
 	border-bottom:none;
+}
+.wsuwp-people-wrapper .wsuwp-person-container:nth-child(even) { 
+	justify-content: space-around;
+	padding-left:1em;
 }
 .wsuwp-people-wrapper .wsuwp-person-container:nth-child(odd) {
   flex: 1 1 calc(50% - 50px);
   justify-content: space-around;
   margin-right:2px;
+  padding-right:1em;
 }
-/*.wsuwp-people-wrapper .wsuwp-person-container:nth-child(even) {
-
-}*/
-.wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-photo,.wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container {
+ .wsuwp-person-photo,.wsuwp-person-info-container {
+	flex:1;
 	box-sizing: border-box;
 	vertical-align: text-top;
-	
+    color: #464e54;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    padding-bottom: 1.2rem;
+    font-weight: 300;
+}
+.wsuwp-person-profile-container {
+	flex:1 100%;
 }
 .wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container {
 	padding-left:1em;
 	padding-right:1em;
 	word-wrap: break-word;
-	flex: 1 1 calc(50% - 50px);
 }
+
 .wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container .wsuwp-person-name {
-	color:#2B3033;
+	font-weight:600;
 	padding-bottom:.4em;
 }
 .wsuwp-person-container:nth-last-child(2) {
     border-bottom: none;
  }
+ 
 /* =========================
   	Utilities
 ========================== */
