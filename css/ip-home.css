@@ -5,16 +5,9 @@ body,
 html,
 #jacket,
 #binder,
-.home #binder:not(.fluid).max-1188, 
-.home #binder:not(.fluid).max-1386, 
-.home #binder:not(.fluid).max-1584, 
-.home #binder:not(.fluid).max-1782, 
-.home #binder:not(.fluid).max-1980,
-#binder:not(.fluid).max-1188 .row, 
-#binder:not(.fluid).max-1386 .row, 
-#binder:not(.fluid).max-1584 .row, 
-#binder:not(.fluid).max-1782 .row, 
-#binder:not(.fluid).max-1980 .row,
+.home #binder:not(.fluid).max-1188,
+.home #binder:not(.fluid).max-1188 .row,
+.home .page,
 .home main {
 	margin:0;
 	padding:0;
@@ -23,13 +16,15 @@ html,
 	box-sizing: border-box;
 	height:100%;
 }
+
 .home .ip-headline,
 .home .main-header:not(.gutter) .header-group:not(.unset):not(.guttered), 
 .home .main-header .header-group:not(.unset),
-.home .main-header.foot-title,
+.home .main-footer,
 #spine .spine-actions {
 	display:none;
 }
+
 .home .main-header,
 .main-header sup:not(.unset) {
 	height:40px;
@@ -42,7 +37,7 @@ html,
 .home .column {
 	max-height:100%;
 	height:100%;
-	padding-bottom:70%;
+	padding: 0;
 }
 .home .column:hover {
 	width:100%;
@@ -54,12 +49,12 @@ html,
 }
 
 /* Default state is hidden. */
-.path-none main .column p a {
+.home main .column p a {
 	visibility: hidden;
 }
 
 /* Clicking a column makes it active. */
-.path-none main .column.active-panel p a {
+.home main .column.active-panel p a {
 	visibility: visible;
 }
 
@@ -69,7 +64,12 @@ html,
 .home .column h2 {
 	font-size:64px;
 	text-transform: uppercase;
-	padding-top:70%;
+	margin-top:60%;
+	color: #fff;
+}
+
+.home .column.white h2 {
+	color:#981E32;
 }
 
 .home .column.crimson:hover h2,
@@ -86,15 +86,6 @@ html,
 	font-weight:700;
 }
 
-.home .column.crimson h2,
-.home .column.blue h2 {
-	color:#fff;
-}
-
-.home .column.white h2 {
-	color:#981E32;
-}
-
 .home .column {
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -102,7 +93,6 @@ html,
 
 .home .column.crimson {
 	background-image: url(../assets/img/campus-aerial-crimson-light.jpg);
-	background-position: 40% -200px;
 }
 
 .home .column.crimson:hover {
@@ -112,7 +102,6 @@ html,
 
 .home .column.white {
 	background-image: url(../assets/img/eiffel_lighter.jpg);
-	background-position: 60% -450px;
 }
 
 .home .column.white:hover {
@@ -122,7 +111,6 @@ html,
 
 .home .column.blue {
 	background-image: url(../assets/img/students-butch_blue.jpg);
-	background-position: 30% -100px;
 }
 
 .home .column.blue:hover {
@@ -171,27 +159,22 @@ main .blue p a.button:focus {
 /* ----------------------
   Width
 -----------------------*/
-
 @media screen and (min-width: 990px) {
 	.home #spine.cropped {
-		left:calc((33.3% / 2 ) - 99px) !important;
+		left: calc((33.3% / 2 ) - 99px) !important;
 	}
 
 }
+
 @media screen and (max-width: 693px) {
 	#jacket {
 		height: initial;
 	}
+
 	.home .column h2 {
 		padding-top: 90px;
 		font-size: 44px;
 		margin-top:0;
-	}
-	.home .column.crimson,
-	.home .column.blue,
-	.home .column {
-		padding-bottom:22%;
-		background-position:center;
 	}
 
 	.home .main-header, 
@@ -199,45 +182,33 @@ main .blue p a.button:focus {
 		height:90px;
 		padding-top:32px;
 	}
+
 	.main-header sup:not(.unset) span {
 		font-size:1.4em;
 		line-height:1.2em;
 	}
 }
+
 @media screen and (max-width: 990px) { 
 	.home .column h2 { 
 		font-size:40px;
-	}
-	.home .column.crimson,
-	.home .column.blue {
-		background-position: 30% 0;
-		background-size: 300%;
-	}
-	.home .column.white {
-		background-position: 60% -200px;
 	}
 }
 .size-lt-large .main-header-sitename {
 	display:block;
 }
+
 /* ----------------------
   Height
 -----------------------*/
-@media screen and (min-height: 801px ) and (max-height:1100px){ 
-	.home .column.crimson,
-	.home .column.blue {
-		padding-bottom:22.1%;
-	}
-   .home .column h2 {
-   		padding-bottom:.5em;
-   }
+@media screen and (min-height: 801px ) and (max-height:1100px){
    .home main p a.button {
    		font-size:1.2em;
    }
 }
+
 @media screen and (max-height: 800px ) {
    .home .column h2 {
-   		padding-bottom:.5em;
    		font-size:40px;
    }
    .home main p a.button {
@@ -245,10 +216,11 @@ main .blue p a.button:focus {
    		padding:8px 4px;
    }
 }
+
 /* ----------------------
   Height and Width
 -----------------------*/
-@media (max-height: 1100px ) and (max-width:791){
+@media (max-height: 1100px ) and (max-width:791px){
 	   .home .column h2 { 
 	   		margin-top:0;
 	   }
