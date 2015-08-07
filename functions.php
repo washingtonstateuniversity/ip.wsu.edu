@@ -226,11 +226,14 @@ class WSU_IP_Theme {
 				</figure>
 			<?php endif; ?>
 			<div class="wsuwp-person-info-container">
-			<div class="wsuwp-person-name"><?php echo esc_html( $person->title ); ?></div>
-			<div class="wsuwp-person-position"><?php echo esc_html( $title ); ?></div>
-			<div class="wsuwp-person-office"><?php echo esc_html( $person->office ); ?></div>
-			<div class="wsuwp-person-phone"><?php echo esc_html( $person->phone ); ?></div>
-		</div>
+				<div class="wsuwp-person-name"><?php echo esc_html( $person->title ); ?></div>
+				<div class="wsuwp-person-position"><?php echo esc_html( $title ); ?></div>
+				<div class="wsuwp-person-office"><?php echo esc_html( $person->office ); ?></div>
+				<div class="wsuwp-person-phone"><?php echo esc_html( $person->phone ); ?></div>
+			</div>
+			<div class="wsuwp-person-profile-container">
+				<?php echo wp_kses_post( $person->bio_department ); ?>
+			</div>
 		</div>
 		<?php
 		$html = ob_get_contents();
