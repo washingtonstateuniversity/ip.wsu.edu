@@ -27,10 +27,10 @@ html,
 
 .home .main-header,
 .main-header sup:not(.unset) {
-	height:35px;
+	height:40px;
 	background-color:#2b3033;
 }
-.main-header sup:not(.unset) span {
+.main-header-sitename .sup-header .sup-header-default{
 	font-size:2em;
 	letter-spacing: 12px;
 }
@@ -115,7 +115,7 @@ html,
 
 .home .column.blue:hover {
 	background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),
-					  url(../assets/img/students-butch_blue.jpg);
+ url(../assets/img/students-butch_blue.jpg);
 }
 
 .home main p a.button {
@@ -179,7 +179,7 @@ main .blue p a.button:focus {
 
 	.home .main-header, 
 	.main-header sup:not(.unset) {
-		height:50px;
+		height:90px;
 		padding-top:32px;
 	}
 
