@@ -38,6 +38,7 @@ html,
 	max-height:100%;
 	height:100%;
 	padding: 0;
+	
 }
 .home .column:hover {
 	width:100%;
@@ -56,13 +57,14 @@ html,
 /* Clicking a column makes it active. */
 .home main .column.active-panel p a {
 	visibility: visible;
+	transition: visibility 0.15s ease-out;
 }
 
 /* ----------------------------------
   Static stylistic styles
 ---------------------------------- */
 .home .column h2 {
-	font-size:64px;
+	font-size:364%;
 	text-transform: uppercase;
 	margin-top:60%;
 	color: #fff;
@@ -169,38 +171,56 @@ main .blue p a.button:focus {
 
 }
 
-@media screen and (max-width: 693px) {
+@media screen and (max-width: 790px) {
 	#jacket {
-		height: initial;
+		height: 100vh;
 	}
-
+	.home section {
+		margin-top:60px;
+		display:flex;
+		flex-direction:column;
+		flex-wrap:wrap;
+		box-sizing: border-box;
+		height: calc(100vh - 90px) !important;
+	}
+	.home .column {
+		width:100%;
+		display:block;
+		flex:1;
+		padding:0;
+	}
+	.home main .column.active-panel {
+		transition: min-height 0.15s ease-out;
+		min-height:100vh;
+	}
 	.home .column h2 {
 		padding-top: 90px;
-		font-size: 44px;
-		margin-top:0;
+		font-size: 144%;
+		margin:0;
+	}
+	.home .main-header, .main-header sup:not(.unset) {
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	.main-header-sitename .sup-header .sup-header-default {
+		font-size:1.1em;
+		line-height:1.2;
+		word-wrap: break-word;
+
+	}
+	 .home .column h2 {
+   		font-size:240%;
+   }
+   .row.thirds .column.one, .row.thirds .column.two, .row.thirds .column.three {
+		width:100%;
 	}
 
-	.home .main-header, 
-	.main-header sup:not(.unset) {
-		height:90px;
-		padding-top:32px;
-	}
-
-	.main-header sup:not(.unset) span {
-		font-size:1.4em;
-		line-height:1.2em;
-	}
-}
-
-@media screen and (max-width: 990px) { 
-	.home .column h2 { 
-		font-size:40px;
-	}
 }
 .size-lt-large .main-header-sitename {
 	display:block;
+	position:relative;
+	top:0;
 }
-
 /* ----------------------
   Height
 -----------------------*/
@@ -211,20 +231,9 @@ main .blue p a.button:focus {
 }
 
 @media screen and (max-height: 800px ) {
-   .home .column h2 {
-   		font-size:40px;
-   }
+ 
    .home main p a.button {
    		font-size:1em;
    		padding:8px 4px;
    }
-}
-
-/* ----------------------
-  Height and Width
------------------------*/
-@media (max-height: 1100px ) and (max-width:791px){
-	   .home .column h2 { 
-	   		margin-top:0;
-	   }
 }
