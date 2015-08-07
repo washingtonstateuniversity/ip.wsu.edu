@@ -54,13 +54,13 @@ html,
 }
 
 /* Default state is hidden. */
-.path-none main .column p {
-	display: none;
+.path-none main .column p a {
+	visibility: hidden;
 }
 
 /* Clicking a column makes it active. */
-.path-none main .column.active-panel p {
-	display: block;
+.path-none main .column.active-panel p a {
+	visibility: visible;
 }
 
 /* ----------------------------------

@@ -105,6 +105,10 @@ class WSU_IP_Theme {
 			wp_enqueue_script( 'wsu-ip-fos', get_stylesheet_directory_uri() . '/js/ip-fos-view.js', array( 'backbone' ), spine_get_script_version(), true );
 			wp_enqueue_script( 'wsu-ip-js', get_stylesheet_directory_uri() . '/js/script.js', array( 'backbone' ), spine_get_script_version(), true );
 		}
+
+		if ( $this->is_ip_site( 'ip-home' ) ) {
+			wp_enqueue_script( 'wsu-ip-home', get_stylesheet_directory_uri() . '/js/ip-home.js', array( 'backbone' ), spine_get_script_version(), true );
+		}
 	}
 
 	/**
