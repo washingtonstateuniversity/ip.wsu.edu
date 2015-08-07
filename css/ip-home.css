@@ -52,6 +52,17 @@ html,
 .home main .column p {
 	margin-bottom:0;
 }
+
+/* Default state is hidden. */
+.path-none main .column p a {
+	visibility: hidden;
+}
+
+/* Clicking a column makes it active. */
+.path-none main .column.active-panel p a {
+	visibility: visible;
+}
+
 /* ----------------------------------
   Static stylistic styles
 ---------------------------------- */
@@ -66,54 +77,59 @@ html,
 .home .column.blue:hover h2 {
 	color:#b5babe;
 }
+
 .home .column h2 .light {
 	font-weight:300;
 }
+
 .home .column h2 .heavy {
 	font-weight:700;
 }
+
 .home .column.crimson h2,
 .home .column.blue h2 {
 	color:#fff;
 }
+
 .home .column.white h2 {
 	color:#981E32;
 }
-.column.crimson {
-	background-image:url(../assets/img/campus-aerial-crimson-light.jpg);
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
-	background-position:40% -200px;
-}
-.column.white {
-	background-image:url(../assets/img/eiffel_lighter.jpg);
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:60% -450px;
-}
-.column.blue {
-	background-image:url(../assets/img/students-butch_blue.jpg);
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:30% -100px;
-}
-.column.white:hover {
-	background-image:url(../assets/img/eiffel_light.jpg);
+
+.home .column {
 	background-repeat:no-repeat;
 	background-size:cover;
 }
-.column.blue:hover {
-	background-image:url(../assets/img/students-butch_blue-drk.jpg);
-	background-repeat:no-repeat;
-	background-size:cover;
+
+.home .column.crimson {
+	background-image: url(../assets/img/campus-aerial-crimson-light.jpg);
+	background-position: 40% -200px;
 }
-.column.crimson:hover {
-	background-image:url(../assets/img/campus-aerial-crimson-dark.jpg);
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:40% -200px;
+
+.home .column.crimson:hover {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),
+					  url(../assets/img/campus-aerial-crimson-light.jpg);
 }
+
+.home .column.white {
+	background-image: url(../assets/img/eiffel_lighter.jpg);
+	background-position: 60% -450px;
+}
+
+.home .column.white:hover {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),
+					  url(../assets/img/eiffel_lighter.jpg);
+}
+
+.home .column.blue {
+	background-image: url(../assets/img/students-butch_blue.jpg);
+	background-position: 30% -100px;
+}
+
+.home .column.blue:hover {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ),
+					  url(../assets/img/students-butch_blue.jpg);
+}
+
 .home main p a.button {
 	width:66%;
 	margin-bottom:0;
@@ -122,21 +138,25 @@ html,
 	text-transform:none;
 	font-size:1.5em;
 }
+
 .white p a.button {
 	background-color:rgba(255,255,255,.6);
 	border:1px solid rgba(141, 149, 154, .5);
 	color:#981E32;
 }
+
 .white p a.button:hover,
 .white p a.button:focus {
 	border-color:rgba(152, 30, 50, 1);
 	color:#981E32;
 	background-color:rgba(255,255,255,1);
 }
+
 main .blue p a.button {
 	border:1px solid #8d959a;
 	color:#fff;
 }
+
 main .blue p a.button:hover,
 main .blue p a.button:focus {
 	color:#fff;	
