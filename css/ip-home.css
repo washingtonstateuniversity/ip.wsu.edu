@@ -171,17 +171,29 @@ main .blue p a.button:focus {
 	.home #spine.cropped {
 		left: calc((33.3% / 2 ) - 99px) !important;
 	}
-
-
 }
-@media screen (min-width: 791px) and (max-width:990px) {
+@media screen and (min-width: 791px) and (max-width:990px) {
 	.home .column h2 {
 		margin-top:30%;
+	}
+	#binder:not(.fluid) #spine button#shelve {
+		display: none;
+	}
+	#binder #wsu-signature {
+		background-position: 50%;
 	}
 }
 @media screen and (max-width: 790px) {
 	#jacket {
 		height: 100vh;
+	}
+
+	#binder:not(.fluid) #spine button#shelve {
+		display: none;
+	}
+
+	#binder #wsu-signature {
+		background-position: 50%;
 	}
 	.home section {
 		margin-top:60px;
@@ -191,37 +203,51 @@ main .blue p a.button:focus {
 		box-sizing: border-box;
 		height: calc(100vh - 90px) !important;
 	}
+
 	.home .column {
 		width:100%;
 		display:block;
 		flex:1;
 		padding:0;
 	}
+
 	.home .column h2 {
-		margin-top:8%;
+		margin-top: 13%;
 	}
+
 	.home main .column.active-panel {
 		transition: min-height 0.15s ease-in;
-		min-height:calc(100vh - 35%);
-		max-height:calc(100vh - 15%);
+		min-height:calc(100vh - 90px);
 	}
+
+	.home main .column.active-panel:after {
+		position: absolute;
+		bottom: 25px;
+		content: "X";
+		font-size: 2em;
+		left: 48%;
+	}
+
 	.home .main-header, .main-header sup:not(.unset) {
-		padding-top:10px;
-		padding-bottom:10px;
+		padding-top: 0;
+		padding-bottom: 0;
+		height: 55px;
 	}
+
 	.main-header-sitename .sup-header .sup-header-default {
 		font-size:1.1em;
 		line-height:1.2;
 		word-wrap: break-word;
 
 	}
-	 .home .column h2 {
+
+	.home .column h2 {
    		font-size:240%;
-   }
-   .row.thirds .column.one, .row.thirds .column.two, .row.thirds .column.three {
-		width:100%;
 	}
 
+	.row.thirds .column.one, .row.thirds .column.two, .row.thirds .column.three {
+		width:100%;
+	}
 }
 .size-lt-large .main-header-sitename {
 	display:block;
