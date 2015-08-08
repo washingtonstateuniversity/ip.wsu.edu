@@ -196,10 +196,12 @@ main .blue p a.button:focus {
 		background-position: 50%;
 	}
 	.home section {
-		margin-top:60px;
-		display:flex;
-		flex-direction:column;
-		flex-wrap:wrap;
+		margin-top: 60px;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		flex-wrap: wrap;
 		box-sizing: border-box;
 		height: calc(100vh - 90px) !important;
 	}
@@ -207,6 +209,7 @@ main .blue p a.button:focus {
 	.home .column {
 		width:100%;
 		display:block;
+		-webkit-flex: 1;
 		flex:1;
 		padding:0;
 	}
