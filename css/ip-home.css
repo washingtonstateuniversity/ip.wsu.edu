@@ -203,7 +203,7 @@ main .blue p a.button:focus {
 		flex-direction: column;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		height: calc(100vh - 90px) !important;
+		height: calc(100vh - 160px) !important;
 	}
 
 	.home .column {
@@ -215,7 +215,7 @@ main .blue p a.button:focus {
 	}
 
 	.home .column h2 {
-		margin-top: 13%;
+		margin-top: 8%;
 	}
 
 	.home main .column.active-panel {
