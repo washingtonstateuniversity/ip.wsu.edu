@@ -106,21 +106,21 @@ html,
 }
 
 .home .column.white {
-	background-image: url(../assets/img/column-white.png);
+	background-image: url(../assets/img/column-white.jpg);
 }
 
 .home .column.white:hover {
-	background-image: linear-gradient( rgba(255,255,255,0.2), rgba(255,255,255,0.2) ),
-					  url(../assets/img/column-white.png);
+	background-image: linear-gradient( rgba(255,255,255,0.25), rgba(255,255,255,0.25) ),
+					  url(../assets/img/column-white.jpg);
 }
 
 .home .column.blue {
-	background-image: url(../assets/img/students-butch-blue-2.png);
+	background-image: url(../assets/img/students-butch-blue-2.jpg);
 }
 
 .home .column.blue:hover {
 	background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),
- url(../assets/img/students-butch-blue-2.png);
+ url(../assets/img/students-butch-blue-2.jpg);
 }
 
 .home main p a.button {
