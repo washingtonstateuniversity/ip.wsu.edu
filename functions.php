@@ -223,14 +223,18 @@ class WSU_IP_Theme {
 			$email = $person->email;
 		}
 
+		if ( isset( $person->profile_photo ) && $person->profile_photo ) {
+			$photo = $person->profile_photo;
+		} else {
+			$photo = get_stylesheet_directory_uri() . '/assets/img/silhouette.png';
+		}
+
 		ob_start();
 		?>
 		<div class="wsuwp-person-container">
-			<?php if ( isset( $person->profile_photo ) && $person->profile_photo ) : ?>
-				<figure class="wsuwp-person-photo">
-					<img src="<?php echo esc_url( $person->profile_photo ); ?>" />
-				</figure>
-			<?php endif; ?>
+			<figure class="wsuwp-person-photo">
+				<img src="<?php echo esc_url( $photo ); ?>" />
+			</figure>
 			<div class="wsuwp-person-info-container">
 				<div class="wsuwp-person-name"><?php echo esc_html( $person->title ); ?></div>
 				<div class="wsuwp-person-position"><?php echo esc_html( $title ); ?></div>
