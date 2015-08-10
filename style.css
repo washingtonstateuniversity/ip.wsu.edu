@@ -1686,17 +1686,14 @@ textarea:focus {
 	border-bottom: dotted 2px #d7dadb;
 	display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6 */
-  
-  display: -moz-box;
+	display: -moz-box;
   /* OLD - Firefox 19- (buggy but mostly works) */
-  
-  display: -ms-flexbox;
+	display: -ms-flexbox;
   /* TWEENER - IE 10 */
-  
-  display: -webkit-flex;
+	display: -webkit-flex;
   /* NEW - Chrome */
-  
-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
 }
 .wsuwp-people-wrapper .wsuwp-person-container {
 	box-sizing: border-box;
@@ -1722,6 +1719,7 @@ flex-wrap: wrap;
   	-webkit-flex-wrap: wrap;
   	flex-wrap: wrap;
   	flex-direction:row;
+  	-webkit-flex-direction:row;
   	align-content: flex-start;
  }
 .wsuwp-people-wrapper .wsuwp-person-container:last-child {
@@ -1733,12 +1731,15 @@ flex-wrap: wrap;
 }
 .wsuwp-people-wrapper .wsuwp-person-container:nth-child(odd) {
   flex: 1 1 calc(50% - 50px);
+  -webkit-flex-: 1 1 calc(50% - 50px);
   justify-content: space-around;
+  -webkit-justify-content: space-around;
   margin-right:2px;
   padding-right:1em;
 }
  .wsuwp-person-photo,.wsuwp-person-info-container {
 	flex:1;
+	-webkit-flex:1;
 	box-sizing: border-box;
 	vertical-align: text-top;
     color: #464e54;
@@ -1749,6 +1750,7 @@ flex-wrap: wrap;
 }
 .wsuwp-person-profile-container {
 	flex:1 100%;
+	-webkit-flex:1 100%;
 }
 .wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container {
 	padding-left:1em;
