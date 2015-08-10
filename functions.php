@@ -260,6 +260,18 @@ class WSU_IP_Theme {
 	 */
 	public function people_sort( $people ) {
 		usort( $people, array( $this, 'sort_alpha' ) );
+
+		if ( 1 === ( count( $people ) % 2 ) ) {
+			$person = new stdClass();
+			$person->title = '';
+			$person->office = '';
+			$person->position_title = '';
+			$person->email = '';
+			$person->phone = '';
+			$person->bio_department = '';
+			$people[] = $person;
+		}
+
 		return $people;
 	}
 
