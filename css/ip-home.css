@@ -106,21 +106,21 @@ html,
 }
 
 .home .column.white {
-	background-image: url(../assets/img/eiffel_lighter.jpg);
+	background-image: url(../assets/img/column-white.png);
 }
 
 .home .column.white:hover {
 	background-image: linear-gradient( rgba(255,255,255,0.2), rgba(255,255,255,0.2) ),
-					  url(../assets/img/eiffel_lighter.jpg);
+					  url(../assets/img/column-white.png);
 }
 
 .home .column.blue {
-	background-image: url(../assets/img/students-butch_blue.jpg);
+	background-image: url(../assets/img/students-butch-blue-2.png);
 }
 
 .home .column.blue:hover {
 	background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),
- url(../assets/img/students-butch_blue.jpg);
+ url(../assets/img/students-butch-blue-2.png);
 }
 
 .home main p a.button {
