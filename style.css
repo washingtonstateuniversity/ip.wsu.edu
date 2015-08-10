@@ -1737,6 +1737,11 @@ textarea:focus {
 	justify-content: space-around;
 	padding-left:1em;
 }
+
+.size-small .wsuwp-people-wrapper .wsuwp-person-container:nth-child(even) {
+	padding-left: 0;
+}
+
 .wsuwp-people-wrapper .wsuwp-person-container:nth-child(odd) {
   flex: 1 1 calc(50% - 50px);
   -webkit-flex-: 1 1 calc(50% - 50px);
@@ -1746,8 +1751,6 @@ textarea:focus {
   padding-right:1em;
 }
  .wsuwp-person-photo,.wsuwp-person-info-container {
-	flex:1;
-	-webkit-flex:1;
 	box-sizing: border-box;
 	vertical-align: text-top;
     color: #464e54;
@@ -1756,24 +1759,45 @@ textarea:focus {
     padding-bottom: 1.2rem;
     font-weight: 300;
 }
+
+.wsuwp-person-photo {
+	-webkit-flex: 1 33%;
+	flex: 1 33%;
+}
+
+.wsuwp-person-info-container {
+	-webkit-flex: 1 66%;
+	flex: 1 66%;
+}
+
 .wsuwp-person-profile-container {
 	flex:1 100%;
 	-webkit-flex:1 100%;
 }
+
 .wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container {
 	padding-left:1em;
 	padding-right:1em;
 	word-wrap: break-word;
 }
 
+.wsuwp-people-wrapper .wsuwp-person-container.person-no-photo .wsuwp-person-info-container {
+	padding-left: 0;
+}
+
 .wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container .wsuwp-person-name {
 	font-weight:600;
 	padding-bottom:.4em;
 }
+
 .wsuwp-person-container:nth-last-child(2) {
     border-bottom: none;
- }
- 
+}
+
+.size-small .wsuwp-person-container:nth-last-child(2) {
+	border-bottom: dotted 2px #d7dadb;
+}
+
 /* =========================
   	Utilities
 ========================== */
