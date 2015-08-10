@@ -22,6 +22,7 @@ class WSU_IP_Theme {
 		add_filter( 'make_prepare_data', array( $this, 'prepare_page_nav' ), 10, 1 );
 
 		add_filter( 'wsuwp_people_item_html', array( $this, 'people_html' ), 10, 2 );
+		add_filter( 'wsuwp_people_sort_items', array( $this, 'people_sort' ), 10, 1 );
 	}
 
 	/**
@@ -217,18 +218,29 @@ class WSU_IP_Theme {
 			$title = $person->position_title;
 		}
 
+		if ( ! empty( $person->email_alt ) ) {
+			$email = $person->email_alt;
+		} else {
+			$email = $person->email;
+		}
+
+		if ( isset( $person->profile_photo ) && $person->profile_photo ) {
+			$photo = $person->profile_photo;
+		} else {
+			$photo = get_stylesheet_directory_uri() . '/assets/img/silhouette.png';
+		}
+
 		ob_start();
 		?>
 		<div class="wsuwp-person-container">
-			<?php if ( isset( $person->profile_photo ) && $person->profile_photo ) : ?>
-				<figure class="wsuwp-person-photo">
-					<img src="<?php echo esc_url( $person->profile_photo ); ?>" />
-				</figure>
-			<?php endif; ?>
+			<figure class="wsuwp-person-photo">
+				<img src="<?php echo esc_url( $photo ); ?>" />
+			</figure>
 			<div class="wsuwp-person-info-container">
 				<div class="wsuwp-person-name"><?php echo esc_html( $person->title ); ?></div>
 				<div class="wsuwp-person-position"><?php echo esc_html( $title ); ?></div>
 				<div class="wsuwp-person-office"><?php echo esc_html( $person->office ); ?></div>
+				<div class="wsuwp-person-email"><?php echo esc_html( $email ); ?></div>
 				<div class="wsuwp-person-phone"><?php echo esc_html( $person->phone ); ?></div>
 			</div>
 			<div class="wsuwp-person-profile-container">
@@ -240,6 +252,26 @@ class WSU_IP_Theme {
 		ob_end_clean();
 
 		return $html;
+	}
+
+	/*
+	 * Use the provided Content Syndicate filter to sort people results before displaying.
+	 */
+	public function people_sort( $people ) {
+		usort( $people, array( $this, 'sort_alpha' ) );
+		return $people;
+	}
+
+	/**
+	 * Sort people alphabetically by their last name.
+	 *
+	 * @param stdClass $a Object representing a person.
+	 * @param stdClass $b Object representing a person.
+	 *
+	 * @return int Whether person a's last name is alphabetically smaller or greater than person b's.
+	 */
+	public function sort_alpha( $a, $b ) {
+		return strcasecmp( $a->last_name, $b->last_name );
 	}
 }
 new WSU_IP_Theme();
