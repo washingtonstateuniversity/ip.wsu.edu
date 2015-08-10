@@ -266,9 +266,25 @@ main .blue p a.button:focus {
    }
 }
 
+@media screen and (max-height: 888px ) {
+	.home .column h2 {
+		margin-top: 40%;
+	}
+}
+
 @media screen and (max-height: 800px ) {
    .home main p a.button {
    		font-size:.8em;
    		padding:8px 4px;
    }
+}
+
+@media screen and (max-height: 650px ) {
+	.home .column h2 {
+		margin-top: 35%;
+	}
+
+	.column h2:first-child {
+		padding: 0 0 5px;
+	}
 }
