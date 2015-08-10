@@ -217,6 +217,12 @@ class WSU_IP_Theme {
 			$title = $person->position_title;
 		}
 
+		if ( ! empty( $person->email_alt ) ) {
+			$email = $person->email_alt;
+		} else {
+			$email = $person->email;
+		}
+
 		ob_start();
 		?>
 		<div class="wsuwp-person-container">
@@ -229,6 +235,7 @@ class WSU_IP_Theme {
 				<div class="wsuwp-person-name"><?php echo esc_html( $person->title ); ?></div>
 				<div class="wsuwp-person-position"><?php echo esc_html( $title ); ?></div>
 				<div class="wsuwp-person-office"><?php echo esc_html( $person->office ); ?></div>
+				<div class="wsuwp-person-email"><?php echo esc_html( $email ); ?></div>
 				<div class="wsuwp-person-phone"><?php echo esc_html( $person->phone ); ?></div>
 			</div>
 			<div class="wsuwp-person-profile-container">
