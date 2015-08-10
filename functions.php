@@ -2,6 +2,7 @@
 include_once( __DIR__ . '/includes/fields-of-study.php' );
 include_once( __DIR__ . '/includes/map-embed-shortcode.php' );
 include_once( __DIR__ . '/includes/shortcode-blockquote.php' );
+include_once( __DIR__ . '/includes/shortcode-form-modal.php' );
 
 class WSU_IP_Theme {
 	/**
