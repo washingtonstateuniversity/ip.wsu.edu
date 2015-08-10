@@ -22,6 +22,7 @@ class WSU_IP_Theme {
 		add_filter( 'make_prepare_data', array( $this, 'prepare_page_nav' ), 10, 1 );
 
 		add_filter( 'wsuwp_people_item_html', array( $this, 'people_html' ), 10, 2 );
+		add_filter( 'wsuwp_people_sort_items', array( $this, 'people_sort' ), 10, 1 );
 	}
 
 	/**
@@ -251,6 +252,26 @@ class WSU_IP_Theme {
 		ob_end_clean();
 
 		return $html;
+	}
+
+	/*
+	 * Use the provided Content Syndicate filter to sort people results before displaying.
+	 */
+	public function people_sort( $people ) {
+		usort( $people, array( $this, 'sort_alpha' ) );
+		return $people;
+	}
+
+	/**
+	 * Sort people alphabetically by their last name.
+	 *
+	 * @param stdClass $a Object representing a person.
+	 * @param stdClass $b Object representing a person.
+	 *
+	 * @return int Whether person a's last name is alphabetically smaller or greater than person b's.
+	 */
+	public function sort_alpha( $a, $b ) {
+		return strcasecmp( $a->last_name, $b->last_name );
 	}
 }
 new WSU_IP_Theme();
