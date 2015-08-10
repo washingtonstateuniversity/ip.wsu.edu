@@ -2036,12 +2036,15 @@ div.reg-date span.reg-month {
 	.row.quarters .column.one {	
 		width: 100%;
 	}
-		.wsuwp-people-wrapper .wsuwp-person-container {
+	.wsuwp-people-wrapper .wsuwp-person-container {
 		display:block;
 		width:100%;
 	}
 	.wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-photo, .wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container {
-		display: inline-block;
+		display: block;
+		width:100%;
+		padding-left:0;
+		clear:both;
 	}
 }
 
