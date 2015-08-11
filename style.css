@@ -101,7 +101,9 @@ hr + h4 {
 	-moz-osx-font-smoothing: grayscale;
 	box-sizing: border-box;
 }
-
+figure.featured-image + .ip-headline {
+    padding-top: 0px;
+}
 /* ============================================================
   MAIN-HEADER Site Name
 ============================================================ */
