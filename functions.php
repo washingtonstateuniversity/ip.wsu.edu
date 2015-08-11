@@ -225,6 +225,18 @@ class WSU_IP_Theme {
 			$email = $person->email;
 		}
 
+		if ( ! empty( $person->office_alt ) ) {
+			$office = $person->office_alt;
+		} else {
+			$office = $person->office;
+		}
+
+		if ( ! empty( $person->phone_alt ) ) {
+			$phone = $person->phone_alt;
+		} else {
+			$phone = $person->phone;
+		}
+
 		ob_start();
 
 		if ( isset( $person->profile_photo ) && $person->profile_photo ) {
@@ -241,9 +253,9 @@ class WSU_IP_Theme {
 			<div class="wsuwp-person-info-container">
 				<div class="wsuwp-person-name"><?php echo esc_html( $person->title ); ?></div>
 				<div class="wsuwp-person-position"><?php echo esc_html( $title ); ?></div>
-				<div class="wsuwp-person-office"><?php echo esc_html( $person->office ); ?></div>
+				<div class="wsuwp-person-office"><?php echo esc_html( $office ); ?></div>
 				<div class="wsuwp-person-email"><?php echo esc_html( $email ); ?></div>
-				<div class="wsuwp-person-phone"><?php echo esc_html( $person->phone ); ?></div>
+				<div class="wsuwp-person-phone"><?php echo esc_html( $phone ); ?></div>
 			</div>
 			<div class="wsuwp-person-profile-container">
 				<?php echo wp_kses_post( $person->bio_department ); ?>
