@@ -4,7 +4,7 @@ Theme URI: https://ip.wsu.edu/
 Author: WSU University Communications
 Author URI: https://web.wsu.edu/
 Description: Child theme of WSU Spine for use by the WSU International Programs.
-Version: 1.6.30
+Version: 1.6.31
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: light
@@ -97,7 +97,7 @@ hr + h4 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	letter-spacing: -2.5px;
-	padding: .5em 0;
+	padding: .6em 0;
 	-moz-osx-font-smoothing: grayscale;
 	box-sizing: border-box;
 }
@@ -2125,7 +2125,15 @@ div.reg-date span.reg-month {
 	main p a.button {
 		margin-top: 1em;
 	}
-	
+	main p a.button:last-of-type {
+		margin-right:0;
+	}
+	main p a.button:first-of-type {
+		margin-left:0;
+	}
+	p a.button + p a.button {
+		margin-left:0;
+	}
 	main p a.button:hover {
 		margin-top: 1em;
 	}
