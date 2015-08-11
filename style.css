@@ -81,6 +81,7 @@ hr + h4 {
 	resize: both;
 	padding: 0;
 	height:150px;
+	padding-top: 30px;
 }
 
 .ip-headline h1 {
