@@ -49,37 +49,6 @@ html,
 	cursor:pointer;
 }
 
-/* ----------------------------------
-  Static stylistic styles
----------------------------------- */
-.home .column h2 {
-	font-size:364%;
-	text-transform: uppercase;
-	margin-top:60%;
-	color: #fff;
-}
-
-.home .column.white h2 {
-	color:#981E32;
-}
-
-.home .column.crimson:hover h2,
-.home .column.blue:hover h2 {
-	color:#b5babe;
-}
-
-.home .column.white:hover h2 {
-	color: #8d959a;
-}
-
-.home .column h2 .light {
-	font-weight:300;
-}
-
-.home .column h2 .heavy {
-	font-weight:700;
-}
-
 .home .column {
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -111,6 +80,34 @@ html,
 .home .column.blue:hover {
 	background-image: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ),
  url(../assets/img/students-butch-blue-2.jpg);
+}
+
+.home .column h2 {
+	font-size: 364%;
+	text-transform: uppercase;
+	margin-top: 60%;
+	color: #fff;
+}
+
+.home .column.white h2 {
+	color: #981E32;
+}
+
+.home .column.crimson:hover h2,
+.home .column.blue:hover h2 {
+	color: #b5babe;
+}
+
+.home .column.white:hover h2 {
+	color: #8d959a;
+}
+
+.home .column h2 .light {
+	font-weight: 300;
+}
+
+.home .column h2 .heavy {
+	font-weight: 700;
 }
 
 .home main .column p {
