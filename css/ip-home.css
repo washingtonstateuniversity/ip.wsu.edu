@@ -305,6 +305,20 @@ html,
 /* iPad Portrait Specific */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 				   and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	.home .main-header {
+		position:fixed;
+		top:50px;
+		left:0;
+		z-index:999999
+	}
+
+	.home main .page {
+		position: fixed;
+		top: 105px;
+		bottom: 0;
+		height: 100%;
+	}
+
 	.main-header-sitename .sup-header .sup-header-default {
 		font-size: 1.6em;
 		line-height: 1.6;
@@ -326,8 +340,22 @@ html,
 /* iPad Landscape Specific */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 				   and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	.home .main-header {
+		position:fixed;
+		top:40px;
+		left:0;
+		z-index:999999
+	}
+
 	.home .main-header, .main-header sup:not(.unset) {
 		height: 40px;
+	}
+
+	.home main .page {
+		position: fixed;
+		top: 80px;
+		bottom: 0;
+		height: 100%;
 	}
 
 	.home section {
@@ -336,7 +364,7 @@ html,
 		display: flex;
 		-webkit-flex-direction: row;
 		flex-direction: row;
-		height: calc(100% - 108px) !important;
+		height: 100% !important;
 	}
 
 	.home main .column.active-panel:after {
