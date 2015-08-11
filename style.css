@@ -80,7 +80,7 @@ hr + h4 {
 	display: flex;
 	resize: both;
 	padding: 0;
-	height:150px;
+	height:150%;
 	padding-top: 30px;
 }
 
