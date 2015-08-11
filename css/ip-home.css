@@ -48,24 +48,6 @@ html,
 	height:100%;
 	cursor:pointer;
 }
-.home main .column p {
-	margin-bottom:0;
-}
-
-/* Default state is hidden. */
-.home main .column p a {
-	visibility: hidden;
-}
-
-.home main .column:hover p a {
-	visibility: visible;
-}
-
-/* Clicking a column makes it active. */
-.home main .column.active-panel p a {
-	visibility: visible;
-	transition: visibility 0.2s ease-in;
-}
 
 /* ----------------------------------
   Static stylistic styles
@@ -131,8 +113,13 @@ html,
  url(../assets/img/students-butch-blue-2.jpg);
 }
 
+.home main .column p {
+	margin-bottom: 0;
+}
+
 /* Properties for all exposed button links in a home page panel */
 .home main p a {
+	visibility: hidden;
 	width: 66%;
 	margin-bottom: 0;
 	margin-top: 0;
@@ -141,6 +128,11 @@ html,
 	font-size: 1.5em;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 500;
+}
+
+.home main .column:hover p a,
+.home main .column.active-panel p a {
+	visibility: visible;
 }
 
 /* Default colors, backgrounds, and borders for each column's panel buttons */
