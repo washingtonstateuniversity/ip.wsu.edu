@@ -35,34 +35,40 @@ class WSU_IP_Theme {
 	public function is_ip_site( $name ) {
 		$site = get_blog_details();
 
-		$home_domain = apply_filters( 'ip_home_domain', 'stage.ip.wsu.edu' );
-		$future_students_domain = apply_filters( 'ip_future_students_domain', 'stage.future-student.ip.wsu.edu' );
-		$study_english_domain = apply_filters( 'ip_study_english_domain', 'stage.study-english.ip.wsu.edu' );
-		$study_abroad_domain = apply_filters( 'ip_study_abroad_domain', 'stage.study-abroad.ip.wsu.edu' );
-		$scholars_abroad_domain = apply_filters( 'ip_scholars_abroad_domain', 'stage.scholar-abroad.ip.wsu.edu' );
-		$on_campus_domain = apply_filters( 'ip_on_campus_domain', 'stage.on-campus.ip.wsu.edu' );
+		$home_domain = apply_filters( 'ip_home_domain', 'ip.wsu.edu' );
+		$home_path = apply_filters( 'ip_home_path', '/' );
+		$future_students_domain = apply_filters( 'ip_future_students_domain', 'ip.wsu.edu' );
+		$future_students_path = apply_filters( 'ip_future_students_path', '/future-students/' );
+		$study_english_domain = apply_filters( 'ip_study_english_domain', 'ip.wsu.edu' );
+		$study_english_path = apply_filters( 'ip_study_english_path', '/learn-english/' );
+		$study_abroad_domain = apply_filters( 'ip_study_abroad_domain', 'ip.wsu.edu' );
+		$study_abroad_path = apply_filters( 'ip_study_abroad_path', '/study-abroad/' );
+		$scholars_abroad_domain = apply_filters( 'ip_scholars_abroad_domain', 'ip.wsu.edu' );
+		$scholars_abroad_path = apply_filters( 'ip_scholars_abroad_path', '/scholars-abroad/' );
+		$on_campus_domain = apply_filters( 'ip_on_campus_domain', 'ip.wsu.edu' );
+		$on_campus_path = apply_filters( 'ip_on_campus_path', '/on-campus/' );
 
-		if ( 'ip-home' === $name && $home_domain === $site->domain ) {
+		if ( 'ip-home' === $name && $home_domain === $site->domain && $home_path === $site->path ) {
 			return true;
 		}
 
-		if ( 'future-students' === $name && $future_students_domain === $site->domain ) {
+		if ( 'future-students' === $name && $future_students_domain === $site->domain && $future_students_path === $site->path ) {
 			return true;
 		}
 
-		if ( 'study-english' === $name && $study_english_domain === $site->domain ) {
+		if ( 'study-english' === $name && $study_english_domain === $site->domain && $study_english_path === $site->path ) {
 			return true;
 		}
 
-		if ( 'study-abroad' === $name && $study_abroad_domain === $site->domain ) {
+		if ( 'study-abroad' === $name && $study_abroad_domain === $site->domain && $study_abroad_path === $site->path ) {
 			return true;
 		}
 
-		if ( 'scholars-abroad' === $name && $scholars_abroad_domain === $site->domain ) {
+		if ( 'scholars-abroad' === $name && $scholars_abroad_domain === $site->domain && $scholars_abroad_path === $site->path ) {
 			return true;
 		}
 
-		if ( 'on-campus' === $name&& $on_campus_domain === $site->domain ) {
+		if ( 'on-campus' === $name&& $on_campus_domain === $site->domain && $on_campus_path === $site->path ) {
 			return true;
 		}
 
