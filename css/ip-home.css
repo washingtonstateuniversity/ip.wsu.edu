@@ -302,6 +302,27 @@ html,
 	}
 }
 
+/* iPad Portrait Specific */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+				   and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	.main-header-sitename .sup-header .sup-header-default {
+		font-size: 1.6em;
+		line-height: 1.6;
+	}
+
+	.home section {
+		height: calc(100vh - 130px) !important;
+	}
+
+	.home main .column.active-panel {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+		height: 100%;
+	}
+}
+
 /* iPad Landscape Specific */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 				   and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
