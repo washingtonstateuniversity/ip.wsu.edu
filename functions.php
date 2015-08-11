@@ -254,8 +254,8 @@ class WSU_IP_Theme {
 				<div class="wsuwp-person-name"><?php echo esc_html( $person->title ); ?></div>
 				<div class="wsuwp-person-position"><?php echo esc_html( $title ); ?></div>
 				<div class="wsuwp-person-office"><?php echo esc_html( $office ); ?></div>
-				<div class="wsuwp-person-email"><?php echo esc_html( $email ); ?></div>
-				<div class="wsuwp-person-phone"><?php echo esc_html( $phone ); ?></div>
+				<div class="wsuwp-person-email"><a href="mailto:<?php echo esc_html( $email ); ?>"><?php echo esc_html( $email ); ?></a></div>
+				<div class="wsuwp-person-phone"><a href="tel:<?php echo esc_html( $phone ); ?>"><?php echo esc_html( $phone ); ?></a></div>
 			</div>
 			<div class="wsuwp-person-profile-container">
 				<?php echo wp_kses_post( $person->bio_department ); ?>
