@@ -117,6 +117,8 @@ html,
 /* Properties for all exposed button links in a home page panel */
 .home main p a {
 	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 300ms, opacity 300ms linear;
 	width: 66%;
 	margin-bottom: 0;
 	margin-top: 0;
@@ -130,6 +132,8 @@ html,
 .home main .column:hover p a,
 .home main .column.active-panel p a {
 	visibility: visible;
+	opacity: 1;
+	transition: visibility 0s linear 0s, opacity 300ms linear;
 }
 
 /* Default colors, backgrounds, and borders for each column's panel buttons */
