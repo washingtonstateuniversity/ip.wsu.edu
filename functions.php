@@ -213,8 +213,8 @@ class WSU_IP_Theme {
 	 * @return string The HTML to output for a person.
 	 */
 	public function people_html( $html, $person ) {
-		if ( isset( $person->working_title[0] ) ) {
-			$title = $person->working_title[0];
+		if ( isset( $person->working_titles[0] ) ) {
+			$title = $person->working_titles[0];
 		} else {
 			$title = $person->position_title;
 		}
