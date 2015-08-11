@@ -78,9 +78,12 @@ html,
 }
 
 .home .column.crimson:hover h2,
-.home .column.white:hover h2,
 .home .column.blue:hover h2 {
 	color:#b5babe;
+}
+
+.home .column.white:hover h2 {
+	color: #8d959a;
 }
 
 .home .column h2 .light {
