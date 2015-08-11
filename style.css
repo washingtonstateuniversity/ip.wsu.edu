@@ -1790,8 +1790,7 @@ textarea:focus {
 	padding-bottom:.4em;
 }
 
-.wsuwp-person-office,
-.wsuwp-person-position {
+.wsuwp-person-office {
 	text-transform: uppercase;
 }
 
