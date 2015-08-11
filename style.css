@@ -1790,6 +1790,10 @@ textarea:focus {
 	padding-bottom:.4em;
 }
 
+.wsuwp-person-position {
+	text-transform: uppercase;
+}
+
 .wsuwp-person-container:nth-last-child(2) {
     border-bottom: none;
 }
