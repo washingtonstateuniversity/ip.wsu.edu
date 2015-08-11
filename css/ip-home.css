@@ -305,8 +305,8 @@ html,
 }
 
 /*
- * iPhone 5 and 6 Portrait
- * 320px min for 5, 667px max for 6
+ * iPhone 4s, 5 and 6 Portrait
+ * 320px min for 4s and 5, 667px max for 6
  */
 @media only screen
 and (min-device-width: 320px)
@@ -362,7 +362,7 @@ and (orientation: portrait) {
 	}
 }
 
-/* Portrait */
+/* iPhone 5 portrait specific overrides */
 @media only screen
 and (min-device-width: 320px)
 and (max-device-width: 568px)
@@ -383,6 +383,22 @@ and (orientation: portrait) {
 
 	.home .column h2 {
 		margin-top: 4%;
+	}
+}
+
+/* iPhone 4s portrait specific overrides */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+	.home .column h2 {
+		font-size: 180%;
+	}
+
+	.home main .column p {
+		padding-bottom: .3rem;
+		font-size: .5rem;
 	}
 }
 
