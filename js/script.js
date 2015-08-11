@@ -94,7 +94,8 @@ var wsuIPTheme = wsuIPTheme || {};
 	});
 
 	var setup_form_modals = function() {
-		$('.trigger-modal').on('click',function(){
+		$('.trigger-modal').on('click',function(e){
+			e.preventDefault();
 			var modal_id = $(this).data('modal');
 			$('body').addClass('noscroll');
 			$('#' + modal_id).show();
