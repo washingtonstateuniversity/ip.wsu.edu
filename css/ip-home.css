@@ -315,7 +315,7 @@ html,
 		display: flex;
 		-webkit-flex-direction: row;
 		flex-direction: row;
-		height: calc(100% - 180px) !important;
+		height: calc(100% - 108px) !important;
 	}
 
 	.home main .column.active-panel:after {
