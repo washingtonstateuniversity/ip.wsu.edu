@@ -80,6 +80,7 @@ hr + h4 {
 	display: flex;
 	resize: both;
 	padding: 0;
+	height:150px;
 }
 
 .ip-headline h1 {
@@ -95,8 +96,9 @@ hr + h4 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	letter-spacing: -2.5px;
-	padding: .953em 0;
+	padding: .5em 0;
 	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
 }
 
 /* ============================================================
@@ -1573,7 +1575,7 @@ section.news-events ul li .content-item-event-meta {
 	float: right;
     position: fixed;
     right: calc(100vw - 90%);
-    top: calc(100vh - 90%);
+    top: calc(100vh - 85%);
 	z-index: 600;
 }
 
@@ -1589,7 +1591,7 @@ div.section-wrapper.close-modal:before {
 }
 
 .noscroll .modal-form {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -1646,6 +1648,7 @@ textarea:focus {
 .gform_wrapper .gform_footer input.button, 
 .gform_wrapper .gform_footer input[type=submit] {
 	font-size:20px;
+	width:210px;
 }
 
 .gform_footer .button,
@@ -1924,6 +1927,12 @@ div.reg-date span.reg-month {
 	.column p ~ p:last-child {
 		text-align: center;
 	}
+	.close-modal {
+		width:39px;
+		height:39px;
+    	right: calc(100vw - 90%);
+    	top: calc(100vh - 90%);
+	}
 }
 
 @media screen and (max-width: 791px) {
@@ -1976,6 +1985,8 @@ div.reg-date span.reg-month {
 	.close-modal { 
 		width:22px;
 		height:22px;
+		right: calc(100vw - 90%);
+    	top: calc(100vh - 92%);
 	}
 }
 
