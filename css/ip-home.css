@@ -87,6 +87,7 @@ html,
 	text-transform: uppercase;
 	margin-top: 60%;
 	color: #fff;
+	transition: color 300ms linear;
 }
 
 .home .column.white h2 {
