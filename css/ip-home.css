@@ -117,7 +117,9 @@ html,
 }
 
 /* Properties for all exposed button links in a home page panel */
-.home main p a {
+.home main p a,
+.home main p a:focus,
+.home main .column:focus p a {
 	visibility: hidden;
 	opacity: 0;
 	transition: visibility 0s linear 300ms, opacity 300ms linear;
@@ -135,7 +137,7 @@ html,
 .home main .column.active-panel p a {
 	visibility: visible;
 	opacity: 1;
-	transition: visibility 0s linear 0s, opacity 300ms linear;
+	transition: visibility 0s linear 100ms, opacity 300ms linear;
 }
 
 /* Default colors, backgrounds, and borders for each column's panel buttons */
@@ -337,6 +339,20 @@ and (orientation: portrait) {
 		z-index: 1;
 		height: 100%;
 	}
+
+	.home main .column:hover p a {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.home main .column.active-panel:hover p a {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.home main .column.active-panel::after {
+		bottom: 75px;
+	}
 }
 
 /* iPad Portrait Specific */
@@ -371,6 +387,16 @@ and (orientation: portrait) {
 		bottom: 0;
 		z-index: 1;
 		height: 100%;
+	}
+
+	.home main .column:hover p a {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	.home main .column.active-panel:hover p a {
+		visibility: visible;
+		opacity: 1;
 	}
 }
 
