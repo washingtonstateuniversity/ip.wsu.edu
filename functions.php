@@ -219,6 +219,8 @@ class WSU_IP_Theme {
 			$title = $person->position_title;
 		}
 
+		$title = ucwords( strtolower( $title ) );
+
 		if ( ! empty( $person->email_alt ) ) {
 			$email = $person->email_alt;
 		} else {
