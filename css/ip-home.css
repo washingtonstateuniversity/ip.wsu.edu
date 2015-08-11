@@ -57,11 +57,17 @@ html,
 	visibility: hidden;
 }
 
+.home main .column:hover p a {
+	visibility: visible;
+}
+
 /* Clicking a column makes it active. */
 .home main .column.active-panel p a {
 	visibility: visible;
-	transition: visibility 0.15s ease-out;
+	transition: visibility 0.2s ease-in;
 }
+
+
 
 /* ----------------------------------
   Static stylistic styles
