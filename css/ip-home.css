@@ -302,6 +302,43 @@ html,
 	}
 }
 
+/* iPhone 6 Portrait */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+	.home .main-header {
+		position:fixed;
+		top:50px;
+		left:0;
+		z-index:999999
+	}
+
+	.home main .page {
+		position: fixed;
+		top: 105px;
+		bottom: 0;
+		height: 100%;
+	}
+
+	.home .column h2 {
+		margin-top: 8%;
+	}
+
+	.home section {
+		height: calc(100vh - 130px) !important;
+	}
+
+	.home main .column.active-panel {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		z-index: 1;
+		height: 100%;
+	}
+}
+
 /* iPad Portrait Specific */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
 				   and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
