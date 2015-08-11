@@ -107,6 +107,7 @@ html,
 
 .home .column.white {
 	background-image: url(../assets/img/column-white.jpg);
+	background-position-x: 43%;
 }
 
 .home .column.white:hover {
