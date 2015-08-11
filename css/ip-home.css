@@ -234,11 +234,6 @@ html,
 		margin-top: 8%;
 	}
 
-	.home main .column.active-panel {
-		transition: min-height 0.15s ease-in;
-		min-height:calc(100vh - 90px);
-	}
-
 	.home main .column.active-panel:after {
 		position: absolute;
 		bottom: 25px;
