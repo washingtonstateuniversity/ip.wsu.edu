@@ -306,3 +306,25 @@ html,
 		padding: 0 0 5px;
 	}
 }
+
+/* iPad Landscape Specific */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+				   and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	.home .main-header, .main-header sup:not(.unset) {
+		height: 40px;
+	}
+
+	.home section {
+		margin-top: 60px;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		flex-direction: row;
+		height: calc(100% - 180px) !important;
+	}
+
+	.home main .column.active-panel:after {
+		display: none;
+		content: "";
+	}
+}
