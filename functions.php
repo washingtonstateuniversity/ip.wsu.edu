@@ -216,10 +216,8 @@ class WSU_IP_Theme {
 		if ( isset( $person->working_titles[0] ) ) {
 			$title = $person->working_titles[0];
 		} else {
-			$title = $person->position_title;
+			$title = ucwords( strtolower( $person->position_title ) );
 		}
-
-		$title = ucwords( strtolower( $title ) );
 
 		if ( ! empty( $person->email_alt ) ) {
 			$email = $person->email_alt;
