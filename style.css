@@ -1569,8 +1569,8 @@ section.news-events ul li .content-item-event-meta {
 	cursor: pointer;
 	display: block;
 	float: right;
-	margin-right: -120px;
-	margin-top: -120px;
+	margin-right: -10px;
+	margin-top: -195px;
 	z-index: 600;
 	width:39px;
 	height:39px;
