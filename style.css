@@ -1568,12 +1568,13 @@ section.news-events ul li .content-item-event-meta {
 	background-size:contain;
 	cursor: pointer;
 	display: block;
-	float: right;
-	margin-right: -10px;
-	margin-top: -195px;
-	z-index: 600;
 	width:39px;
 	height:39px;
+	float: right;
+    position: fixed;
+    right: calc(100vw - 90%);
+    top: calc(100vh - 90%);
+	z-index: 600;
 }
 
 div.section-wrapper.close-modal:before {
@@ -1971,6 +1972,10 @@ div.reg-date span.reg-month {
 	
 	.stat-circles .column.two {
 		margin: 0;
+	}
+	.close-modal { 
+		width:22px;
+		height:22px;
 	}
 }
 
