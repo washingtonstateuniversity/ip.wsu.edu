@@ -67,8 +67,6 @@ html,
 	transition: visibility 0.2s ease-in;
 }
 
-
-
 /* ----------------------------------
   Static stylistic styles
 ---------------------------------- */
@@ -144,32 +142,37 @@ html,
 	font-weight: 600;
 }
 
-.white p a.button {
-	background-color:rgba(255,255,255,.6);
+.home main .crimson p a,
+.home main .blue p a {
+	color: #fff;
+	background-color:rgba(0,0,0,.25);
+}
+
+.home main .crimson p a {
+	border: 1px solid rgba(141,149,154,.65);
+}
+
+.home main .blue p a {
+	border: 1px solid rgba(174,199,203, .5);
+}
+
+.home main .crimson p a:hover,
+.home main .crimson p a:focus,
+.home main .blue p a:hover,
+.home main .blue p a:focus {
+	border-color: rgba(255,255,255,1);
+}
+
+.home main .white p a  {
+	color:#981E32;
 	border:1px solid rgba(141, 149, 154, .5);
-	color:#981E32;
+	background-color:rgba(255,255,255,.3);
 }
 
-.white p a.button:hover,
-.white p a.button:focus {
+.home main .white p a.button:hover,
+.home main .white p a.button:focus {
 	border-color:rgba(152, 30, 50, 1);
-	color:#981E32;
-	background-color:rgba(255,255,255,1);
 }
-
-main .blue p a.button {
-	border:1px solid #8d959a;
-	color:#fff;
-}
-main .crimson p a.button:hover,
-main .crimson p a.button:focus,
-main .blue p a.button:hover,
-main .blue p a.button:focus {
-	color:#fff;	
-	border-color: #fff;
-	background-color:rgba(0,0,0,.13);
-}
-
 
 /* ----------------------------------
   Responding
