@@ -131,17 +131,19 @@ html,
  url(../assets/img/students-butch-blue-2.jpg);
 }
 
-.home main p a.button {
-	width:66%;
-	margin-bottom:0;
-	margin-top:0;
-	line-height:1.3;
-	text-transform:none;
-	font-size:1.5em;
-	font-family:"Open Sans";
-	font-weight: 600;
+/* Properties for all exposed button links in a home page panel */
+.home main p a {
+	width: 66%;
+	margin-bottom: 0;
+	margin-top: 0;
+	line-height: 1.3;
+	text-transform: none;
+	font-size: 1.5em;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 500;
 }
 
+/* Default colors, backgrounds, and borders for each column's panel buttons */
 .home main .crimson p a,
 .home main .blue p a {
 	color: #fff;
@@ -156,17 +158,18 @@ html,
 	border: 1px solid rgba(174,199,203, .5);
 }
 
+.home main .white p a  {
+	color:#981E32;
+	border:1px solid rgba(141, 149, 154, .5);
+	background-color:rgba(255,255,255,.3);
+}
+
+/* Adjusted state for panel buttons when a parent panel is active or hovered */
 .home main .crimson p a:hover,
 .home main .crimson p a:focus,
 .home main .blue p a:hover,
 .home main .blue p a:focus {
 	border-color: rgba(255,255,255,1);
-}
-
-.home main .white p a  {
-	color:#981E32;
-	border:1px solid rgba(141, 149, 154, .5);
-	background-color:rgba(255,255,255,.3);
 }
 
 .home main .white p a.button:hover,
@@ -265,11 +268,13 @@ html,
 		width:100%;
 	}
 }
+
 .size-lt-large .main-header-sitename {
 	display:block;
 	position:relative;
 	top:0;
 }
+
 /* ----------------------
   Height
 -----------------------*/
