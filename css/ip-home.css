@@ -304,9 +304,12 @@ html,
 	}
 }
 
-/* iPhone 6 Portrait */
+/*
+ * iPhone 5 and 6 Portrait
+ * 320px min for 5, 667px max for 6
+ */
 @media only screen
-and (min-device-width: 375px)
+and (min-device-width: 320px)
 and (max-device-width: 667px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
@@ -352,6 +355,34 @@ and (orientation: portrait) {
 
 	.home main .column.active-panel::after {
 		bottom: 75px;
+	}
+
+	.home main .column p a.button:hover {
+		margin-top: 0;
+	}
+}
+
+/* Portrait */
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+	.home main .column.active-panel::after {
+		bottom: 15px;
+		font-size: 1.3em;
+	}
+
+	.home main .column p {
+		font-size: .6rem;
+	}
+
+	.home section {
+		height: calc(100vh - 170px) !important;
+	}
+
+	.home .column h2 {
+		margin-top: 4%;
 	}
 }
 
