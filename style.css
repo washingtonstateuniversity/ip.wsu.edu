@@ -1267,9 +1267,8 @@ main .page .alternative section {
 	padding-top: 0;
 }
 
-main .page section.border-bottom .column.one.seventy-five_single {
+main .border-bottom .column.one.seventy-five_single {
 	padding-bottom: 75px;
-	margin-bottom: 75px;
 	border-bottom: 1px solid #cbc482;
 }
 
@@ -1840,11 +1839,6 @@ img.fill {
 	height: auto;
 	width: auto;
 	-ms-interpolation-mode: bicubic;
-}
-
-main .page section.border-bottom {
-	padding-bottom: 0;
-	margin-bottom: 0;
 }
 
 .remove-bottom-border .column {
