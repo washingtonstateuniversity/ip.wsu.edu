@@ -1629,10 +1629,10 @@ div.section-wrapper.close-modal:before {
 	font-weight: 300;
 }
 
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=email]:focus,
-textarea:focus {
+main input[type=text]:focus,
+main input[type=password]:focus,
+main input[type=email]:focus,
+main textarea:focus {
 	border:1px solid #981e32;
 	color:#d7dadb;
 	font-weight:300;
