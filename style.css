@@ -1387,6 +1387,9 @@ main .border-bottom .column.one.seventy-five_single {
 /* =========================
   	Tablepress
 ========================== */
+.tablepress {
+	margin-bottom:0;
+}
 .tablepress tfoot th,
 .tablepress thead th {
 	background-color: transparent;
