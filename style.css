@@ -1278,10 +1278,9 @@ main .border-bottom .column.one.seventy-five_single {
 /* =========================
   	Accordion
 ========================== */
-.accordion * {
-	text-align: left;
+.accordion h4, .accordion h5 {
+    text-align: center;
 }
-
 .accordion {
 	border-bottom: dotted 2px #d7dadb;
 }
