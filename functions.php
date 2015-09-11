@@ -79,7 +79,7 @@ class WSU_IP_Theme {
 	 * Enqueue site specific stylesheets after the child theme's stylesheet.
 	 */
 	public function enqueue_site_styles() {
-		if ( $this->is_ip_site( 'ip-home' ) ) {
+		if ( $this->is_ip_site( 'ip-home' ) && is_front_page() ) {
 			wp_enqueue_style( 'wsu-ip-home', get_stylesheet_directory_uri() . '/css/ip-home.css', array(), spine_get_script_version() );
 		}
 
@@ -114,7 +114,7 @@ class WSU_IP_Theme {
 			wp_enqueue_script( 'wsu-ip-js', get_stylesheet_directory_uri() . '/js/script.js', array( 'backbone' ), spine_get_script_version(), true );
 		}
 
-		if ( $this->is_ip_site( 'ip-home' ) ) {
+		if ( $this->is_ip_site( 'ip-home' ) && is_front_page() ) {
 			wp_enqueue_script( 'wsu-ip-home', get_stylesheet_directory_uri() . '/js/ip-home.js', array( 'backbone' ), spine_get_script_version(), true );
 		}
 	}
