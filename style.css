@@ -1491,10 +1491,7 @@ section.news-events ul li {
 	border-top: dotted 2px #d7dadb;
 	border-bottom: none;
 	width: 100%;
-	display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+	display:inline-block;
   /* NEW - Chrome */
 	padding:1em 0 1em 0;
 }
