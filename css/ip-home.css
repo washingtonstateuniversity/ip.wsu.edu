@@ -14,7 +14,7 @@ html,
 	max-width:100%;
 	width:100%;
 	box-sizing: border-box;
-	height:100%;
+	height:100%; /* Comment out the height when we are ready to go live with the changes */
 }
 
 .home .ip-headline,
@@ -173,7 +173,33 @@ html,
 .home main .white p a.button:focus {
 	border-color:rgba(152, 30, 50, 1);
 }
+.home-panels section.row .column {
+	height: calc(95vh - 100px);
+}
 
+.news-home p.news-to-head {
+	height: 50px;
+	display: block;
+	width: 100%;
+	background-color: #fff;
+	font-size: 25px;
+	padding-top: 10px;
+}
+
+.news-home p.news-to-head .strong {
+	font-weight: 600;
+}
+
+.news-events {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.news-events .column header h2 {
+	margin-top: 0;
+	padding-top: 2em;
+	color: #981E32;
+}
 /* ----------------------------------
   Responding
 ---------------------------------- */
@@ -449,7 +475,7 @@ and (orientation: portrait) {
 
 /* iPad Landscape Specific */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
-				   and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 	.home .main-header {
 		position:fixed;
 		top:40px;
