@@ -181,7 +181,6 @@ html,
 	height: 50px;
 	display: block;
 	width: 100%;
-	background-color: #fff;
 	font-size: 25px;
 	padding-top: 10px;
 }
@@ -196,17 +195,16 @@ html,
 }
 .news-events .column header h2 {
 	margin-top: 0;
-	padding-top: 2em;
+	padding-top: 1em;
 	color: #981E32;
 }
 .news-events a.more {
 	font-size: 17px;
 	font-weight: 300;
 }
-.news-event.row.single .column.seventy-five_single {
-	padding-bottom: 4em;
+.home .news-home .news-events.row.single .column.one.seventy-five_single {
+	padding-bottom:4em;
 }
-
 /* ----------------------------------
   Responding
 ---------------------------------- */
@@ -385,6 +383,7 @@ and (orientation: portrait) {
 	.home main .column.active-panel:hover p a {
 		visibility: visible;
 		opacity: 1;
+		font-size:1.4em;
 	}
 
 	.home main .column.active-panel::after {
