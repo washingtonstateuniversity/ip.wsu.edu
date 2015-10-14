@@ -14,7 +14,7 @@ html,
 	max-width:100%;
 	width:100%;
 	box-sizing: border-box;
-	height:100%; /* Comment out the height when we are ready to go live with the homepage news changes */
+	/*height:100%;  Comment out the height when we are ready to go live with the homepage news changes */
 }
 
 .home .ip-headline,
@@ -194,12 +194,19 @@ html,
 	margin-left: auto;
 	margin-right: auto;
 }
-
 .news-events .column header h2 {
 	margin-top: 0;
 	padding-top: 2em;
 	color: #981E32;
 }
+.news-events a.more {
+	font-size: 17px;
+	font-weight: 300;
+}
+.news-event.row.single .column.seventy-five_single {
+	padding-bottom: 4em;
+}
+
 /* ----------------------------------
   Responding
 ---------------------------------- */
