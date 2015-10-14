@@ -351,7 +351,6 @@ html,
 	}
 
 	.home main .page {
-		position: fixed;
 		top: 105px;
 		bottom: 0;
 		height: 100%;
@@ -362,7 +361,7 @@ html,
 	}
 
 	.home section {
-		height: calc(100vh - 130px) !important;
+		height: calc(100vh - 200px) !important;
 	}
 
 	.home main .column.active-panel {
@@ -406,6 +405,7 @@ html,
 
 	.home section {
 		height: calc(100vh - 170px) !important;
+		/*height: calc(100vh - 240px) !important;*/
 	}
 
 	.home .column h2 {
@@ -435,7 +435,6 @@ html,
 	}
 
 	.home main .page {
-		position: fixed;
 		top: 105px;
 		bottom: 0;
 		height: 100%;
