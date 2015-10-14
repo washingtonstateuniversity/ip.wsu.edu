@@ -272,7 +272,7 @@ html,
 		left: 48%;
 	}
 	.home main .news-home .column.active-panel:after {
-		color:#464e54;
+		display:none;
 	}
 	.home .main-header, .main-header sup:not(.unset) {
 		padding-top: 0;
@@ -293,6 +293,9 @@ html,
 
 	.row.thirds .column.one, .row.thirds .column.two, .row.thirds .column.three {
 		width:100%;
+	}
+	.news-home p.news-to-head {
+		font-size: 2.2em;
 	}
 }
 
@@ -340,6 +343,9 @@ html,
  */
 @media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 	.home .main-header {
+		/* Can remove if you need to. */
+		display:none;
+		/**/
 		position:fixed;
 		top:50px;
 		left:0;
@@ -359,7 +365,11 @@ html,
 	.home section {
 		height: calc(100vh - 200px) !important;
 	}
-
+	.home section.news-home {
+		position:relative;
+		min-height:100vh;
+		overflow: scroll;
+	}
 	.home main .column.active-panel {
 		position: absolute;
 		top: 0;
