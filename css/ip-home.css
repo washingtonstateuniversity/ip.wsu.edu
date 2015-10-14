@@ -232,10 +232,6 @@ html,
 }
 
 @media screen and (max-width: 790px) {
-	#jacket {
-		height: 100vh;
-	}
-
 	#binder:not(.fluid) #spine button#shelve {
 		display: none;
 	}
