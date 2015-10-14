@@ -248,10 +248,17 @@ html,
 		flex-direction: column;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		height: calc(100vh - 160px) !important;
-		/*height: calc(100vh - 220px) !important; uncomment for mobile*/
+		/*height: calc(100vh - 160px) !important;*/
+		height: calc(100vh - 220px)
 	}
-
+	.home section.news-home {
+		position:relative;
+		min-height:100vh;
+		overflow: scroll;
+	}
+	.news-home p.news-to-head {
+		font-size: 2.2em;
+	}
 	.home .column {
 		width:100%;
 		display:block;
@@ -293,9 +300,6 @@ html,
 
 	.row.thirds .column.one, .row.thirds .column.two, .row.thirds .column.three {
 		width:100%;
-	}
-	.news-home p.news-to-head {
-		font-size: 2.2em;
 	}
 }
 
@@ -365,11 +369,6 @@ html,
 	.home section {
 		height: calc(100vh - 200px) !important;
 	}
-	.home section.news-home {
-		position:relative;
-		min-height:100vh;
-		overflow: scroll;
-	}
 	.home main .column.active-panel {
 		position: absolute;
 		top: 0;
@@ -410,8 +409,8 @@ html,
 	}
 
 	.home section {
-		height: calc(100vh - 170px) !important;
-		/*height: calc(100vh - 240px) !important;*/
+		/*height: calc(100vh - 170px) !important;*/
+		height: calc(100vh - 240px) !important;
 	}
 
 	.home .column h2 {
