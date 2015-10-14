@@ -308,8 +308,7 @@ html,
 -----------------------*/
 @media screen and (min-height: 801px ) and (max-height:1100px){
    .home main p a.button {
-   		font-size:1.2em;
-   		/*font-size:.9em; Uncomment this when ready to go live with homepage news changes*/
+   	font-size:.9em;
    }
 }
 
