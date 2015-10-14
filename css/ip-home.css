@@ -253,6 +253,7 @@ html,
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		height: calc(100vh - 160px) !important;
+		/*height: calc(100vh - 220px) !important; uncomment for mobile*/
 	}
 
 	.home .column {
@@ -274,7 +275,9 @@ html,
 		font-size: 2em;
 		left: 48%;
 	}
-
+	.home main .news-home .column.active-panel:after {
+		color:#464e54;
+	}
 	.home .main-header, .main-header sup:not(.unset) {
 		padding-top: 0;
 		padding-bottom: 0;
@@ -339,11 +342,7 @@ html,
  * iPhone 4s, 5 and 6 Portrait
  * 320px min for 4s and 5, 667px max for 6
  */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 	.home .main-header {
 		position:fixed;
 		top:50px;
@@ -395,11 +394,7 @@ and (orientation: portrait) {
 }
 
 /* iPhone 5 portrait specific overrides */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 	.home main .column.active-panel::after {
 		bottom: 15px;
 		font-size: 1.3em;
@@ -419,24 +414,19 @@ and (orientation: portrait) {
 }
 
 /* iPhone 4s portrait specific overrides */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 	.home .column h2 {
 		font-size: 180%;
 	}
 
 	.home main .column p {
 		padding-bottom: .3rem;
-		font-size: .5rem;
+		font-size: .8rem;
 	}
 }
 
 /* iPad Portrait Specific */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
-				   and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 	.home .main-header {
 		position:fixed;
 		top:50px;
@@ -480,8 +470,7 @@ and (orientation: portrait) {
 }
 
 /* iPad Landscape Specific */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
-	and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 	.home .main-header {
 		position:fixed;
 		top:40px;
