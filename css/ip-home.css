@@ -1,10 +1,6 @@
 /* ----------------------------------
   Static structure styles
 ---------------------------------- */
-.news-events,
-.news-home {
-	display: none;
-}
 body,
 html,
 #jacket,
@@ -18,7 +14,7 @@ html,
 	max-width:100%;
 	width:100%;
 	box-sizing: border-box;
-	/*height:100%;  Comment out the height when we are ready to go live with the homepage news changes */
+	height:100%;
 }
 
 .home .ip-headline,
@@ -177,38 +173,7 @@ html,
 .home main .white p a.button:focus {
 	border-color:rgba(152, 30, 50, 1);
 }
-.home-panels section.row .column {
-	height: calc(95vh - 100px);
-}
 
-.news-home p.news-to-head {
-	height: 50px;
-	display: block;
-	width: 100%;
-	font-size: 25px;
-	padding-top: 10px;
-}
-
-.news-home p.news-to-head .strong {
-	font-weight: 600;
-}
-
-.news-events {
-	margin-left: auto;
-	margin-right: auto;
-}
-.news-events .column header h2 {
-	margin-top: 0;
-	padding-top: 1em;
-	color: #981E32;
-}
-.news-events a.more {
-	font-size: 17px;
-	font-weight: 300;
-}
-.home .news-home .news-events.row.single .column.one.seventy-five_single {
-	padding-bottom:4em;
-}
 /* ----------------------------------
   Responding
 ---------------------------------- */
@@ -236,6 +201,10 @@ html,
 }
 
 @media screen and (max-width: 790px) {
+	#jacket {
+		height: 100vh;
+	}
+
 	#binder:not(.fluid) #spine button#shelve {
 		display: none;
 	}
@@ -252,16 +221,9 @@ html,
 		flex-direction: column;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		height: calc(100vh - 190px) !important;
+		height: calc(100vh - 160px) !important;
 	}
-	.home section.news-events {
-		position:relative;
-		min-height:100vh;
-		overflow: scroll;
-	}
-	.news-home p.news-to-head {
-		font-size: 2.2em !important;
-	}
+
 	.home .column {
 		width:100%;
 		display:block;
@@ -281,9 +243,7 @@ html,
 		font-size: 2em;
 		left: 48%;
 	}
-	.home main .news-home .column.active-panel:after {
-		display:none;
-	}
+
 	.home .main-header, .main-header sup:not(.unset) {
 		padding-top: 0;
 		padding-bottom: 0;
@@ -311,17 +271,13 @@ html,
 	position:relative;
 	top:0;
 }
-@media screen and (max-width: 490px) {
-	.news-events a.more {
-		margin-left: 1.8em;
-	}
-}
+
 /* ----------------------
   Height
 -----------------------*/
 @media screen and (min-height: 801px ) and (max-height:1100px){
    .home main p a.button {
-   	font-size:.9em;
+   		font-size:1.2em;
    }
 }
 
@@ -352,15 +308,20 @@ html,
  * iPhone 4s, 5 and 6 Portrait
  * 320px min for 4s and 5, 667px max for 6
  */
-@media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
 	.home .main-header {
-		position:relative;
-		top:0px;
+		position:fixed;
+		top:50px;
 		left:0;
 		z-index:999999
 	}
 
 	.home main .page {
+		position: fixed;
 		top: 105px;
 		bottom: 0;
 		height: 100%;
@@ -371,14 +332,15 @@ html,
 	}
 
 	.home section {
-		height: calc(100vh - 190px) !important;
+		height: calc(100vh - 130px) !important;
 	}
+
 	.home main .column.active-panel {
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		z-index: 1;
-		min-height: 85vh;
+		height: 100%;
 	}
 
 	.home main .column:hover p a {
@@ -389,7 +351,6 @@ html,
 	.home main .column.active-panel:hover p a {
 		visibility: visible;
 		opacity: 1;
-		font-size:1.4em;
 	}
 
 	.home main .column.active-panel::after {
@@ -402,7 +363,11 @@ html,
 }
 
 /* iPhone 5 portrait specific overrides */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
 	.home main .column.active-panel::after {
 		bottom: 15px;
 		font-size: 1.3em;
@@ -413,7 +378,7 @@ html,
 	}
 
 	.home section {
-		height: calc(100vh - 190px) !important;
+		height: calc(100vh - 170px) !important;
 	}
 
 	.home .column h2 {
@@ -422,27 +387,33 @@ html,
 }
 
 /* iPhone 4s portrait specific overrides */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
 	.home .column h2 {
 		font-size: 180%;
 	}
 
 	.home main .column p {
 		padding-bottom: .3rem;
-		font-size: .8rem;
+		font-size: .5rem;
 	}
 }
 
 /* iPad Portrait Specific */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+				   and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 	.home .main-header {
-		position:relative;
-		top:0px;
+		position:fixed;
+		top:50px;
 		left:0;
 		z-index:999999
 	}
 
 	.home main .page {
+		position: fixed;
 		top: 105px;
 		bottom: 0;
 		height: 100%;
@@ -477,10 +448,11 @@ html,
 }
 
 /* iPad Landscape Specific */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+				   and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 	.home .main-header {
-		position:relative;
-		top:0px;
+		position:fixed;
+		top:40px;
 		left:0;
 		z-index:999999
 	}
