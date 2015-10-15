@@ -248,8 +248,7 @@ html,
 		flex-direction: column;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		/*height: calc(100vh - 160px) !important;*/
-		height: calc(100vh - 220px)
+		height: calc(100vh - 190px) !important;
 	}
 	.home section.news-events {
 		position:relative;
@@ -347,11 +346,8 @@ html,
  */
 @media only screen and (min-device-width: 320px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
 	.home .main-header {
-		/* Can remove if you need to. */
-		display:none;
-		/**/
-		position:fixed;
-		top:50px;
+		position:relative;
+		top:0px;
 		left:0;
 		z-index:999999
 	}
@@ -367,14 +363,14 @@ html,
 	}
 
 	.home section {
-		height: calc(100vh - 200px) !important;
+		height: calc(100vh - 190px) !important;
 	}
 	.home main .column.active-panel {
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		z-index: 1;
-		height: 100%;
+		min-height: 85vh;
 	}
 
 	.home main .column:hover p a {
@@ -409,8 +405,7 @@ html,
 	}
 
 	.home section {
-		/*height: calc(100vh - 170px) !important;*/
-		height: calc(100vh - 240px) !important;
+		height: calc(100vh - 190px) !important;
 	}
 
 	.home .column h2 {
@@ -433,8 +428,8 @@ html,
 /* iPad Portrait Specific */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
 	.home .main-header {
-		position:fixed;
-		top:50px;
+		position:relative;
+		top:0px;
 		left:0;
 		z-index:999999
 	}
@@ -476,8 +471,8 @@ html,
 /* iPad Landscape Specific */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 	.home .main-header {
-		position:fixed;
-		top:40px;
+		position:relative;
+		top:0px;
 		left:0;
 		z-index:999999
 	}
