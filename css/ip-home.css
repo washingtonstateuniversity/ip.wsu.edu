@@ -1,6 +1,10 @@
 /* ----------------------------------
   Static structure styles
 ---------------------------------- */
+.news-events,
+.news-home {
+	display: none;
+}
 body,
 html,
 #jacket,
@@ -307,7 +311,11 @@ html,
 	position:relative;
 	top:0;
 }
-
+@media screen and (max-width: 490px) {
+	.news-events a.more {
+		margin-left: 1.8em;
+	}
+}
 /* ----------------------
   Height
 -----------------------*/
