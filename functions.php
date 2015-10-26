@@ -80,8 +80,10 @@ class WSU_IP_Theme {
 	 */
 	public function enqueue_site_styles() {
 		if ( $this->is_ip_site( 'ip-home' ) && is_front_page() ) {
-			wp_enqueue_style( 'wsu-ip-home', get_stylesheet_directory_uri() . '/css/ip-home.css', array(), spine_get_script_version() );
-		}
+            wp_enqueue_style( 'wsu-ip-home', get_stylesheet_directory_uri() . '/css/ip-home.css', array(), spine_get_script_version() );
+        } elseif ( $this->is_ip_site( 'ip-home' ) ) {
+           wp_enqueue_style( 'wsu-ip-home', get_stylesheet_directory_uri() . '/css/ip-home-inside.css', array(), spine_get_script_version() );
+        }
 
 		if ( $this->is_ip_site( 'future-students' ) ) {
 			wp_enqueue_style( 'wsu-ip-future-students', get_stylesheet_directory_uri() . '/css/ip-future-students.css', array(), spine_get_script_version() );
@@ -135,7 +137,7 @@ class WSU_IP_Theme {
 	 */
 	public function color_palette_values() {
 		return array(
-			'palette1' => array( 'name' => 'Crimson',  'hex' => '#981e32' ),
+			'palette1'   => array( 'name' => 'Crimson',  'hex' => '#981e32' ),
 			'palette2'   => array( 'name' => 'Blue One', 'hex' => '#4f868e' ),
 			'palette3'   => array( 'name' => 'Blue Two', 'hex' => '#2f5055' ),
 			'palette4'   => array( 'name' => 'Gray One', 'hex' => '#8d959a' ),
