@@ -43,6 +43,7 @@ body.blog #jacket #binder main section .column article.post:first-of-type {
 body.blog #jacket #binder main section .column article.post {
 	border-top:dotted 2px #d7dadb;
 	padding:30px 0;
+	min-height: 150px;
 }
 body.blog #jacket #binder main section .column article.post header.article-header hgroup h2.article-title {
 	font-size: 23px;
@@ -71,6 +72,7 @@ body.blog #jacket #binder main section .column article.post p {
 }
 body.blog #jacket #binder main section.row div.column .article-summary figure.article-thumbnail {
 	float:left;
+	clear:both;
 	margin-left:0;
 	margin-right:1em;
 	margin-top:.8em;
