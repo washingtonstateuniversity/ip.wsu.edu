@@ -308,4 +308,16 @@ class WSU_IP_Theme {
 		return strcasecmp( $a->last_name, $b->last_name );
 	}
 }
-new WSU_IP_Theme();
+$wsu_ip_theme = new WSU_IP_Theme();
+
+/**
+ * Wrapper to determine if a current view is a specific site.
+ *
+ * @param string $site
+ *
+ * @return bool
+ */
+function ip_is_ip_site( $site ) {
+	global $wsu_ip_theme;
+	return $wsu_ip_theme->is_ip_site( $site );
+}
