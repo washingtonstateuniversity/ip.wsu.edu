@@ -1,7 +1,8 @@
 /* Archive and single post */
 body.single-post #jacket #binder main section.row:not(.boundless):not(.rebound) .column.one,
 body.blog #jacket #binder main section.row:not(.boundless):not(.rebound) .column.one {
-	max-width:75%;
+	max-width:693px;
+	width:100%;
 	float: none;
 	margin-left: auto;
 	margin-right:auto;
@@ -23,10 +24,13 @@ body.single-post #jacket #binder main section article header.article-header hgro
 body.blog #jacket #binder main header figure {
 	display:none;
 }
-body.single-post #jacket #binder main figure.featured-image {
+body.single-post #jacket #binder main header figure.featured-image {
 	display:block;
 	position: relative;
 	margin-top:0;
+}
+body.single-post #jacket #binder main header + figure.featured-image {
+	display:none;
 }
 body.single-post #jacket #binder main section.row div.column article div.article-body,
 body.single-post #jacket #binder main section.row div.column footer.article-footer {

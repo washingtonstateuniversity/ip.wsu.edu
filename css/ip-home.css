@@ -177,15 +177,17 @@ html,
 	height: calc(95vh - 100px);
 }
 
-.news-home p.news-to-head {
+.news-home div.news-to-head {
 	height: 40px;
 	display: block;
 	width: 100%;
 	font-size: 25px;
 	padding-top: 10px;
+	opacity: 1;
+	top:0;
 }
 
-.news-home p.news-to-head .strong {
+.news-home div.news-to-head .strong {
 	font-weight: 600;
 }
 
@@ -292,7 +294,7 @@ a.content-item-read-story {
 		min-height:100vh;
 		overflow: scroll;
 	}
-	.news-home p.news-to-head {
+	.news-home div.news-to-head {
 		font-size: 2.2em !important;
 	}
 	.home .column {
