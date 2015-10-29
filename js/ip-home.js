@@ -31,7 +31,12 @@ var wsuIPHome = wsuIPHome || {};
 
 		}
 	});
+	$(window).on('scroll', function() {
+		var upOpaque = $(this).scrollTop();
+		var targetDiv = $('.news-to-head');
 
+		targetDiv.css({'opacity' : (1 - upOpaque/230)});
+	});
 	$(document).ready(function() {
 		window.wsuIPHome.app = new wsuIPHome.appView();
 	});
