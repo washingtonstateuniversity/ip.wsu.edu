@@ -174,7 +174,7 @@ html,
 	border-color:rgba(152, 30, 50, 1);
 }
 .home-panels section.row .column {
-	height: calc(95vh - 100px);
+	height: calc(95vh - 68px);
 }
 
 .news-home div.news-to-head {
