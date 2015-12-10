@@ -257,7 +257,7 @@ class WSU_IP_Theme {
 		}
 		?>
 			<div class="wsuwp-person-info-container">
-				<div class="wsuwp-person-name"><?php echo esc_html( $person->title ); ?></div>
+				<div class="wsuwp-person-name"><?php echo esc_html( $person->title->rendered ); ?></div>
 				<div class="wsuwp-person-position"><?php echo esc_html( $title ); ?></div>
 				<div class="wsuwp-person-office"><?php echo esc_html( $office ); ?></div>
 				<div class="wsuwp-person-email"><a href="mailto:<?php echo esc_html( $email ); ?>"><?php echo esc_html( $email ); ?></a></div>
