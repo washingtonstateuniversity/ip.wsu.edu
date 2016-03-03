@@ -1,0 +1,89 @@
+/* Archive and single post */
+body.single-post #jacket #binder main section.row:not(.boundless):not(.rebound) .column.one,
+body.blog #jacket #binder main section.row:not(.boundless):not(.rebound) .column.one {
+	max-width:75%;
+	float: none;
+	margin-left: auto;
+	margin-right:auto;
+}
+body.blog #jacket #binder main section.row:not(.boundless):not(.rebound) .column.one {
+	padding-left:0;
+	padding-right:0;
+}
+body.single-post #jacket #binder main header.main-header .ip-headline,
+body.blog #jacket #binder main header.main-header .ip-headline {
+	background-color:white;
+	float:none;
+}
+body.blog #jacket #binder main header.main-header .ip-headline {
+	margin-bottom:2em;
+}
+body.single-post #jacket #binder main section.row .column.two,
+body.single-post #jacket #binder main section article header.article-header hgroup.source,
+body.blog #jacket #binder main header figure {
+	display:none;
+}
+body.single-post #jacket #binder main figure.featured-image {
+	display:block;
+	position: relative;
+	margin-top:0;
+}
+body.single-post #jacket #binder main section.row div.column article div.article-body,
+body.single-post #jacket #binder main section.row div.column footer.article-footer {
+	float:left;
+	width:100%;
+}
+body.single-post #jacket #binder main section.row div.column article div.article-body {
+	padding:2em 0;
+}
+body.blog #jacket #binder main section .column article.post:first-of-type {
+	border-top:0;
+	padding-top:0;
+}
+body.blog #jacket #binder main section .column article.post {
+	border-top:dotted 2px #d7dadb;
+	padding:30px 0;
+}
+body.blog #jacket #binder main section .column article.post header.article-header hgroup h2.article-title {
+	font-size: 23px;
+    color: #4f868e;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    padding-bottom: .5em;
+    padding-top:0;
+    text-align: left;
+} 
+body.blog #jacket #binder main section .column article.post header.article-header hgroup h2.article-title a {
+	border-bottom:0;
+} 
+body.blog #jacket #binder main section .column article.post header.article-header hgroup h2.article-title a:hover {
+   color: #981e32;
+}
+body.blog #jacket #binder main section .column article.post hgroup.source,
+body.blog #jacket #binder main section .column .article-footer {
+	display:none;
+}
+body.blog #jacket #binder main section .column article.post p {
+	font-size: 16px;
+    line-height: 32px;
+    color: #5e6a71;
+}
+body.blog #jacket #binder main section.row div.column .article-summary figure.article-thumbnail {
+	float:left;
+	margin-left:0;
+	margin-right:1em;
+	margin-top:.8em;
+	width:120px;
+}
+body.blog #jacket #binder main section.row div.column .article-summary figure.article-thumbnail a {
+	border:none;
+}
+body.blog #jacket #binder main section.row div.column .article-summary a.more-link {
+	border-bottom: 2px dotted #00a5bd !important;
+    text-decoration: none;
+    display:block;
+    width:15% !important;
+    padding-bottom:0 !important;
+    padding-top:1em;
+}
