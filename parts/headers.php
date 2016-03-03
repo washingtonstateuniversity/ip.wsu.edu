@@ -26,15 +26,37 @@ if ( spine_get_option( 'main_header_show' ) == 'true' ) :
 			<span class="sup-header-default"><?php echo strip_tags( $spine_main_header_values['sup_header_default'], '<a>' ); ?></span>
 		</sup>
 	</div>
-	<?php if ( spine_has_featured_image() ) {
-		$featured_image_src = spine_get_featured_image_src(); ?>
-		<figure class="featured-image" style="background-image: url('<?php echo $featured_image_src ?>');">
-			<?php spine_the_featured_image(); ?>
-		</figure>
-	<?php } ?>
-	<div class="ip-headline">
+<?php
+	if ( ip_is_ip_site( 'ip-home' ) && is_singular( 'post' ) ) {
+		?>
+		<div class="ip-headline">
+			<h1>NEWS</h1>
+		</div>
+		<?php
+		if ( spine_has_featured_image() ) {
+			$featured_image_src = spine_get_featured_image_src();
+			?>
+			<figure class="featured-image" style="background-image: url('<?php echo $featured_image_src ?>');">
+				<?php spine_the_featured_image(); ?>
+			</figure>
+			<?php
+		}
+	} else {
+		if ( spine_has_featured_image() ) {
+			$featured_image_src = spine_get_featured_image_src();
+			?>
+			<figure class="featured-image" style="background-image: url('<?php echo $featured_image_src ?>');">
+				<?php spine_the_featured_image(); ?>
+			</figure>
+			<?php
+		}
+		?>
+		<div class="ip-headline">
 			<h1><?php echo strip_tags( $spine_main_header_values['sub_header_default'], '<a>' ); ?></h1>
-	</div>
+		</div>
+		<?php
+	}
+?>
 </header>
 
 <?php endif; ?>
