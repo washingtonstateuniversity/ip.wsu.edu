@@ -79,8 +79,7 @@ var wsuIPTheme = wsuIPTheme || {};
 		}
 	});
 
-	/**
-	$('a[href*=#]:not([href=#])').click(function() {
+	$('a[href*="#"]:not([href="#"])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
 			var target = $(this.hash);
@@ -92,7 +91,7 @@ var wsuIPTheme = wsuIPTheme || {};
 				return false;
 			}
 		}
-	});**/
+	});
 
 	var setup_form_modals = function() {
 		$('.trigger-modal').on('click',function(e){
