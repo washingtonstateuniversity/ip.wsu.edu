@@ -4,7 +4,7 @@ Theme URI: https://ip.wsu.edu/
 Author: WSU University Communications
 Author URI: https://web.wsu.edu/
 Description: Child theme of WSU Spine for use by the WSU International Programs.
-Version: 1.9.6
+Version: 1.9.7
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Tags: light
@@ -322,8 +322,8 @@ main .row {
 }
 
 .fluid-container iframe,
-.fluid-container object, 
-.fluid-container embed, 
+.fluid-container object,
+.fluid-container embed,
 .fluid-container video {
 	position:absolute;
 	top:0;
@@ -823,7 +823,7 @@ main section.row.single .column.seventy-five_single.next-step-negative {
 }
 
 /* ============================================================
-  COLORING 
+  COLORING
   ref: https://brand.wsu.edu/visual/colors/
 ============================================================ */
 
@@ -987,7 +987,7 @@ body.wsu-palette-palette4 .dropcap:first-child:first-letter {
 
 .black p a.button {
 	border:1px solid rgba(141, 149, 154, .5);
-	color:#fff;	
+	color:#fff;
 }
 
 .black p a.button:hover,
@@ -1112,7 +1112,7 @@ main .crimson p a.button {
 
 main .crimson p a.button:hover,
 main .crimson p a.button:focus {
-	color:#fff;	
+	color:#fff;
 	border-color: #fff;
 	background-color:transparent;
 }
@@ -1620,12 +1620,12 @@ div.section-wrapper.close-modal:before {
 	padding-top:.8em;
 }
 
-.gform_wrapper .gfield_checkbox li, 
+.gform_wrapper .gfield_checkbox li,
 .gform_wrapper .gfield_radio li  {
 	cursor:pointer;
 }
 
-.gform_wrapper .gfield_checkbox li label, 
+.gform_wrapper .gfield_checkbox li label,
 .gform_wrapper .gfield_radio li label {
 	font-size: 100%;
 	font-weight: 300;
@@ -1646,7 +1646,7 @@ main textarea:focus {
 	margin-left:0;
 }
 
-.gform_wrapper .gform_footer input.button, 
+.gform_wrapper .gform_footer input.button,
 .gform_wrapper .gform_footer input[type=submit] {
 	font-size:20px;
 	width:210px;
@@ -1685,9 +1685,9 @@ main textarea:focus {
 	color:#fff;
 }
 
-.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_left select, 
-.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_right select, 
-.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield input[type=radio], 
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_left select,
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield div.ginput_complex span.ginput_right select,
+.gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield input[type=radio],
 .gform_wrapper.gf_browser_chrome ul.gform_fields li.gfield select {
 	margin-left:1px;
 }
@@ -1738,7 +1738,7 @@ display: -webkit-box;
 .wsuwp-people-wrapper .wsuwp-person-container:last-child {
 	border-bottom:none;
 }
-.wsuwp-people-wrapper .wsuwp-person-container:nth-child(even) { 
+.wsuwp-people-wrapper .wsuwp-person-container:nth-child(even) {
 	justify-content: space-around;
 	padding-left:1em;
 }
@@ -1945,48 +1945,48 @@ div.reg-date span.reg-month {
 		font-size: 1.5em;
 		line-height: 1.6em;
 	}
-	
+
 	blockquote span:before {
 		font-size: 5rem;
 		left: -.7em;
 	}
-	
+
 	.white blockquote p {
 		padding-bottom: 1em;
 	}
-	
+
 	.row.quarters .column.one {
 		width: 100%;
 		padding-top: 1em;
 	}
-	
+
 	.row.quarters .column.two {
 		width: 100%;
 		padding-top: 1em;
 	}
-	
+
 	.row.quarters .column.three {
 		width: 100%;
 		padding-top: 1em;
 	}
-	
+
 	.row.quarters .column.four {
 		width: 100%;
 		padding-top: 1em;
 	}
-	
+
 	main .anchor-nav li a {
 		font-size: .9em;
 	}
-	
+
 	.stat-circles .column.one {
 		margin: 0;
 	}
-	
+
 	.stat-circles .column.two {
 		margin: 0;
 	}
-	.close-modal { 
+	.close-modal {
 		width:22px;
 		height:22px;
 		right: calc(100vw - 90%);
@@ -2001,14 +2001,14 @@ div.reg-date span.reg-month {
 		margin: 0 auto;
 		float: none;
 	}
-	
+
 	.row.single .column.one.seventy-five_single {
 		width: 100%;
 		max-width: 693px;
 		margin: 0 auto;
 		float: none;
 	}
-	
+
 	.row.single .column.one.sixty-six_sixty-seven_single,
 	.row.single .column.one.sixty-six_single {
 		width: 100%;
@@ -2016,20 +2016,20 @@ div.reg-date span.reg-month {
 		margin: 0 auto;
 		float: none;
 	}
-	
+
 	.row.single .column.one.fifty_single {
 		width: 100%;
 		max-width: 512px;
 		margin: 0 auto;
 		float: none;
 	}
-	
+
 	/***** TWO EQUAL COLS *****/
 	.row.halves .column.one,
 	.row.halves .column.two {
 		width: 50%;
 	}
-	
+
 	/***** TWO 41.67% COLS *****/
 	.row.halves .column.one.forty-one_sixty-seven,
 	.row.halves .column.two.forty-one_sixty-seven {
@@ -2068,17 +2068,17 @@ div.reg-date span.reg-month {
 		width: 25%;
 		margin: 0 4.165%;
 	}
-	
+
 	/***** THREE COLS (25% / 50% / 25%) *****/
 	.row.triptych .column.one,
 	.row.triptych .column.three {
 		width: 25%;
 	}
-	
+
 	.row.triptych .column.two {
 		width: 50%;
 	}
-	
+
 	/***** FOUR COLS *****/
 	.row.quarters .column.one,
 	.row.quarters .column.two,
@@ -2091,7 +2091,7 @@ div.reg-date span.reg-month {
 
 @media screen and ( max-width: 694px) {
 	/***** FOUR COLS *****/
-	.row.quarters .column.one {	
+	.row.quarters .column.one {
 		width: 100%;
 	}
 	.wsuwp-people-wrapper .wsuwp-person-container {
@@ -2110,19 +2110,19 @@ div.reg-date span.reg-month {
 	.intro p {
 		font-size: 1.7rem;
 	}
-	
+
 	blockquote {
 		font-size: 1.2em;
 		line-height: 1.5em;
 		padding: .6em;
 		letter-spacing: .2px;
 	}
-	
+
 	blockquote span:before {
 		font-size: 4rem;
 		left: -.6em;
 	}
-	
+
 	main p a.button {
 		margin-top: 1em;
 	}
@@ -2138,39 +2138,39 @@ div.reg-date span.reg-month {
 	main p a.button:hover {
 		margin-top: 1em;
 	}
-	
+
 	main .next-steps a.button {
 		margin-top: 1em;
 	}
-	
+
 	main .next-steps a.button:hover {
 		margin-top: 1em;
 	}
-	
+
 	h2 {
 		font-size: 2.5em;
 	}
-	
+
 	h3 {
 		padding-top: .1em;
 		padding-bottom: .9em;
 		font-size: 1.6em;
 		line-height: 1.2em;
 	}
-	
+
 	.dates h3 {
 		padding-bottom: 1em;
 	}
-	
+
 	.ip-headline h1 {
 		font-size: 1.35em;
 	}
-	
+
 	main .anchor-nav li a {
 		font-size: .7em;
 		line-height: 1.2em;
 	}
-	
+
 	main ul li, main ol li {
 		padding-bottom: .4rem;
 	}
@@ -2203,7 +2203,7 @@ div.section-wrapper-has-background.blockquote-has-thumbnail  {
 section.blockquote-has-thumbnail.side-left blockquote p {
 	text-align:right;
 }
-/*reset city 
+/*reset city
 main .page div.has-thumbnail section,
 main .page div.has-thumbnail section .column,
 main .page div.has-thumbnail section .column blockquote {

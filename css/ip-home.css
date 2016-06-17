@@ -18,7 +18,7 @@ html,
 }
 
 .home .ip-headline,
-.home .main-header:not(.gutter) .header-group:not(.unset):not(.guttered), 
+.home .main-header:not(.gutter) .header-group:not(.unset):not(.guttered),
 .home .main-header .header-group:not(.unset),
 .home .main-footer,
 #spine .spine-actions {
@@ -174,7 +174,7 @@ html,
 	border-color:rgba(152, 30, 50, 1);
 }
 .home-panels section.row .column {
-	height: calc(95vh - 100px);
+	height: calc(95vh - 175%);
 }
 .news-home .news-to-head a {
 	border:none;
@@ -221,7 +221,7 @@ html,
 	display:none;
 }
 .home .news-home .news-events .content-item-excerpt {
-	
+
 }
 .home .news-home .news-events .content-item-excerpt p {
 	font-size:16px;
@@ -250,7 +250,7 @@ a.content-item-read-story {
 /* ----------------------
   Width
 -----------------------*/
-@media screen and (min-width: 1800px) { 
+@media screen and (min-width: 1800px) {
 	.home .column h2 {
 		margin-top:30%;
 	}
@@ -285,19 +285,16 @@ a.content-item-read-story {
 	}
 
 	.home section {
-		margin-top: 60px;
 		display: -webkit-flex;
 		display: flex;
 		-webkit-flex-direction: column;
 		flex-direction: column;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		height: calc(100vh - 190px) !important;
 	}
 	.home section.news-events {
 		position:relative;
 		min-height:100vh;
-		overflow: scroll;
 	}
 	.news-home p.news-to-head {
 		font-size: 2.2em !important;
@@ -324,7 +321,8 @@ a.content-item-read-story {
 	.home main .news-home .column.active-panel:after {
 		display:none;
 	}
-	.home .main-header, .main-header sup:not(.unset) {
+	.home .main-header,
+	.main-header sup:not(.unset) {
 		padding-top: 0;
 		padding-bottom: 0;
 		height: 55px;
@@ -341,7 +339,9 @@ a.content-item-read-story {
    		font-size:240%;
 	}
 
-	.row.thirds .column.one, .row.thirds .column.two, .row.thirds .column.three {
+	.row.thirds .column.one,
+	.row.thirds .column.two,
+	.row.thirds .column.three {
 		width:100%;
 	}
 }
@@ -405,7 +405,9 @@ a.content-item-read-story {
 		bottom: 0;
 		height: 100%;
 	}
-
+.home main .column {
+	height:35%;
+}
 	.home .column h2 {
 		margin-top: 8%;
 	}
