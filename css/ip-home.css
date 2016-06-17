@@ -294,8 +294,7 @@ a.content-item-read-story {
 	}
 	.home section.news-events {
 		position:relative;
-		min-height:100vh;
-		height:100vh;
+		height: 100% !important;
 		overflow: visible;
 	}
 	.news-home p.news-to-head {
