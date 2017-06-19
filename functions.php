@@ -284,7 +284,7 @@ class WSU_IP_Theme {
 
 		if ( 1 === ( count( $people ) % 2 ) ) {
 			$person = new stdClass();
-			$person->title = '';
+			$person->title = (object) array( 'rendered' => '' );
 			$person->office = '';
 			$person->position_title = '';
 			$person->email = '';
