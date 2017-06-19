@@ -251,7 +251,8 @@ class WSU_IP_Theme {
 			?>
 			<div class="wsuwp-person-container">
 				<figure class="wsuwp-person-photo">
-					<img src="<?php echo esc_url( $person->profile_photo ); ?>" />
+					<img src="<?php echo esc_url( $person->profile_photo ); ?>"
+						 alt="<?php echo esc_attr( $person->title->rendered ); ?>" />
 				</figure>
 			<?php
 		} else {
