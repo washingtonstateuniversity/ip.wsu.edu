@@ -251,7 +251,8 @@ class WSU_IP_Theme {
 			?>
 			<div class="wsuwp-person-container">
 				<figure class="wsuwp-person-photo">
-					<img src="<?php echo esc_url( $person->profile_photo ); ?>" />
+					<img src="<?php echo esc_url( $person->profile_photo ); ?>"
+						 alt="<?php echo esc_attr( $person->title->rendered ); ?>" />
 				</figure>
 			<?php
 		} else {
@@ -284,7 +285,7 @@ class WSU_IP_Theme {
 
 		if ( 1 === ( count( $people ) % 2 ) ) {
 			$person = new stdClass();
-			$person->title = '';
+			$person->title = (object) array( 'rendered' => '' );
 			$person->office = '';
 			$person->position_title = '';
 			$person->email = '';
