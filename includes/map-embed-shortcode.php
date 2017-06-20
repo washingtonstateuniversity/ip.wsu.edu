@@ -46,7 +46,7 @@ class WSUWP_IP_Map_Shortcode {
 		}
 
 		$content = '<div id="map-embed-' . $map_path . '"></div>';
-		$content .= '<script>var map_view_scripts_block = true; var map_view_id = "map-embed-' . esc_js( $map_path ) .'";</script>';
+		$content .= '<script>var map_view_scripts_block = true; var map_view_id = "map-embed-' . esc_js( $map_path ) . '";</script>';
 
 		wp_enqueue_script( 'wsu-ip-map', esc_url( 'https://beta.maps.wsu.edu/embed/ ' . $map_path ), array( 'jquery' ), false, true );
 

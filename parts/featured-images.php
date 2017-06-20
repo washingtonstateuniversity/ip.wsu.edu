@@ -18,12 +18,12 @@ $anchor_html = '';
 
 if ( $anchor_nav_data ) {
 	$anchor_count = 0;
-	foreach( $anchor_nav_data as $anchor_id => $anchor_text ) {
+	foreach ( $anchor_nav_data as $anchor_id => $anchor_text ) {
 		$anchor_count++;
 		$anchor_html .= '<li class="anchor-nav-item"><a href="#' . esc_attr( $anchor_id ) . '">' . esc_html( $anchor_text ) . '</a></li>';
 	}
 }
 
 if ( '' !== $anchor_html ) {
-	echo '<div class="anchor-nav-wrapper anchor-count-' . $anchor_count . '"><ul class="anchor-nav">' . $anchor_html . '</ul></div>';
+	echo '<div class="anchor-nav-wrapper anchor-count-' . esc_attr( $anchor_count ) . '"><ul class="anchor-nav">' . esc_html( $anchor_html ) . '</ul></div>';
 }
