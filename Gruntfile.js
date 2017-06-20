@@ -63,7 +63,7 @@ module.exports = function( grunt ) {
 				options: {
 					preset: "jquery",
 					requireCamelCaseOrUpperCaseIdentifiers: false, // We rely on name_name too much to change them all.
-					maximumLineLength: 250,
+					maximumLineLength: 250
 				}
 			}
 		},
@@ -110,6 +110,15 @@ module.exports = function( grunt ) {
 			}
 		},
 
+		uglify: {
+			dist: {
+				cwd: "src/js/",
+				src: "*.js",
+				dest: "js/",
+				expand: true
+			}
+		},
+
 		watch: {
 			styles: {
 				files: [ "css/*.css", "js/*.js" ],
@@ -136,6 +145,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( "grunt-contrib-concat" );
 	grunt.loadNpmTasks( "grunt-contrib-connect" );
 	grunt.loadNpmTasks( "grunt-contrib-jshint" );
+	grunt.loadNpmTasks( "grunt-contrib-uglify" );
 	grunt.loadNpmTasks( "grunt-contrib-watch" );
 	grunt.loadNpmTasks( "grunt-jscs" );
 	grunt.loadNpmTasks( "grunt-phpcs" );
@@ -143,7 +153,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( "grunt-stylelint" );
 
 	// Default task(s).
-	grunt.registerTask( "default", [ "stylelint", "concat", "postcss", "clean", "jscs", "jshint", "phpcs" ] );
+	grunt.registerTask( "default", [ "stylelint", "concat", "postcss", "clean", "jscs", "jshint", "uglify", "phpcs" ] );
 
 	grunt.registerTask( "serve", [ "connect", "watch" ] );
 };
