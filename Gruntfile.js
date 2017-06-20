@@ -3,7 +3,7 @@ module.exports = function( grunt ) {
 		pkg: grunt.file.readJSON( "package.json" ),
 
 		stylelint: {
-			src: [ "css/*.css" ]
+			src: [ "src/css/**/*.css" ]
 		},
 
 		concat: {
@@ -11,24 +11,42 @@ module.exports = function( grunt ) {
 				sourceMap: true
 			},
 			dist: {
-				src: "css/*.css",
+				src: "src/css/*.css",
 				dest: "tmp-style.css"
 			}
 		},
 
 		postcss: {
+			primary: {
+				options: {
+					map: true,
+					processors: [
+						require( "autoprefixer" )( {
+							browsers: [ "> 1%", "ie 8-11", "Firefox ESR" ]
+						} )
+					]
+				},
+				src: "tmp-style.css",
+				dest: "style.css"
+			},
 			options: {
-				map: true,
-				diff: false,
 				processors: [
 					require( "autoprefixer" )( {
 						browsers: [ "> 1%", "ie 8-11", "Firefox ESR" ]
 					} )
 				]
 			},
-			dist: {
-				src: "tmp-style.css",
-				dest: "style.css"
+			secondary: {
+				cwd: "src/css/secondary/",
+				src: "*.css",
+				dest: "css/",
+				expand: true
+			},
+			admin: {
+				cwd: "src/css/admin/",
+				src: "*.css",
+				dest: "css/",
+				expand: true
 			}
 		},
 
@@ -125,7 +143,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( "grunt-stylelint" );
 
 	// Default task(s).
-	grunt.registerTask( "default", [ "jscs", "jshint", "stylelint", "concat", "postcss", "clean", "phpcs" ] );
+	grunt.registerTask( "default", [ "stylelint", "concat", "postcss", "clean", "jscs", "jshint", "phpcs" ] );
 
 	grunt.registerTask( "serve", [ "connect", "watch" ] );
 };
