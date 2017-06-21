@@ -1,16 +1,3 @@
-/*
-Theme Name: WSU International Programs
-Theme URI: https://ip.wsu.edu/
-Author: WSU University Communications
-Author URI: https://web.wsu.edu/
-Description: Child theme of WSU Spine for use by the WSU International Programs.
-Version: 2.0
-License: GNU General Public License v2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Tags: light
-Template: spine
-*/
-
 /* General overrides */
 html {
 	background-color: #f5f5f5;
@@ -68,8 +55,6 @@ hr + h4 {
 	float: left;
 	width: 100%;
 	margin: 0 auto;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	resize: both;
 	padding: 0;
@@ -163,23 +148,15 @@ figure.featured-image + .ip-headline {
 	padding: 0;
 	width: 100%;
 	max-width: 990px;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 }
 
 .anchor-nav li {
 	padding: 0;
 	float: left;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	align-items: center;
+	justify-content: center;
 	background-color: #eeece0;
 	font-size: 1.313rem;
 	line-height: 1;
@@ -196,16 +173,10 @@ main .anchor-nav li a {
 	padding: 15px 8px;
 	width: 100%;
 	border: none;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	box-sizing: border-box;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	align-items: center;
+	justify-content: center;
 }
 
 .anchor-count-2 li {
@@ -1631,11 +1602,8 @@ main textarea:focus {
 .wsuwp-people-wrapper {
 	width: 100%;
 	border-bottom: dotted 2px #d7dadb;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .wsuwp-people-wrapper .wsuwp-person-container {
@@ -1643,17 +1611,10 @@ main textarea:focus {
 	width: 49%;
 	border-bottom: dotted 2px #d7dadb;
 	padding: 1.2em 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-ms-flex-line-pack: start;
-	    align-content: flex-start;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-content: flex-start;
 }
 
 .wsuwp-people-wrapper .wsuwp-person-container:last-child {
@@ -1661,8 +1622,7 @@ main textarea:focus {
 }
 
 .wsuwp-people-wrapper .wsuwp-person-container:nth-child(even) {
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	justify-content: space-around;
 	padding-left: 1em;
 }
 
@@ -1671,11 +1631,8 @@ main textarea:focus {
 }
 
 .wsuwp-people-wrapper .wsuwp-person-container:nth-child(odd) {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1 1 calc(50% - 50px);
-	        flex: 1 1 calc(50% - 50px);
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	flex: 1 1 calc(50% - 50px);
+	justify-content: space-around;
 	margin-right: 2px;
 	padding-right: 1em;
 }
@@ -1692,21 +1649,15 @@ main textarea:focus {
 }
 
 .wsuwp-person-photo {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1 33%;
-	        flex: 1 33%;
+	flex: 1 33%;
 }
 
 .wsuwp-person-info-container {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1 66%;
-	        flex: 1 66%;
+	flex: 1 66%;
 }
 
 .wsuwp-person-profile-container {
-	-webkit-box-flex: 1;
-	    -ms-flex: 1 100%;
-	        flex: 1 100%;
+	flex: 1 100%;
 }
 
 .wsuwp-people-wrapper .wsuwp-person-container .wsuwp-person-info-container {
@@ -2125,4 +2076,3 @@ div.section-wrapper-has-background.blockquote-has-thumbnail {
 	background-position: right;
 	background-size: contain;
 }
-/*# sourceMappingURL=style.css.map */

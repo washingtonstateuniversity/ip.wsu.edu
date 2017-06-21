@@ -3,7 +3,7 @@
 	<header class="article-header">
 		<hgroup>
 		<?php if ( is_single() ) : ?>
-			<?php if ( spine_get_option( 'articletitle_show' ) == 'true' ) : ?>
+			<?php if ( spine_get_option( 'articletitle_show' ) === 'true' ) : ?>
 				<h1 class="article-title"><?php the_title(); ?></h1>
 			<?php endif; ?>
 		<?php else : ?>
@@ -32,7 +32,7 @@
 			// to that. If an option is set specifically to display excerpts, default to that. Otherwise show
 			// full content.
 			if ( $post->post_excerpt ) {
-				echo get_the_excerpt() . ' <a href="' . get_permalink() . '"><span class="excerpt-more-default">&raquo; More ...</span></a>';
+				echo esc_html( get_the_excerpt() ) . ' <a href="' . esc_url( get_permalink() ) . '"><span class="excerpt-more-default">&raquo; More ...</span></a>';
 			} elseif ( strstr( $post->post_content, '<!--more-->' ) ) {
 				the_content( '<span class="content-more-default">&raquo; More ...</span>' );
 			} elseif ( 'excerpt' === spine_get_option( 'archive_content_display' ) ) {
@@ -47,7 +47,10 @@
 		<div class="article-body">
 			<h2 class="article-title"><?php the_title(); ?></h2>
 			<?php the_content(); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'spine' ), 'after' => '</div>' ) ); ?>
+			<?php wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'spine' ),
+				'after' => '</div>',
+			) ); ?>
 		</div>
 	<?php endif; ?>
 
@@ -63,8 +66,8 @@
 	if ( has_category() ) {
 		echo '<dl class="categorized">';
 		echo '<dt><span class="categorized-default">Categorized</span></dt>';
-		foreach( get_the_category() as $category ) {
-			echo '<dd><a href="' . get_category_link( $category->cat_ID ) . '">' . $category->cat_name . '</a></dd>';
+		foreach ( get_the_category() as $category ) {
+			echo '<dd><a href="' . esc_url( get_category_link( $category->cat_ID ) ) . '">' . esc_html( $category->cat_name ) . '</a></dd>';
 		}
 		echo '</dl>';
 	}
@@ -79,7 +82,7 @@
 			foreach ( $university_category_terms as $term ) {
 				$term_link = get_term_link( $term->term_id, 'wsuwp_university_category' );
 				if ( ! is_wp_error( $term_link ) ) {
-					echo '<dd><a href="' . esc_url( $term_link ) . '">' . $term->name . '</a></dd>';
+					echo '<dd><a href="' . esc_url( $term_link ) . '">' . esc_html( $term->name ) . '</a></dd>';
 				}
 			}
 			echo '</dl>';
@@ -90,8 +93,8 @@
 	if ( has_tag() ) {
 		echo '<dl class="tagged">';
 		echo '<dt><span class="tagged-default">Tagged</span></dt>';
-		foreach( get_the_tags() as $tag ) {
-			echo '<dd><a href="' . get_tag_link( $tag->term_id ) . '">' . $tag->name . '</a></dd>';
+		foreach ( get_the_tags() as $tag ) {
+			echo '<dd><a href="' . esc_url( get_tag_link( $tag->term_id ) ) . '">' . esc_html( $tag->name ) . '</a></dd>';
 		}
 		echo '</dl>';
 	}
@@ -106,7 +109,7 @@
 			foreach ( $university_location_terms as $term ) {
 				$term_link = get_term_link( $term->term_id, 'wsuwp_university_location' );
 				if ( ! is_wp_error( $term_link ) ) {
-					echo '<dd><a href="' . esc_url( $term_link ) . '">' . $term->name . '</a></dd>';
+					echo '<dd><a href="' . esc_url( $term_link ) . '">' . esc_html( $term->name ) . '</a></dd>';
 				}
 			}
 			echo '</dl>';
@@ -132,11 +135,11 @@
 				?>
 			</div><!-- .author-avatar -->
 			<div class="author-description">
-				<h2><?php printf( __( 'About %s', 'twentytwelve' ), get_the_author() ); ?></h2>
+				<h2><?php printf( 'About %s', get_the_author() ); ?></h2>
 				<p><?php the_author_meta( 'description' ); ?></p>
 				<div class="author-link">
 					<a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" rel="author">
-						<?php printf( __( 'View all posts by %s <span class="meta-nav">&rarr;</span>', 'twentytwelve' ), get_the_author() ); ?>
+						<?php printf( 'View all posts by %s <span class="meta-nav">&rarr;</span>', get_the_author() ); ?>
 					</a>
 				</div><!-- .author-link	-->
 			</div><!-- .author-description -->

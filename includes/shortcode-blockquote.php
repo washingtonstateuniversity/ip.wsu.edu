@@ -48,14 +48,14 @@ class WSU_IP_Blockquote_Shortcode {
 						''         => 'Text in column one, image in column two',
 						'reverse'  => 'Image in column one, text in column two',
 						'together' => 'Image and text in a single column',
-					)
+					),
 				),
 				array(
 					'label'   => 'Wrapper class',
 					'attr'    => 'wrapper',
 					'type'    => 'text',
 					'description' => 'If provided, a class will be added to the wrapping container. Classes blockquote-container and blockquote-has-image are aready placed automatically.',
-				)
+				),
 			),
 		);
 		shortcode_ui_register_for_shortcode( 'ip_blockquote', $args );
@@ -98,7 +98,6 @@ class WSU_IP_Blockquote_Shortcode {
 				$atts['wrapper'] .= ' blockquote-has-image blockquote-has-image-together';
 				$content = '<div class="column one">' . wp_get_attachment_image( $atts['image'], 'thumbnail', false ) . '</div><div class="column two">' . $content . '</div>';
 			}
-
 		}
 
 		$content = '<div class="' . esc_attr( $atts['wrapper'] ) . '">' . $content . '</div>';

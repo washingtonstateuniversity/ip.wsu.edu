@@ -80,10 +80,10 @@ class WSU_IP_Theme {
 	 */
 	public function enqueue_site_styles() {
 		if ( $this->is_ip_site( 'ip-home' ) && is_front_page() ) {
-            wp_enqueue_style( 'wsu-ip-home', get_stylesheet_directory_uri() . '/css/ip-home.css', array(), spine_get_script_version() );
-        } elseif ( $this->is_ip_site( 'ip-home' ) ) {
-           wp_enqueue_style( 'wsu-ip-home', get_stylesheet_directory_uri() . '/css/ip-home-inside.css', array(), spine_get_script_version() );
-        }
+			wp_enqueue_style( 'wsu-ip-home', get_stylesheet_directory_uri() . '/css/ip-home.css', array(), spine_get_script_version() );
+		} elseif ( $this->is_ip_site( 'ip-home' ) ) {
+			wp_enqueue_style( 'wsu-ip-home', get_stylesheet_directory_uri() . '/css/ip-home-inside.css', array(), spine_get_script_version() );
+		}
 
 		if ( $this->is_ip_site( 'future-students' ) ) {
 			wp_enqueue_style( 'wsu-ip-future-students', get_stylesheet_directory_uri() . '/css/ip-future-students.css', array(), spine_get_script_version() );
@@ -137,11 +137,26 @@ class WSU_IP_Theme {
 	 */
 	public function color_palette_values() {
 		return array(
-			'palette1'   => array( 'name' => 'Crimson',  'hex' => '#981e32' ),
-			'palette2'   => array( 'name' => 'Blue One', 'hex' => '#4f868e' ),
-			'palette3'   => array( 'name' => 'Blue Two', 'hex' => '#2f5055' ),
-			'palette4'   => array( 'name' => 'Gray One', 'hex' => '#8d959a' ),
-			'palette5'   => array( 'name' => 'Gray Two', 'hex' => '#464e54' ),
+			'palette1' => array(
+				'name' => 'Crimson',
+				'hex' => '#981e32',
+			),
+			'palette2' => array(
+				'name' => 'Blue One',
+				'hex' => '#4f868e',
+			),
+			'palette3' => array(
+				'name' => 'Blue Two',
+				'hex' => '#2f5055',
+			),
+			'palette4' => array(
+				'name' => 'Gray One',
+				'hex' => '#8d959a',
+			),
+			'palette5' => array(
+				'name' => 'Gray Two',
+				'hex' => '#464e54',
+			),
 		);
 	}
 
@@ -157,14 +172,14 @@ class WSU_IP_Theme {
 		$section_anchor_text = isset( $ttfmake_section_data['data']['section-anchor-text'] ) ? $ttfmake_section_data['data']['section-anchor-text'] : '';
 		?>
 		<div class="wsuwp-builder-meta" style="width:100%; margin-top:10px;">
-			<label for="<?php echo $section_name; ?>[section-anchor-text]">Section Anchor Text:</label>
-			<input type="text" id="<?php echo $section_name; ?>[section-anchor-text]"
+			<label for="<?php echo esc_attr( $section_name ); ?>[section-anchor-text]">Section Anchor Text:</label>
+			<input type="text" id="<?php echo esc_attr( $section_name ); ?>[section-anchor-text]"
 				   class="wsuwp-builder-section-anchor-text widefat"
-				   name="<?php echo $section_name; ?>[section-anchor-text]"
+				   name="<?php echo esc_attr( $section_name ); ?>[section-anchor-text]"
 				   value="<?php echo esc_attr( $section_anchor_text ); ?>" />
 			<p class="description">A short title for this section. Used in navigation at the top of the page.</p>
-			<label for="<?php echo $section_name; ?>[section-id]">Section Id:</label>
-			<input type="text" id="<?php echo $section_name; ?>[section-id]" class="wsuwp-builder-section-id widefat" name="<?php echo $section_name; ?>[section-id]" value="<?php echo esc_attr( $section_id ); ?>" />
+			<label for="<?php echo esc_attr( $section_name ); ?>[section-id]">Section Id:</label>
+			<input type="text" id="<?php echo esc_attr( $section_name ); ?>[section-id]" class="wsuwp-builder-section-id widefat" name="<?php echo esc_attr( $section_name ); ?>[section-id]" value="<?php echo esc_attr( $section_id ); ?>" />
 			<p class="description">A single ID to be applied to this <code>section</code> element.</p>
 		</div>
 	<?php
@@ -201,7 +216,7 @@ class WSU_IP_Theme {
 	public function prepare_page_nav( $clean_sections ) {
 		$anchor_nav = array();
 
-		foreach( $clean_sections as $section ) {
+		foreach ( $clean_sections as $section ) {
 			if ( isset( $section['section-id'] ) && '' !== $section['section-id'] && isset( $section['section-anchor-text'] ) && '' !== $section['section-anchor-text'] ) {
 				$anchor_nav[ $section['section-id'] ] = $section['section-anchor-text'];
 			}
@@ -285,7 +300,9 @@ class WSU_IP_Theme {
 
 		if ( 1 === ( count( $people ) % 2 ) ) {
 			$person = new stdClass();
-			$person->title = (object) array( 'rendered' => '' );
+			$person->title = (object) array(
+				'rendered' => '',
+			);
 			$person->office = '';
 			$person->position_title = '';
 			$person->email = '';
