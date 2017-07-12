@@ -25,5 +25,5 @@ if ( $anchor_nav_data ) {
 }
 
 if ( '' !== $anchor_html ) {
-	echo '<div class="anchor-nav-wrapper anchor-count-' . esc_attr( $anchor_count ) . '"><ul class="anchor-nav">' . esc_html( $anchor_html ) . '</ul></div>';
+	echo '<div class="anchor-nav-wrapper anchor-count-' . esc_attr( $anchor_count ) . '"><ul class="anchor-nav">' . wp_kses_post( $anchor_html ) . '</ul></div>';
 }
