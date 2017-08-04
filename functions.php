@@ -260,13 +260,29 @@ class WSU_IP_Theme {
 			$phone = $person->phone;
 		}
 
+		if ( ! empty( $person->photos[0]->thumbnail ) ) {
+			$photo = $person->photos[0]->thumbnail;
+		} elseif ( isset( $person->profile_photo ) ) {
+			$photo = $person->profile_photo;
+		} else {
+			$photo = false;
+		}
+
+		if ( ! empty( $person->bio_unit ) ) {
+			$bio = $person->bio_unit;
+		} elseif ( $person->bio_department ) {
+			$bio = $person->bio_department;
+		} else {
+			$bio = '';
+		}
+
 		ob_start();
 
-		if ( isset( $person->profile_photo ) && $person->profile_photo ) {
+		if ( $photo ) {
 			?>
 			<div class="wsuwp-person-container">
 				<figure class="wsuwp-person-photo">
-					<img src="<?php echo esc_url( $person->profile_photo ); ?>"
+					<img src="<?php echo esc_url( $photo ); ?>"
 						 alt="<?php echo esc_attr( $person->title->rendered ); ?>" />
 				</figure>
 			<?php
@@ -282,7 +298,7 @@ class WSU_IP_Theme {
 				<div class="wsuwp-person-phone"><a href="tel:<?php echo esc_html( $phone ); ?>"><?php echo esc_html( $phone ); ?></a></div>
 			</div>
 			<div class="wsuwp-person-profile-container">
-				<?php echo wp_kses_post( $person->bio_department ); ?>
+				<?php echo wp_kses_post( $bio ); ?>
 			</div>
 		</div>
 		<?php
