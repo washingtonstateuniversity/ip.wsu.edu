@@ -11,11 +11,11 @@
  */
 
 body.wsu-palette-palette2 .ip-headline {
-	background-color: #c69214;
+	background-color: #e5cd93;
 }
 
 body.wsu-palette-palette2 .ip-headline h1 {
-	color: #fff;
+	color: #2a3033;
 }
 
 body.wsu-palette-palette2 .dropcap:first-child:first-letter {
@@ -43,31 +43,31 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 
 /* Defaults */
 p a.button {
-	border-color: rgba(158, 117, 16, .5);
-	color: #9e7510;
+	border-color: #e5cd93;
+	color: #2a3033;
 }
 
 p a.button:hover,
 p a.button:focus {
-	border: 1px solid #9e7510;
-	color: #9e7510;
+	border: 1px solid #d7b258;
+	color: #d7b258;
 }
 
 p a.button.cta {
-	background: #c69214;
-	color: #fff;
-	border: 1px solid #c69214;
+	background: #e5cd93;
+	color: #2a3033;
+	border: 1px solid #e5cd93;
 }
 
 p a.button.cta:hover,
 p a.button.cta:focus {
-	background: #9e7510;
-	border: 1px solid #9e7510;
+	background: #d7b258;
+	border: 1px solid #d7b258;
 }
 
 main a,
 main a:hover {
-	border-color: #ffb81c;
+	border-color: #d7b258;
 }
 
 .accordion h3.ui-accordion-header.ui-accordion-header-active.ui-state-active:hover {

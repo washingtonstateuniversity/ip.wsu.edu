@@ -146,13 +146,13 @@ p a.button.cta:focus {
 }
 
 .green-med h2 {
-	color: #ada400;
+	color: #fff;
 }
 
 .green-med h3,
 .green-med h4,
 .green-med h5 {
-	color: #cbc4a2;
+	color: #fff;
 }
 
 .green-med,
@@ -162,7 +162,7 @@ p a.button.cta:focus {
 
 .green-med blockquote,
 .green-med blockquote p {
-	color: #cbc4a2;
+	color: #fff;
 }
 
 .green-med blockquote p span:before,
@@ -410,7 +410,7 @@ p a.button.cta:focus {
 }
 
 .gray-med h2 {
-	color: #ada400;
+	color: #fff;
 }
 
 .gray-med h3,
