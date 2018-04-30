@@ -70,7 +70,7 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 }
 
 .gray1 {
-	background-color: #8d959a;
+	background-color: #464e54;
 }
 
 .gray2 {
@@ -151,7 +151,7 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 
 /* Blue2 */
 .blue2-text {
-	color: #4f868e;
+	color: #2f5055;
 }
 
 .blue2 h1,
@@ -360,7 +360,7 @@ body.wsu-palette-palette5 .dropcap:first-child:first-letter {
 }
 
 .gray-light-text {
-	color: #b5babe;
+	color: #fff;
 }
 
 /* Tan1 */
@@ -787,7 +787,7 @@ main .az li {
 
 /* Tables */
 body:not(.unset) table th {
-	color: #4f868e;
+	color: #2f5055;
 }
 
 /* custom table styles */
