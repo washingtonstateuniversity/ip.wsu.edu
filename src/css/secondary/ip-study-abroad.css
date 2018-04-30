@@ -359,14 +359,14 @@ p a.button.cta:focus {
 }
 
 .tan-dark p a.button {
-	border-color: rgba(182, 114, 51, .5);
-	color: #925b29;
+	border-color: #34383a;
+	color: #34383a;
 }
 
 .tan-dark p a.button:hover,
 .tan-dark p a.button:focus {
-	border: 1px solid #925b29;
-	color: #925b29;
+	border: 1px solid #981e32;
+	color: #981e32;
 }
 
 .tan-dark p a.button.cta {
@@ -641,7 +641,7 @@ p a.button.cta:focus {
 
 /* Numbers */
 .number-o {
-	color: #f6861f;
+	color: #c69214;
 	line-height: 1.3em;
 }
 

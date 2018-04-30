@@ -61,20 +61,20 @@ p a.button {
 
 p a.button:hover,
 p a.button:focus {
-	border: 1px solid #5e6a71;
-	color: #5e6a71;
+	border: 1px solid #34383a;
+	color: #34383a;
 }
 
 p a.button.cta {
-	background: #8d959a;
+	background: #34383a;
 	color: #fff;
-	border: 1px solid #8d959a;
+	border: 1px solid #34383a;
 }
 
 p a.button.cta:hover,
 p a.button.cta:focus {
-	background: #5e6a71;
-	border: 1px solid #5e6a71;
+	background: #34383a;
+	border: 1px solid #34383a;
 }
 
 .accordion h3.ui-accordion-header.ui-accordion-header-active.ui-state-active:hover {
@@ -316,14 +316,14 @@ p a.button.cta:focus {
 }
 
 .tan-dark p a.button {
-	border-color: rgba(141, 149, 154, .5);
-	color: #5e6a71;
+	border-color: #34383a;
+	color: #34383a;
 }
 
 .tan-dark p a.button:hover,
 .tan-dark p a.button:focus {
-	border: 1px solid #5e6a71;
-	color: #5e6a71;
+	border: 1px solid #3f6b72;
+	color: #3f6b72;
 }
 
 .tan-dark p a.button.cta {
